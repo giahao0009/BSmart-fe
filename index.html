@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BSmart</title>
+    <!-- Import css bootstrap v5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- Import font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Imoprt owl carousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Import css reset -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
+    <!-- Import css styles -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
+    <!-- Import css responsive -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/responsive.css" />
+  </head>
+  <body>
+    <!-- Start header -->
+    <header class="header-main">
+      <div class="header-top">
+        <div class="container">
+          <div class="header-top-wrapper">
+            <!-- Start header social -->
+            <div class="header-top-social text-left">
+              <ul>
+                <li>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-dribbble"></i></a>
+                </li>
+              </ul>
+            </div>
+            <!-- End header social -->
+            <!-- Start header contact info -->
+            <div class="header-contact-info">
+              <ul>
+                <li class="mb-3">
+                  <i class="fa fa-envelope"></i> bsmart@gmail.com
+                </li>
+                <li><i class="fa fa-phone"></i> +98 946005077</li>
+              </ul>
+            </div>
+            <!-- End header contact info -->
+            <!-- Start header search -->
+            <div class="header-course-search">
+              <input
+                type="text"
+                placeholder="Tìm kiếm khoá học"
+                class="form-control"
+              />
+              <span><i class="fa fa-search"></i></span>
+            </div>
+            <!-- End header search -->
+            <div class="header-log-reg d-flex justify-content-end">
+              <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><small>|</small></li>
+                <li><a href="registration.html">Register</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <div class="container">
+          <div class="header-bottom-wrapper">
+            <a href="#"><span class="site-logo">BSMART</span></a>
+            <nav class="navbar navbar-expand-lg">
+              <div class="container-fluid">
+                <div class="collapse navbar-collapse">
+                  <ul class="navbar-nav">
+                    <li>
+                      <a href="#" class="nav-link nav-link-custom active"
+                        >Trang Chủ</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="nav-link nav-link-custom">Khoá Học</a>
+                      <ul class="sub-menu">
+                        <li><a href="#">Devops</a></li>
+                        <li><a href="#">.NET Basic</a></li>
+                        <li><a href="#">.NET Core MVC</a></li>
+                        <li><a href="#">.NET Core Api</a></li>
+                        <li><a href="#">ReactJS</a></li>
+                        <li><a href="#">Front End</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#" class="nav-link nav-link-custom"
+                        >Giảng viên</a
+                      >
+                      <ul class="sub-menu">
+                        <li><a href="#">Mentor Cường</a></li>
+                        <li><a href="#">Mentor Long</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#" class="nav-link nav-link-custom"
+                        >Về Chúng Tôi</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="nav-link nav-link-custom"
+                        >Câu Chuyện Học Viên</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+            <div class="header-cart">
+              <a href="#"
+                ><i class="fa fa-shopping-cart"></i>
+                <span class="cart-total-number">0</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End header -->
+    <section class="banner">
+      <div class="container">
+        <div class="caption-content text-center">
+          <h4>Khởi đầu sự nghiệp của bạn</h4>
+          <h2>Trở thành lập trình viên chuyên nghiệp tại BSmart</h2>
+          <p>
+            Chúng tôi cung cấp các khoá học chất lượng cao để cải thiện các kỹ
+            năng lập trình của bạn. Tất cả các giảng viên của chúng tôi đều có
+            nhiều kinh nghiệm trong thực tế và giảng dạy.
+          </p>
+          <div class="mt-5 banner-control">
+            <a class="btn btn-primary-custom">Xem khoá học</a>
+            <a class="btn btn-outline-secondary-custom ms-3">Xem khoá học</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="aboutus">
+      <div class="container">
+        <div class="aboutus-content">
+          <h2 class="text-center section-heading">Về chúng tôi</h2>
+          <div class="row">
+            <div class="col-md-6 col-sm-6">
+              <p class="about-description">
+                BSmart khai thác nhu cầu tuyển dụng lập trình, kết nối việc làm
+                tới doanh nghiệp và tích hợp các dự án với công nghệ mới nhất
+                vào phương pháp đào tạo tích cực cho các học viên học xong có
+                việc làm ngay. Chương trình giảng dạy được biên soạn may đo dành
+                riêng cho các bạn Lập trình từ trái ngành hoặc đã có kiến thức
+                theo cường độ cao, luôn được tinh chỉnh và tối ưu hóa theo thời
+                gian bởi các thành viên sáng lập và giảng viên dày kinh nghiệm.
+              </p>
+              <div class="d-flex mt-5">
+                <button class="btn btn-primary-custom">Xem khoá học</button>
+                <button class="btn btn-outline-secondary-custom ms-3">
+                  Hỗ trợ tư vấn
+                </button>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+              <div class="banner-aboutus">
+                <img src="./assets/images/banner-2.jpg" alt="Hinh anh" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="advantages">
+      <div class="container">
+        <h2 class="section-heading text-end">Điểm ưu việt tại BSmart</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="service-card">
+              <div class="d-flex align-items-center pt-2 pb-2 mb-3">
+                <div class="service-card-icon me-2">
+                  <i class="fa fa-check-circle-o"></i>
+                </div>
+                <h4 class="service-card-title">
+                  Học theo lộ trình, có định hướng
+                </h4>
+              </div>
+              <div class="service-card-content">
+                BSmart sẽ định hướng và đưa ra các lộ trình học lập trình nhằm
+                phát triển năng lực và niềm đam mê lập trình của bạn để có việc
+                ngay sau học.
+              </div>
+            </div>
+            <div class="service-card">
+              <div class="d-flex align-items-center pt-2 pb-2 mb-3">
+                <div class="service-card-icon me-2">
+                  <i class="fa fa-users"></i>
+                </div>
+                <h4 class="service-card-title">Mentor tận tâm</h4>
+              </div>
+              <div class="service-card-content">
+                Bạn sẽ được giao dự án và làm theo Teamwork ngay từ ngày đầu
+                tiên. Đóng vai trò một thành viên trong qui trình Scrum, Agile.
+                Được Mentor hỗ trợ tân tâm, nhiệt tình.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-card">
+              <div class="d-flex align-items-center pt-2 pb-2 mb-3">
+                <div class="service-card-icon me-2">
+                  <i class="fa fa-cogs"></i>
+                </div>
+                <h4 class="service-card-title">
+                  Nền tảng cốt lõi trong lập trình
+                </h4>
+              </div>
+              <div class="service-card-content">
+                BSmart cung cấp những nền tảng, giá trị tư duy cốt lõi nhất
+                trong lập trình. Bạn sẽ tự tin trước sự thay đổi của công nghệ
+                và môi trường làm việc.
+              </div>
+            </div>
+            <div class="service-card">
+              <div class="d-flex align-items-center pt-2 pb-2 mb-3">
+                <div class="service-card-icon me-2">
+                  <i class="fa fa-qrcode"></i>
+                </div>
+                <h4 class="service-card-title">Cộng nghệ mới, thực tế</h4>
+              </div>
+              <div class="service-card-content">
+                Bạn được học và trải nghiệm các công nghệ lập trình mới nhất,
+                chuyên sâu, bám sát nhu cầu tuyển dụng thực tế từ doanh nghiệp.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-card">
+              <div class="d-flex align-items-center pt-2 pb-2 mb-3">
+                <div class="service-card-icon me-2">
+                  <i class="fa fa-fire"></i>
+                </div>
+                <h4 class="service-card-title">Mài giũa bạn qua thực tế</h4>
+              </div>
+              <div class="service-card-content">
+                Đội ngũ Giảng viên và các Mentor là những người dày dạn kinh
+                nghiệm qua các dự án thực tế tại các công ty lớn sẽ truyền đạt
+                những kinh nghiệm "máu lửa" cho bạn.
+              </div>
+            </div>
+            <div class="service-card">
+              <div class="d-flex align-items-center pt-2 pb-2 mb-3">
+                <div class="service-card-icon me-2">
+                  <i class="fa fa-trophy"></i>
+                </div>
+                <h4 class="service-card-title">
+                  Trao tay chìa khóa thành công
+                </h4>
+              </div>
+              <div class="service-card-content">
+                Hướng dẫn viết CV, phỏng vấn. Kết nối doanh nghiệp, gặp gỡ doanh
+                nghiệp, phỏng vấn cùng doanh nghiệp ngay sau khi tốt nghiệp.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="learning-path">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 col-sm-6 p-0">
+            <div class="left-section">
+              <div class="left-section-content">
+                <h2 class="text-center">Trái ngành</h2>
+                <p class="text-center">
+                  Lộ trình cho người trái ngành, mất gốc, học từ Zero
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6 p-0">
+            <div class="right-section">
+              <div class="right-section-content">
+                <h2 class="text-center">Đã biết lập trình</h2>
+                <p class="text-center">
+                  Đã có kiến thức tư duy lập trình và OOP
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="courses-section">
+      <div class="container">
+        <div class="courses-content">
+          <h2 class="section-heading text-center">Khoá học</h2>
+          <div class="row">
+            <div class="col-md-4 col-sm-3 mb-3">
+              <div class="card course-card" style="width: 100%">
+                <img
+                  src="./assets/images/devops-course-banner.png"
+                  class="card-img-top"
+                  alt="devops-course-banner"
+                  height="250"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Khoá học Devops</h5>
+                  <div class="testi-rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                </div>
+                <button class="btn btn-primary-custom w-100">Tham gia</button>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-3 mb-3">
+              <div class="card course-card" style="width: 100%">
+                <img
+                  src="./assets/images/net-course-banner.jpg"
+                  class="card-img-top"
+                  alt="devops-course-banner"
+                  height="250"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Khoá học .NET Basic</h5>
+                  <div class="testi-rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                </div>
+                <button class="btn btn-primary-custom w-100">Tham gia</button>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-3 mb-3">
+              <div class="card course-card" style="width: 100%">
+                <img
+                  src="./assets/images/net-mvc-course.png"
+                  class="card-img-top"
+                  alt="devops-course-banner"
+                  height="250"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Khoá học .NET Core MVC</h5>
+                  <div class="testi-rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                </div>
+                <button class="btn btn-primary-custom w-100">Tham gia</button>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-3 mb-3">
+              <div class="card course-card" style="width: 100%">
+                <img
+                  src="./assets/images/net-api-course.jpg"
+                  class="card-img-top"
+                  alt="devops-course-banner"
+                  height="250"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Khoá học .NET Core API</h5>
+                  <div class="testi-rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                </div>
+                <button class="btn btn-primary-custom w-100">Tham gia</button>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-3 mb-3">
+              <div class="card course-card" style="width: 100%">
+                <img
+                  src="./assets/images/reactjs-course.png.crdownload"
+                  class="card-img-top"
+                  alt="devops-course-banner"
+                  height="250"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Khoá học ReactJS</h5>
+                  <div class="testi-rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                </div>
+                <button class="btn btn-primary-custom w-100">Tham gia</button>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-3 mb-3">
+              <div class="card course-card" style="width: 100%">
+                <img
+                  src="./assets/images/front-end-course.png"
+                  class="card-img-top"
+                  alt="devops-course-banner"
+                  height="250"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Khoá học Front End</h5>
+                  <div class="testi-rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                </div>
+                <button class="btn btn-primary-custom w-100">Tham gia</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial-content">
+      <div class="container">
+        <h2 class="text-center section-heading">Câu chuyện của học viên</h2>
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <div class="card" style="width: 18rem">
+              <img
+                src="https://algo.edu.vn/wp-content/uploads/2022/05/be1.jpg"
+                class="card-img-top card-img-top-custom"
+                alt="card-img"
+              />
+              <div class="card-body">
+                <h5 class="card-title title">Sulin</h5>
+                <span class="sub-title">Front-end</span>
+                <p class="card-text">
+                  "Bé có thể tự tạo nên dự án riêng và học cách quản lý, phát
+                  triển dự án"
+                </p>
+                <div class="testi-rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card card-custom" style="width: 18rem">
+              <img
+                src="https://algo.edu.vn/wp-content/uploads/2022/05/be2.jpg"
+                class="card-img-top card-img-top-custom"
+                alt="card-img"
+              />
+              <div class="card-body">
+                <h5 class="card-title title">Karik</h5>
+                <span class="sub-title">.NET Basic</span>
+                <p class="card-text">
+                  "Con tự tin, mạnh dạn hơn khi trình bày, thuyết trình về lập
+                  trình"
+                </p>
+                <div class="testi-rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card card-custom" style="width: 18rem">
+              <img
+                src="https://algo.edu.vn/wp-content/uploads/2022/05/ethan-2-2.jpg"
+                class="card-img-top card-img-top-custom"
+                alt="card-img"
+              />
+              <div class="card-body">
+                <h5 class="card-title title">Ethen</h5>
+                <span class="sub-title">ReactJS</span>
+                <p class="card-text">
+                  "Em phát triển rất nhiều, giúp các môn học trên trường dễ dàng
+                  hơn"
+                </p>
+                <div class="testi-rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card card-custom" style="width: 18rem">
+              <img
+                src="https://algo.edu.vn/wp-content/uploads/2022/05/im3-1-1.png"
+                class="card-img-top card-img-top-custom"
+                alt="card-img"
+              />
+              <div class="card-body">
+                <h5 class="card-title title">Trần Tiến</h5>
+                <span class="sub-title">ReactJS</span>
+                <p class="card-text">
+                  "Con có thể thuần thục viết code, thật tuyệt vời"
+                </p>
+                <div class="testi-rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="advantages-2">
+      <div class="container">
+        <div class="advantages-2-content">
+          <h4 class="text-center">Định hướng và Chuẩn hoá lộ trình học tập</h4>
+          <h2 class="text-center">Học Thật, Dự Án Thật, Giảng Viên Tận Tâm</h2>
+          <div class="d-flex justify-content-center">
+            <button class="btn btn-primary-custom m-2">
+              Danh sách khoá học
+            </button>
+            <button class="btn btn-outline-secondary-custom m-2">
+              Tư vấn lộ trình
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6">
+            <img
+              src="./assets/images/banner-contact.jpg"
+              class="form-contact-img"
+              alt="Hinh anh contact"
+              width="100%"
+            />
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <div class="form-contact-container">
+              <h2 class="text-center mb-4">Liên hệ tư vấn</h2>
+              <form>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Họ và tên *"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Email liên hệ *"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Điện thoại liên hệ *"
+                  />
+                </div>
+                <div class="mb-3">
+                  <div class="form-floating">
+                    <textarea
+                      class="form-control"
+                      placeholder="Leave a comment here"
+                      id="floatingTextarea"
+                    ></textarea>
+                    <label for="floatingTextarea"
+                      >Bạn cần tư vấn thêm về chương trình, vui lòng để lại tin
+                      nhắn tại đây
+                    </label>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <button class="btn btn-primary-custom w-100">
+                    đăng ký tư vấn
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="post-section" id=""></section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12">
+            <h3 class="title-address">TP.Hồ Chí Minh</h3>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-lg-3 col-md-6">
+            <h3 class="quaters">Trụ sở: 117 Tân Cảng, Bình Thạnh</h3>
+            <p class="hotline">Hotline: 096.105.1014</p>
+            <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h3 class="quaters">Trụ sở: 117 Tân Cảng, Bình Thạnh</h3>
+            <p class="hotline">Hotline: 096.105.1014</p>
+            <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h3 class="quaters">Trụ sở: 117 Tân Cảng, Bình Thạnh</h3>
+            <p class="hotline">Hotline: 096.105.1014</p>
+            <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
+          </div>
+        </div>
+        <hr class="text-success mt-5 mb-5" />
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-logo">
+              <a href="#"
+                ><span class="site-logo site-logo-footer">BSMART</span></a
+              >
+              <p class="footer-about-description">
+                Chúng tôi cung cấp các khoá học chất lượng cao để cải thiện các
+                kỹ năng lập trình của bạn. Tất cả các giảng viên của chúng tôi
+                đều có nhiều kinh nghiệm trong thực tế và giảng dạy.
+              </p>
+              <h6>Theo dõi chúng tôi tại:</h6>
+              <ul class="footer-social-icons">
+                <li>
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-pinterest"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <div class="footer-menu">
+              <h4>Menu</h4>
+              <ul>
+                <li><a href="#">Khoá học</a></li>
+                <li><a href="#">Giảng viên</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-control">
+              <button class="btn btn-primary-custom p-2 mb-2">
+                Đăng ký khoá học
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-contact">
+              <h4>Liên hệ với chúng tôi</h4>
+              <li>
+                <i class="fa fa-map-marker"></i>
+                <p class="m-0">260/19 Tân Binh, Hồ Chí Minh</p>
+              </li>
+              <li>
+                <i class="fa fa-envelope"></i>
+                <p class="m-0">bsmart@gmail.com</p>
+              </li>
+              <li>
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <p class="m-0">+98 946005077</p>
+              </li>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="text-success mt-5" />
+      <div class="container">
+        <p class="m-0 text-light">
+          © Bản quyền BSmart 2022 - Empowered by <a href="#">BSmart</a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Import script bootstrap V5 -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Import script Jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Import script owl carousel  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Script -->
+    <script type="text/javascript">
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 3,
+          },
+          1000: {
+            items: 4,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
