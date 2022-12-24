@@ -5,6 +5,10 @@ body {
     font-family: 'Roboto',sans-serif;
 }
 
+.wrapper {
+    scroll-behavior: smooth;
+}
+
 /* Header */
 .header-main {
 
@@ -48,7 +52,7 @@ body {
 }
 
 .header-course-search {
-    flex-basis: 40%;
+    flex-basis: 50%;
     position: relative;
 }
 
@@ -60,6 +64,10 @@ body {
     color: #fff;
 }
 
+.header-course-search input::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+
 .header-course-search input:focus {
     background-color: transparent;
     color: #fff;
@@ -69,12 +77,12 @@ body {
     position: absolute;
     color: rgba(255, 255, 255, 0.5);
     z-index: 10000;
-    top: 7px;
+    top: 10px;
     right: 20px;
 }
 
 .header-log-reg {
-    flex-basis: 19%;
+    
 }
 
 .header-log-reg li {
@@ -514,18 +522,57 @@ body {
 }
 
 .courses-section .course-card{
-    box-shadow: 0 0 10px rgb(51 51 51 / 50%);
-    overflow: hidden;
     transition: 0.5s;
     border-radius: 10px;
-    border: none;
+    width: 90%;
+    border: 1px solid #999999;
+}   
+
+.courses-section .course-card .banner-course {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+    position: relative;
+    border-bottom: 1px solid #999999;
+}
+
+.courses-section .course-card .logo-course {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border: 2px solid #999999;
+    padding: 2px;
+    background-color: #fff;
+    bottom: -20%;
+    left: 20px;
+    border-radius: 5px;
+}
+
+.courses-section .course-card .logo-course img {
+    width: 100%;
+    height: 100%;
 }
 
 .courses-section .course-card .card-title{
     color: #130F40;
     font-size: 24px;
     font-weight: 700;
-    line-height: 34px;
+    line-height: 30px;
+}
+
+.courses-section .course-card .sub-title{
+    color: #999999;
+    
+}
+
+.courses-section .course-card .btn-invite-course {
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    background: #FF630E;
+    color: #fff;
+    border-radius: 5px;
 }
 /* ------------------------------------ */
 /* Section 4 */
