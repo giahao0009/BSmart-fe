@@ -1,0 +1,63 @@
+.courses-section {
+  padding: 95px 0 150px;
+  .course-card {
+    transition: 0.5s;
+    border-radius: 10px;
+    width: 90%;
+    border: 1px solid #999999;
+    .banner-course {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 200px;
+      position: relative;
+      border-bottom: 1px solid #999999;
+    }
+    .logo-course {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      border: 2px solid #999999;
+      padding: 2px;
+      background-color: #fff;
+      bottom: -20%;
+      left: 20px;
+      border-radius: 5px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .card-title {
+      color: #130f40;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 30px;
+    }
+    .sub-title {
+      color: #999999;
+    }
+    .description {
+      color: #130f40;
+      margin-top: 10px;
+      font-weight: 600;
+      text-align: justify;
+      width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      line-height: 25px;
+      -webkit-line-clamp: 3;
+      height: 75px;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+    }
+    .btn-invite-course {
+      padding: 10px 20px;
+      font-size: 20px;
+      border: none;
+      background: #ff630e;
+      color: #fff;
+      border-radius: 5px;
+    }
+  }
+}

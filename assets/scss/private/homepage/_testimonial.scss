@@ -1,0 +1,28 @@
+.testimonial-content {
+  padding: 95px 0 150px;
+  background-color: #f5f5f5;
+  .card-body {
+    .card-img-top-custom {
+      height: 260px;
+      max-height: 300px;
+      object-fit: cover;
+    }
+    .title {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 25px;
+      margin: 0 0 6px;
+      color: #130f40;
+    }
+    .sub-title {
+      font-weight: 400;
+      color: #696969;
+    }
+    p {
+      font-size: 16px;
+      line-height: 26px;
+      color: #696969;
+      margin: 10px 0 20px;
+    }
+  }
+}

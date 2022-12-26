@@ -45,6 +45,7 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/responsive.css" />
   </head>
   <body>
+    <!-- Start Sidebar mobile -->
     <div class="sidebar-wrap" id="sidebar-mobile">
       <div class="container-fluid">
         <div class="sidebar-content">
@@ -120,6 +121,55 @@
         </div>
       </div>
     </div>
+    <!-- End Sidebar mobile -->
+    <!-- Start Login form modal -->
+    <div id="loginForm" class="modal">
+      <form class="modal-content animate" method="post">
+        <div class="imgcontainer">
+          <span
+            onclick="document.getElementById('loginForm').style.display='none'"
+            class="close"
+            title="Close Modal"
+            >&times;</span
+          >
+        </div>
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input
+            type="text"
+            placeholder="Enter Username"
+            name="uname"
+            required
+          />
+
+          <label for="psw"><b>Password</b></label>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="psw"
+            required
+          />
+
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember" /> Remember
+            me
+          </label>
+        </div>
+
+        <div class="container" style="background-color: #f1f1f1">
+          <button
+            type="button"
+            onclick="document.getElementById('id01').style.display='none'"
+            class="cancelbtn"
+          >
+            Cancel
+          </button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+    <!-- End login form mobile -->
     <div class="wrapper">
       <!-- Start header -->
       <header class="header-main">
@@ -163,7 +213,7 @@
               <!-- End header search -->
               <div class="header-log-reg d-flex justify-content-end">
                 <ul>
-                  <li><a href="login.html">Login</a></li>
+                  <li><a href="#">Login</a></li>
                   <li><small>|</small></li>
                   <li><a href="registration.html">Register</a></li>
                 </ul>
@@ -178,14 +228,20 @@
               <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                   <div class="collapse navbar-collapse">
+                    <!-- Menu -->
+                    <!-- Menu cấp parent -->
                     <ul class="navbar-nav">
                       <li>
-                        <a href="#" class="nav-link nav-link-custom active"
+                        <a
+                          href="./index.html"
+                          class="nav-link nav-link-custom active"
                           >Trang Chủ</a
                         >
                       </li>
                       <li>
-                        <a href="#aboutus" class="nav-link nav-link-custom"
+                        <a
+                          href="./aboutus.html"
+                          class="nav-link nav-link-custom"
                           >Về Chúng Tôi</a
                         >
                       </li>
@@ -193,13 +249,51 @@
                         <a href="#" class="nav-link nav-link-custom"
                           >Khoá Học</a
                         >
-                        <ul class="sub-menu">
-                          <li><a href="#">Devops</a></li>
-                          <li><a href="#">.NET Basic</a></li>
-                          <li><a href="#">.NET Core MVC</a></li>
-                          <li><a href="#">.NET Core Api</a></li>
-                          <li><a href="#">ReactJS</a></li>
-                          <li><a href="#">Front End</a></li>
+                        <!-- Menu con cấp 1 -->
+                        <ul>
+                          <li>
+                            <a href="#" class="nav-link-custom"
+                              >Khoá học Devops</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#" class="nav-link-custom"
+                              >Khoá học Back End</a
+                            >
+                            <ul>
+                              <li>
+                                <a href="#" class="nav-link-custom"
+                                  >ASP.NET Core Basic</a
+                                >
+                              </li>
+                              <li>
+                                <a href="#" class="nav-link-custom"
+                                  >ASP.NET Core MVC</a
+                                >
+                              </li>
+                              <li>
+                                <a href="#" class="nav-link-custom"
+                                  >ASP.NET Core API</a
+                                >
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#" class="nav-link-custom"
+                              >Khoá học Front End</a
+                            >
+                            <ul>
+                              <li>
+                                <a href="#" class="nav-link-custom">ReactJS</a>
+                              </li>
+                              <li>
+                                <a href="#" class="nav-link-custom">VueJS</a>
+                              </li>
+                              <li>
+                                <a href="#" class="nav-link-custom">Angular</a>
+                              </li>
+                            </ul>
+                          </li>
                         </ul>
                       </li>
                       <li>
@@ -265,7 +359,7 @@
           <div class="aboutus-content">
             <h2 class="text-center section-heading">Về chúng tôi</h2>
             <div class="row">
-              <div class="col-md-6 col-sm-6">
+              <div class="col-md-6 col-sm-12">
                 <p class="about-description">
                   BSmart khai thác nhu cầu tuyển dụng lập trình, kết nối việc
                   làm tới doanh nghiệp và tích hợp các dự án với công nghệ mới
@@ -283,7 +377,7 @@
                   </button>
                 </div>
               </div>
-              <div class="col-md-6 col-sm-6">
+              <div class="col-md-6 col-sm-12">
                 <div class="banner-aboutus">
                   <img src="./assets/images/banner-2.jpg" alt="Hinh anh" />
                 </div>
@@ -297,7 +391,7 @@
         <div class="container">
           <h2 class="section-heading text-end">Điểm ưu việt tại BSmart</h2>
           <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4 col-xs-12 col-sm-12">
               <div class="service-card">
                 <div class="d-flex align-items-center pt-2 pb-2 mb-3">
                   <div class="service-card-icon me-2">
@@ -327,7 +421,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-xs-12 col-sm-12">
               <div class="service-card">
                 <div class="d-flex align-items-center pt-2 pb-2 mb-3">
                   <div class="service-card-icon me-2">
@@ -357,7 +451,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-xs-12 col-sm-12">
               <div class="service-card">
                 <div class="d-flex align-items-center pt-2 pb-2 mb-3">
                   <div class="service-card-icon me-2">
@@ -419,7 +513,7 @@
       <section class="courses-section">
         <div class="container">
           <div class="courses-content">
-            <h2 class="section-heading text-center">Khoá học</h2>
+            <h2 class="section-heading text-center">Khoá học tiêu biểu</h2>
             <div class="owl-carousel owl-theme">
               <div class="item">
                 <div class="card course-card">
@@ -431,14 +525,19 @@
                   >
                     <div class="logo-course">
                       <img
-                        src="./assets/images/devops-logo.png"
+                        src="./assets/images/avatar-mentor-1.jpg"
                         alt="Logo devops"
                       />
                     </div>
                   </div>
                   <div class="card-body pt-5">
                     <h5 class="card-title">Khoá học Devops</h5>
-                    <p class="sub-title">Khoá học Devops</p>
+                    <p class="sub-title">Mentor Cường</p>
+                    <p class="description">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s
+                    </p>
                     <div class="testi-rating">
                       <i class="fa fa-star"></i>
                       <i class="fa fa-star"></i>
@@ -460,14 +559,19 @@
                   >
                     <div class="logo-course">
                       <img
-                        src="./assets/images/front-end-logo.png"
+                        src="./assets/images/avatar-mentor-2.jpg"
                         alt="Logo devops"
                       />
                     </div>
                   </div>
                   <div class="card-body pt-5">
                     <h5 class="card-title">Khoá học Front End</h5>
-                    <p class="sub-title">Khoá học Front End</p>
+                    <p class="sub-title">Khoá học Long</p>
+                    <p class="description">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s
+                    </p>
                     <div class="testi-rating">
                       <i class="fa fa-star"></i>
                       <i class="fa fa-star"></i>
@@ -475,6 +579,7 @@
                       <i class="fa fa-star"></i>
                       <i class="fa fa-star"></i>
                     </div>
+
                     <button class="btn-invite-course mt-2">Tham gia</button>
                   </div>
                 </div>
@@ -489,14 +594,19 @@
                   >
                     <div class="logo-course">
                       <img
-                        src="./assets/images/dotnet-basic-logo.png"
+                        src="./assets/images/avatar-mentor-3.jpg"
                         alt="Logo devops"
                       />
                     </div>
                   </div>
                   <div class="card-body pt-5">
                     <h5 class="card-title">Khoá học .NET Basic</h5>
-                    <p class="sub-title">Khoá học .NET Basic</p>
+                    <p class="sub-title">Mentor Phúc</p>
+                    <p class="description">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s
+                    </p>
                     <div class="testi-rating">
                       <i class="fa fa-star"></i>
                       <i class="fa fa-star"></i>
@@ -518,14 +628,19 @@
                   >
                     <div class="logo-course">
                       <img
-                        src="./assets/images/dotnet-mvc-logo.png"
+                        src="./assets/images/avatar-mentor-1.jpg"
                         alt="Logo devops"
                       />
                     </div>
                   </div>
                   <div class="card-body pt-5">
                     <h5 class="card-title">Khoá học .NET MVC</h5>
-                    <p class="sub-title">Khoá học .NET MVC</p>
+                    <p class="sub-title">Mentor Cường</p>
+                    <p class="description">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s
+                    </p>
                     <div class="testi-rating">
                       <i class="fa fa-star"></i>
                       <i class="fa fa-star"></i>
@@ -547,14 +662,19 @@
                   >
                     <div class="logo-course">
                       <img
-                        src="./assets/images/dotnet-api-logo.png"
+                        src="./assets/images/avatar-mentor-2.jpg"
                         alt="Logo devops"
                       />
                     </div>
                   </div>
                   <div class="card-body pt-5">
                     <h5 class="card-title">Khoá học .NET API</h5>
-                    <p class="sub-title">Khoá học .NET API</p>
+                    <p class="sub-title">Mentor Long</p>
+                    <p class="description">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s
+                    </p>
                     <div class="testi-rating">
                       <i class="fa fa-star"></i>
                       <i class="fa fa-star"></i>
@@ -698,7 +818,7 @@
       <section class="contacts-section">
         <div class="container">
           <div class="row">
-            <div class="col-md-6 col-sm-6">
+            <div class="col-md-6 col-sm-12">
               <img
                 src="./assets/images/banner-contact.jpg"
                 class="form-contact-img"
@@ -706,7 +826,7 @@
                 width="100%"
               />
             </div>
-            <div class="col-md-6 col-sm-6">
+            <div class="col-md-6 col-sm-12">
               <div class="form-contact-container">
                 <h2 class="text-center mb-4">Liên hệ tư vấn</h2>
                 <form>
@@ -878,81 +998,6 @@
       referrerpolicy="no-referrer"
     ></script>
     <!-- Script -->
-    <script type="text/javascript">
-      $(".owl-carousel").owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: true,
-        responsive: {
-          0: {
-            items: 1,
-          },
-          600: {
-            items: 3,
-          },
-          1000: {
-            items: 4,
-          },
-        },
-      });
-
-      // Select all links with hashes
-      $('a[href*="#"]')
-        // Remove links that don't actually link to anything
-        .not('[href="#"]')
-        .not('[href="#0"]')
-        .click(function (event) {
-          // On-page links
-          if (
-            location.pathname.replace(/^\//, "") ==
-              this.pathname.replace(/^\//, "") &&
-            location.hostname == this.hostname
-          ) {
-            // Figure out element to scroll to
-            var target = $(this.hash);
-            target = target.length
-              ? target
-              : $("[name=" + this.hash.slice(1) + "]");
-            // Does a scroll target exist?
-            if (target.length) {
-              // Only prevent default if animation is actually gonna happen
-              event.preventDefault();
-              $("html, body").animate(
-                {
-                  scrollTop: target.offset().top,
-                },
-                1000,
-                function () {
-                  // Callback after animation
-                  // Must change focus!
-                  var $target = $(target);
-                  $target.focus();
-                  if ($target.is(":focus")) {
-                    // Checking if the target was focused
-                    return false;
-                  } else {
-                    $target.attr("tabindex", "-1"); // Adding tabindex for elements not focusable
-                    $target.focus(); // Set focus again
-                  }
-                }
-              );
-            }
-          }
-        });
-
-      $("#closeSidebar").click(function (event) {
-        var $sidebar = $("#sidebar-mobile").css("right", "-100%");
-      });
-
-      $("#activeMenu").click(function (event) {
-        var $sidebar = $("#sidebar-mobile").css("right", "0");
-      });
-
-      $(".mean-expand").click(function (event) {
-        var parent = event.currentTarget.offsetParent;
-        var subMenu = parent.querySelector(".sub-menu");
-        subMenu.style.display = "block";
-      });
-    </script>
+    <script type="text/javascript" src="./assets/js/main.js"></script>
   </body>
 </html>

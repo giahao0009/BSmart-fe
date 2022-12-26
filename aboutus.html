@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BSmart</title>
+    <!-- Import css bootstrap v5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+
+    <!-- Import font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <!-- Imoprt owl carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+    <!-- Import css reset -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
+    <!-- Import css styles -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
+    <!-- Import css responsive -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/aboutus.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/responsive.css" />
+    
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Start header -->
+        <header class="header-main">
+            <div class="header-top">
+                <div class="container">
+                    <div class="header-top-wrapper">
+                        <!-- Start header social -->
+                        <div class="header-top-social text-left">
+                            <ul>
+                                <li>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- End header social -->
+                        <!-- Start header contact info -->
+                        <div class="header-contact-info">
+                            <ul>
+                                <li class="mb-3">
+                                    <i class="fa fa-envelope"></i> bsmart@gmail.com
+                                </li>
+                                <li><i class="fa fa-phone"></i> +98 946005077</li>
+                            </ul>
+                        </div>
+                        <!-- End header contact info -->
+                        <!-- Start header search -->
+                        <div class="header-course-search">
+                            <input type="text" placeholder="Tìm kiếm khoá học" class="form-control" />
+                            <span><i class="fa fa-search"></i></span>
+                        </div>
+                        <!-- End header search -->
+                        <div class="header-log-reg d-flex justify-content-end">
+                            <ul>
+                                <li><a href="login.html">Login</a></li>
+                                <li><small>|</small></li>
+                                <li><a href="registration.html">Register</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="container">
+                    <div class="header-bottom-wrapper">
+                        <a href="./index.html"><span class="site-logo">BSMART</span></a>
+                        <nav class="navbar navbar-expand-lg">
+                            <div class="container-fluid">
+                                <div class="collapse navbar-collapse">
+                                    <ul class="navbar-nav">
+                                        <li>
+                                            <a href="./index.html" class="nav-link nav-link-custom">Trang Chủ</a>
+                                        </li>
+                                        <li>
+                                            <a href="./aboutus.html" class="nav-link nav-link-custom active">Về Chúng Tôi</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="nav-link nav-link-custom">Khoá Học</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="#">Devops</a></li>
+                                                <li><a href="#">.NET Basic</a></li>
+                                                <li><a href="#">.NET Core MVC</a></li>
+                                                <li><a href="#">.NET Core Api</a></li>
+                                                <li><a href="#">ReactJS</a></li>
+                                                <li><a href="#">Front End</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="nav-link nav-link-custom">Giảng viên</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="#">Mentor Cường</a></li>
+                                                <li><a href="#">Mentor Long</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li>
+                                            <a href="#blog" class="nav-link nav-link-custom">Blog</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                        <div class="header-cart">
+                            <a href="#"><i class="fa fa-shopping-cart"></i>
+                                <span class="cart-total-number">0</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-mobile">
+                <div class="container">
+                    <div class="header-mobile-content">
+                        <div class="header-mobile-logo"><span>BSMART</span></div>
+                        <div class="header-mobile-menu-hambuger" id="activeMenu">
+                            <i class="fa fa-bars"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- End header -->
+        <section class="banner__aboutus">
+            <div class="container">
+                <div class="caption-content text-center">
+                    <h2>About Us</h2>
+                    <h5 style="color: white;">Home > About us</h5>
+                </div>
+            </div>
+        </section>
+
+        <section class="employee__img">
+            <div class="employ__box">
+                <img src="./assets/images/empl.1.jpg" alt="">
+            </div>
+            <div class="employ__box">
+                <img src="./assets/images/empl.1.jpg" alt="">
+            </div>
+            <div class="employ__box">
+                <img src="./assets/images/empl.1.jpg" alt="">
+            </div>
+        </section>
+
+        <section class="sec-heading__about">
+            <h5>WHO WE ARE</h5>
+            <h2>We Are Providing The Best Quality Online Courses. Our All Instructors Are High Expert</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque assumenda ut hic quod maiores asperiores corrupti consectetur accusantium officiis exercitationem enim provident tempora quas, atque rem, dolorem et? Odio, voluptatibus.</p>
+        </section>
+
+        <section class="counter">
+            <div class="counter-single">
+                <h2>35,535+</h2>
+                <div class="counter-title">
+                    <p>Students Enrolled</p>
+                </div>
+            </div>
+            <div class="counter-single">
+                <h2>35+</h2>
+                <div class="counter-title">
+                    <p>Registered Instructors</p>
+                </div>
+            </div>
+            <div class="counter-single">
+                <h2>66%</h2>
+                <div class="counter-title">
+                    <p>Success Rate</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="why-choose-area">
+            <h4>BEST LEARNING PLATFORM</h4>
+            <h2>Why We Are The Best</h2>
+            <div class="choose">
+                <div class="choose-single">
+                    <img src="./assets/images/folder.svg" alt="">
+                    <h3>High Quality Courses</h3>
+                    <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+                </div>
+                <div class="choose-single">
+                    <img src="./assets/images/ribbon.svg" alt="">
+                    <h3>Expert Instructors</h3>
+                    <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+                </div>
+                <div class="choose-single">
+                    <img src="./assets/images/teacher.svg" alt="">
+                    <h3>Life Time Access</h3>
+                    <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="our">
+            <h2>INSTRUCTORS</h2>
+            <h1>Our Expert Instructors</h1>
+            <div class="our_employ">
+                <div class="out__sigle">
+                    <img src="./assets/images/instructor-2.jpg" alt="">
+                    <h3>Shane Warne</h3>
+                    <h4>Instructor</h4>
+                    <div class="instructor-links">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="out__sigle">
+                    <img src="./assets/images/instructor-2.jpg" alt="">
+                    <h3>Shane Warne</h3>
+                    <h4>Instructor</h4>
+                    <div class="instructor-links">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="out__sigle">
+                    <img src="./assets/images/instructor-2.jpg" alt="">
+                    <h3>Shane Warne</h3>
+                    <h4>Instructor</h4>
+                    <div class="instructor-links">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="out__sigle">
+                    <img src="./assets/images/instructor-2.jpg" alt="">
+                    <h3>Shane Warne</h3>
+                    <h4>Instructor</h4>
+                    <div class="instructor-links">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12">
+                        <h3 class="title-address">TP.Hồ Chí Minh</h3>
+                    </div>
+                </div>
+                <div class="row mb-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="quaters">Trụ sở: 117 Tân Cảng, Bình Thạnh</h3>
+                        <p class="hotline">Hotline: 096.105.1014</p>
+                        <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="quaters">Trụ sở: 117 Tân Cảng, Bình Thạnh</h3>
+                        <p class="hotline">Hotline: 096.105.1014</p>
+                        <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="quaters">Trụ sở: 117 Tân Cảng, Bình Thạnh</h3>
+                        <p class="hotline">Hotline: 096.105.1014</p>
+                        <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
+                    </div>
+                </div>
+                <hr class="text-success mt-5 mb-5" />
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 mb-3">
+                        <div class="footer-logo">
+                            <a href="#"><span class="site-logo site-logo-footer">BSMART</span></a>
+                            <p class="footer-about-description">
+                                Chúng tôi cung cấp các khoá học chất lượng cao để cải thiện các kỹ năng lập trình của bạn. Tất cả các giảng viên của chúng tôi đều có nhiều kinh nghiệm trong thực tế và giảng dạy.
+                            </p>
+                            <h6>Theo dõi chúng tôi tại:</h6>
+                            <ul class="footer-social-icons">
+                                <li>
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-3">
+                        <div class="footer-menu">
+                            <h4>Menu</h4>
+                            <ul>
+                                <li><a href="#">Khoá học</a></li>
+                                <li><a href="#">Giảng viên</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-3">
+                        <div class="footer-control">
+                            <button class="btn btn-primary-custom p-2 mb-2">
+                                Đăng ký khoá học
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-3">
+                        <div class="footer-contact">
+                            <h4>Liên hệ với chúng tôi</h4>
+                            <li>
+                                <i class="fa fa-map-marker"></i>
+                                <p class="m-0">260/19 Tân Binh, Hồ Chí Minh</p>
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope"></i>
+                                <p class="m-0">bsmart@gmail.com</p>
+                            </li>
+                            <li>
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                <p class="m-0">+98 946005077</p>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="text-success mt-5" />
+            <div class="container">
+                <p class="m-0 text-light">
+                    © Bản quyền BSmart 2022 - Empowered by <a href="#">BSmart</a>
+                </p>
+            </div>
+        </footer>
+    </div>
+    <!-- Import script bootstrap V5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <!-- Import script Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Import script owl carousel  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Script -->
+    <script type="text/javascript">
+        $(".owl-carousel").owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                600: {
+                    items: 3,
+                },
+                1000: {
+                    items: 4,
+                },
+            },
+        });
+
+        // Select all links with hashes
+        $('a[href*="#"]')
+            // Remove links that don't actually link to anything
+            .not('[href="#"]')
+            .not('[href="#0"]')
+            .click(function(event) {
+                // On-page links
+                if (
+                    location.pathname.replace(/^\//, "") ==
+                    this.pathname.replace(/^\//, "") &&
+                    location.hostname == this.hostname
+                ) {
+                    // Figure out element to scroll to
+                    var target = $(this.hash);
+                    target = target.length ?
+                        target :
+                        $("[name=" + this.hash.slice(1) + "]");
+                    // Does a scroll target exist?
+                    if (target.length) {
+                        // Only prevent default if animation is actually gonna happen
+                        event.preventDefault();
+                        $("html, body").animate({
+                                scrollTop: target.offset().top,
+                            },
+                            1000,
+                            function() {
+                                // Callback after animation
+                                // Must change focus!
+                                var $target = $(target);
+                                $target.focus();
+                                if ($target.is(":focus")) {
+                                    // Checking if the target was focused
+                                    return false;
+                                } else {
+                                    $target.attr("tabindex", "-1"); // Adding tabindex for elements not focusable
+                                    $target.focus(); // Set focus again
+                                }
+                            }
+                        );
+                    }
+                }
+            });
+
+        $("#closeSidebar").click(function(event) {
+            var $sidebar = $("#sidebar-mobile").css("right", "-100%");
+        });
+
+        $("#activeMenu").click(function(event) {
+            var $sidebar = $("#sidebar-mobile").css("right", "0");
+        });
+
+        $(".mean-expand").click(function(event) {
+            var parent = event.currentTarget.offsetParent;
+            var subMenu = parent.querySelector(".sub-menu");
+            subMenu.style.display = "block";
+        });
+    </script>
+</body>
+
+</html>
+
+</html>
+
+</html>

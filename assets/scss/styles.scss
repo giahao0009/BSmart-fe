@@ -1,0 +1,12 @@
+// Import url google font
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,500&display=swap");
+// Import global scss
+@import "./global/_global.scss";
+// Import scss header component
+@import "./global/_header.scss";
+// Import scss content component
+@import "./private/homepage/_index.scss";
+// Import scss footer component
+@import "./global/_footer";
+// Import scss responsive
+@import "./responsive";

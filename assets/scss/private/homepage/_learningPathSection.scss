@@ -1,0 +1,85 @@
+.learning-path {
+  .left-section {
+    background-image: url(../images/banner-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%);
+    padding: 220px 0;
+    position: relative;
+    overflow: hidden;
+    h2 {
+      color: #fff;
+      font-size: 42px;
+      line-height: 56px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    p {
+      color: #fff;
+      font-size: 22px;
+      line-height: 26px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    &:hover {
+      &:before {
+        background-color: rgba(0, 0, 0, 0);
+        cursor: pointer;
+        transition: 2s;
+      }
+    }
+  }
+  .left-section-content {
+    position: relative;
+  }
+  .right-section {
+    background-image: url(../images/banner-4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+    padding: 220px 0;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    &:hover {
+      &:before {
+        background-color: rgba(0, 0, 0, 0);
+        cursor: pointer;
+        transition: 2s;
+      }
+    }
+    .right-section-content {
+      position: relative;
+    }
+    h2 {
+      color: #fff;
+      font-size: 42px;
+      line-height: 56px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    p {
+      color: #fff;
+      font-size: 22px;
+      line-height: 26px;
+    }
+  }
+}
