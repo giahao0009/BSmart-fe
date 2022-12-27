@@ -45,84 +45,7 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/responsive.css" />
   </head>
   <body>
-    <!-- Start Sidebar mobile -->
-    <div class="sidebar-wrap" id="sidebar-mobile">
-      <div class="container-fluid">
-        <div class="sidebar-content">
-          <div class="sidebar-top">
-            <span class="sidebar-logo">BSMART</span>
-            <i class="fa fa-times" class="sidebar-close" id="closeSidebar"></i>
-          </div>
-          <div class="sidebar-center">
-            <ul class="sidebar-mean-nav">
-              <li><a href="#">Trang chủ</a></li>
-              <li><a href="#">Về chúng tôi</a></li>
-              <li>
-                <a href="#">Khoá học</a>
-                <div class="d-flex align-items-center justify-content-end">
-                  <ul class="sub-menu">
-                    <li><a href="#">Devops</a></li>
-                    <li><a href="#">.NET Basic</a></li>
-                    <li><a href="#">.NET Core MVC</a></li>
-                    <li><a href="#">.NET Core API</a></li>
-                    <li><a href="#">ReactJS</a></li>
-                    <li><a href="#">Front End</a></li>
-                  </ul>
-                </div>
-
-                <a class="mean-expand" href="#">+</a>
-              </li>
-              <li>
-                <a href="#">Giảng viên</a>
-                <div class="d-flex align-items-center justify-content-end">
-                  <ul class="sub-menu">
-                    <li><a href="#">Mentor Long</a></li>
-                    <li><a href="#">Mentor Cuong</a></li>
-                  </ul>
-                </div>
-
-                <a class="mean-expand" href="#">+</a>
-              </li>
-              <li><a href="#">Blog</a></li>
-            </ul>
-          </div>
-          <div class="sidebar-bottom">
-            <div class="search-course">
-              <input
-                type="text"
-                placeholder="Tìm kiếm khoá học"
-                class="form-control"
-              />
-              <span><i class="fa fa-search"></i></span>
-            </div>
-            <ul class="contact-info">
-              <li class="mb-3">
-                <i class="fa fa-envelope"></i> bsmart@gmail.com
-              </li>
-              <li><i class="fa fa-phone"></i> +98 946005077</li>
-            </ul>
-            <ul class="social-list">
-              <li>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-linkedin"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-dribbble"></i></a>
-              </li>
-            </ul>
-            <ul class="sidebar-controls">
-              <li><a href="login.html">Login</a></li>
-              <li><small>|</small></li>
-              <li><a href="registration.html">Register</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End Sidebar mobile -->
-    <div class="aboutus-wrapper">
+    <div class="register-wrapper">
       <!-- Start header -->
       <header class="header-main">
         <div class="header-top">
@@ -165,9 +88,9 @@
               <!-- End header search -->
               <div class="header-log-reg d-flex justify-content-end">
                 <ul>
-                  <li><a href="#">Login</a></li>
+                  <li><a href="#" id="loginFormOpen">Login</a></li>
                   <li><small>|</small></li>
-                  <li><a href="registration.html">Register</a></li>
+                  <li><a href="./register.html">Register</a></li>
                 </ul>
               </div>
             </div>
@@ -184,14 +107,16 @@
                     <!-- Menu cấp parent -->
                     <ul class="navbar-nav">
                       <li>
-                        <a href="./index.html" class="nav-link nav-link-custom"
+                        <a
+                          href="./index.html"
+                          class="nav-link nav-link-custom active"
                           >Trang Chủ</a
                         >
                       </li>
                       <li>
                         <a
                           href="./aboutus.html"
-                          class="nav-link nav-link-custom active"
+                          class="nav-link nav-link-custom"
                           >Về Chúng Tôi</a
                         >
                       </li>
@@ -286,220 +211,64 @@
         </div>
       </header>
       <!-- End header -->
-
-      <!-- Start Aboutus -->
-      <section class="banner__aboutus">
+      <section class="page-banner-area">
         <div class="container">
-          <div class="caption-content text-center">
-            <h4>Về chúng tôi</h4>
-            <h2>Trang chủ > Về chúng tôi</h2>
+          <div class="page-banner-content text-center">
+            <h1>Đăng ký</h1>
+            <p><a href="index.html">Trang chủ</a><span> > </span> Đăng ký</p>
           </div>
         </div>
       </section>
-
-      <section class="employee__img">
+      <section class="registration-area">
         <div class="container">
-          <div class="row">
-            <div class="col-md-4 mt-5">
-              <div class="employ__box">
-                <img src="./assets/images/empl.1.jpg" alt="hinh anh" />
+          <div class="registration-area-content">
+            <div class="registration-form-wrap">
+              <div class="form-group mb-3">
+                <label for="name" class="mb-2">Họ và tên</label>
+                <input
+                  type="text"
+                  placeholder="Họ và tên"
+                  class="form-control"
+                  name="name"
+                />
               </div>
-            </div>
-            <div class="col-md-4">
-              <div class="employ__box">
-                <img src="./assets/images/empl.1.jpg" alt="hinh anh" />
+              <div class="form-group mb-3">
+                <label for="email" class="mb-2">E-Mail</label>
+                <input
+                  type="text"
+                  placeholder="E-Mail"
+                  class="form-control"
+                  name="email"
+                />
               </div>
-            </div>
-            <div class="col-md-4 mt-5">
-              <div class="employ__box">
-                <img src="./assets/images/empl.1.jpg" alt="hinh anh" />
+              <div class="form-group mb-3">
+                <label for="password" class="mb-2">Mật khẩu</label>
+                <input
+                  type="text"
+                  placeholder="Mật khẩu"
+                  class="form-control"
+                  name="password"
+                />
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="sec-heading__about">
-        <div class="container">
-          <h5>Chúng tôi là</h5>
-          <h2>
-            Chúng tôi đang cung cấp các khóa học trực tuyến chất lượng tốt nhất.
-            Tất cả các giảng viên của chúng tôi đều là các chuyên gia
-          </h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
-            assumenda ut hic quod maiores asperiores corrupti consectetur
-            accusantium officiis exercitationem enim provident tempora quas,
-            atque rem, dolorem et? Odio, voluptatibus.
-          </p>
-        </div>
-      </section>
-
-      <section class="counter container">
-        <div class="row">
-          <div class="col-xs-12 col-md-4">
-            <div class="counter-single">
-              <h2>35,535+</h2>
-              <div class="counter-title">
-                <p>Sinh viên đã đăng ký</p>
+              <div class="form-group mb-3">
+                <label for="confirmPassword" class="mb-2"
+                  >Xác nhận mật khẩu</label
+                >
+                <input
+                  type="text"
+                  placeholder="Xác nhận mật khẩu"
+                  class="form-control"
+                  name="confirmPassword"
+                />
               </div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-4">
-            <div class="counter-single">
-              <h2>35+</h2>
-              <div class="counter-title">
-                <p>Giảng viên đã đăng ký</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-4">
-            <div class="counter-single">
-              <h2>66%</h2>
-              <div class="counter-title">
-                <p>Tỷ lệ thành công</p>
+              <div class="registration-btn">
+                <a href="#" class="btn btn-primary-custom">Đăng ký</a>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-      <section class="why-choose-area">
-        <div class="container">
-          <h4>BEST LEARNING PLATFORM</h4>
-          <h2>Tại sao chúng tôi là tốt nhất</h2>
-          <div class="choose">
-            <div class="row">
-              <div class="col-xs-12 col-md-4">
-                <div class="choose-single">
-                  <img src="./assets/images/folder.svg" alt="" />
-                  <h3>High Quality Courses</h3>
-                  <p>
-                    Donec nec justo eget felis facilisis fermentum. Aliquam
-                    porttitor mauris sit amet orci. Aenean dignissim
-                    pellentesque felis.
-                  </p>
-                </div>
-              </div>
-              <div class="col-xs-12 col-md-4">
-                <div class="choose-single">
-                  <img src="./assets/images/ribbon.svg" alt="" />
-                  <h3>Expert Instructors</h3>
-                  <p>
-                    Donec nec justo eget felis facilisis fermentum. Aliquam
-                    porttitor mauris sit amet orci. Aenean dignissim
-                    pellentesque felis.
-                  </p>
-                </div>
-              </div>
-              <div class="col-xs-12 col-md-4">
-                <div class="choose-single">
-                  <img src="./assets/images/teacher.svg" alt="" />
-                  <h3>Life Time Access</h3>
-                  <p>
-                    Donec nec justo eget felis facilisis fermentum. Aliquam
-                    porttitor mauris sit amet orci. Aenean dignissim
-                    pellentesque felis.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="our">
-        <div class="container">
-          <h2>INSTRUCTORS</h2>
-          <h1>Our Expert Instructors</h1>
-          <div class="our_employ">
-            <div class="out__sigle">
-              <img src="./assets/images/instructor-2.jpg" alt="" />
-              <h3>Shane Warne</h3>
-              <h4>Instructor</h4>
-              <div class="instructor-links">
-                <ul>
-                  <li>
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa fa-pinterest"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="out__sigle">
-              <img src="./assets/images/instructor-2.jpg" alt="" />
-              <h3>Shane Warne</h3>
-              <h4>Instructor</h4>
-              <div class="instructor-links">
-                <ul>
-                  <li>
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa fa-pinterest"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="out__sigle">
-              <img src="./assets/images/instructor-2.jpg" alt="" />
-              <h3>Shane Warne</h3>
-              <h4>Instructor</h4>
-              <div class="instructor-links">
-                <ul>
-                  <li>
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa fa-pinterest"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="out__sigle">
-              <img src="./assets/images/instructor-2.jpg" alt="" />
-              <h3>Shane Warne</h3>
-              <h4>Instructor</h4>
-              <div class="instructor-links">
-                <ul>
-                  <li>
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa fa-pinterest"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <!-- Start footer -->
       <footer class="footer">
         <div class="container">
           <div class="row">
@@ -598,6 +367,7 @@
           </p>
         </div>
       </footer>
+      <!-- End footer -->
     </div>
     <!-- Import script bootstrap V5 -->
     <script

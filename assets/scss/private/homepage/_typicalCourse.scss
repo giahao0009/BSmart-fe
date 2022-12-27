@@ -35,10 +35,10 @@
       line-height: 30px;
     }
     .sub-title {
-      color: #999999;
+      color: $text-grey-color;
     }
     .description {
-      color: #130f40;
+      color: $primary-color;
       margin-top: 10px;
       font-weight: 600;
       text-align: justify;
@@ -55,8 +55,8 @@
       padding: 10px 20px;
       font-size: 20px;
       border: none;
-      background: #ff630e;
-      color: #fff;
+      background: $secondary-color;
+      color: $white-color;
       border-radius: 5px;
     }
   }

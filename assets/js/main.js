@@ -11,10 +11,22 @@ $(document).ready(function () {
       600: {
         items: 2,
       },
-      1000: {
+      1024: {
+        items: 3,
+      },
+      1440: {
         items: 4,
       },
     },
+  });
+  // ----------------------------------------------------------------
+
+  // Open modal login
+  $("#loginFormClose").click(function (event) {
+    $("#loginFormModal").css("top", "-100%");
+  });
+  $("#loginFormOpen").click(function (event) {
+    $("#loginFormModal").css("top", "0");
   });
   // ----------------------------------------------------------------
 
@@ -79,4 +91,16 @@ $(document).ready(function () {
     var subMenu = parent.querySelector(".sub-menu");
     subMenu.style.display = "block";
   });
+  // Fixed header bottom
+  window.onscroll = () => {
+    var headerBottom = document.querySelector(".header-bottom");
+    var sticky = headerBottom.offsetTop;
+
+    if (window.pageYOffset >= sticky) {
+      headerBottom.classList.add("sticky");
+    }
+    if (window.pageYOffset === 0) {
+      headerBottom.classList.remove("sticky");
+    }
+  };
 });

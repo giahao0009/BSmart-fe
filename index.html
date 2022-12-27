@@ -113,7 +113,7 @@
               </li>
             </ul>
             <ul class="sidebar-controls">
-              <li><a href="login.html">Login</a></li>
+              <li><a href="./login-mobile.html">Login</a></li>
               <li><small>|</small></li>
               <li><a href="registration.html">Register</a></li>
             </ul>
@@ -122,55 +122,50 @@
       </div>
     </div>
     <!-- End Sidebar mobile -->
-    <!-- Start Login form modal -->
-    <div id="loginForm" class="modal">
-      <form class="modal-content animate" method="post">
-        <div class="imgcontainer">
-          <span
-            onclick="document.getElementById('loginForm').style.display='none'"
-            class="close"
-            title="Close Modal"
-            >&times;</span
-          >
+    <!-- Login form modal -->
+    <div id="loginFormModal" class="login-form-container">
+      <div
+        class="container-fluid d-flex justify-content-center align-items-center"
+        style="height: 100%"
+      >
+        <div class="login-form-content">
+          <div class="close-login-form" id="loginFormClose">&times;</div>
+          <h3 class="mb-3 text-center">Đăng nhập</h3>
+          <form action="#">
+            <div class="form-group mb-3">
+              <input type="text" placeholder="Email" class="form-control" />
+            </div>
+            <div class="form-group mb-3">
+              <input type="text" placeholder="Password" class="form-control" />
+            </div>
+            <div
+              class="form-check d-flex justify-content-between align-items-center mb-3"
+            >
+              <div class="checkbox d-flex align-items-center">
+                <input
+                  type="checkbox"
+                  class="form-check-input mt-0"
+                  id="signed"
+                />
+                <label for="signed" class="ms-1">Remember me</label>
+              </div>
+              <div class="forgot-pass">
+                <a href="#" class="link-custom">Forgot Password?</a>
+              </div>
+            </div>
+            <div class="login-btn text-center mb-4">
+              <a href="#" class="btn btn-primary-custom p-2">Đăng nhập</a>
+            </div>
+            <div class="new-registration text-center">
+              <span>Bạn chưa có tài khoản?</span>
+              <a href="#" class="link-custom">Đăng ký ngay</a>
+            </div>
+          </form>
         </div>
-        <div class="container">
-          <label for="uname"><b>Username</b></label>
-          <input
-            type="text"
-            placeholder="Enter Username"
-            name="uname"
-            required
-          />
-
-          <label for="psw"><b>Password</b></label>
-          <input
-            type="password"
-            placeholder="Enter Password"
-            name="psw"
-            required
-          />
-
-          <button type="submit">Login</button>
-          <label>
-            <input type="checkbox" checked="checked" name="remember" /> Remember
-            me
-          </label>
-        </div>
-
-        <div class="container" style="background-color: #f1f1f1">
-          <button
-            type="button"
-            onclick="document.getElementById('id01').style.display='none'"
-            class="cancelbtn"
-          >
-            Cancel
-          </button>
-          <span class="psw">Forgot <a href="#">password?</a></span>
-        </div>
-      </form>
+      </div>
     </div>
-    <!-- End login form mobile -->
-    <div class="wrapper">
+    <!-- End login form modal -->
+    <div class="wrapper home-wrapper">
       <!-- Start header -->
       <header class="header-main">
         <div class="header-top">
@@ -213,9 +208,9 @@
               <!-- End header search -->
               <div class="header-log-reg d-flex justify-content-end">
                 <ul>
-                  <li><a href="#">Login</a></li>
+                  <li><a href="#" id="loginFormOpen">Login</a></li>
                   <li><small>|</small></li>
-                  <li><a href="registration.html">Register</a></li>
+                  <li><a href="./register.html">Register</a></li>
                 </ul>
               </div>
             </div>
@@ -878,104 +873,104 @@
 
       <section class="post-section" id=""></section>
 
-      <footer class="footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12 col-md-12">
-              <h3 class="title-address">TP.Hồ Chí Minh</h3>
+        <footer class="footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 col-md-12">
+                <h3 class="title-address">TP.Hồ Chí Minh</h3>
+              </div>
+            </div>
+            <div class="row mb-5">
+              <div class="col-lg-3 col-md-6">
+                <h3 class="quaters">Trụ sở: 117 Tân Cảng, Bình Thạnh</h3>
+                <p class="hotline">Hotline: 096.105.1014</p>
+                <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <h3 class="quaters">Trụ sở: 117 Tân Cảng, Bình Thạnh</h3>
+                <p class="hotline">Hotline: 096.105.1014</p>
+                <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <h3 class="quaters">Trụ sở: 117 Tân Cảng, Bình Thạnh</h3>
+                <p class="hotline">Hotline: 096.105.1014</p>
+                <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
+              </div>
+            </div>
+            <hr class="text-success mt-5 mb-5" />
+            <div class="row">
+              <div class="col-lg-3 col-md-6 mb-3">
+                <div class="footer-logo">
+                  <a href="#"
+                    ><span class="site-logo site-logo-footer">BSMART</span></a
+                  >
+                  <p class="footer-about-description">
+                    Chúng tôi cung cấp các khoá học chất lượng cao để cải thiện
+                    các kỹ năng lập trình của bạn. Tất cả các giảng viên của chúng
+                    tôi đều có nhiều kinh nghiệm trong thực tế và giảng dạy.
+                  </p>
+                  <h6>Theo dõi chúng tôi tại:</h6>
+                  <ul class="footer-social-icons">
+                    <li>
+                      <a href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-pinterest"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-instagram"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-6 mb-3">
+                <div class="footer-menu">
+                  <h4>Menu</h4>
+                  <ul>
+                    <li><a href="#">Khoá học</a></li>
+                    <li><a href="#">Giảng viên</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-3">
+                <div class="footer-control">
+                  <button class="btn btn-primary-custom p-2 mb-2">
+                    Đăng ký khoá học
+                  </button>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-3">
+                <div class="footer-contact">
+                  <h4>Liên hệ với chúng tôi</h4>
+                  <li>
+                    <i class="fa fa-map-marker"></i>
+                    <p class="m-0">260/19 Tân Binh, Hồ Chí Minh</p>
+                  </li>
+                  <li>
+                    <i class="fa fa-envelope"></i>
+                    <p class="m-0">bsmart@gmail.com</p>
+                  </li>
+                  <li>
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <p class="m-0">+98 946005077</p>
+                  </li>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="row mb-5">
-            <div class="col-lg-3 col-md-6">
-              <h3 class="quaters">Trụ sở: 117 Tân Cảng, Bình Thạnh</h3>
-              <p class="hotline">Hotline: 096.105.1014</p>
-              <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <h3 class="quaters">Trụ sở: 117 Tân Cảng, Bình Thạnh</h3>
-              <p class="hotline">Hotline: 096.105.1014</p>
-              <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <h3 class="quaters">Trụ sở: 117 Tân Cảng, Bình Thạnh</h3>
-              <p class="hotline">Hotline: 096.105.1014</p>
-              <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
-            </div>
+          <hr class="text-success mt-5" />
+          <div class="container">
+            <p class="m-0 text-light">
+              © Bản quyền BSmart 2022 - Empowered by <a href="#">BSmart</a>
+            </p>
           </div>
-          <hr class="text-success mt-5 mb-5" />
-          <div class="row">
-            <div class="col-lg-3 col-md-6 mb-3">
-              <div class="footer-logo">
-                <a href="#"
-                  ><span class="site-logo site-logo-footer">BSMART</span></a
-                >
-                <p class="footer-about-description">
-                  Chúng tôi cung cấp các khoá học chất lượng cao để cải thiện
-                  các kỹ năng lập trình của bạn. Tất cả các giảng viên của chúng
-                  tôi đều có nhiều kinh nghiệm trong thực tế và giảng dạy.
-                </p>
-                <h6>Theo dõi chúng tôi tại:</h6>
-                <ul class="footer-social-icons">
-                  <li>
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa fa-pinterest"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-2 col-md-6 mb-3">
-              <div class="footer-menu">
-                <h4>Menu</h4>
-                <ul>
-                  <li><a href="#">Khoá học</a></li>
-                  <li><a href="#">Giảng viên</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-3">
-              <div class="footer-control">
-                <button class="btn btn-primary-custom p-2 mb-2">
-                  Đăng ký khoá học
-                </button>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-3">
-              <div class="footer-contact">
-                <h4>Liên hệ với chúng tôi</h4>
-                <li>
-                  <i class="fa fa-map-marker"></i>
-                  <p class="m-0">260/19 Tân Binh, Hồ Chí Minh</p>
-                </li>
-                <li>
-                  <i class="fa fa-envelope"></i>
-                  <p class="m-0">bsmart@gmail.com</p>
-                </li>
-                <li>
-                  <i class="fa fa-phone" aria-hidden="true"></i>
-                  <p class="m-0">+98 946005077</p>
-                </li>
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr class="text-success mt-5" />
-        <div class="container">
-          <p class="m-0 text-light">
-            © Bản quyền BSmart 2022 - Empowered by <a href="#">BSmart</a>
-          </p>
-        </div>
-      </footer>
+        </footer>
     </div>
     <!-- Import script bootstrap V5 -->
     <script

@@ -1,0 +1,15 @@
+.login-mobile-section {
+  background: $grey-white-color;
+  padding: 30px 0;
+  .login-form-content {
+    background: $white-color;
+    border-radius: 10px;
+    padding: 60px;
+    h3 {
+      font-size: 24px;
+      line-height: 34px;
+      color: $primary-color;
+      font-weight: 700;
+    }
+  }
+}

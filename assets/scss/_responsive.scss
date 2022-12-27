@@ -48,7 +48,7 @@
     .sidebar-content {
       padding: 20px;
       width: 290px;
-      background-color: #fff;
+      background-color: $white-color;
       height: 100%;
       position: absolute;
       right: 0;
@@ -59,7 +59,7 @@
         justify-content: space-between;
         .sidebar-logo {
           font-weight: 700;
-          color: #130f40;
+          color: $primary-color;
           font-size: 30px;
           line-height: 1.42857143;
           i {
@@ -71,12 +71,12 @@
         padding-top: 20px;
         .sidebar-mean-nav li {
           padding: 12px 0;
-          border-top: 1px solid #ebebeb;
+          border-top: 1px solid $grey-white-color;
           position: relative;
           a:first-child {
             font-size: 16px;
             font-weight: 600;
-            color: #130f40;
+            color: $primary-color;
             text-decoration: none;
             text-transform: uppercase;
           }
@@ -90,7 +90,7 @@
             top: 0;
             padding: 12px;
             font-size: 16px;
-            color: #130f40;
+            color: $primary-color;
           }
           &:last-child {
             border-bottom: none;
@@ -116,7 +116,7 @@
         .contact-info {
           i {
             margin-right: 10px;
-            color: #ff630e;
+            color: $secondary-color;
           }
         }
         .social-list {
@@ -125,7 +125,7 @@
             margin-right: 10px;
             display: inline-block;
             a {
-              color: #130f40;
+              color: $primary-color;
             }
           }
         }
@@ -134,7 +134,7 @@
             display: inline-block;
             margin-right: 5px;
             a {
-              color: #130f40;
+              color: $primary-color;
               color: 16px;
             }
           }
@@ -243,6 +243,13 @@
     }
   }
   /* ------------------------ */
+  // Register page
+  .register-wrapper {
+    .registration-form-wrap {
+      width: 100% !important;
+    }
+  }
+  /* ------------------------ */
 }
 
 /* Mobile */
@@ -298,7 +305,7 @@
     .sidebar-content {
       padding: 20px;
       width: 290px;
-      background-color: #fff;
+      background-color: $white-color;
       height: 100%;
       position: absolute;
       right: 0;
@@ -309,7 +316,7 @@
         justify-content: space-between;
         .sidebar-logo {
           font-weight: 700;
-          color: #130f40;
+          color: $primary-color;
           font-size: 30px;
           line-height: 1.42857143;
           i {
@@ -321,12 +328,12 @@
         padding-top: 20px;
         .sidebar-mean-nav li {
           padding: 12px 0;
-          border-top: 1px solid #ebebeb;
+          border-top: 1px solid $grey-white-color;
           position: relative;
           a:first-child {
             font-size: 16px;
             font-weight: 600;
-            color: #130f40;
+            color: $primary-color;
             text-decoration: none;
             text-transform: uppercase;
           }
@@ -340,7 +347,7 @@
             top: 0;
             padding: 12px;
             font-size: 16px;
-            color: #130f40;
+            color: $primary-color;
           }
           &:last-child {
             border-bottom: none;
@@ -366,7 +373,7 @@
         .contact-info {
           i {
             margin-right: 10px;
-            color: #ff630e;
+            color: $secondary-color;
           }
         }
         .social-list {
@@ -375,7 +382,7 @@
             margin-right: 10px;
             display: inline-block;
             a {
-              color: #130f40;
+              color: $primary-color;
             }
           }
         }
@@ -384,7 +391,7 @@
             display: inline-block;
             margin-right: 5px;
             a {
-              color: #130f40;
+              color: $primary-color;
               color: 16px;
             }
           }
@@ -393,112 +400,186 @@
     }
   }
   /* ------------------------ */
-  /* Banner */
-  .banner {
-    padding: 0;
-    .caption-content {
-      padding: 100px 0px;
-      h4 {
+  // Homepage
+  .home-wrapper {
+    /* Banner */
+    .banner {
+      padding: 0;
+      .caption-content {
+        padding: 100px 0px;
+        h4 {
+          font-size: 18px;
+          line-height: 28px;
+        }
+        h2 {
+          font-size: 40px;
+          line-height: 50px;
+        }
+        p {
+          padding: 0;
+        }
+        .btn-primary-custom {
+          padding: 14px 20px;
+          font-size: 14px;
+        }
+        .btn-outline-secondary-custom {
+          padding: 14px 20px;
+          font-size: 14px;
+        }
+      }
+    }
+    /* ------------------------ */
+    /* About us */
+    .aboutus {
+      padding: 100px 0;
+      .about-description {
         font-size: 18px;
-        line-height: 28px;
-      }
-      h2 {
-        font-size: 40px;
-        line-height: 50px;
-      }
-      p {
-        padding: 0;
+        line-height: 26px;
       }
       .btn-primary-custom {
         padding: 14px 20px;
         font-size: 14px;
+        margin-bottom: 20px;
       }
       .btn-outline-secondary-custom {
         padding: 14px 20px;
         font-size: 14px;
+        margin-bottom: 20px;
       }
     }
-  }
-  /* ------------------------ */
-  /* About us */
-  .aboutus {
-    padding: 100px 0;
-    .about-description {
-      font-size: 18px;
-      line-height: 26px;
+    /* ------------------------ */
+    /* Advantages */
+    .advantages {
+      padding-bottom: 80px;
+      .section-heading {
+        text-align: center !important;
+      }
     }
-    .btn-primary-custom {
-      padding: 14px 20px;
-      font-size: 14px;
-      margin-bottom: 20px;
+    /* ------------------------ */
+    /* Learning path */
+    .learning-path {
+      .left-section {
+        clip-path: none;
+        margin-bottom: 10px;
+      }
+      .right-section {
+        clip-path: none;
+        margin-bottom: 10px;
+      }
     }
-    .btn-outline-secondary-custom {
-      padding: 14px 20px;
-      font-size: 14px;
-      margin-bottom: 20px;
-    }
-  }
-  /* ------------------------ */
-  /* Advantages */
-  .advantages {
-    padding-bottom: 80px;
-    .section-heading {
-      text-align: center !important;
-    }
-  }
-  /* ------------------------ */
-  /* Learning path */
-  .learning-path {
-    .left-section {
-      clip-path: none;
-      margin-bottom: 10px;
-    }
-    .right-section {
-      clip-path: none;
-      margin-bottom: 10px;
-    }
-  }
-  /* ------------------------ */
-  /* Course section */
-  .courses-section {
-    .courses-content {
-      .item {
-        display: flex;
-        justify-content: center;
-        .btn-invite-course {
-          width: 100%;
+    /* ------------------------ */
+    /* Course section */
+    .courses-section {
+      .courses-content {
+        .item {
+          display: flex;
+          justify-content: center;
+          .btn-invite-course {
+            width: 100%;
+          }
         }
       }
     }
+    /* ------------------------ */
+    /* Testimonial-content */
+    .testimonial-content {
+      .item {
+        display: flex;
+        justify-content: center;
+        .card-custom {
+          width: 100% !important;
+        }
+      }
+    }
+    /* ------------------------ */
+    /* Advantages-2 */
+    .advantages-2 {
+      .btn-outline-secondary-custom {
+        padding: 14px 20px;
+        font-size: 14px;
+      }
+      .btn-primary-custom {
+        padding: 14px 10px;
+        font-size: 14px;
+      }
+    }
+
+    /* ------------------------ */
+    /* Contacts section */
+    .contacts-section {
+      .form-contact-container {
+        margin-top: 15px;
+      }
+    }
+    /* ------------------------ */
   }
   /* ------------------------ */
-  /* Testimonial-content */
-  .testimonial-content {
-    .item {
-      display: flex;
-      justify-content: center;
-      .card-custom {
-        width: 100% !important;
+  // About us page
+  .aboutus-wrapper {
+    .employee__img {
+      margin-top: 30px;
+      width: 100%;
+
+      gap: 30px 0;
+      padding: 70px;
+      .employ__box {
+        &:nth-child(2) {
+          margin-top: 0px;
+        }
       }
+    }
+
+    .sec-heading__about {
+      h2 {
+        font-size: 36px;
+        line-height: 46px;
+      }
+    }
+    .counter {
+      width: 100%;
+      margin: auto;
+      display: initial;
+      grid-template-columns: none !important;
+      text-align: center;
+      .counter-single {
+        margin: 15px;
+        h2 {
+          font-size: 28px;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .why-choose-area {
+      width: 100%;
+      background-color: #f7f7f7;
+      margin-top: 50px;
+      padding: 70px 70px;
+      .choose {
+        display: initial !important;
+        grid-template-columns: none !important;
+        width: 100%;
+        margin-top: 30px;
+        text-align: center;
+        .choose-single {
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    .our_employ {
+      display: grid;
+      width: 100%;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 10px 36px;
     }
   }
   /* ------------------------ */
-  /* Advantages-2 */
-  .advantages-2 {
-  }
-  .advantages-2 .btn-outline-secondary-custom {
-    padding: 14px 20px;
-    font-size: 14px;
-  }
-  .advantages-2 .btn-primary-custom {
-    padding: 14px 10px;
-    font-size: 14px;
-  }
-
-  /* ------------------------ */
-  /* Contacts section */
-  .contacts-section .form-contact-container {
-    margin-top: 15px;
+  // Register page
+  .register-wrapper {
+    .registration-form-wrap {
+      width: 100% !important;
+    }
   }
   /* ------------------------ */
   /* Footer */

@@ -1,0 +1,59 @@
+.register-wrapper {
+  .page-banner-area {
+    background-image: url(../images/banner-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 110px 0 100px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      background: $primary-overlay-color;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+    .page-banner-content {
+      position: relative;
+      h1 {
+        font-size: 60px;
+        line-height: 70px;
+        margin-bottom: 25px;
+        color: $secondary-color;
+        font-weight: 700;
+      }
+      p {
+        font-size: 16px;
+        line-height: 26px;
+        color: $grey-white-color;
+        a {
+          color: $grey-white-color;
+          transition: all 0.3s;
+          &:hover {
+            color: $secondary-color;
+          }
+        }
+      }
+    }
+  }
+  .registration-area {
+    padding: 110px 0;
+    .registration-area-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .registration-form-wrap {
+        border-radius: 10px;
+        box-shadow: 0 0 30px rgb(51 51 51 / 10%);
+        width: 50%;
+        padding: 40px;
+        label {
+          color: $text-grey-color;
+        }
+      }
+    }
+  }
+}
