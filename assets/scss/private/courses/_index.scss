@@ -1,0 +1,179 @@
+.courses-wrapper {
+  .banner__course {
+    width: 100%;
+    padding: 110px 0 100px;
+    background-image: url(../images/banner-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: $primary-overlay-color;
+    }
+    .content__banner_course {
+      text-align: center;
+      position: relative;
+      h1 {
+        font-size: 49px;
+        font-weight: 700;
+        margin-bottom: 25px;
+        color: $secondary-color;
+      }
+      p {
+        font-size: 16px;
+        line-height: 26px;
+        color: $grey-white-color;
+        a {
+          color: $grey-white-color;
+          transition: all 0.3s;
+          &:hover {
+            color: $secondary-color;
+          }
+        }
+      }
+    }
+  }
+  .course-content-container {
+    padding: 100px 0;
+    .course-sidebar {
+      .course-sidebar-search {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+        position: relative;
+        i {
+          position: absolute;
+          right: 15px;
+          font-size: 18px;
+          color: grey;
+        }
+        input {
+          padding-right: 30px !important;
+        }
+      }
+      .tag_r {
+        margin-bottom: 30px;
+        width: 100%;
+
+        h3 {
+          font-size: 17px;
+          text-transform: uppercase;
+          color: rgba(0, 0, 0, 0.832);
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+        .checkbox__course {
+          margin: 10px 0;
+          label {
+            font-size: 14px;
+            color: grey;
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+    .courses-list-content {
+      .header-courses-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .counter-course {
+          h5 {
+            font-weight: 700;
+            margin-right: 5px;
+          }
+        }
+        select {
+          flex-basis: 25%;
+        }
+      }
+      .main-courses-list {
+        .card-course-custom {
+          width: 100%;
+          img {
+            height: 150px;
+            object-fit: cover;
+          }
+          .card-title {
+            color: #130f40;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 30px;
+          }
+          .sub-title {
+            color: $text-grey-color;
+          }
+          .description {
+            color: $primary-color;
+            margin-top: 10px;
+            font-weight: 600;
+            text-align: justify;
+            width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            line-height: 25px;
+            -webkit-line-clamp: 3;
+            height: 75px;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+          }
+          .cost {
+            color: $secondary-color;
+            font-size: 16px;
+            font-weight: 500;
+          }
+          .add-to-cart {
+            i {
+              font-size: 27px;
+            }
+            &:hover {
+              i {
+                transition: all 0.3s;
+                color: $secondary-color;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+      .course-pagination {
+        margin-top: 20px;
+        ul {
+          li {
+            display: inline-block;
+            margin-right: 10px;
+            a {
+              width: 100%;
+              height: 100%;
+              display: block;
+              text-align: center;
+              width: 40px;
+              height: 40px;
+              line-height: 40px;
+              color: $black-color;
+              background: $grey-white-color;
+              border-radius: 50%;
+              &:hover {
+                background-color: $secondary-color;
+                color: $white-color;
+                transition: all 0.3s;
+              }
+            }
+            .active {
+              background-color: $secondary-color;
+              color: $white-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}

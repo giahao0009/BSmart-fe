@@ -250,6 +250,20 @@
     }
   }
   /* ------------------------ */
+  // Courses page
+  .courses-wrapper {
+    .courses-list-content {
+      .header-courses-list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start !important;
+        select {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+  /* ------------------------ */
 }
 
 /* Mobile */
@@ -579,6 +593,19 @@
   .register-wrapper {
     .registration-form-wrap {
       width: 100% !important;
+    }
+  }
+  // Courses page
+  .courses-wrapper {
+    .courses-list-content {
+      .header-courses-list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start !important;
+        select {
+          margin-top: 10px;
+        }
+      }
     }
   }
   /* ------------------------ */
