@@ -45,21 +45,127 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/responsive.css" />
   </head>
   <body>
-    <!-- Preloader start -->
-    <div class="preloader">
-      <div class="lds-roller">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+    <!-- Start Sidebar mobile -->
+    <div class="sidebar-wrap" id="sidebar-mobile">
+      <div class="container-fluid">
+        <div class="sidebar-content">
+          <div class="sidebar-top">
+            <span class="sidebar-logo">BSMART</span>
+            <i class="fa fa-times" class="sidebar-close" id="closeSidebar"></i>
+          </div>
+          <div class="sidebar-center">
+            <ul class="sidebar-mean-nav">
+              <li><a href="#">Trang chủ</a></li>
+              <li><a href="#">Về chúng tôi</a></li>
+              <li>
+                <a href="#">Khoá học</a>
+                <div class="d-flex align-items-center justify-content-end">
+                  <ul class="sub-menu">
+                    <li><a href="#">Devops</a></li>
+                    <li><a href="#">.NET Basic</a></li>
+                    <li><a href="#">.NET Core MVC</a></li>
+                    <li><a href="#">.NET Core API</a></li>
+                    <li><a href="#">ReactJS</a></li>
+                    <li><a href="#">Front End</a></li>
+                  </ul>
+                </div>
+
+                <a class="mean-expand" href="#">+</a>
+              </li>
+              <li>
+                <a href="#">Giảng viên</a>
+                <div class="d-flex align-items-center justify-content-end">
+                  <ul class="sub-menu">
+                    <li><a href="#">Mentor Long</a></li>
+                    <li><a href="#">Mentor Cuong</a></li>
+                  </ul>
+                </div>
+
+                <a class="mean-expand" href="#">+</a>
+              </li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="sidebar-bottom">
+            <div class="search-course">
+              <input
+                type="text"
+                placeholder="Tìm kiếm khoá học"
+                class="form-control"
+              />
+              <span><i class="fa fa-search"></i></span>
+            </div>
+            <ul class="contact-info">
+              <li class="mb-3">
+                <i class="fa fa-envelope"></i> bsmart@gmail.com
+              </li>
+              <li><i class="fa fa-phone"></i> +98 946005077</li>
+            </ul>
+            <ul class="social-list">
+              <li>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-dribbble"></i></a>
+              </li>
+            </ul>
+            <ul class="sidebar-controls">
+              <li><a href="./login-mobile.html">Login</a></li>
+              <li><small>|</small></li>
+              <li><a href="registration.html">Register</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
-    <!-- Preloader end -->
-    <div class="register-wrapper">
+    <!-- End Sidebar mobile -->
+    <!-- Login form modal -->
+    <div id="loginFormModal" class="login-form-container">
+      <div
+        class="container-fluid d-flex justify-content-center align-items-center"
+        style="height: 100%"
+      >
+        <div class="login-form-content">
+          <div class="close-login-form" id="loginFormClose">&times;</div>
+          <h3 class="mb-3 text-center">Đăng nhập</h3>
+          <form action="#">
+            <div class="form-group mb-3">
+              <input type="text" placeholder="Email" class="form-control" />
+            </div>
+            <div class="form-group mb-3">
+              <input type="text" placeholder="Password" class="form-control" />
+            </div>
+            <div
+              class="form-check d-flex justify-content-between align-items-center mb-3"
+            >
+              <div class="checkbox d-flex align-items-center">
+                <input
+                  type="checkbox"
+                  class="form-check-input mt-0"
+                  id="signed"
+                />
+                <label for="signed" class="ms-1">Remember me</label>
+              </div>
+              <div class="forgot-pass">
+                <a href="#" class="link-custom">Forgot Password?</a>
+              </div>
+            </div>
+            <div class="login-btn text-center mb-4">
+              <a href="#" class="btn btn-primary-custom p-2">Đăng nhập</a>
+            </div>
+            <div class="new-registration text-center">
+              <span>Bạn chưa có tài khoản?</span>
+              <a href="#" class="link-custom">Đăng ký ngay</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- End login form modal -->
+    <div class="wrapper banner-mentor-wrapper">
       <!-- Start header -->
       <header class="header-main">
         <div class="header-top">
@@ -135,7 +241,9 @@
                         >
                       </li>
                       <li>
-                        <a href="#" class="nav-link nav-link-custom"
+                        <a
+                          href="./courses.html"
+                          class="nav-link nav-link-custom"
                           >Khoá Học</a
                         >
                         <!-- Menu con cấp 1 -->
@@ -190,8 +298,12 @@
                           >Giảng viên</a
                         >
                         <ul class="sub-menu">
-                          <li><a href="#">Mentor Cường</a></li>
-                          <li><a href="#">Mentor Long</a></li>
+                          <li>
+                            <a href="./mentor-detail.html">Mentor Cường</a>
+                          </li>
+                          <li>
+                            <a href="./mentor-detail.html">Mentor Long</a>
+                          </li>
                         </ul>
                       </li>
 
@@ -225,61 +337,12 @@
         </div>
       </header>
       <!-- End header -->
-      <section class="page-banner-area">
-        <div class="container">
-          <div class="page-banner-content text-center">
-            <h1>Đăng ký</h1>
-            <p><a href="index.html">Trang chủ</a><span> > </span> Đăng ký</p>
-          </div>
-        </div>
-      </section>
-      <section class="registration-area">
-        <div class="container">
-          <div class="registration-area-content">
-            <div class="registration-form-wrap">
-              <div class="form-group mb-3">
-                <label for="name" class="mb-2">Họ và tên</label>
-                <input
-                  type="text"
-                  placeholder="Họ và tên"
-                  class="form-control"
-                  name="name"
-                />
-              </div>
-              <div class="form-group mb-3">
-                <label for="email" class="mb-2">E-Mail</label>
-                <input
-                  type="text"
-                  placeholder="E-Mail"
-                  class="form-control"
-                  name="email"
-                />
-              </div>
-              <div class="form-group mb-3">
-                <label for="password" class="mb-2">Mật khẩu</label>
-                <input
-                  type="text"
-                  placeholder="Mật khẩu"
-                  class="form-control"
-                  name="password"
-                />
-              </div>
-              <div class="form-group mb-3">
-                <label for="confirmPassword" class="mb-2"
-                  >Xác nhận mật khẩu</label
-                >
-                <input
-                  type="text"
-                  placeholder="Xác nhận mật khẩu"
-                  class="form-control"
-                  name="confirmPassword"
-                />
-              </div>
-              <div class="registration-btn">
-                <a href="#" class="btn btn-primary-custom">Đăng ký</a>
-              </div>
-            </div>
-          </div>
+      <section class="banner-mentor-detail">
+        <div class="content-banner-mentor-detail">
+          <h1>Thông tin mentor</h1>
+          <p>
+            <a href="index.html">Trang chủ</a><span> > </span> Thông tin mentor
+          </p>
         </div>
       </section>
       <!-- Start footer -->

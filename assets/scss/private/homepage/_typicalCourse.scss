@@ -1,5 +1,37 @@
 .courses-section {
   padding: 95px 0 150px;
+  .owl-carousel {
+    .owl-nav {
+      position: absolute;
+      top: 40%;
+      width: 100%;
+      .owl-prev {
+        position: absolute;
+        left: -4%;
+        font-size: 100px;
+        color: $primary-color;
+        outline: none;
+        &:hover {
+          background-color: rgba(0, 0, 0, 0);
+          color: $primary-color;
+        }
+      }
+      .owl-next {
+        position: absolute;
+        right: -4%;
+        font-size: 100px;
+        color: $primary-color;
+        outline: none;
+        &:hover {
+          background-color: rgba(0, 0, 0, 0);
+          color: $primary-color;
+        }
+      }
+    }
+    .owl-dots {
+      margin-top: 30px !important;
+    }
+  }
   .course-card {
     transition: 0.5s;
     border-radius: 10px;

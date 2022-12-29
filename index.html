@@ -45,6 +45,20 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/responsive.css" />
   </head>
   <body>
+    <!-- Preloader start -->
+    <div class="preloader">
+      <div class="lds-roller">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <!-- Preloader end -->
     <!-- Start Sidebar mobile -->
     <div class="sidebar-wrap" id="sidebar-mobile">
       <div class="container-fluid">
@@ -246,60 +260,58 @@
                           class="nav-link nav-link-custom"
                           >Khoá Học</a
                         >
-                        <!-- Menu con cấp 1 -->
-                        <ul>
-                          <li>
-                            <a href="#" class="nav-link-custom"
-                              >Khoá học Devops</a
-                            >
-                          </li>
-                          <li>
-                            <a href="#" class="nav-link-custom"
-                              >Khoá học Back End</a
-                            >
-                            <ul>
-                              <li>
-                                <a href="#" class="nav-link-custom"
-                                  >ASP.NET Core Basic</a
-                                >
-                              </li>
-                              <li>
-                                <a href="#" class="nav-link-custom"
-                                  >ASP.NET Core MVC</a
-                                >
-                              </li>
-                              <li>
-                                <a href="#" class="nav-link-custom"
-                                  >ASP.NET Core API</a
-                                >
-                              </li>
-                            </ul>
-                          </li>
-                          <li>
-                            <a href="#" class="nav-link-custom"
-                              >Khoá học Front End</a
-                            >
-                            <ul>
-                              <li>
-                                <a href="#" class="nav-link-custom">ReactJS</a>
-                              </li>
-                              <li>
-                                <a href="#" class="nav-link-custom">VueJS</a>
-                              </li>
-                              <li>
-                                <a href="#" class="nav-link-custom">Angular</a>
-                              </li>
-                            </ul>
-                          </li>
-                        </ul>
+                        <div class="sub-nav">
+                          <div
+                            class="content-sub-nav d-flex justify-content-between"
+                          >
+                            <div>
+                              <a href="#">Front End</a>
+                              <ul>
+                                <li>
+                                  <a href="#"><span>+</span> Front End Basic</a>
+                                </li>
+                                <li>
+                                  <a href="#"><span>+</span> ReactJS</a>
+                                </li>
+                                <li>
+                                  <a href="#"><span>+</span> VueJS</a>
+                                </li>
+                                <li>
+                                  <a href="#"><span>+</span> Angular</a>
+                                </li>
+                              </ul>
+                            </div>
+                            <div>
+                              <a href="#">Back End</a>
+                              <ul>
+                                <li>
+                                  <a href="#"><span>+</span> NodeJS </a>
+                                </li>
+                                <li>
+                                  <a href="#"><span>+</span> .NET Core MVC</a>
+                                </li>
+                                <li>
+                                  <a href="#"><span>+</span> .NET Core API</a>
+                                </li>
+                              </ul>
+                            </div>
+                            <div>
+                              <a href="#">Devops</a>
+                            </div>
+                          </div>
+                        </div>
                       </li>
                       <li>
                         <a href="#" class="nav-link nav-link-custom"
                           >Giảng viên</a
                         >
                         <ul class="sub-menu">
-                          <li><a href="#">Mentor Cường</a></li>
-                          <li><a href="#">Mentor Long</a></li>
+                          <li>
+                            <a href="./mentor-detail.html">Mentor Cường</a>
+                          </li>
+                          <li>
+                            <a href="./mentor-detail.html">Mentor Long</a>
+                          </li>
                         </ul>
                       </li>
 
@@ -404,6 +416,42 @@
                   việc ngay sau học.
                 </div>
               </div>
+            </div>
+            <div class="col-md-4 col-xs-12 col-sm-12">
+              <div class="service-card">
+                <div class="d-flex align-items-center pt-2 pb-2 mb-3">
+                  <div class="service-card-icon me-2">
+                    <i class="fa fa-cogs"></i>
+                  </div>
+                  <h4 class="service-card-title">
+                    Nền tảng cốt lõi trong lập trình
+                  </h4>
+                </div>
+                <div class="service-card-content">
+                  BSmart cung cấp những nền tảng, giá trị tư duy cốt lõi nhất
+                  trong lập trình. Bạn sẽ tự tin trước sự thay đổi của công nghệ
+                  và môi trường làm việc.
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-xs-12 col-sm-12">
+              <div class="service-card">
+                <div class="d-flex align-items-center pt-2 pb-2 mb-3">
+                  <div class="service-card-icon me-2">
+                    <i class="fa fa-fire"></i>
+                  </div>
+                  <h4 class="service-card-title">Mài giũa bạn qua thực tế</h4>
+                </div>
+                <div class="service-card-content">
+                  Đội ngũ Giảng viên và các Mentor là những người dày dạn kinh
+                  nghiệm qua các dự án thực tế tại các công ty lớn sẽ truyền đạt
+                  những kinh nghiệm "máu lửa" cho bạn.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-xs-12 col-sm-12">
               <div class="service-card">
                 <div class="d-flex align-items-center pt-2 pb-2 mb-3">
                   <div class="service-card-icon me-2">
@@ -422,21 +470,6 @@
               <div class="service-card">
                 <div class="d-flex align-items-center pt-2 pb-2 mb-3">
                   <div class="service-card-icon me-2">
-                    <i class="fa fa-cogs"></i>
-                  </div>
-                  <h4 class="service-card-title">
-                    Nền tảng cốt lõi trong lập trình
-                  </h4>
-                </div>
-                <div class="service-card-content">
-                  BSmart cung cấp những nền tảng, giá trị tư duy cốt lõi nhất
-                  trong lập trình. Bạn sẽ tự tin trước sự thay đổi của công nghệ
-                  và môi trường làm việc.
-                </div>
-              </div>
-              <div class="service-card">
-                <div class="d-flex align-items-center pt-2 pb-2 mb-3">
-                  <div class="service-card-icon me-2">
                     <i class="fa fa-qrcode"></i>
                   </div>
                   <h4 class="service-card-title">Cộng nghệ mới, thực tế</h4>
@@ -449,19 +482,6 @@
               </div>
             </div>
             <div class="col-md-4 col-xs-12 col-sm-12">
-              <div class="service-card">
-                <div class="d-flex align-items-center pt-2 pb-2 mb-3">
-                  <div class="service-card-icon me-2">
-                    <i class="fa fa-fire"></i>
-                  </div>
-                  <h4 class="service-card-title">Mài giũa bạn qua thực tế</h4>
-                </div>
-                <div class="service-card-content">
-                  Đội ngũ Giảng viên và các Mentor là những người dày dạn kinh
-                  nghiệm qua các dự án thực tế tại các công ty lớn sẽ truyền đạt
-                  những kinh nghiệm "máu lửa" cho bạn.
-                </div>
-              </div>
               <div class="service-card">
                 <div class="d-flex align-items-center pt-2 pb-2 mb-3">
                   <div class="service-card-icon me-2">
@@ -512,7 +532,7 @@
           <div class="courses-content">
             <h2 class="section-heading text-center">Khoá học tiêu biểu</h2>
             <div class="owl-carousel owl-theme">
-              <div class="item">
+              <div class="item d-flex justify-content-center">
                 <div class="card course-card">
                   <div
                     class="banner-course"
@@ -546,7 +566,7 @@
                   </div>
                 </div>
               </div>
-              <div class="item">
+              <div class="item d-flex justify-content-center">
                 <div class="card course-card">
                   <div
                     class="banner-course"
@@ -581,7 +601,7 @@
                   </div>
                 </div>
               </div>
-              <div class="item">
+              <div class="item d-flex justify-content-center">
                 <div class="card course-card">
                   <div
                     class="banner-course"
@@ -615,7 +635,7 @@
                   </div>
                 </div>
               </div>
-              <div class="item">
+              <div class="item d-flex justify-content-center">
                 <div class="card course-card">
                   <div
                     class="banner-course"
@@ -649,7 +669,7 @@
                   </div>
                 </div>
               </div>
-              <div class="item">
+              <div class="item d-flex justify-content-center">
                 <div class="card course-card">
                   <div
                     class="banner-course"

@@ -115,6 +115,39 @@
         visibility: visible;
         opacity: 1;
       }
+      .sub-nav {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+    .sub-nav {
+      position: absolute;
+      top: 40px;
+      width: 100%;
+      z-index: 1;
+      min-width: 450px;
+      background-color: $white-color;
+      -webkit-box-shadow: 0 0 30px rgb(0 0 0 / 10%);
+      box-shadow: 0 0 30px rgb(0 0 0 / 10%);
+      border-top: 2px solid $secondary-color;
+      border-radius: 5px;
+      transition: 0.3s;
+      padding: 20px;
+      visibility: hidden;
+      opacity: 0;
+      a {
+        color: $primary-color;
+        font-weight: 700;
+        display: block;
+        transition: 0.3s;
+        padding: 5px;
+        &:hover {
+          color: $secondary-color;
+        }
+      }
+      li {
+        border-bottom: 1px solid $grey-white-color;
+      }
     }
     .sub-menu {
       position: absolute;

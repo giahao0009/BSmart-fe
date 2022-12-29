@@ -4,9 +4,16 @@
     display: block;
     padding: 20px 0;
     margin-bottom: 30px;
+    div:first-child {
+      height: 70px;
+      align-items: center !important;
+    }
     .service-card-icon {
+      display: inline-block;
       i {
-        font-size: 40px;
+        line-height: 70px;
+        font-size: 30px;
+        display: inline-block;
         color: $secondary-color;
       }
     }

@@ -103,4 +103,11 @@ $(document).ready(function () {
       headerBottom.classList.remove("sticky");
     }
   };
+
+  // Preloader
+  setTimeout(() => {
+    var preloader = document.querySelector(".preloader");
+    preloader.style.opacity = "0";
+    preloader.style.visibility = "hidden";
+  }, 300);
 });

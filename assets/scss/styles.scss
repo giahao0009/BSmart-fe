@@ -4,6 +4,8 @@
 @import "./variable";
 // Import global scss
 @import "./global/_global.scss";
+// Import spinner scss
+@import "./global/_preloader.scss";
 // Import scss header component
 @import "./global/_header.scss";
 // Import scss content component

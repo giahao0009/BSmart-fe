@@ -5,6 +5,23 @@
   }
 }
 
+// Laptop medium
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+  .courses-wrapper {
+    .course-content-container {
+      .courses-list-content {
+        .main-courses-list {
+          .card-course-custom {
+            .card-title {
+              min-height: 60px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 /* Tablet */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .col-sm-12 {
