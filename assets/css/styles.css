@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,500&display=swap");
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -78,7 +78,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 4;
+  z-index: 5;
 }
 
 .preloader {
@@ -91,7 +91,7 @@ body {
   justify-content: center;
   align-items: center;
   opacity: 1;
-  transition: all 0.1s;
+  transition: all 0.3s;
 }
 
 .lds-roller {
@@ -339,7 +339,7 @@ body {
 }
 .navbar-nav li .sub-nav a {
   color: #0e0a38;
-  font-weight: 700;
+  font-weight: 500;
   display: block;
   transition: 0.3s;
   padding: 5px;
@@ -370,7 +370,7 @@ body {
 .navbar-nav li .sub-menu li a {
   padding: 10px 5px;
   color: #0e0a38;
-  font-weight: 700;
+  font-weight: 500;
   display: block;
   transition: 0.3s;
 }
@@ -387,7 +387,7 @@ body {
   color: #130f40;
   padding: 10px 5px;
   font-size: 17px;
-  font-weight: 700;
+  font-weight: 500;
 }
 .nav-link-custom.active {
   color: #ff630e !important;
@@ -705,7 +705,7 @@ body {
 .courses-section .course-card .description {
   color: #0e0a38;
   margin-top: 10px;
-  font-weight: 600;
+  font-weight: 400;
   text-align: justify;
   width: 100%;
   overflow: hidden;
@@ -1244,7 +1244,7 @@ body {
 .courses-wrapper .course-content-container .courses-list-content .main-courses-list .card-course-custom .description {
   color: #0e0a38;
   margin-top: 10px;
-  font-weight: 600;
+  font-weight: 400;
   text-align: justify;
   width: 100%;
   overflow: hidden;
@@ -1753,6 +1753,9 @@ body {
   .header-bottom {
     display: none;
   }
+  .header-mobile {
+    background: #fff;
+  }
   .header-mobile-content {
     display: flex;
     justify-content: space-between;
@@ -2028,6 +2031,9 @@ body {
   }
   .header-bottom {
     display: none;
+  }
+  .header-mobile {
+    background: #fff;
   }
   .header-mobile-content {
     display: flex;

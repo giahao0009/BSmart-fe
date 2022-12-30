@@ -104,10 +104,22 @@ $(document).ready(function () {
     }
   };
 
+  // Fixed header mobile
+  window.onscroll = () => {
+    var headerMobile = document.querySelector(".header-mobile");
+    var sticky = headerMobile.offsetTop;
+    if (window.pageYOffset >= sticky) {
+      headerMobile.classList.add("sticky");
+    }
+    if (window.pageYOffset === 0) {
+      headerMobile.classList.remove("sticky");
+    }
+  };
+
   // Preloader
   setTimeout(() => {
     var preloader = document.querySelector(".preloader");
     preloader.style.opacity = "0";
     preloader.style.visibility = "hidden";
-  }, 300);
+  }, 500);
 });

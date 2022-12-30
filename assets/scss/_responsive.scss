@@ -35,9 +35,14 @@
   .header-bottom {
     display: none;
   }
+
+  .header-mobile {
+    background: $white-color;
+  }
   .header-mobile-content {
     display: flex;
     justify-content: space-between;
+
     padding: 16px;
     .header-mobile-logo {
       font-size: 30px;
@@ -339,6 +344,9 @@
   }
   .header-bottom {
     display: none;
+  }
+  .header-mobile {
+    background: $white-color;
   }
   .header-mobile-content {
     display: flex;
