@@ -6,6 +6,8 @@
 @import "./global/_global.scss";
 // Import spinner scss
 @import "./global/_preloader.scss";
+// Import login with google btn
+@import "./global/login-g-btn.scss";
 // Import scss header component
 @import "./global/_header.scss";
 // Import scss content component
@@ -20,6 +22,8 @@
 @import "./private/courses/_index.scss";
 // Import scss course detail component
 @import "./private/course-detail/_index.scss";
+// Import scss mentor detail component
+@import "./private/mentor-detail/_index.scss";
 // Import scss footer component
 @import "./global/_footer";
 // Import login modal

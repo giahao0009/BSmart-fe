@@ -1,0 +1,214 @@
+.mentor-detail-wrapper {
+  .banner-mentor-detail {
+    width: 100%;
+    padding: 110px 0 100px;
+    background-image: url(../images/banner-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: $primary-overlay-color;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+    .banner-content {
+      position: relative;
+      text-align: center;
+      h1 {
+        font-size: 49px;
+        font-weight: 700;
+        margin-bottom: 25px;
+        color: $secondary-color;
+      }
+      p {
+        color: $white-color;
+        font-size: 16px;
+        line-height: 26px;
+        a {
+          color: $white-color;
+          font-size: 16px;
+          line-height: 26px;
+          &:hover {
+            color: $secondary-color;
+            transition: all 0.3s;
+          }
+        }
+      }
+    }
+  }
+  .content-info-mentor {
+    padding: 100px 0;
+    .mentor-info {
+      padding: 20px 20px 50px;
+      box-shadow: 0px 0px 15px 0px rgb(51 51 51 / 10%);
+      border-radius: 10px;
+      text-align: center;
+      .mentor-img {
+        background-image: url(../images/overlay-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 50px 50px 30px;
+        img {
+          margin-top: 20px;
+          border-radius: 4px;
+          max-width: 100%;
+          height: 100%;
+        }
+      }
+      .mentor-details {
+        h4 {
+          font-weight: 700;
+          font-size: 22px;
+          line-height: 32px;
+        }
+        p {
+          font-size: 16px;
+          line-height: 26px;
+          color: $text-grey-color;
+          margin-bottom: 1rem;
+        }
+        .social-list {
+          margin: 0;
+          padding: 0;
+          li {
+            display: inline-block;
+            a {
+              display: block;
+              text-align: center;
+              width: 35px;
+              height: 35px;
+              font-size: 16px;
+              line-height: 38px;
+              margin: 0 3px;
+              color: $white-color;
+              background-color: $secondary-color;
+              border-radius: 4px;
+            }
+          }
+        }
+        .contact-info {
+          padding: 30px 0 20px;
+          li {
+            margin: 0 30px;
+            font-size: 16px;
+            line-height: 22px;
+            padding: 10px 0;
+            color: $text-grey-color;
+            span {
+              i {
+                color: $secondary-color;
+                font-size: 14px;
+                padding-right: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .about-mentor {
+      padding: 20px;
+      h3 {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 46px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 26px;
+        color: $text-grey-color;
+      }
+    }
+    .skill-rate {
+      padding: 20px;
+      h3 {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 46px;
+        color: $primary-color;
+        margin-bottom: 0.5rem;
+      }
+      .skill-single {
+        margin-bottom: 15px;
+        .skill-level-text {
+          float: right;
+        }
+      }
+    }
+    .experience {
+      padding: 20px 0 20px 20px;
+      h3 {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 46px;
+        color: $primary-color;
+        margin-bottom: 0.5rem;
+      }
+      p {
+        font-size: 16px;
+        line-height: 26px;
+        color: $text-grey-color;
+      }
+    }
+    .mentor-profile-counter {
+      .counter-single {
+        margin: 0 10px 0 20px;
+        padding: 25px 20px 20px 20px;
+        background-color: $grey-white-color;
+        border-radius: 10px;
+        .counter-number {
+          h2 {
+            color: $secondary-color;
+            font-size: 50px;
+            font-weight: 700;
+            margin-bottom: 15px;
+          }
+        }
+        .counter-title {
+          p {
+            font-size: 20px;
+            color: $primary-color;
+          }
+        }
+      }
+    }
+    .courses {
+      padding: 35px 20px 0;
+      h3 {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 46px;
+      }
+      .course-card {
+        box-shadow: 0 0 10px rgb(51 51 51 / 10%);
+        .card-img-top {
+          width: 100%;
+          height: 210px;
+        }
+        .card-body {
+          padding: 30px 35px;
+          .card-price {
+            color: $secondary-color;
+            font-size: 24px;
+            font-weight: 700;
+          }
+          .card-title {
+            color: $primary-color;
+            margin: 6px 0 15px;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 34px;
+          }
+        }
+      }
+    }
+  }
+}

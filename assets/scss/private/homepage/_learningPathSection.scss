@@ -7,6 +7,7 @@
     padding: 220px 0;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
     h2 {
       color: $white-color;
       font-size: 42px;
@@ -34,7 +35,7 @@
       &:before {
         background-color: rgba(0, 0, 0, 0);
         cursor: pointer;
-        transition: 2s;
+        transition: 0.3s;
       }
     }
   }
@@ -48,6 +49,7 @@
     clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
     padding: 220px 0;
     position: relative;
+    cursor: pointer;
     &::before {
       content: "";
       position: absolute;
@@ -63,7 +65,7 @@
       &:before {
         background-color: rgba(0, 0, 0, 0);
         cursor: pointer;
-        transition: 2s;
+        transition: 0.3s;
       }
     }
     .right-section-content {

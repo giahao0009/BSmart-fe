@@ -40,12 +40,47 @@
     }
   }
   .registration-area {
-    padding: 110px 0;
+    padding: 0 0 110px;
+    .tab-register {
+      margin-bottom: 50px;
+      .tab-item {
+        padding: 10px;
+        background-color: $grey-white-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        color: $secondary-color;
+        font-size: 18px;
+        font-weight: 500;
+        border-bottom: 2px solid $secondary-color;
+        cursor: pointer;
+        &.active {
+          background-color: $secondary-color;
+          color: $white-color;
+        }
+        &:hover {
+          background-color: $secondary-color;
+          color: $white-color;
+          transition: 0.3s;
+        }
+      }
+    }
     .registration-area-content {
       display: flex;
       justify-content: center;
       align-items: center;
       .registration-form-wrap {
+        border-radius: 10px;
+        box-shadow: 0 0 30px rgb(51 51 51 / 10%);
+        width: 50%;
+        padding: 40px;
+        label {
+          color: $text-grey-color;
+        }
+      }
+      .registration-form-mentor-wrap {
+        display: none;
         border-radius: 10px;
         box-shadow: 0 0 30px rgb(51 51 51 / 10%);
         width: 50%;

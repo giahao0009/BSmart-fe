@@ -137,7 +137,7 @@
       opacity: 0;
       a {
         color: $primary-color;
-        font-weight: 500;
+        font-weight: 500 !important;
         display: block;
         transition: 0.3s;
         padding: 5px;
@@ -168,7 +168,7 @@
         a {
           padding: 10px 5px;
           color: $primary-color;
-          font-weight: 500;
+          font-weight: 500 !important;
           display: block;
           transition: 0.3s;
         }

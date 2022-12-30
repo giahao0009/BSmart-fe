@@ -59,6 +59,55 @@
       </div>
     </div>
     <!-- Preloader end -->
+    <!-- Login form modal -->
+    <div id="loginFormModal" class="login-form-container">
+      <div
+        class="container-fluid d-flex justify-content-center align-items-center"
+        style="height: 100%"
+      >
+        <div class="login-form-content">
+          <div class="close-login-form" id="loginFormClose">&times;</div>
+          <h3 class="mb-3 text-center">Đăng nhập</h3>
+          <form action="#">
+            <div class="form-group mb-3">
+              <input type="text" placeholder="Email" class="form-control" />
+            </div>
+            <div class="form-group mb-3">
+              <input type="text" placeholder="Password" class="form-control" />
+            </div>
+            <div
+              class="form-check d-flex justify-content-between align-items-center mb-3"
+            >
+              <div class="checkbox d-flex align-items-center">
+                <input
+                  type="checkbox"
+                  class="form-check-input mt-0"
+                  id="signed"
+                />
+                <label for="signed" class="ms-1">Remember me</label>
+              </div>
+              <div class="forgot-pass">
+                <a href="#" class="link-custom">Forgot Password?</a>
+              </div>
+            </div>
+            <div class="login-btn text-center mb-4">
+              <a href="#" class="btn btn-primary-custom p-2">Đăng nhập</a>
+            </div>
+            <div id="gSignInWrapper" class="mb-4 w-100">
+              <div id="customBtn" class="customGPlusSignIn w-100">
+                <span class="icon"></span>
+                <span class="buttonText">Đăng nhập bằng tài khoản google</span>
+              </div>
+            </div>
+            <div class="new-registration text-center">
+              <span>Bạn chưa có tài khoản?</span>
+              <a href="#" class="link-custom">Đăng ký ngay</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- End login form modal -->
     <div class="register-wrapper">
       <!-- Start header -->
       <header class="header-main">
@@ -113,7 +162,7 @@
         <div class="header-bottom">
           <div class="container">
             <div class="header-bottom-wrapper">
-              <a href="#"><span class="site-logo">BSMART</span></a>
+              <a href="./index.html"><span class="site-logo">BSMART</span></a>
               <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                   <div class="collapse navbar-collapse">
@@ -229,14 +278,41 @@
         <div class="container">
           <div class="page-banner-content text-center">
             <h1>Đăng ký</h1>
-            <p><a href="index.html">Trang chủ</a><span> > </span> Đăng ký</p>
+            <p><a href="./index.html">Trang chủ</a><span> > </span> Đăng ký</p>
           </div>
         </div>
       </section>
       <section class="registration-area">
+        <div class="tab-register">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-6 p-0">
+                <div
+                  class="tab-item active"
+                  onclick="openTabRegister('studentRegisterForm')"
+                  id="openFormStudentRegisterBtn"
+                >
+                  Học viên
+                </div>
+              </div>
+              <div class="col-lg-6 p-0">
+                <div
+                  class="tab-item"
+                  onclick="openTabRegister('mentorRegisterForm')"
+                  id="openFormMentorRegisterBtn"
+                >
+                  Mentor
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="container">
           <div class="registration-area-content">
-            <div class="registration-form-wrap">
+            <div
+              id="studentRegisterForm"
+              class="registration-form-wrap tab-item-register"
+            >
               <div class="form-group mb-3">
                 <label for="name" class="mb-2">Họ và tên</label>
                 <input
@@ -275,8 +351,98 @@
                   name="confirmPassword"
                 />
               </div>
-              <div class="registration-btn">
+              <div class="registration-btn mb-3">
                 <a href="#" class="btn btn-primary-custom">Đăng ký</a>
+              </div>
+              <div id="gSignInWrapper" class="mb-4 w-100">
+                <div
+                  id="customBtn"
+                  class="customGPlusSignIn w-100 p-2 d-flex justify-content-center align-items-center"
+                >
+                  <span class="icon"></span>
+                  <span class="buttonText" style="font-size: 16px"
+                    >Đăng nhập bằng tài khoản google</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              id="mentorRegisterForm"
+              class="registration-form-mentor-wrap tab-item-register"
+            >
+              <div class="form-group mb-3">
+                <label for="name" class="mb-2">Họ và tên</label>
+                <input
+                  type="text"
+                  placeholder="Họ và tên"
+                  class="form-control"
+                  name="name"
+                />
+              </div>
+              <div class="form-group mb-3">
+                <label for="name" class="mb-2">Số điện thoại</label>
+                <input
+                  type="text"
+                  placeholder="Họ và tên"
+                  class="form-control"
+                  name="name"
+                />
+              </div>
+              <div class="form-group mb-3">
+                <label for="email" class="mb-2">E-Mail</label>
+                <input
+                  type="text"
+                  placeholder="E-Mail"
+                  class="form-control"
+                  name="email"
+                />
+              </div>
+              <div class="form-group mb-3">
+                <label for="password" class="mb-2">Mật khẩu</label>
+                <input
+                  type="text"
+                  placeholder="Mật khẩu"
+                  class="form-control"
+                  name="password"
+                />
+              </div>
+              <div class="form-group mb-3">
+                <label for="confirmPassword" class="mb-2"
+                  >Xác nhận mật khẩu</label
+                >
+                <input
+                  type="text"
+                  placeholder="Xác nhận mật khẩu"
+                  class="form-control"
+                  name="confirmPassword"
+                />
+              </div>
+              <div class="form-group mb-3">
+                <label for="confirmPassword" class="mb-2"
+                  >Giới thiệu bản thân</label
+                >
+                <div class="form-floating">
+                  <textarea
+                    class="form-control"
+                    placeholder="Leave a comment here"
+                    id="floatingTextarea2"
+                    style="height: 100px"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="registration-btn mb-3">
+                <a href="#" class="btn btn-primary-custom">Đăng ký</a>
+              </div>
+              <div id="gSignInWrapper" class="mb-4 w-100">
+                <div
+                  id="customBtn"
+                  class="customGPlusSignIn w-100 p-2 d-flex justify-content-center align-items-center"
+                >
+                  <span class="icon"></span>
+                  <span class="buttonText" style="font-size: 16px"
+                    >Đăng nhập bằng tài khoản google</span
+                  >
+                </div>
               </div>
             </div>
           </div>
@@ -405,5 +571,31 @@
     ></script>
     <!-- Script -->
     <script type="text/javascript" src="./assets/js/main.js"></script>
+    <script>
+      function openTabRegister(name) {
+        var i;
+        var x = document.getElementsByClassName("tab-item-register");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        document.getElementById(name).style.display = "block";
+        if (name === "studentRegisterForm") {
+          document
+            .getElementById("openFormStudentRegisterBtn")
+            .classList.add("active");
+          document
+            .getElementById("openFormMentorRegisterBtn")
+            .classList.remove("active");
+        }
+        if (name === "mentorRegisterForm") {
+          document
+            .getElementById("openFormMentorRegisterBtn")
+            .classList.add("active");
+          document
+            .getElementById("openFormStudentRegisterBtn")
+            .classList.remove("active");
+        }
+      }
+    </script>
   </body>
 </html>
