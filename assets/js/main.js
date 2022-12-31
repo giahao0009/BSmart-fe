@@ -91,28 +91,24 @@ $(document).ready(function () {
     var subMenu = parent.querySelector(".sub-menu");
     subMenu.style.display = "block";
   });
-  // Fixed header bottom
-  window.onscroll = () => {
-    var headerBottom = document.querySelector(".header-bottom");
-    var sticky = headerBottom.offsetTop;
 
-    if (window.pageYOffset >= sticky) {
-      headerBottom.classList.add("sticky");
-    }
-    if (window.pageYOffset === 0) {
-      headerBottom.classList.remove("sticky");
-    }
-  };
-
-  // Fixed header mobile
+  // Fixed header
   window.onscroll = () => {
-    var headerMobile = document.querySelector(".header-mobile");
-    var sticky = headerMobile.offsetTop;
+    let headerMobile = document.querySelector(".header-mobile");
+    let headerBottom = document.querySelector(".header-bottom");
+    let sticky = headerMobile.offsetTop;
+    let stickyHeaderBottom = headerBottom.offsetTop;
     if (window.pageYOffset >= sticky) {
       headerMobile.classList.add("sticky");
     }
     if (window.pageYOffset === 0) {
       headerMobile.classList.remove("sticky");
+    }
+    if (window.pageYOffset >= stickyHeaderBottom) {
+      headerBottom.classList.add("sticky");
+    }
+    if (window.pageYOffset === 0) {
+      headerBottom.classList.remove("sticky");
     }
   };
 

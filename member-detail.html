@@ -72,9 +72,6 @@
               <li><a href="#">Trang chủ</a></li>
               <li><a href="#">Về chúng tôi</a></li>
               <li>
-                <a href="./lms.html">Nền tảng LMS</a>
-              </li>
-              <li>
                 <a href="#">Khoá học</a>
                 <div class="d-flex align-items-center justify-content-end">
                   <ul class="sub-menu">
@@ -171,7 +168,9 @@
               </div>
             </div>
             <div class="login-btn text-center mb-4">
-              <a href="#" class="btn btn-primary-custom p-2">Đăng nhập</a>
+              <a href="./login-success.html" class="btn btn-primary-custom p-2"
+                >Đăng nhập</a
+              >
             </div>
             <div class="new-registration text-center">
               <span>Bạn chưa có tài khoản?</span>
@@ -182,7 +181,7 @@
       </div>
     </div>
     <!-- End login form modal -->
-    <div class="wrapper mentor-detail-wrapper">
+    <div class="wrapper member-detail-wrapper">
       <!-- Start header -->
       <header class="header-main">
         <div class="header-top">
@@ -224,11 +223,13 @@
               </div>
               <!-- End header search -->
               <div class="header-log-reg d-flex justify-content-end">
-                <ul>
-                  <li><a href="#" id="loginFormOpen">Login</a></li>
-                  <li><small>|</small></li>
-                  <li><a href="./register.html">Register</a></li>
-                </ul>
+                <a href="./member-detail.html">
+                  <img
+                    src="./assets/images/avatar-mentor-3.jpg"
+                    alt="hinh anh"
+                    class="avatar"
+                  />
+                </a>
               </div>
             </div>
           </div>
@@ -236,7 +237,7 @@
         <div class="header-bottom">
           <div class="container">
             <div class="header-bottom-wrapper">
-              <a href="#"><span class="site-logo">BSMART</span></a>
+              <a href="./index.html"><span class="site-logo">BSMART</span></a>
               <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                   <div class="collapse navbar-collapse">
@@ -255,11 +256,6 @@
                           href="./aboutus.html"
                           class="nav-link nav-link-custom"
                           >Về Chúng Tôi</a
-                        >
-                      </li>
-                      <li>
-                        <a href="./lms.html" class="nav-link nav-link-custom"
-                          >Nền tảng LMS</a
                         >
                       </li>
                       <li>
@@ -359,11 +355,11 @@
         </div>
       </header>
       <!-- End header -->
-      <section class="banner-mentor-detail">
+      <section class="banner-member-detail">
         <div class="banner-content">
-          <h1>Thông tin mentor</h1>
+          <h1>Thông tin member</h1>
           <p>
-            <a href="index.html">Trang chủ</a><span> > </span> Thông tin mentor
+            <a href="index.html">Trang chủ</a><span> > </span> Thông tin member
           </p>
         </div>
       </section>
@@ -371,16 +367,16 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-4 col-md-5">
-              <div class="mentor-info">
-                <div class="mentor-img">
+              <div class="member-info">
+                <div class="member-img">
                   <img
-                    src="./assets/images/avatar-mentor-1.jpg"
-                    alt="hinh anh mentor"
+                    src="./assets/images/avatar-mentor-3.jpg"
+                    alt="hinh anh member"
                   />
                 </div>
-                <div class="mentor-details">
-                  <h4>Mentor Cường</h4>
-                  <p>Mentor</p>
+                <div class="member-details">
+                  <h4>Nguyễn Văn A</h4>
+                  <p>Member</p>
                   <ul class="social-list">
                     <li>
                       <a href="#"><i class="fa fa-facebook"></i></a>
@@ -394,8 +390,20 @@
                   </ul>
                   <ul class="contact-info">
                     <li>
+                      <span><i class="fa fa-male fs-2"></i></span>
+                    </li>
+                    <li>
+                      <span>27/01/2001</span>
+                    </li>
+                    <li>
+                      <span>
+                        <i class="fa fa-location-arrow"></i> Tân Bình, Tp. Hồ
+                        Chí Minh
+                      </span>
+                    </li>
+                    <li>
                       <span
-                        ><i class="fa fa-envelope"></i>mrcuong@gmail.com</span
+                        ><i class="fa fa-envelope"></i>member@gmail.com</span
                       >
                     </li>
                     <li>
@@ -403,96 +411,20 @@
                     </li>
                   </ul>
                   <div class="contact-btn">
-                    <a href="#" class="btn btn-primary-custom">Liên hệ</a>
+                    <a href="#" class="btn btn-primary-custom"
+                      >Chỉnh sửa thông tin</a
+                    >
                   </div>
                 </div>
+              </div>
+              <div class="member-operation mt-3">
+                <h4>Các hoạt động gần đây</h4>
+                <p class="mt-2">Chưa có hoạt động nào</p>
               </div>
             </div>
             <div class="col-lg-8 col-md-7">
-              <div class="about-mentor">
-                <h3>Giới thiệu</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In
-                  nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed
-                  pretium, ligula sollicitudin laoreet viverra, tortor libero
-                  sodales leo, eget blandit nunc tortor eu nibh.
-                </p>
-              </div>
-              <div class="skill-rate">
-                <h3>Skill</h3>
-                <div class="row">
-                  <div class="col-lg-6 skill-single">
-                    <div class="d-flex justify-content-between mb-2">
-                      <div class="skill-name">PHP</div>
-                      <div class="skill-level-text">97%</div>
-                    </div>
-                    <div class="progress p-0">
-                      <div class="progress-bar" style="width: 97%"></div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 skill-single">
-                    <div class="d-flex justify-content-between mb-2">
-                      <div class="skill-name">PHP</div>
-                      <div class="skill-level-text">97%</div>
-                    </div>
-                    <div class="progress p-0">
-                      <div class="progress-bar" style="width: 97%"></div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 skill-single">
-                    <div class="d-flex justify-content-between mb-2">
-                      <div class="skill-name">PHP</div>
-                      <div class="skill-level-text">97%</div>
-                    </div>
-                    <div class="progress p-0">
-                      <div class="progress-bar" style="width: 97%"></div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 skill-single">
-                    <div class="d-flex justify-content-between mb-2">
-                      <div class="skill-name">PHP</div>
-                      <div class="skill-level-text">97%</div>
-                    </div>
-                    <div class="progress p-0">
-                      <div class="progress-bar" style="width: 97%"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="experience">
-                <h3>Kinh nghiệm thực tế</h3>
-                <p>
-                  Tôi có kinh nghiệm 10 năm với vai trò là một seniot web
-                  developer (2010 - Hiện tại) tại CodeMex. Ngoài ra, tôi còn là
-                  mentor của trung tâm lập trình WebCode trong hơn 5 năm (2005
-                  -2010).
-                </p>
-              </div>
-              <div class="row mentor-profile-counter">
-                <div class="col-lg-6">
-                  <div class="counter-single text-center mb-3">
-                    <div class="counter-number">
-                      <h2><span>20</span>+</h2>
-                    </div>
-                    <div class="counter-title">
-                      <p>Khoá học</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="counter-single text-center mb-3">
-                    <div class="counter-number">
-                      <h2><span>10,000</span>+</h2>
-                    </div>
-                    <div class="counter-title">
-                      <p>Học viên</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
               <div class="courses">
-                <h3 class="mb-3">Khoá học của tôi</h3>
+                <h3 class="mb-3">Các khoá học đã tham gia</h3>
                 <div class="row">
                   <div class="col-lg-6">
                     <div class="card course-card mb-3" style="width: 100%">
@@ -512,9 +444,15 @@
                           <i class="fa fa-star"></i>
                         </div>
                         <hr />
-                        <a href="#" class="btn btn-primary-custom"
-                          >Xem chi tiết</a
-                        >
+                        <div class="skill-single">
+                          <div class="d-flex justify-content-between mb-2">
+                            <div class="skill-name">Tiến độ</div>
+                            <div class="skill-level-text">97%</div>
+                          </div>
+                          <div class="progress p-0">
+                            <div class="progress-bar" style="width: 70%"></div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -536,18 +474,19 @@
                           <i class="fa fa-star"></i>
                         </div>
                         <hr />
-                        <a href="#" class="btn btn-primary-custom"
-                          >Xem chi tiết</a
-                        >
+                        <div class="skill-single">
+                          <div class="d-flex justify-content-between mb-2">
+                            <div class="skill-name">Tiến độ</div>
+                            <div class="skill-level-text">80%</div>
+                          </div>
+                          <div class="progress p-0">
+                            <div class="progress-bar" style="width: 80%"></div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="course-showmore d-flex justify-content-center mt-4">
-                <a href="#" class="btn btn-outline-secondary-custom w-50 p-2"
-                  >Xem thêm</a
-                >
               </div>
             </div>
           </div>

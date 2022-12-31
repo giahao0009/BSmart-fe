@@ -60,6 +60,7 @@
   }
 }
 .header-log-reg {
+  position: relative;
   li {
     display: inline-block;
     a {
@@ -72,6 +73,29 @@
     }
     small {
       color: $white-color;
+    }
+  }
+  .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .avatar-control {
+    position: absolute;
+    width: 100%;
+
+    border-radius: 10px;
+    background: $white-color;
+    box-shadow: 0 -4px 32px rgb(0 0 0 / 20%);
+    min-width: 230px;
+    padding: 8px 24px !important;
+    z-index: 600;
+    li {
+      display: block;
+      a {
+        color: $primary-color;
+      }
     }
   }
 }

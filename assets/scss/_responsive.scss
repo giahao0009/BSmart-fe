@@ -1,3 +1,8 @@
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1320px !important;
+  }
+}
 /* Laptop */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .sidebar-wrap {
@@ -756,6 +761,17 @@
       width: 100%;
       grid-template-columns: repeat(1, 1fr);
       gap: 10px 36px;
+    }
+  }
+  /* ------------------------ */
+  // Member detail page
+  .member-detail-wrapper {
+    .content-info-mentor {
+      .courses {
+        h3 {
+          font-size: 25px;
+        }
+      }
     }
   }
   /* ------------------------ */
