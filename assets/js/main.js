@@ -122,4 +122,14 @@ $(document).ready(function () {
     preloader.style.opacity = "0";
     preloader.style.visibility = "hidden";
   }, 500);
+
+  //Date wallet history
+  //input date
+  $(".input-daterange").datepicker({
+    format: "dd-mm-yyyy",
+    autoclose: true,
+    calendarWeeks: true,
+    clearBtn: true,
+    disableTouchKeyboard: true,
+  });
 });
