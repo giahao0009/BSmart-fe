@@ -83,6 +83,16 @@
   .wallet-history-option {
     padding-top: 100px;
   }
+
+  .title-wallet-member h3 {
+    color: $secondary-color;
+    line-height: 30px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 32px;
+  }
   .search-form {
     position: relative;
   }
@@ -130,6 +140,10 @@
   .search-date {
     margin-right: 10px;
   }
+  .btn {
+    background-color: #ff630e;
+    color: white;
+  }
 
   .wallet-history-area {
     padding: 10px 0;
@@ -169,5 +183,12 @@
     border-color: #ff630e;
     background-color: #ff630e;
     color: #fff;
+  }
+
+  @media only screen and(min-width:414px) {
+    .table {
+      .row {
+      }
+    }
   }
 }
