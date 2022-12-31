@@ -1850,6 +1850,12 @@ span.buttonText {
 
 /* Start Style of Blog page */
 /* End Style of Blog page */
+.blog-wrapper a {
+  text-decoration: none;
+}
+.blog-wrapper a:hover {
+  text-decoration: none;
+}
 .blog-wrapper .banner__blog {
   background-image: url(../images/banner-2.jpg);
   background-position: center;
