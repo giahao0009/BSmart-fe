@@ -1,4 +1,3 @@
-<!-- Test push git -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -65,27 +64,24 @@
       <div class="container-fluid">
         <div class="sidebar-content">
           <div class="sidebar-top">
-            <span class="sidebar-logo">BSMART</span>
+            <a href="./index.html" class="sidebar-logo">BSMART</a>
             <i class="fa fa-times" class="sidebar-close" id="closeSidebar"></i>
           </div>
           <div class="sidebar-center">
             <ul class="sidebar-mean-nav">
-              <li><a href="#">Trang chủ</a></li>
-              <li><a href="#">Về chúng tôi</a></li>
+              <li><a href="./index.html">Trang chủ</a></li>
+              <li><a href="./aboutus.html">Về chúng tôi</a></li>
               <li>
-                <a href="#">Khoá học</a>
+                <a href="./courses.html">Khoá học</a>
                 <div class="d-flex align-items-center justify-content-end">
                   <ul class="sub-menu">
-                    <li><a href="#">Devops</a></li>
-                    <li><a href="#">.NET Basic</a></li>
-                    <li><a href="#">.NET Core MVC</a></li>
-                    <li><a href="#">.NET Core API</a></li>
-                    <li><a href="#">ReactJS</a></li>
                     <li><a href="#">Front End</a></li>
+                    <li><a href="#">Back End</a></li>
+                    <li><a href="#">Devops</a></li>
                   </ul>
                 </div>
-
                 <a class="mean-expand" href="#">+</a>
+                <a class="mean-non-expand" href="#">-</a>
               </li>
               <li>
                 <a href="#">Giảng viên</a>
@@ -97,17 +93,21 @@
                 </div>
 
                 <a class="mean-expand" href="#">+</a>
+                <a class="mean-non-expand" href="#">-</a>
               </li>
               <li><a href="./blog.html">Blog</a></li>
             </ul>
           </div>
           <div class="sidebar-bottom">
             <div class="search-course">
-              <input
-                type="text"
-                placeholder="Tìm kiếm khoá học"
-                class="form-control"
-              />
+              <form action="#" method="post">
+                <input
+                  type="text"
+                  placeholder="Tìm kiếm khoá học"
+                  class="form-control"
+                />
+              </form>
+
               <span><i class="fa fa-search"></i></span>
             </div>
             <ul class="contact-info">
@@ -128,16 +128,67 @@
               </li>
             </ul>
             <ul class="sidebar-controls">
-              <li><a href="login.html">Login</a></li>
+              <li><a href="./login-mobile.html">Login</a></li>
               <li><small>|</small></li>
-              <li><a href="registration.html">Register</a></li>
+              <li><a href="./register.html">Register</a></li>
             </ul>
           </div>
         </div>
       </div>
     </div>
     <!-- End Sidebar mobile -->
-    <div class="blog-wrapper">
+    <!-- Login form modal -->
+    <div id="loginFormModal" class="login-form-container">
+      <div
+        class="container-fluid d-flex justify-content-center align-items-center"
+        style="height: 100%"
+      >
+        <div class="login-form-content">
+          <div class="close-login-form" id="loginFormClose">&times;</div>
+          <h3 class="mb-3 text-center">Đăng nhập</h3>
+          <form action="#" method="post">
+            <div class="form-group mb-3">
+              <input type="text" placeholder="Email" class="form-control" />
+            </div>
+            <div class="form-group mb-3">
+              <input type="text" placeholder="Password" class="form-control" />
+            </div>
+            <div
+              class="form-check d-flex justify-content-between align-items-center mb-3"
+            >
+              <div class="checkbox d-flex align-items-center">
+                <input
+                  type="checkbox"
+                  class="form-check-input mt-0"
+                  id="signed"
+                />
+                <label for="signed" class="ms-1">Remember me</label>
+              </div>
+              <div class="forgot-pass">
+                <a href="#" class="link-custom">Forgot Password?</a>
+              </div>
+            </div>
+            <div class="login-btn text-center mb-2">
+              <a href="./login-success.html" class="btn btn-primary-custom p-2"
+                >Đăng nhập</a
+              >
+            </div>
+            <div id="gSignInWrapper" class="mb-4 w-100">
+              <div id="customBtn" class="customGPlusSignIn w-100">
+                <span class="icon"></span>
+                <span class="buttonText">Đăng nhập bằng tài khoản google</span>
+              </div>
+            </div>
+            <div class="new-registration text-center">
+              <span>Bạn chưa có tài khoản?</span>
+              <a href="./register.html" class="link-custom">Đăng ký ngay</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- End login form modal -->
+    <div class="wrapper blog-wrapper">
       <!-- Start header -->
       <header class="header-main">
         <div class="header-top">
@@ -170,11 +221,13 @@
               <!-- End header contact info -->
               <!-- Start header search -->
               <div class="header-course-search">
-                <input
-                  type="text"
-                  placeholder="Tìm kiếm khoá học"
-                  class="form-control"
-                />
+                <form action="#" method="post">
+                  <input
+                    type="text"
+                    placeholder="Tìm kiếm khoá học"
+                    class="form-control"
+                  />
+                </form>
                 <span><i class="fa fa-search"></i></span>
               </div>
               <!-- End header search -->
@@ -282,6 +335,20 @@
                         <a href="./blog.html" class="nav-link nav-link-custom"
                           >Blog</a
                         >
+                        <ul class="sub-menu">
+                          <li>
+                            <a href="./blog.html">Sự kiện</a>
+                          </li>
+                          <li>
+                            <a href="./blog.html">Khuyến mãi</a>
+                          </li>
+                          <li>
+                            <a href="./blog.html">Tuyển dụng</a>
+                          </li>
+                          <li>
+                            <a href="./blog.html">Hoạt động</a>
+                          </li>
+                        </ul>
                       </li>
                     </ul>
                   </div>
@@ -308,9 +375,7 @@
         </div>
       </header>
       <!-- End header -->
-
-      <!-- Start body of Blog page -->
-
+      <!-- Banner section -->
       <section class="banner__blog">
         <div class="container">
           <div class="caption-content text-center">
@@ -319,11 +384,12 @@
           </div>
         </div>
       </section>
-
+      <!-- End banner section -->
+      <!-- Blog section content -->
       <section class="blog-area two">
         <div class="container">
           <div class="row">
-            <div class="col-md-8 all-posts-wrap">
+            <div class="col-md-8 all-posts-wrap col-sm-12">
               <!--start blog post-->
               <div class="blog-posts">
                 <div class="blog-post-thumb">
@@ -333,7 +399,7 @@
                     class="img-fluid"
                   />
                 </div>
-                <div class="blog-posts-meta">
+                <div class="blog-posts-meta mt-3">
                   <ul>
                     <li><i class="fa fa-user"></i><a href="#">BSmart</a></li>
                     <li>
@@ -346,7 +412,7 @@
                   </ul>
                 </div>
                 <h3>
-                  <a href="blog-single.html"
+                  <a href="blog-detail.html"
                     >Tìm hiểu phát triển ứng dụng web từ các chuyên gia</a
                   >
                 </h3>
@@ -361,12 +427,18 @@
                     như vậy. điện thoại thông minh Nhưng nhu cầu, trước khi và
                     vulutate volutpat, eros pede [...]
                   </p>
-                  <div class="omexo-post-btn">
-                    <a href="blog-single.html">Đọc thêm</a>
+                  <div>
+                    <a
+                      href="./blog-detail.html"
+                      class="btn btn-primary-custom p-2"
+                      >Đọc thêm</a
+                    >
                   </div>
                 </div>
+                <hr />
               </div>
               <!--end blog post-->
+
               <!--start blog post-->
               <div class="blog-posts">
                 <div class="blog-post-thumb">
@@ -376,7 +448,7 @@
                     class="img-fluid"
                   />
                 </div>
-                <div class="blog-posts-meta">
+                <div class="blog-posts-meta mt-3">
                   <ul>
                     <li><i class="fa fa-user"></i><a href="#">bsmart</a></li>
                     <li>
@@ -389,7 +461,7 @@
                   </ul>
                 </div>
                 <h3>
-                  <a href="blog-single.html"
+                  <a href="blog-detail.html"
                     >Mở rộng cơ hội nghề nghiệp của bạn với Python</a
                   >
                 </h3>
@@ -404,8 +476,12 @@
                     như vậy. điện thoại thông minh Nhưng nhu cầu, trước khi và
                     vulutate volutpat, eros pede [...]
                   </p>
-                  <div class="omexo-post-btn">
-                    <a href="blog-single.html">đọc thêm</a>
+                  <div>
+                    <a
+                      href="./blog-detail.html"
+                      class="btn btn-primary-custom p-2"
+                      >đọc thêm</a
+                    >
                   </div>
                 </div>
               </div>
@@ -415,7 +491,7 @@
 
               <div class="blog-pagination text-center">
                 <ul>
-                  <li><span>1</span></li>
+                  <li><a href="#" class="active">1</a></li>
                   <li><a href="#">2</a></li>
                   <li>
                     <a href="#"><i class="fa fa-angle-right"></i></a>
@@ -424,7 +500,7 @@
               </div>
             </div>
             <!--start sidebar-->
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-12">
               <div class="blog-sidebar">
                 <!--start widget-->
                 <div class="search-form widget">
@@ -443,20 +519,13 @@
                   <h4>Bài viết gần đây</h4>
                   <!--start recent post single-->
                   <div class="recent-post-single">
-                    <div class="recent-post-thumb two">
-                      <img
-                        src="assets/images/blog-sm-5.jpg"
-                        alt="image"
-                        class="img-fluid"
-                      />
-                    </div>
                     <div class="recent-post-cont two">
                       <h6>
                         <a class="recent-news-title" href="#"
                           >Tìm hiểu phát triển ứng dụng web từ các chuyên gia</a
                         >
                       </h6>
-                      <span class="recent-post-date">12/30/2023</span>
+                      <p class="recent-post-date mt-2">12/30/2023</p>
                     </div>
                   </div>
                   <!--end recent post single-->
@@ -525,7 +594,9 @@
                       <a href="#"><i class="fa fa-angle-right"></i> Đăng ký</a>
                     </li>
                     <li>
-                      <a href="#"><i class="fa fa-angle-right"></i>Đăng nhập</a>
+                      <a href="#"
+                        ><i class="fa fa-angle-right"></i> Đăng nhập</a
+                      >
                     </li>
                     <li>
                       <a href="#"
@@ -546,9 +617,8 @@
           </div>
         </div>
       </section>
-
-      <!-- End body of Blog page -->
-
+      <!-- End blog section content -->
+      <!-- Start footer -->
       <footer class="footer">
         <div class="container">
           <div class="row">
@@ -557,18 +627,18 @@
             </div>
           </div>
           <div class="row mb-5">
-            <div class="col-lg-3 col-md-6">
-              <h3 class="quaters">Trụ sở: 117 Tân Cảng, Bình Thạnh</h3>
+            <div class="col-lg-4 col-md-6 mb-3">
+              <h3 class="quaters">Trụ sở 1: 117 Tân Cảng, Bình Thạnh</h3>
               <p class="hotline">Hotline: 096.105.1014</p>
               <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
             </div>
-            <div class="col-lg-3 col-md-6">
-              <h3 class="quaters">Trụ sở: 117 Tân Cảng, Bình Thạnh</h3>
+            <div class="col-lg-4 col-md-6 mb-3">
+              <h3 class="quaters">Trụ sở 2: 117 Tân Cảng, Bình Thạnh</h3>
               <p class="hotline">Hotline: 096.105.1014</p>
               <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
             </div>
-            <div class="col-lg-3 col-md-6">
-              <h3 class="quaters">Trụ sở: 117 Tân Cảng, Bình Thạnh</h3>
+            <div class="col-lg-4 col-md-6 mb-3">
+              <h3 class="quaters">Trụ sở 3: 117 Tân Cảng, Bình Thạnh</h3>
               <p class="hotline">Hotline: 096.105.1014</p>
               <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
             </div>
@@ -609,16 +679,23 @@
               <div class="footer-menu">
                 <h4>Menu</h4>
                 <ul>
+                  <li><a href="#">Trang chủ</a></li>
+                  <li><a href="#">Về chúng tôi</a></li>
+                  <li><a href="#">Nền tảng LMS</a></li>
                   <li><a href="#">Khoá học</a></li>
                   <li><a href="#">Giảng viên</a></li>
+                  <li><a href="#">Blog</a></li>
                 </ul>
               </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-3">
-              <div class="footer-control">
-                <button class="btn btn-primary-custom p-2 mb-2">
+              <div class="footer-control d-flex align-items-center mt-5">
+                <a
+                  href="./courses.html"
+                  class="btn btn-primary-custom p-2 mb-2"
+                >
                   Đăng ký khoá học
-                </button>
+                </a>
               </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-3">
@@ -642,11 +719,12 @@
         </div>
         <hr class="text-success mt-5" />
         <div class="container">
-          <p class="m-0 text-light">
+          <p class="m-0 text-light text-center">
             © Bản quyền BSmart 2022 - Empowered by <a href="#">BSmart</a>
           </p>
         </div>
       </footer>
+      <!-- End footer -->
     </div>
     <!-- Import script bootstrap V5 -->
     <script
@@ -654,14 +732,6 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
-
-    <!--  -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
     <!-- Import script Jquery -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
@@ -676,6 +746,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <!-- API google -->
+    <script src="https://apis.google.com/js/api:client.js"></script>
     <!-- Script -->
     <script type="text/javascript" src="./assets/js/main.js"></script>
   </body>

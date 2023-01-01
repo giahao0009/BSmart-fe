@@ -86,10 +86,21 @@ $(document).ready(function () {
   });
   // ----------------------------------------------------------------
 
+  // Mean expand
   $(".mean-expand").click(function (event) {
     var parent = event.currentTarget.offsetParent;
+    parent.querySelector(".mean-non-expand").style.display = "block";
     var subMenu = parent.querySelector(".sub-menu");
     subMenu.style.display = "block";
+    event.currentTarget.style.display = "none";
+  });
+
+  $(".mean-non-expand").click(function (event) {
+    var parent = event.currentTarget.offsetParent;
+    var subMenu = parent.querySelector(".sub-menu");
+    subMenu.style.display = "none";
+    parent.querySelector(".mean-expand").style.display = "block";
+    event.currentTarget.style.display = "none";
   });
 
   // Fixed header
@@ -119,6 +130,23 @@ $(document).ready(function () {
     preloader.style.visibility = "hidden";
   }, 500);
 
+  // Function openTabRegister
+  function openTabRegister(name) {
+    var i;
+    var x = document.getElementsByClassName("tab-item-register");
+    console.log(x);
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    document.getElementById(name).style.display = "block";
+  }
+
+  // Filter course mobile
+  $(".openFilterCourse").click(function (event) {
+    let e = event;
+    console.log(e);
+  });
+
   // Login with google demo
   var googleUser = {};
   var startApp = function () {
@@ -147,15 +175,4 @@ $(document).ready(function () {
     );
   }
   startApp();
-
-  // Function openTabRegister
-  function openTabRegister(name) {
-    var i;
-    var x = document.getElementsByClassName("tab-item-register");
-    console.log(x);
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-    }
-    document.getElementById(name).style.display = "block";
-  }
 });

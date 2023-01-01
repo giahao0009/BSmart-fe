@@ -119,6 +119,15 @@
             font-size: 16px;
             color: $primary-color;
           }
+          .mean-non-expand {
+            display: none;
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding: 12px;
+            font-size: 16px;
+            color: $primary-color;
+          }
           &:last-child {
             border-bottom: none;
           }
@@ -206,6 +215,7 @@
   /* About us */
   .aboutus {
     padding: 100px 0;
+
     .about-description {
       font-size: 18px;
       line-height: 26px;
@@ -330,6 +340,9 @@
   * {
     transition: all 2s;
   }
+  .d-xs-none {
+    display: none;
+  }
   .wrapper {
     width: 100vw;
     overflow: hidden;
@@ -427,6 +440,15 @@
             font-size: 16px;
             color: $primary-color;
           }
+          .mean-non-expand {
+            display: none;
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding: 12px;
+            font-size: 20px;
+            color: $primary-color;
+          }
           &:last-child {
             border-bottom: none;
           }
@@ -510,6 +532,7 @@
     /* About us */
     .aboutus {
       padding: 100px 0;
+
       .about-description {
         font-size: 18px;
         line-height: 26px;
@@ -594,6 +617,13 @@
   /* ------------------------ */
   // About us page
   .aboutus-wrapper {
+    .banner__aboutus {
+      .caption-content {
+        h2 {
+          font-size: 25px;
+        }
+      }
+    }
     .employee__img {
       margin-top: 30px;
       width: 100%;
@@ -601,16 +631,19 @@
       gap: 30px 0;
       padding: 70px;
       .employ__box {
-        &:nth-child(2) {
-          margin-top: 0px;
+        &:not(:first-child) {
+          display: none !important;
         }
       }
     }
 
     .sec-heading__about {
+      h5 {
+        margin-bottom: 10px;
+      }
       h2 {
-        font-size: 36px;
-        line-height: 46px;
+        font-size: 20px;
+        line-height: 25px;
       }
     }
     .counter {
@@ -632,7 +665,10 @@
       width: 100%;
       background-color: #f7f7f7;
       margin-top: 50px;
-      padding: 70px 70px;
+      h2 {
+        font-size: 20px;
+        line-height: 25px;
+      }
       .choose {
         display: initial !important;
         grid-template-columns: none !important;
@@ -658,9 +694,20 @@
     .registration-form-wrap {
       width: 100% !important;
     }
+    .registration-form-mentor-wrap {
+      width: 100% !important;
+    }
   }
   // Courses page
   .courses-wrapper {
+    .course-sidebar {
+      .tag_r {
+        margin-bottom: 20px !important;
+        h3 {
+          margin-bottom: 0 !important;
+        }
+      }
+    }
     .courses-list-content {
       .header-courses-list {
         display: flex;
@@ -705,62 +752,24 @@
   /* ------------------------ */
   // Blog page
   .blog-wrapper {
-    .employee__img {
-      margin-top: 30px;
-      width: 100%;
-
-      gap: 30px 0;
-      padding: 70px;
-      .employ__box {
-        &:nth-child(2) {
-          margin-top: 0px;
+    .blog-posts {
+      .blog-posts-meta {
+        ul {
+          li {
+            margin-bottom: 10px;
+          }
         }
       }
-    }
-
-    .sec-heading__about {
-      h2 {
-        font-size: 36px;
-        line-height: 46px;
-      }
-    }
-    .counter {
-      width: 100%;
-      margin: auto;
-      display: initial;
-      grid-template-columns: none !important;
-      text-align: center;
-      .counter-single {
-        margin: 15px;
-        h2 {
-          font-size: 28px;
-          font-weight: bold;
+      h3 {
+        a {
+          font-size: 25px !important;
         }
       }
-    }
-
-    .why-choose-area {
-      width: 100%;
-      background-color: #f7f7f7;
-      margin-top: 50px;
-      padding: 70px 70px;
-      .choose {
-        display: initial !important;
-        grid-template-columns: none !important;
-        width: 100%;
-        margin-top: 30px;
-        text-align: center;
-        .choose-single {
-          margin-bottom: 20px;
+      .entry-content {
+        p {
+          text-align: justify;
         }
       }
-    }
-
-    .our_employ {
-      display: grid;
-      width: 100%;
-      grid-template-columns: repeat(1, 1fr);
-      gap: 10px 36px;
     }
   }
   /* ------------------------ */

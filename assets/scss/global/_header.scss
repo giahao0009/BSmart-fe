@@ -146,7 +146,7 @@
     }
     .sub-nav {
       position: absolute;
-      top: 40px;
+      top: 35px;
       width: 100%;
       z-index: 1;
       min-width: 450px;
@@ -171,11 +171,14 @@
       }
       li {
         border-bottom: 1px solid $grey-white-color;
+        a {
+          font-weight: 400 !important;
+        }
       }
     }
     .sub-menu {
       position: absolute;
-      top: 40px;
+      top: 35px;
       z-index: 1;
       background-color: $white-color;
       text-align: left;

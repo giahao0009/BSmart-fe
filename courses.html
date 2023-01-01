@@ -250,7 +250,9 @@
                     <!-- Menu cấp parent -->
                     <ul class="navbar-nav">
                       <li>
-                        <a href="./index.html" class="nav-link nav-link-custom"
+                        <a
+                          href="./index.html"
+                          class="nav-link nav-link-custom active"
                           >Trang Chủ</a
                         >
                       </li>
@@ -267,70 +269,84 @@
                         >
                       </li>
                       <li>
-                        <a href="#" class="nav-link nav-link-custom active"
+                        <a
+                          href="./courses.html"
+                          class="nav-link nav-link-custom"
                           >Khoá Học</a
                         >
-                        <!-- Menu con cấp 1 -->
-                        <ul>
-                          <li>
-                            <a href="#" class="nav-link-custom"
-                              >Khoá học Devops</a
-                            >
-                          </li>
-                          <li>
-                            <a href="#" class="nav-link-custom"
-                              >Khoá học Back End</a
-                            >
-                            <ul>
-                              <li>
-                                <a href="#" class="nav-link-custom"
-                                  >ASP.NET Core Basic</a
-                                >
-                              </li>
-                              <li>
-                                <a href="#" class="nav-link-custom"
-                                  >ASP.NET Core MVC</a
-                                >
-                              </li>
-                              <li>
-                                <a href="#" class="nav-link-custom"
-                                  >ASP.NET Core API</a
-                                >
-                              </li>
-                            </ul>
-                          </li>
-                          <li>
-                            <a href="#" class="nav-link-custom"
-                              >Khoá học Front End</a
-                            >
-                            <ul>
-                              <li>
-                                <a href="#" class="nav-link-custom">ReactJS</a>
-                              </li>
-                              <li>
-                                <a href="#" class="nav-link-custom">VueJS</a>
-                              </li>
-                              <li>
-                                <a href="#" class="nav-link-custom">Angular</a>
-                              </li>
-                            </ul>
-                          </li>
-                        </ul>
+                        <div class="sub-nav">
+                          <div
+                            class="content-sub-nav d-flex justify-content-between"
+                          >
+                            <div>
+                              <a href="#">Front End</a>
+                              <ul>
+                                <li>
+                                  <a href="#"><span>+</span> Front End Basic</a>
+                                </li>
+                                <li>
+                                  <a href="#"><span>+</span> ReactJS</a>
+                                </li>
+                                <li>
+                                  <a href="#"><span>+</span> VueJS</a>
+                                </li>
+                                <li>
+                                  <a href="#"><span>+</span> Angular</a>
+                                </li>
+                              </ul>
+                            </div>
+                            <div>
+                              <a href="#">Back End</a>
+                              <ul>
+                                <li>
+                                  <a href="#"><span>+</span> NodeJS </a>
+                                </li>
+                                <li>
+                                  <a href="#"><span>+</span> .NET Core MVC</a>
+                                </li>
+                                <li>
+                                  <a href="#"><span>+</span> .NET Core API</a>
+                                </li>
+                              </ul>
+                            </div>
+                            <div>
+                              <a href="#">Devops</a>
+                            </div>
+                          </div>
+                        </div>
                       </li>
                       <li>
                         <a href="#" class="nav-link nav-link-custom"
                           >Giảng viên</a
                         >
                         <ul class="sub-menu">
-                          <li><a href="#">Mentor Cường</a></li>
-                          <li><a href="#">Mentor Long</a></li>
+                          <li>
+                            <a href="./mentor-detail.html">Mentor Cường</a>
+                          </li>
+                          <li>
+                            <a href="./mentor-detail.html">Mentor Long</a>
+                          </li>
                         </ul>
                       </li>
 
                       <li>
-                        <a href="#blog" class="nav-link nav-link-custom"
+                        <a href="./blog.html" class="nav-link nav-link-custom"
                           >Blog</a
                         >
+                        <ul class="sub-menu">
+                          <li>
+                            <a href="./blog.html">Sự kiện</a>
+                          </li>
+                          <li>
+                            <a href="./blog.html">Khuyến mãi</a>
+                          </li>
+                          <li>
+                            <a href="./blog.html">Tuyển dụng</a>
+                          </li>
+                          <li>
+                            <a href="./blog.html">Hoạt động</a>
+                          </li>
+                        </ul>
                       </li>
                     </ul>
                   </div>
@@ -363,7 +379,7 @@
       <section class="banner__course">
         <div class="content__banner_course">
           <h1>Danh sách khoá học</h1>
-          <p><a href="index.html">Trang chủ</a><span> > </span> Đăng ký</p>
+          <p><a href="index.html">Trang chủ</a><span> > </span> Khoá học</p>
         </div>
       </section>
       <!-- End banner course -->
@@ -374,17 +390,24 @@
           <div class="row">
             <div class="col-lg-3 col-md-5">
               <div class="course-sidebar">
-                <div class="course-sidebar-search">
+                <form action="#" method="post" class="course-sidebar-search">
                   <input
                     type="text"
                     placeholder="Tìm kiếm ..."
                     class="form-control"
-                  />
-                  <i class="fa fa-search"></i>
-                </div>
-                <div class="category__course tag_r">
-                  <h3>Lĩnh vực</h3>
-                  <div class="categories__course">
+                  /><i class="fa fa-search"></i>
+                </form>
+                <form action="#" method="post" class="category__course tag_r">
+                  <div class="d-flex align-items-center">
+                    <h3 class="me-2">Lĩnh vực</h3>
+                    <span class="openFilterCourse"
+                      ><i class="fa fa-arrow-down"></i
+                    ></span>
+                    <span class="closeFilterCourse"
+                      ><i class="fa fa-arrow-down" style="display: none"></i
+                    ></span>
+                  </div>
+                  <div class="categories__course d-xs-none">
                     <div class="checkbox__course">
                       <input id="id" type="checkbox" />
                       <label for="id">Front End</label>
@@ -402,10 +425,10 @@
                       <label for="id">Database</label>
                     </div>
                   </div>
-                </div>
-                <div class="tag__course tag_r">
+                </form>
+                <form action="#" method="post" class="tag__course tag_r">
                   <h3>Môn học</h3>
-                  <div class="tag__course">
+                  <div class="tag__course d-xs-none">
                     <div>
                       <div class="checkbox__course">
                         <input id="id" type="checkbox" />
@@ -441,7 +464,77 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                </form>
+                <form action="#" method="post" class="tag__form tag_r">
+                  <h3>Hình thức</h3>
+                  <div class="tag__course d-xs-none">
+                    <div>
+                      <div class="checkbox__course">
+                        <input id="id" type="checkbox" />
+                        <label for="id">Online</label>
+                      </div>
+                      <div class="checkbox__course">
+                        <input id="id" type="checkbox" />
+                        <label for="id">Offline</label>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <form action="#" method="post" class="tag__location tag_r">
+                  <h3>Khu vực</h3>
+                  <div class="tag__course d-xs-none">
+                    <div>
+                      <div class="checkbox__course">
+                        <input id="id" type="checkbox" />
+                        <label for="id">Quận 1</label>
+                      </div>
+                      <div class="checkbox__course">
+                        <input id="id" type="checkbox" />
+                        <label for="id">Quận 2</label>
+                      </div>
+                      <div class="checkbox__course">
+                        <input id="id" type="checkbox" />
+                        <label for="id">Quận 3</label>
+                      </div>
+                      <div class="checkbox__course">
+                        <input id="id" type="checkbox" />
+                        <label for="id">Quận 4</label>
+                      </div>
+                      <div class="checkbox__course">
+                        <input id="id" type="checkbox" />
+                        <label for="id">Quận 5</label>
+                      </div>
+                      <div class="checkbox__course">
+                        <input id="id" type="checkbox" />
+                        <label for="id">Quận 6</label>
+                      </div>
+                      <div class="checkbox__course">
+                        <input id="id" type="checkbox" />
+                        <label for="id">Quận 7</label>
+                      </div>
+                      <div class="checkbox__course">
+                        <input id="id" type="checkbox" />
+                        <label for="id">Quận 10</label>
+                      </div>
+                      <div class="checkbox__course">
+                        <input id="id" type="checkbox" />
+                        <label for="id">Quận 11</label>
+                      </div>
+                      <div class="checkbox__course">
+                        <input id="id" type="checkbox" />
+                        <label for="id">Quận 12</label>
+                      </div>
+                      <div class="checkbox__course">
+                        <input id="id" type="checkbox" />
+                        <label for="id">Thủ Đức</label>
+                      </div>
+                      <div class="checkbox__course">
+                        <input id="id" type="checkbox" />
+                        <label for="id">Bình Chánh</label>
+                      </div>
+                    </div>
+                  </div>
+                </form>
               </div>
             </div>
             <div class="col-lg-9 col-md-7">
@@ -451,13 +544,16 @@
                     <h5>0</h5>
                     <p>Khoá học</p>
                   </div>
-                  <select class="form-select">
-                    <option selected>Sắp xếp khoá học</option>
-                    <option value="1">Các khoá học mới nhất</option>
-                    <option value="2">Các khoá học nhiều người học</option>
-                    <option value="3">A - Z</option>
-                    <option value="3">Z - A</option>
-                  </select>
+                  <form action="#" method="post">
+                    <select class="form-select">
+                      <option selected>Sắp xếp khoá học</option>
+                      <option value="1">Khoá học mới nhất</option>
+                      <option value="2">Khoá học nhiều người học</option>
+                      <option value="3">Khoá học sắp bắt đầu</option>
+                      <option value="3">A - Z</option>
+                      <option value="3">Z - A</option>
+                    </select>
+                  </form>
                 </div>
                 <div class="main-courses-list mt-3">
                   <div class="row">
@@ -490,9 +586,16 @@
                             class="d-flex justify-content-between align-items-center"
                           >
                             <span class="cost">1,200,000 VND</span>
-                            <span class="add-to-cart"
-                              ><i class="fa fa-shopping-cart"></i
-                            ></span>
+                          </div>
+                          <div>
+                            <a
+                              href="#"
+                              class="btn btn-outline-secondary-custom w-100 p-1 mb-2 mt-2"
+                              >Link giới thiệu</a
+                            >
+                            <a href="#" class="btn btn-primary-custom p-3"
+                              >Đăng ký</a
+                            >
                           </div>
                         </div>
                       </div>
@@ -526,9 +629,16 @@
                             class="d-flex justify-content-between align-items-center"
                           >
                             <span class="cost">2,000,000 VND</span>
-                            <span class="add-to-cart"
-                              ><i class="fa fa-shopping-cart"></i
-                            ></span>
+                          </div>
+                          <div>
+                            <a
+                              href="#"
+                              class="btn btn-outline-secondary-custom w-100 p-1 mb-2 mt-2"
+                              >Link giới thiệu</a
+                            >
+                            <a href="#" class="btn btn-primary-custom p-3"
+                              >Đăng ký</a
+                            >
                           </div>
                         </div>
                       </div>
@@ -564,9 +674,16 @@
                             class="d-flex justify-content-between align-items-center"
                           >
                             <span class="cost">1,200,000 VND</span>
-                            <span class="add-to-cart"
-                              ><i class="fa fa-shopping-cart"></i
-                            ></span>
+                          </div>
+                          <div>
+                            <a
+                              href="#"
+                              class="btn btn-outline-secondary-custom w-100 p-1 mb-2 mt-2"
+                              >Link giới thiệu</a
+                            >
+                            <a href="#" class="btn btn-primary-custom p-3"
+                              >Đăng ký</a
+                            >
                           </div>
                         </div>
                       </div>
@@ -600,9 +717,16 @@
                             class="d-flex justify-content-between align-items-center"
                           >
                             <span class="cost">3,000,000 VND</span>
-                            <span class="add-to-cart"
-                              ><i class="fa fa-shopping-cart"></i
-                            ></span>
+                          </div>
+                          <div>
+                            <a
+                              href="#"
+                              class="btn btn-outline-secondary-custom w-100 p-1 mb-2 mt-2"
+                              >Link giới thiệu</a
+                            >
+                            <a href="#" class="btn btn-primary-custom p-3"
+                              >Đăng ký</a
+                            >
                           </div>
                         </div>
                       </div>
@@ -636,9 +760,16 @@
                             class="d-flex justify-content-between align-items-center"
                           >
                             <span class="cost">1,000,000 VND</span>
-                            <span class="add-to-cart"
-                              ><i class="fa fa-shopping-cart"></i
-                            ></span>
+                          </div>
+                          <div>
+                            <a
+                              href="#"
+                              class="btn btn-outline-secondary-custom w-100 p-1 mb-2 mt-2"
+                              >Link giới thiệu</a
+                            >
+                            <a href="#" class="btn btn-primary-custom p-3"
+                              >Đăng ký</a
+                            >
                           </div>
                         </div>
                       </div>
@@ -672,9 +803,16 @@
                             class="d-flex justify-content-between align-items-center"
                           >
                             <span class="cost">1,000,000 VND</span>
-                            <span class="add-to-cart"
-                              ><i class="fa fa-shopping-cart"></i
-                            ></span>
+                          </div>
+                          <div>
+                            <a
+                              href="#"
+                              class="btn btn-outline-secondary-custom w-100 p-1 mb-2 mt-2"
+                              >Link giới thiệu</a
+                            >
+                            <a href="#" class="btn btn-primary-custom p-3"
+                              >Đăng ký</a
+                            >
                           </div>
                         </div>
                       </div>
@@ -708,9 +846,16 @@
                             class="d-flex justify-content-between align-items-center"
                           >
                             <span class="cost">1,300,000 VND</span>
-                            <span class="add-to-cart"
-                              ><i class="fa fa-shopping-cart"></i
-                            ></span>
+                          </div>
+                          <div>
+                            <a
+                              href="#"
+                              class="btn btn-outline-secondary-custom w-100 p-1 mb-2 mt-2"
+                              >Link giới thiệu</a
+                            >
+                            <a href="#" class="btn btn-primary-custom p-3"
+                              >Đăng ký</a
+                            >
                           </div>
                         </div>
                       </div>
@@ -744,9 +889,16 @@
                             class="d-flex justify-content-between align-items-center"
                           >
                             <span class="cost">1,000,000 VND</span>
-                            <span class="add-to-cart"
-                              ><i class="fa fa-shopping-cart"></i
-                            ></span>
+                          </div>
+                          <div>
+                            <a
+                              href="#"
+                              class="btn btn-outline-secondary-custom w-100 p-1 mb-2 mt-2"
+                              >Link giới thiệu</a
+                            >
+                            <a href="#" class="btn btn-primary-custom p-3"
+                              >Đăng ký</a
+                            >
                           </div>
                         </div>
                       </div>
@@ -780,9 +932,16 @@
                             class="d-flex justify-content-between align-items-center"
                           >
                             <span class="cost">1,500,000 VND</span>
-                            <span class="add-to-cart"
-                              ><i class="fa fa-shopping-cart"></i
-                            ></span>
+                          </div>
+                          <div>
+                            <a
+                              href="#"
+                              class="btn btn-outline-secondary-custom w-100 p-1 mb-2 mt-2"
+                              >Link giới thiệu</a
+                            >
+                            <a href="#" class="btn btn-primary-custom p-3"
+                              >Đăng ký</a
+                            >
                           </div>
                         </div>
                       </div>
