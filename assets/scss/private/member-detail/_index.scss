@@ -110,6 +110,9 @@
                 padding-right: 5px;
               }
             }
+            .current-amount {
+              color: $secondary-color;
+            }
           }
         }
       }
@@ -128,6 +131,42 @@
       p {
         font-size: 16px;
         color: $text-grey-color;
+      }
+      span {
+        display: block;
+        margin-top: 5px;
+        color: $secondary-color;
+      }
+    }
+    .table-wallet-container {
+      .table-wallet {
+        width: 100%;
+      }
+    }
+    .table-wallet-pagination {
+      text-align: center;
+      ul {
+        li {
+          display: inline-block;
+          a.active {
+            background-color: $secondary-color;
+            color: $white-color;
+          }
+          a {
+            display: inline-block;
+            background-color: $grey-white-color;
+            color: $black-color;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            border-radius: 50%;
+            &:hover {
+              background-color: $secondary-color;
+              color: $white-color;
+            }
+          }
+        }
       }
     }
     .courses {
@@ -166,6 +205,21 @@
             }
           }
         }
+      }
+    }
+  }
+  .edit-content {
+    padding: 100px 0;
+    form {
+      h3 {
+        font-size: 25px;
+        font-weight: 500;
+        color: $primary-color;
+      }
+      .sub-title {
+        display: block;
+        margin-bottom: 5px;
+        color: $text-grey-color;
       }
     }
   }

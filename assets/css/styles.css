@@ -2234,6 +2234,9 @@ span.buttonText {
   font-size: 14px;
   padding-right: 5px;
 }
+.member-detail-wrapper .content-info-mentor .member-info .member-details .contact-info li .current-amount {
+  color: #ff630e;
+}
 .member-detail-wrapper .content-info-mentor .member-operation {
   box-shadow: 0px 0px 15px 0px rgba(51, 51, 51, 0.1);
   border-radius: 10px;
@@ -2249,6 +2252,38 @@ span.buttonText {
 .member-detail-wrapper .content-info-mentor .member-operation p {
   font-size: 16px;
   color: #999;
+}
+.member-detail-wrapper .content-info-mentor .member-operation span {
+  display: block;
+  margin-top: 5px;
+  color: #ff630e;
+}
+.member-detail-wrapper .content-info-mentor .table-wallet-container .table-wallet {
+  width: 100%;
+}
+.member-detail-wrapper .content-info-mentor .table-wallet-pagination {
+  text-align: center;
+}
+.member-detail-wrapper .content-info-mentor .table-wallet-pagination ul li {
+  display: inline-block;
+}
+.member-detail-wrapper .content-info-mentor .table-wallet-pagination ul li a.active {
+  background-color: #ff630e;
+  color: #fff;
+}
+.member-detail-wrapper .content-info-mentor .table-wallet-pagination ul li a {
+  display: inline-block;
+  background-color: #f5f5f5;
+  color: #000;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+}
+.member-detail-wrapper .content-info-mentor .table-wallet-pagination ul li a:hover {
+  background-color: #ff630e;
+  color: #fff;
 }
 .member-detail-wrapper .content-info-mentor .courses {
   padding: 35px 20px 0;
@@ -2285,6 +2320,19 @@ span.buttonText {
 }
 .member-detail-wrapper .content-info-mentor .courses .course-card .card-body .skill-single .progress .progress-bar {
   background-color: #ff630e;
+}
+.member-detail-wrapper .edit-content {
+  padding: 100px 0;
+}
+.member-detail-wrapper .edit-content form h3 {
+  font-size: 25px;
+  font-weight: 500;
+  color: #0e0a38;
+}
+.member-detail-wrapper .edit-content form .sub-title {
+  display: block;
+  margin-bottom: 5px;
+  color: #999;
 }
 
 .footer {
@@ -3116,6 +3164,12 @@ span.buttonText {
     text-align: justify;
   }
   /* ------------------------ */
+  .member-detail-wrapper .content-info-mentor .table-wallet-container {
+    overflow-x: scroll;
+  }
+  .member-detail-wrapper .content-info-mentor .table-wallet-container .table-wallet {
+    width: 500px !important;
+  }
   .member-detail-wrapper .content-info-mentor .courses h3 {
     font-size: 25px;
   }

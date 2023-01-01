@@ -64,27 +64,24 @@
       <div class="container-fluid">
         <div class="sidebar-content">
           <div class="sidebar-top">
-            <span class="sidebar-logo">BSMART</span>
+            <a href="./index.html" class="sidebar-logo">BSMART</a>
             <i class="fa fa-times" class="sidebar-close" id="closeSidebar"></i>
           </div>
           <div class="sidebar-center">
             <ul class="sidebar-mean-nav">
-              <li><a href="#">Trang chủ</a></li>
-              <li><a href="#">Về chúng tôi</a></li>
+              <li><a href="./index.html">Trang chủ</a></li>
+              <li><a href="./aboutus.html">Về chúng tôi</a></li>
               <li>
-                <a href="#">Khoá học</a>
+                <a href="./courses.html">Khoá học</a>
                 <div class="d-flex align-items-center justify-content-end">
                   <ul class="sub-menu">
-                    <li><a href="#">Devops</a></li>
-                    <li><a href="#">.NET Basic</a></li>
-                    <li><a href="#">.NET Core MVC</a></li>
-                    <li><a href="#">.NET Core API</a></li>
-                    <li><a href="#">ReactJS</a></li>
                     <li><a href="#">Front End</a></li>
+                    <li><a href="#">Back End</a></li>
+                    <li><a href="#">Devops</a></li>
                   </ul>
                 </div>
-
                 <a class="mean-expand" href="#">+</a>
+                <a class="mean-non-expand" href="#">-</a>
               </li>
               <li>
                 <a href="#">Giảng viên</a>
@@ -96,17 +93,21 @@
                 </div>
 
                 <a class="mean-expand" href="#">+</a>
+                <a class="mean-non-expand" href="#">-</a>
               </li>
               <li><a href="./blog.html">Blog</a></li>
             </ul>
           </div>
           <div class="sidebar-bottom">
             <div class="search-course">
-              <input
-                type="text"
-                placeholder="Tìm kiếm khoá học"
-                class="form-control"
-              />
+              <form action="#" method="post">
+                <input
+                  type="text"
+                  placeholder="Tìm kiếm khoá học"
+                  class="form-control"
+                />
+              </form>
+
               <span><i class="fa fa-search"></i></span>
             </div>
             <ul class="contact-info">
@@ -129,7 +130,7 @@
             <ul class="sidebar-controls">
               <li><a href="./login-mobile.html">Login</a></li>
               <li><small>|</small></li>
-              <li><a href="registration.html">Register</a></li>
+              <li><a href="./register.html">Register</a></li>
             </ul>
           </div>
         </div>
@@ -145,7 +146,7 @@
         <div class="login-form-content">
           <div class="close-login-form" id="loginFormClose">&times;</div>
           <h3 class="mb-3 text-center">Đăng nhập</h3>
-          <form action="#">
+          <form action="#" method="post">
             <div class="form-group mb-3">
               <input type="text" placeholder="Email" class="form-control" />
             </div>
@@ -167,14 +168,20 @@
                 <a href="#" class="link-custom">Forgot Password?</a>
               </div>
             </div>
-            <div class="login-btn text-center mb-4">
+            <div class="login-btn text-center mb-2">
               <a href="./login-success.html" class="btn btn-primary-custom p-2"
                 >Đăng nhập</a
               >
             </div>
+            <div id="gSignInWrapper" class="mb-4 w-100">
+              <div id="customBtn" class="customGPlusSignIn w-100">
+                <span class="icon"></span>
+                <span class="buttonText">Đăng nhập bằng tài khoản google</span>
+              </div>
+            </div>
             <div class="new-registration text-center">
               <span>Bạn chưa có tài khoản?</span>
-              <a href="#" class="link-custom">Đăng ký ngay</a>
+              <a href="./register.html" class="link-custom">Đăng ký ngay</a>
             </div>
           </form>
         </div>
@@ -368,175 +375,61 @@
         </div>
       </header>
       <!-- End header -->
-      <section class="banner-member-detail">
-        <div class="banner-content">
-          <h1>Thông tin member</h1>
-          <p>
-            <a href="index.html">Trang chủ</a><span> > </span> Thông tin member
-          </p>
-        </div>
-      </section>
-      <section class="content-info-mentor">
+      <section class="edit-content">
         <div class="container">
-          <div class="row">
-            <div class="col-lg-4 col-md-5">
-              <div class="member-info">
-                <div class="member-img">
-                  <img
-                    src="./assets/images/avatar-mentor-3.jpg"
-                    alt="hinh anh member"
-                  />
-                </div>
-                <div class="member-details">
-                  <h4>Nguyễn Văn A</h4>
-                  <p>Member</p>
-                  <ul class="social-list">
-                    <li>
-                      <a href="#"><i class="fa fa-facebook"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-twitter"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-linkedin"></i></a>
-                    </li>
-                  </ul>
-                  <ul class="contact-info">
-                    <li>
-                      <span><i class="fa fa-male fs-2"></i></span>
-                    </li>
-                    <li>
-                      <span>27/01/2001</span>
-                    </li>
-                    <li>
-                      <span>
-                        <i class="fa fa-location-arrow"></i> Tân Bình, Tp. Hồ
-                        Chí Minh
-                      </span>
-                    </li>
-                    <li>
-                      <span
-                        ><i class="fa fa-envelope"></i>member@gmail.com</span
-                      >
-                    </li>
-                    <li>
-                      <span><i class="fa fa-phone"></i> 0946005077</span>
-                    </li>
-                    <li>
-                      <span
-                        >Số dư hiện tại:
-                        <span class="current-amount">300,000 BS</span></span
-                      >
-                    </li>
-                  </ul>
-                  <div class="contact-btn">
-                    <a href="./edit-profile.html" class="btn btn-primary-custom"
-                      >Chỉnh sửa thông tin</a
-                    >
-                  </div>
-                  <div class="mt-2">
-                    <a
-                      href="./wallet-management.html"
-                      class="btn btn-primary-custom w-100"
-                      >Quản lý ví tiền</a
-                    >
-                  </div>
-                  <div class="mt-2">
-                    <a href="#" class="btn btn-primary-custom w-100"
-                      >Rút tiền</a
-                    >
-                  </div>
-                </div>
-              </div>
-              <div class="member-operation mt-3">
-                <h4>Các hoạt động gần đây</h4>
-                <ul>
-                  <li>
-                    <p class="mt-2">Đã đăng ký khoá học ReactJS Basic</p>
-                    <span>01/01/2023</span>
-                    <hr />
-                  </li>
-                  <li>
-                    <p class="mt-2">
-                      Đã nhận được 100 BS từ việc chia sẻ khoá học
-                    </p>
-                    <span>01/01/2023</span>
-                    <hr />
-                  </li>
-                </ul>
-              </div>
+          <form action="#" method="post">
+            <h3>Thông tin cá nhân</h3>
+            <hr />
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                value="member@gmail.com"
+              />
             </div>
-            <div class="col-lg-8 col-md-7">
-              <div class="courses">
-                <h3 class="mb-3">Các khoá học đã tham gia</h3>
-                <div class="row">
-                  <div class="col-lg-6">
-                    <div class="card course-card mb-3" style="width: 100%">
-                      <img
-                        src="./assets/images/front-end-course.png"
-                        class="card-img-top"
-                        alt="hinh anh"
-                      />
-                      <div class="card-body">
-                        <p class="card-price">1,200,000 VND</p>
-                        <h5 class="card-title">Front End Basic</h5>
-                        <div class="testi-rating">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <hr />
-                        <div class="skill-single">
-                          <div class="d-flex justify-content-between mb-2">
-                            <div class="skill-name">Tiến độ</div>
-                            <div class="skill-level-text">97%</div>
-                          </div>
-                          <div class="progress p-0">
-                            <div class="progress-bar" style="width: 70%"></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="card course-card mb-3" style="width: 100%">
-                      <img
-                        src="./assets/images/reactjs-banner.png"
-                        class="card-img-top"
-                        alt="hinh anh"
-                      />
-                      <div class="card-body">
-                        <p class="card-price">2,000,000 VND</p>
-                        <h5 class="card-title">ReactJS Basic</h5>
-                        <div class="testi-rating">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <hr />
-                        <div class="skill-single">
-                          <div class="d-flex justify-content-between mb-2">
-                            <div class="skill-name">Tiến độ</div>
-                            <div class="skill-level-text">80%</div>
-                          </div>
-                          <div class="progress p-0">
-                            <div class="progress-bar" style="width: 80%"></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"
+                >Số điện thoại</label
+              >
+              <input type="text" class="form-control" value="0946005077" />
             </div>
-          </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Họ tên</label>
+              <input type="text" class="form-control" value="Nguyễn Văn A" />
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Avatar</label>
+              <span class="sub-title"
+                >Nên là ảnh vuông, chấp nhận các tệp: JPG, PNG</span
+              >
+              <input type="text" class="form-control" value="0946005077" />
+            </div>
+            <h3>Liên kết mạng xã hội</h3>
+            <hr />
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"
+                >Facebook</label
+              >
+              <input type="text" class="form-control" value="facebook.com" />
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Twitter</label>
+              <input type="text" class="form-control" value="twitter.com" />
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"
+                >Instagram</label
+              >
+              <input type="text" class="form-control" value="instagram.com" />
+            </div>
+
+            <button type="submit" class="btn btn-primary-custom p-3">
+              Thay đổi
+            </button>
+          </form>
         </div>
       </section>
-      <!-- Start footer -->
       <footer class="footer">
         <div class="container">
           <div class="row">
@@ -545,18 +438,18 @@
             </div>
           </div>
           <div class="row mb-5">
-            <div class="col-lg-3 col-md-6">
-              <h3 class="quaters">Trụ sở: 117 Tân Cảng, Bình Thạnh</h3>
+            <div class="col-lg-4 col-md-6 mb-3">
+              <h3 class="quaters">Trụ sở 1: 117 Tân Cảng, Bình Thạnh</h3>
               <p class="hotline">Hotline: 096.105.1014</p>
               <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
             </div>
-            <div class="col-lg-3 col-md-6">
-              <h3 class="quaters">Trụ sở: 117 Tân Cảng, Bình Thạnh</h3>
+            <div class="col-lg-4 col-md-6 mb-3">
+              <h3 class="quaters">Trụ sở 2: 117 Tân Cảng, Bình Thạnh</h3>
               <p class="hotline">Hotline: 096.105.1014</p>
               <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
             </div>
-            <div class="col-lg-3 col-md-6">
-              <h3 class="quaters">Trụ sở: 117 Tân Cảng, Bình Thạnh</h3>
+            <div class="col-lg-4 col-md-6 mb-3">
+              <h3 class="quaters">Trụ sở 3: 117 Tân Cảng, Bình Thạnh</h3>
               <p class="hotline">Hotline: 096.105.1014</p>
               <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
             </div>
@@ -597,16 +490,23 @@
               <div class="footer-menu">
                 <h4>Menu</h4>
                 <ul>
+                  <li><a href="#">Trang chủ</a></li>
+                  <li><a href="#">Về chúng tôi</a></li>
+                  <li><a href="#">Nền tảng LMS</a></li>
                   <li><a href="#">Khoá học</a></li>
                   <li><a href="#">Giảng viên</a></li>
+                  <li><a href="#">Blog</a></li>
                 </ul>
               </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-3">
-              <div class="footer-control">
-                <button class="btn btn-primary-custom p-2 mb-2">
+              <div class="footer-control d-flex align-items-center mt-5">
+                <a
+                  href="./courses.html"
+                  class="btn btn-primary-custom p-2 mb-2"
+                >
                   Đăng ký khoá học
-                </button>
+                </a>
               </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-3">
@@ -630,12 +530,11 @@
         </div>
         <hr class="text-success mt-5" />
         <div class="container">
-          <p class="m-0 text-light">
+          <p class="m-0 text-light text-center">
             © Bản quyền BSmart 2022 - Empowered by <a href="#">BSmart</a>
           </p>
         </div>
       </footer>
-      <!-- End footer -->
     </div>
     <!-- Import script bootstrap V5 -->
     <script
@@ -657,6 +556,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <!-- API google -->
+    <script src="https://apis.google.com/js/api:client.js"></script>
     <!-- Script -->
     <script type="text/javascript" src="./assets/js/main.js"></script>
   </body>

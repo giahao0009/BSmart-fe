@@ -776,6 +776,13 @@
   // Member detail page
   .member-detail-wrapper {
     .content-info-mentor {
+      .table-wallet-container {
+        overflow-x: scroll;
+        .table-wallet {
+          width: 500px !important;
+        }
+      }
+
       .courses {
         h3 {
           font-size: 25px;
