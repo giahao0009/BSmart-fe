@@ -199,7 +199,122 @@
     }
   }
 }
-@media screen and (min-width: 414px) and (max-width: 1250px) {
+// desktop
+@media screen and (min-width: 1366px) and (max-height: 768px) {
+  .history-course-wrapper {
+    .sec-sidebar-history-course {
+      .subject {
+        img {
+          width: 90px;
+          height: 40px;
+        }
+        .detail-subject {
+          position: absolute;
+
+          left: 120px;
+          top: 10px;
+          h3 {
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 2px;
+          }
+          p {
+            font-size: 12px;
+            font-weight: 500;
+            margin-bottom: 2px;
+          }
+          a {
+            font-size: 10px;
+            background-color: #ff630e;
+            padding: 2px 2px 2px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            -webkit-box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
+            box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
+          }
+        }
+      }
+      .testi-rating {
+        // display: none;
+        position: absolute;
+        left: 650px;
+        top: 30px;
+        .fa {
+          width: 6px;
+          height: 6px;
+        }
+      }
+      .cost-history-course {
+        position: absolute;
+        left: 650px;
+        top: 60px;
+        .cost {
+          // display: none;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+// tablet
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .history-course-wrapper {
+    .sec-sidebar-history-course {
+      .subject {
+        img {
+          width: 90px;
+          height: 40px;
+        }
+        .detail-subject {
+          position: absolute;
+
+          left: 120px;
+          top: 10px;
+          h3 {
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 2px;
+          }
+          p {
+            font-size: 12px;
+            font-weight: 500;
+            margin-bottom: 2px;
+          }
+          a {
+            font-size: 10px;
+            background-color: #ff630e;
+            padding: 2px 2px 2px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            -webkit-box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
+            box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
+          }
+        }
+      }
+      .testi-rating {
+        // display: none;
+        position: absolute;
+        left: 390px;
+        top: 30px;
+        .fa {
+          width: 6px;
+          height: 6px;
+        }
+      }
+      .cost-history-course {
+        position: absolute;
+        left: 380px;
+        top: 60px;
+        .cost {
+          // display: none;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+// ipjhone XR
+@media screen and (min-width: 414px) and (max-width: 896) {
   .history-course-wrapper {
     .sec-sidebar-history-course {
       .subject {
@@ -247,6 +362,119 @@
         left: 310px;
         top: 60px;
         .cost {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+// Iphone Se
+@media screen and (min-width: 375px) and (max-width: 667px) {
+  .history-course-wrapper {
+    .sec-sidebar-history-course {
+      .subject {
+        img {
+          width: 90px;
+          height: 40px;
+        }
+        .detail-subject {
+          position: absolute;
+
+          left: 120px;
+          top: 10px;
+          h3 {
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 2px;
+          }
+          p {
+            font-size: 12px;
+            font-weight: 500;
+            margin-bottom: 2px;
+          }
+          a {
+            font-size: 10px;
+            background-color: #ff630e;
+            padding: 2px 2px 2px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            -webkit-box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
+            box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
+          }
+        }
+      }
+      .testi-rating {
+        position: absolute;
+        left: 300px;
+        top: 30px;
+        .fa {
+          width: 6px;
+          height: 6px;
+        }
+      }
+      .cost-history-course {
+        position: absolute;
+        left: 290px;
+        top: 60px;
+        .cost {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+// Iphone ss
+@media screen and (min-width: 360px) and (max-width: 740px) {
+  .history-course-wrapper {
+    .sec-sidebar-history-course {
+      .subject {
+        img {
+          width: 90px;
+          height: 40px;
+        }
+        .detail-subject {
+          position: absolute;
+
+          left: 120px;
+          top: 10px;
+          h3 {
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 2px;
+          }
+          p {
+            font-size: 12px;
+            font-weight: 500;
+            margin-bottom: 2px;
+          }
+          a {
+            font-size: 10px;
+            background-color: #ff630e;
+            padding: 2px 2px 2px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            -webkit-box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
+            box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
+          }
+        }
+      }
+      .testi-rating {
+        display: none;
+        position: absolute;
+        left: 290px;
+        top: 30px;
+        .fa {
+          width: 6px;
+          height: 6px;
+        }
+      }
+      .cost-history-course {
+        display: none;
+        position: absolute;
+        left: 280px;
+        top: 60px;
+        .cost {
+          display: none;
           font-size: 12px;
         }
       }

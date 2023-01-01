@@ -2274,7 +2274,101 @@ body {
   color: #fff;
 }
 
-@media screen and (min-width: 414px) and (max-width: 1250px) {
+@media screen and (min-width: 1366px) and (max-height: 768px) {
+  .history-course-wrapper .sec-sidebar-history-course .subject img {
+    width: 90px;
+    height: 40px;
+  }
+  .history-course-wrapper .sec-sidebar-history-course .subject .detail-subject {
+    position: absolute;
+    left: 120px;
+    top: 10px;
+  }
+  .history-course-wrapper .sec-sidebar-history-course .subject .detail-subject h3 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 2px;
+  }
+  .history-course-wrapper .sec-sidebar-history-course .subject .detail-subject p {
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 2px;
+  }
+  .history-course-wrapper .sec-sidebar-history-course .subject .detail-subject a {
+    font-size: 10px;
+    background-color: #ff630e;
+    padding: 2px 2px 2px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
+    box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
+  }
+  .history-course-wrapper .sec-sidebar-history-course .testi-rating {
+    position: absolute;
+    left: 650px;
+    top: 30px;
+  }
+  .history-course-wrapper .sec-sidebar-history-course .testi-rating .fa {
+    width: 6px;
+    height: 6px;
+  }
+  .history-course-wrapper .sec-sidebar-history-course .cost-history-course {
+    position: absolute;
+    left: 650px;
+    top: 60px;
+  }
+  .history-course-wrapper .sec-sidebar-history-course .cost-history-course .cost {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .history-course-wrapper .sec-sidebar-history-course .subject img {
+    width: 90px;
+    height: 40px;
+  }
+  .history-course-wrapper .sec-sidebar-history-course .subject .detail-subject {
+    position: absolute;
+    left: 120px;
+    top: 10px;
+  }
+  .history-course-wrapper .sec-sidebar-history-course .subject .detail-subject h3 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 2px;
+  }
+  .history-course-wrapper .sec-sidebar-history-course .subject .detail-subject p {
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 2px;
+  }
+  .history-course-wrapper .sec-sidebar-history-course .subject .detail-subject a {
+    font-size: 10px;
+    background-color: #ff630e;
+    padding: 2px 2px 2px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
+    box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
+  }
+  .history-course-wrapper .sec-sidebar-history-course .testi-rating {
+    position: absolute;
+    left: 390px;
+    top: 30px;
+  }
+  .history-course-wrapper .sec-sidebar-history-course .testi-rating .fa {
+    width: 6px;
+    height: 6px;
+  }
+  .history-course-wrapper .sec-sidebar-history-course .cost-history-course {
+    position: absolute;
+    left: 380px;
+    top: 60px;
+  }
+  .history-course-wrapper .sec-sidebar-history-course .cost-history-course .cost {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 414px) and (max-width: 896) {
   .history-course-wrapper .sec-sidebar-history-course .subject img {
     width: 90px;
     height: 40px;
@@ -2318,6 +2412,103 @@ body {
     top: 60px;
   }
   .history-course-wrapper .sec-sidebar-history-course .cost-history-course .cost {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 667px) {
+  .history-course-wrapper .sec-sidebar-history-course .subject img {
+    width: 90px;
+    height: 40px;
+  }
+  .history-course-wrapper .sec-sidebar-history-course .subject .detail-subject {
+    position: absolute;
+    left: 120px;
+    top: 10px;
+  }
+  .history-course-wrapper .sec-sidebar-history-course .subject .detail-subject h3 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 2px;
+  }
+  .history-course-wrapper .sec-sidebar-history-course .subject .detail-subject p {
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 2px;
+  }
+  .history-course-wrapper .sec-sidebar-history-course .subject .detail-subject a {
+    font-size: 10px;
+    background-color: #ff630e;
+    padding: 2px 2px 2px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
+    box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
+  }
+  .history-course-wrapper .sec-sidebar-history-course .testi-rating {
+    position: absolute;
+    left: 300px;
+    top: 30px;
+  }
+  .history-course-wrapper .sec-sidebar-history-course .testi-rating .fa {
+    width: 6px;
+    height: 6px;
+  }
+  .history-course-wrapper .sec-sidebar-history-course .cost-history-course {
+    position: absolute;
+    left: 290px;
+    top: 60px;
+  }
+  .history-course-wrapper .sec-sidebar-history-course .cost-history-course .cost {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 740px) {
+  .history-course-wrapper .sec-sidebar-history-course .subject img {
+    width: 90px;
+    height: 40px;
+  }
+  .history-course-wrapper .sec-sidebar-history-course .subject .detail-subject {
+    position: absolute;
+    left: 120px;
+    top: 10px;
+  }
+  .history-course-wrapper .sec-sidebar-history-course .subject .detail-subject h3 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 2px;
+  }
+  .history-course-wrapper .sec-sidebar-history-course .subject .detail-subject p {
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 2px;
+  }
+  .history-course-wrapper .sec-sidebar-history-course .subject .detail-subject a {
+    font-size: 10px;
+    background-color: #ff630e;
+    padding: 2px 2px 2px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
+    box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
+  }
+  .history-course-wrapper .sec-sidebar-history-course .testi-rating {
+    display: none;
+    position: absolute;
+    left: 290px;
+    top: 30px;
+  }
+  .history-course-wrapper .sec-sidebar-history-course .testi-rating .fa {
+    width: 6px;
+    height: 6px;
+  }
+  .history-course-wrapper .sec-sidebar-history-course .cost-history-course {
+    display: none;
+    position: absolute;
+    left: 280px;
+    top: 60px;
+  }
+  .history-course-wrapper .sec-sidebar-history-course .cost-history-course .cost {
+    display: none;
     font-size: 12px;
   }
 }
