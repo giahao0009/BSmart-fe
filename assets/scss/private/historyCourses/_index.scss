@@ -1,0 +1,255 @@
+.history-course-wrapper {
+  .banner__history-course {
+    width: 100%;
+    padding: 110px 0 100px;
+    background-image: url(../images/banner-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: $primary-overlay-color;
+    }
+    .content__banner_course {
+      text-align: center;
+      position: relative;
+      h1 {
+        font-size: 49px;
+        font-weight: 700;
+        margin-bottom: 25px;
+        color: $secondary-color;
+      }
+      p {
+        font-size: 16px;
+        line-height: 26px;
+        color: $grey-white-color;
+        a {
+          color: $grey-white-color;
+          transition: all 0.3s;
+          &:hover {
+            color: $secondary-color;
+          }
+        }
+      }
+    }
+  }
+  .sec-title-history-course {
+    padding-top: 50px;
+    h2 {
+      text-align: center;
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 25px;
+      color: $secondary-color;
+    }
+  }
+  .sec-sidebar-history-course {
+    padding-top: 20px;
+    .history-course-sidebar {
+      .search-form {
+        position: relative;
+      }
+
+      .search-form input {
+        width: 100%;
+        height: 35px;
+        border: 0;
+        background-color: #f1f1f1;
+        padding-left: 20px;
+        border-radius: 5px;
+        font-family: "Rubik";
+      }
+
+      .search-form button {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        height: 35px;
+        width: 60px;
+        border: 0;
+        background-color: #ff630e;
+        font-size: 20px;
+        padding: 0 20px;
+        border-radius: 0 5px 5px 0;
+        color: #fff;
+      }
+
+      .search-form button:hover {
+        background-color: #130f40;
+      }
+      .widget {
+        padding: 20px 20px 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        -webkit-box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
+        box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
+      }
+      .tag_r {
+        margin-bottom: 30px;
+        width: 100%;
+
+        h3 {
+          font-size: 17px;
+          text-transform: uppercase;
+          color: rgba(0, 0, 0, 0.832);
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+        .checkbox__history-course {
+          margin: 10px 0;
+          label {
+            font-size: 14px;
+            color: grey;
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+    .subject {
+      position: relative;
+
+      padding-top: 20px;
+      padding-bottom: 20px;
+      border-top: 1px solid gray;
+      border-bottom: 1px solid gray;
+      justify-content: center;
+      justify-items: center;
+
+      img {
+        width: 230px;
+        height: 130px;
+      }
+
+      .detail-subject {
+        position: absolute;
+
+        left: 280px;
+        top: 20px;
+        h3 {
+          font-size: 24px;
+          font-weight: 500;
+          margin-bottom: 15px;
+        }
+        p {
+          font-size: 18px;
+          font-weight: 500;
+          margin-bottom: 15px;
+        }
+        a {
+          background-color: #ff630e;
+          padding: 10px 10px 10px;
+          margin-bottom: 20px;
+          border-radius: 10px;
+          -webkit-box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
+          box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
+        }
+      }
+    }
+    .testi-rating {
+      position: absolute;
+      left: 45rem;
+      top: 100px;
+    }
+    .cost-history-course {
+      position: absolute;
+      left: 45rem;
+      top: 130px;
+    }
+
+    .course-pagination {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      ul {
+        li {
+          display: inline-block;
+          margin-right: 10px;
+          a {
+            width: 100%;
+            height: 100%;
+            display: block;
+            text-align: center;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            color: $black-color;
+            background: $grey-white-color;
+            border-radius: 50%;
+            &:hover {
+              background-color: $secondary-color;
+              color: $white-color;
+              transition: all 0.3s;
+            }
+          }
+          .active {
+            background-color: $secondary-color;
+            color: $white-color;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 414px) and (max-width: 1250px) {
+  .history-course-wrapper {
+    .sec-sidebar-history-course {
+      .subject {
+        img {
+          width: 90px;
+          height: 40px;
+        }
+        .detail-subject {
+          position: absolute;
+
+          left: 120px;
+          top: 10px;
+          h3 {
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 2px;
+          }
+          p {
+            font-size: 12px;
+            font-weight: 500;
+            margin-bottom: 2px;
+          }
+          a {
+            font-size: 12px;
+            background-color: #ff630e;
+            padding: 2px 2px 2px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            -webkit-box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
+            box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
+          }
+        }
+      }
+      .testi-rating {
+        position: absolute;
+        left: 310px;
+        top: 30px;
+        .fa {
+          width: 8px;
+          height: 8px;
+        }
+      }
+      .cost-history-course {
+        position: absolute;
+        left: 310px;
+        top: 60px;
+        .cost {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
