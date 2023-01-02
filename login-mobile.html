@@ -64,27 +64,24 @@
       <div class="container-fluid">
         <div class="sidebar-content">
           <div class="sidebar-top">
-            <span class="sidebar-logo">BSMART</span>
+            <a href="./index.html" class="sidebar-logo">BSMART</a>
             <i class="fa fa-times" class="sidebar-close" id="closeSidebar"></i>
           </div>
           <div class="sidebar-center">
             <ul class="sidebar-mean-nav">
-              <li><a href="#">Trang chủ</a></li>
-              <li><a href="#">Về chúng tôi</a></li>
+              <li><a href="./index.html">Trang chủ</a></li>
+              <li><a href="./aboutus.html">Về chúng tôi</a></li>
               <li>
-                <a href="#">Khoá học</a>
+                <a href="./courses.html">Khoá học</a>
                 <div class="d-flex align-items-center justify-content-end">
                   <ul class="sub-menu">
-                    <li><a href="#">Devops</a></li>
-                    <li><a href="#">.NET Basic</a></li>
-                    <li><a href="#">.NET Core MVC</a></li>
-                    <li><a href="#">.NET Core API</a></li>
-                    <li><a href="#">ReactJS</a></li>
                     <li><a href="#">Front End</a></li>
+                    <li><a href="#">Back End</a></li>
+                    <li><a href="#">Devops</a></li>
                   </ul>
                 </div>
-
                 <a class="mean-expand" href="#">+</a>
+                <a class="mean-non-expand" href="#">-</a>
               </li>
               <li>
                 <a href="#">Giảng viên</a>
@@ -96,17 +93,21 @@
                 </div>
 
                 <a class="mean-expand" href="#">+</a>
+                <a class="mean-non-expand" href="#">-</a>
               </li>
-              <li><a href="./blog">Blog</a></li>
+              <li><a href="./blog.html">Blog</a></li>
             </ul>
           </div>
           <div class="sidebar-bottom">
             <div class="search-course">
-              <input
-                type="text"
-                placeholder="Tìm kiếm khoá học"
-                class="form-control"
-              />
+              <form action="#" method="post">
+                <input
+                  type="text"
+                  placeholder="Tìm kiếm khoá học"
+                  class="form-control"
+                />
+              </form>
+
               <span><i class="fa fa-search"></i></span>
             </div>
             <ul class="contact-info">
@@ -129,7 +130,7 @@
             <ul class="sidebar-controls">
               <li><a href="./login-mobile.html">Login</a></li>
               <li><small>|</small></li>
-              <li><a href="registration.html">Register</a></li>
+              <li><a href="./register.html">Register</a></li>
             </ul>
           </div>
         </div>
@@ -141,7 +142,9 @@
         <div class="header-mobile">
           <div class="container">
             <div class="header-mobile-content">
-              <div class="header-mobile-logo"><span>BSMART</span></div>
+              <div class="header-mobile-logo">
+                <a href="./index.html"><span>BSMART</span></a>
+              </div>
               <div class="header-mobile-menu-hambuger" id="activeMenu">
                 <i class="fa fa-bars"></i>
               </div>

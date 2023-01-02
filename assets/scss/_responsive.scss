@@ -25,6 +25,56 @@
       }
     }
   }
+  .home-wrapper {
+    .courses-section {
+      .owl-carousel {
+        .owl-nav {
+          .owl-prev {
+            left: 10px !important;
+          }
+          .owl-next {
+            right: 10px !important;
+          }
+        }
+      }
+    }
+    .testimonial-content {
+      .owl-carousel {
+        .owl-nav {
+          .owl-prev {
+            left: 10px;
+          }
+          .owl-next {
+            right: 10px;
+          }
+        }
+      }
+    }
+    .our {
+      .owl-carousel {
+        .owl-nav {
+          .owl-prev {
+            left: 10px;
+          }
+          .owl-next {
+            right: 10px;
+          }
+        }
+      }
+    }
+  }
+  .aboutus-wrapper {
+    .owl-carousel {
+      .owl-nav {
+        .owl-prev {
+          left: -1%;
+        }
+        .owl-next {
+          right: -1%;
+        }
+      }
+    }
+  }
 }
 
 /* Tablet */

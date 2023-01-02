@@ -64,32 +64,24 @@
       <div class="container-fluid">
         <div class="sidebar-content">
           <div class="sidebar-top">
-            <span class="sidebar-logo">BSMART</span>
+            <a href="./index.html" class="sidebar-logo">BSMART</a>
             <i class="fa fa-times" class="sidebar-close" id="closeSidebar"></i>
           </div>
           <div class="sidebar-center">
             <ul class="sidebar-mean-nav">
-              <li><a href="#">Trang chủ</a></li>
-              <li><a href="#">Về chúng tôi</a></li>
+              <li><a href="./index.html">Trang chủ</a></li>
+              <li><a href="./aboutus.html">Về chúng tôi</a></li>
               <li>
-                <a href="./lms.html" class="nav-link nav-link-custom"
-                  >Nền tảng LMS</a
-                >
-              </li>
-              <li>
-                <a href="#">Khoá học</a>
+                <a href="./courses.html">Khoá học</a>
                 <div class="d-flex align-items-center justify-content-end">
                   <ul class="sub-menu">
-                    <li><a href="#">Devops</a></li>
-                    <li><a href="#">.NET Basic</a></li>
-                    <li><a href="#">.NET Core MVC</a></li>
-                    <li><a href="#">.NET Core API</a></li>
-                    <li><a href="#">ReactJS</a></li>
                     <li><a href="#">Front End</a></li>
+                    <li><a href="#">Back End</a></li>
+                    <li><a href="#">Devops</a></li>
                   </ul>
                 </div>
-
                 <a class="mean-expand" href="#">+</a>
+                <a class="mean-non-expand" href="#">-</a>
               </li>
               <li>
                 <a href="#">Giảng viên</a>
@@ -101,17 +93,21 @@
                 </div>
 
                 <a class="mean-expand" href="#">+</a>
+                <a class="mean-non-expand" href="#">-</a>
               </li>
               <li><a href="./blog.html">Blog</a></li>
             </ul>
           </div>
           <div class="sidebar-bottom">
             <div class="search-course">
-              <input
-                type="text"
-                placeholder="Tìm kiếm khoá học"
-                class="form-control"
-              />
+              <form action="#" method="post">
+                <input
+                  type="text"
+                  placeholder="Tìm kiếm khoá học"
+                  class="form-control"
+                />
+              </form>
+
               <span><i class="fa fa-search"></i></span>
             </div>
             <ul class="contact-info">
@@ -132,9 +128,9 @@
               </li>
             </ul>
             <ul class="sidebar-controls">
-              <li><a href="login.html">Login</a></li>
+              <li><a href="./login-mobile.html">Login</a></li>
               <li><small>|</small></li>
-              <li><a href="registration.html">Register</a></li>
+              <li><a href="./register.html">Register</a></li>
             </ul>
           </div>
         </div>
@@ -263,7 +259,7 @@
                           >Về Chúng Tôi</a
                         >
                       </li>
-                      
+
                       <li>
                         <a
                           href="./courses.html"
@@ -385,19 +381,9 @@
       <section class="employee__img">
         <div class="container">
           <div class="row">
-            <div class="col-md-4 mt-5">
+            <div class="col-md-12 mt-5">
               <div class="employ__box">
-                <img src="./assets/images/empl.1.jpg" alt="hinh anh" />
-              </div>
-            </div>
-            <div class="col-md-4 d-xs-none">
-              <div class="employ__box">
-                <img src="./assets/images/empl.1.jpg" alt="hinh anh" />
-              </div>
-            </div>
-            <div class="col-md-4 mt-5 d-xs-none">
-              <div class="employ__box">
-                <img src="./assets/images/empl.1.jpg" alt="hinh anh" />
+                <img src="./assets/images/banner.jpg" alt="hinh anh" />
               </div>
             </div>
           </div>
@@ -406,10 +392,10 @@
 
       <section class="sec-heading__about">
         <div class="container">
-          <h5>Chúng tôi là</h5>
+          <h5>Chúng tôi là ai?</h5>
           <h2>
-            Chúng tôi đang cung cấp các khóa học online và offline chất lượng
-            tốt nhất. Tất cả các giảng viên của chúng tôi đều là các chuyên gia.
+            BSmart đang cung cấp các khóa học online và offline chất lượng tốt
+            nhất. Tất cả các giảng viên của chúng tôi đều là các chuyên gia.
           </h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
@@ -497,28 +483,6 @@
         <div class="container">
           <h2>MENTOR</h2>
           <h1>Mentor tiêu biểu</h1>
-          <!-- <div class="out__sigle">
-            <img src="./assets/images/instructor-2.jpg" alt="" />
-            <h3>Shane Warne</h3>
-            <h4>Instructor</h4>
-            <div class="instructor-links">
-              <ul>
-                <li>
-                  <a href="#"><i class="fa fa-facebook"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa fa-pinterest"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa fa-twitter"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa fa-linkedin"></i></a>
-                </li>
-              </ul>
-            </div>
-          </div> -->
-
           <div class="owl-carousel owl-theme">
             <div class="item">
               <div class="out__sigle">
@@ -647,18 +611,18 @@
             </div>
           </div>
           <div class="row mb-5">
-            <div class="col-lg-3 col-md-6">
-              <h3 class="quaters">Trụ sở: 117 Tân Cảng, Bình Thạnh</h3>
+            <div class="col-lg-4 col-md-6 mb-3">
+              <h3 class="quaters">Trụ sở 1: 117 Tân Cảng, Bình Thạnh</h3>
               <p class="hotline">Hotline: 096.105.1014</p>
               <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
             </div>
-            <div class="col-lg-3 col-md-6">
-              <h3 class="quaters">Trụ sở: 117 Tân Cảng, Bình Thạnh</h3>
+            <div class="col-lg-4 col-md-6 mb-3">
+              <h3 class="quaters">Trụ sở 2: 117 Tân Cảng, Bình Thạnh</h3>
               <p class="hotline">Hotline: 096.105.1014</p>
               <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
             </div>
-            <div class="col-lg-3 col-md-6">
-              <h3 class="quaters">Trụ sở: 117 Tân Cảng, Bình Thạnh</h3>
+            <div class="col-lg-4 col-md-6 mb-3">
+              <h3 class="quaters">Trụ sở 3: 117 Tân Cảng, Bình Thạnh</h3>
               <p class="hotline">Hotline: 096.105.1014</p>
               <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
             </div>
@@ -699,16 +663,23 @@
               <div class="footer-menu">
                 <h4>Menu</h4>
                 <ul>
+                  <li><a href="#">Trang chủ</a></li>
+                  <li><a href="#">Về chúng tôi</a></li>
+                  <li><a href="#">Nền tảng LMS</a></li>
                   <li><a href="#">Khoá học</a></li>
                   <li><a href="#">Giảng viên</a></li>
+                  <li><a href="#">Blog</a></li>
                 </ul>
               </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-3">
-              <div class="footer-control">
-                <button class="btn btn-primary-custom p-2 mb-2">
+              <div class="footer-control d-flex align-items-center mt-5">
+                <a
+                  href="./courses.html"
+                  class="btn btn-primary-custom p-2 mb-2"
+                >
                   Đăng ký khoá học
-                </button>
+                </a>
               </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-3">
@@ -732,7 +703,7 @@
         </div>
         <hr class="text-success mt-5" />
         <div class="container">
-          <p class="m-0 text-light">
+          <p class="m-0 text-light text-center">
             © Bản quyền BSmart 2022 - Empowered by <a href="#">BSmart</a>
           </p>
         </div>

@@ -64,30 +64,24 @@
       <div class="container-fluid">
         <div class="sidebar-content">
           <div class="sidebar-top">
-            <span class="sidebar-logo">BSMART</span>
+            <a href="./index.html" class="sidebar-logo">BSMART</a>
             <i class="fa fa-times" class="sidebar-close" id="closeSidebar"></i>
           </div>
           <div class="sidebar-center">
             <ul class="sidebar-mean-nav">
-              <li><a href="#">Trang chủ</a></li>
-              <li><a href="#">Về chúng tôi</a></li>
+              <li><a href="./index.html">Trang chủ</a></li>
+              <li><a href="./aboutus.html">Về chúng tôi</a></li>
               <li>
-                <a href="./lms.html">Nền tảng LMS</a>
-              </li>
-              <li>
-                <a href="#">Khoá học</a>
+                <a href="./courses.html">Khoá học</a>
                 <div class="d-flex align-items-center justify-content-end">
                   <ul class="sub-menu">
-                    <li><a href="#">Devops</a></li>
-                    <li><a href="#">.NET Basic</a></li>
-                    <li><a href="#">.NET Core MVC</a></li>
-                    <li><a href="#">.NET Core API</a></li>
-                    <li><a href="#">ReactJS</a></li>
                     <li><a href="#">Front End</a></li>
+                    <li><a href="#">Back End</a></li>
+                    <li><a href="#">Devops</a></li>
                   </ul>
                 </div>
-
                 <a class="mean-expand" href="#">+</a>
+                <a class="mean-non-expand" href="#">-</a>
               </li>
               <li>
                 <a href="#">Giảng viên</a>
@@ -99,17 +93,21 @@
                 </div>
 
                 <a class="mean-expand" href="#">+</a>
+                <a class="mean-non-expand" href="#">-</a>
               </li>
-              <li><a href="#">Blog</a></li>
+              <li><a href="./blog.html">Blog</a></li>
             </ul>
           </div>
           <div class="sidebar-bottom">
             <div class="search-course">
-              <input
-                type="text"
-                placeholder="Tìm kiếm khoá học"
-                class="form-control"
-              />
+              <form action="#" method="post">
+                <input
+                  type="text"
+                  placeholder="Tìm kiếm khoá học"
+                  class="form-control"
+                />
+              </form>
+
               <span><i class="fa fa-search"></i></span>
             </div>
             <ul class="contact-info">
@@ -132,7 +130,7 @@
             <ul class="sidebar-controls">
               <li><a href="./login-mobile.html">Login</a></li>
               <li><small>|</small></li>
-              <li><a href="registration.html">Register</a></li>
+              <li><a href="./register.html">Register</a></li>
             </ul>
           </div>
         </div>
@@ -148,7 +146,7 @@
         <div class="login-form-content">
           <div class="close-login-form" id="loginFormClose">&times;</div>
           <h3 class="mb-3 text-center">Đăng nhập</h3>
-          <form action="#">
+          <form action="#" method="post">
             <div class="form-group mb-3">
               <input type="text" placeholder="Email" class="form-control" />
             </div>
@@ -170,8 +168,10 @@
                 <a href="#" class="link-custom">Forgot Password?</a>
               </div>
             </div>
-            <div class="login-btn text-center mb-4">
-              <a href="#" class="btn btn-primary-custom p-2">Đăng nhập</a>
+            <div class="login-btn text-center mb-2">
+              <a href="./login-success.html" class="btn btn-primary-custom p-2"
+                >Đăng nhập</a
+              >
             </div>
             <div id="gSignInWrapper" class="mb-4 w-100">
               <div id="customBtn" class="customGPlusSignIn w-100">
@@ -181,7 +181,7 @@
             </div>
             <div class="new-registration text-center">
               <span>Bạn chưa có tài khoản?</span>
-              <a href="#" class="link-custom">Đăng ký ngay</a>
+              <a href="./register.html" class="link-custom">Đăng ký ngay</a>
             </div>
           </form>
         </div>
@@ -589,7 +589,9 @@
                               class="btn btn-outline-secondary-custom w-100 p-1 mb-2 mt-2"
                               >Link giới thiệu</a
                             >
-                            <a href="#" class="btn btn-primary-custom p-3"
+                            <a
+                              href="./course-detail.html"
+                              class="btn btn-primary-custom p-3"
                               >Đăng ký</a
                             >
                           </div>
@@ -632,7 +634,9 @@
                               class="btn btn-outline-secondary-custom w-100 p-1 mb-2 mt-2"
                               >Link giới thiệu</a
                             >
-                            <a href="#" class="btn btn-primary-custom p-3"
+                            <a
+                              href="./course-detail.html"
+                              class="btn btn-primary-custom p-3"
                               >Đăng ký</a
                             >
                           </div>
@@ -677,7 +681,9 @@
                               class="btn btn-outline-secondary-custom w-100 p-1 mb-2 mt-2"
                               >Link giới thiệu</a
                             >
-                            <a href="#" class="btn btn-primary-custom p-3"
+                            <a
+                              href="./course-detail.html"
+                              class="btn btn-primary-custom p-3"
                               >Đăng ký</a
                             >
                           </div>
@@ -720,7 +726,9 @@
                               class="btn btn-outline-secondary-custom w-100 p-1 mb-2 mt-2"
                               >Link giới thiệu</a
                             >
-                            <a href="#" class="btn btn-primary-custom p-3"
+                            <a
+                              href="./course-detail.html"
+                              class="btn btn-primary-custom p-3"
                               >Đăng ký</a
                             >
                           </div>
@@ -763,7 +771,9 @@
                               class="btn btn-outline-secondary-custom w-100 p-1 mb-2 mt-2"
                               >Link giới thiệu</a
                             >
-                            <a href="#" class="btn btn-primary-custom p-3"
+                            <a
+                              href="./course-detail.html"
+                              class="btn btn-primary-custom p-3"
                               >Đăng ký</a
                             >
                           </div>
@@ -806,7 +816,9 @@
                               class="btn btn-outline-secondary-custom w-100 p-1 mb-2 mt-2"
                               >Link giới thiệu</a
                             >
-                            <a href="#" class="btn btn-primary-custom p-3"
+                            <a
+                              href="./course-detail.html"
+                              class="btn btn-primary-custom p-3"
                               >Đăng ký</a
                             >
                           </div>
@@ -849,7 +861,9 @@
                               class="btn btn-outline-secondary-custom w-100 p-1 mb-2 mt-2"
                               >Link giới thiệu</a
                             >
-                            <a href="#" class="btn btn-primary-custom p-3"
+                            <a
+                              href="./course-detail.html"
+                              class="btn btn-primary-custom p-3"
                               >Đăng ký</a
                             >
                           </div>
@@ -892,7 +906,9 @@
                               class="btn btn-outline-secondary-custom w-100 p-1 mb-2 mt-2"
                               >Link giới thiệu</a
                             >
-                            <a href="#" class="btn btn-primary-custom p-3"
+                            <a
+                              href="./course-detail.html"
+                              class="btn btn-primary-custom p-3"
                               >Đăng ký</a
                             >
                           </div>
@@ -935,7 +951,9 @@
                               class="btn btn-outline-secondary-custom w-100 p-1 mb-2 mt-2"
                               >Link giới thiệu</a
                             >
-                            <a href="#" class="btn btn-primary-custom p-3"
+                            <a
+                              href="./course-detail.html"
+                              class="btn btn-primary-custom p-3"
                               >Đăng ký</a
                             >
                           </div>
@@ -962,7 +980,6 @@
       </section>
       <!-- End content -->
 
-      <!-- Start footer -->
       <footer class="footer">
         <div class="container">
           <div class="row">
@@ -971,18 +988,18 @@
             </div>
           </div>
           <div class="row mb-5">
-            <div class="col-lg-3 col-md-6">
-              <h3 class="quaters">Trụ sở: 117 Tân Cảng, Bình Thạnh</h3>
+            <div class="col-lg-4 col-md-6 mb-3">
+              <h3 class="quaters">Trụ sở 1: 117 Tân Cảng, Bình Thạnh</h3>
               <p class="hotline">Hotline: 096.105.1014</p>
               <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
             </div>
-            <div class="col-lg-3 col-md-6">
-              <h3 class="quaters">Trụ sở: 117 Tân Cảng, Bình Thạnh</h3>
+            <div class="col-lg-4 col-md-6 mb-3">
+              <h3 class="quaters">Trụ sở 2: 117 Tân Cảng, Bình Thạnh</h3>
               <p class="hotline">Hotline: 096.105.1014</p>
               <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
             </div>
-            <div class="col-lg-3 col-md-6">
-              <h3 class="quaters">Trụ sở: 117 Tân Cảng, Bình Thạnh</h3>
+            <div class="col-lg-4 col-md-6 mb-3">
+              <h3 class="quaters">Trụ sở 3: 117 Tân Cảng, Bình Thạnh</h3>
               <p class="hotline">Hotline: 096.105.1014</p>
               <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
             </div>
@@ -1023,16 +1040,20 @@
               <div class="footer-menu">
                 <h4>Menu</h4>
                 <ul>
+                  <li><a href="#">Trang chủ</a></li>
+                  <li><a href="#">Về chúng tôi</a></li>
+                  <li><a href="#">Nền tảng LMS</a></li>
                   <li><a href="#">Khoá học</a></li>
                   <li><a href="#">Giảng viên</a></li>
+                  <li><a href="#">Blog</a></li>
                 </ul>
               </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-3">
-              <div class="footer-control">
-                <button class="btn btn-primary-custom p-2 mb-2">
-                  Đăng ký khoá học
-                </button>
+              <div class="footer-control d-flex align-items-center mt-5">
+                <a href="#" class="btn btn-primary-custom mb-2">
+                  Liên hệ tư vấn
+                </a>
               </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-3">
@@ -1056,12 +1077,11 @@
         </div>
         <hr class="text-success mt-5" />
         <div class="container">
-          <p class="m-0 text-light">
+          <p class="m-0 text-light text-center">
             © Bản quyền BSmart 2022 - Empowered by <a href="#">BSmart</a>
           </p>
         </div>
       </footer>
-      <!-- End footer -->
     </div>
     <!-- Import script bootstrap V5 -->
     <script

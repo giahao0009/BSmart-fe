@@ -120,6 +120,11 @@
           margin-bottom: 1rem;
           text-align: justify;
         }
+        .info {
+          p {
+            color: $secondary-color;
+          }
+        }
       }
       .course-review {
         h3 {
