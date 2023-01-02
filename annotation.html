@@ -64,24 +64,27 @@
       <div class="container-fluid">
         <div class="sidebar-content">
           <div class="sidebar-top">
-            <a href="./index.html" class="sidebar-logo">BSMART</a>
+            <span class="sidebar-logo">BSMART</span>
             <i class="fa fa-times" class="sidebar-close" id="closeSidebar"></i>
           </div>
           <div class="sidebar-center">
             <ul class="sidebar-mean-nav">
-              <li><a href="./index.html">Trang chủ</a></li>
-              <li><a href="./aboutus.html">Về chúng tôi</a></li>
+              <li><a href="#">Trang chủ</a></li>
+              <li><a href="#">Về chúng tôi</a></li>
               <li>
-                <a href="./courses.html">Khoá học</a>
+                <a href="#">Khoá học</a>
                 <div class="d-flex align-items-center justify-content-end">
                   <ul class="sub-menu">
-                    <li><a href="#">Front End</a></li>
-                    <li><a href="#">Back End</a></li>
                     <li><a href="#">Devops</a></li>
+                    <li><a href="#">.NET Basic</a></li>
+                    <li><a href="#">.NET Core MVC</a></li>
+                    <li><a href="#">.NET Core API</a></li>
+                    <li><a href="#">ReactJS</a></li>
+                    <li><a href="#">Front End</a></li>
                   </ul>
                 </div>
+
                 <a class="mean-expand" href="#">+</a>
-                <a class="mean-non-expand" href="#">-</a>
               </li>
               <li>
                 <a href="#">Giảng viên</a>
@@ -93,21 +96,17 @@
                 </div>
 
                 <a class="mean-expand" href="#">+</a>
-                <a class="mean-non-expand" href="#">-</a>
               </li>
               <li><a href="./blog.html">Blog</a></li>
             </ul>
           </div>
           <div class="sidebar-bottom">
             <div class="search-course">
-              <form action="#" method="post">
-                <input
-                  type="text"
-                  placeholder="Tìm kiếm khoá học"
-                  class="form-control"
-                />
-              </form>
-
+              <input
+                type="text"
+                placeholder="Tìm kiếm khoá học"
+                class="form-control"
+              />
               <span><i class="fa fa-search"></i></span>
             </div>
             <ul class="contact-info">
@@ -130,7 +129,7 @@
             <ul class="sidebar-controls">
               <li><a href="./login-mobile.html">Login</a></li>
               <li><small>|</small></li>
-              <li><a href="./register.html">Register</a></li>
+              <li><a href="registration.html">Register</a></li>
             </ul>
           </div>
         </div>
@@ -146,7 +145,7 @@
         <div class="login-form-content">
           <div class="close-login-form" id="loginFormClose">&times;</div>
           <h3 class="mb-3 text-center">Đăng nhập</h3>
-          <form action="#" method="post">
+          <form action="#">
             <div class="form-group mb-3">
               <input type="text" placeholder="Email" class="form-control" />
             </div>
@@ -169,9 +168,7 @@
               </div>
             </div>
             <div class="login-btn text-center mb-2">
-              <a href="./login-success.html" class="btn btn-primary-custom p-2"
-                >Đăng nhập</a
-              >
+              <a href="#" class="btn btn-primary-custom p-2">Đăng nhập</a>
             </div>
             <div id="gSignInWrapper" class="mb-4 w-100">
               <div id="customBtn" class="customGPlusSignIn w-100">
@@ -181,14 +178,14 @@
             </div>
             <div class="new-registration text-center">
               <span>Bạn chưa có tài khoản?</span>
-              <a href="./register.html" class="link-custom">Đăng ký ngay</a>
+              <a href="#" class="link-custom">Đăng ký ngay</a>
             </div>
           </form>
         </div>
       </div>
     </div>
     <!-- End login form modal -->
-    <div class="wrapper blog-wrapper">
+    <div class="annotation-wrapper">
       <!-- Start header -->
       <header class="header-main">
         <div class="header-top">
@@ -221,22 +218,29 @@
               <!-- End header contact info -->
               <!-- Start header search -->
               <div class="header-course-search">
-                <form action="#" method="post">
-                  <input
-                    type="text"
-                    placeholder="Tìm kiếm khoá học"
-                    class="form-control"
-                  />
-                </form>
+                <input
+                  type="text"
+                  placeholder="Tìm kiếm khoá học"
+                  class="form-control"
+                />
                 <span><i class="fa fa-search"></i></span>
               </div>
               <!-- End header search -->
-              <div class="header-log-reg d-flex justify-content-end">
-                <ul>
-                  <li><a href="#" id="loginFormOpen">Login</a></li>
-                  <li><small>|</small></li>
-                  <li><a href="./register.html">Register</a></li>
-                </ul>
+              <div
+                class="header-log-reg d-flex justify-content-end align-items-center"
+              >
+                <span class="d-block me-3">
+                  <a href="./annotation.html"
+                    ><i class="fa fa-bell" style="color: #fff"></i
+                  ></a>
+                </span>
+                <a href="./member-detail.html">
+                  <img
+                    src="./assets/images/avatar-mentor-3.jpg"
+                    alt="hinh anh"
+                    class="avatar"
+                  />
+                </a>
               </div>
             </div>
           </div>
@@ -252,7 +256,9 @@
                     <!-- Menu cấp parent -->
                     <ul class="navbar-nav">
                       <li>
-                        <a href="./index.html" class="nav-link nav-link-custom"
+                        <a
+                          href="./index.html"
+                          class="nav-link nav-link-custom active"
                           >Trang Chủ</a
                         >
                       </li>
@@ -326,9 +332,7 @@
                       </li>
 
                       <li>
-                        <a
-                          href="./blog.html"
-                          class="nav-link nav-link-custom active"
+                        <a href="./blog.html" class="nav-link nav-link-custom"
                           >Blog</a
                         >
                         <ul class="sub-menu">
@@ -371,250 +375,169 @@
         </div>
       </header>
       <!-- End header -->
-      <!-- Banner section -->
-      <section class="banner__blog">
+      <!-- Start annotation -->
+      <section class="banner__annotation">
         <div class="container">
           <div class="caption-content text-center">
-            <h2>Blog</h2>
-            <p><a href="index.html">Trang chủ</a><span> > </span> blog</p>
+            <h2>Thông báo</h2>
+            <p><a href="index.html">Trang chủ</a><span> > </span> Thông báo</p>
           </div>
         </div>
       </section>
-      <!-- End banner section -->
-      <!-- Blog section content -->
-      <section class="blog-area two">
+
+      <section class="section2-annotation">
         <div class="container">
           <div class="row">
-            <div class="col-md-8 all-posts-wrap col-sm-12">
-              <!--start blog post-->
-              <div class="blog-posts">
-                <div class="blog-post-thumb">
-                  <img
-                    src="assets/images/blog-member.jpg"
-                    alt="image"
-                    class="img-fluid"
-                  />
-                </div>
-                <div class="blog-posts-meta mt-3">
-                  <ul>
-                    <li><i class="fa fa-user"></i><a href="#">BSmart</a></li>
-                    <li>
-                      <i class="fa fa-calendar"></i><a href="#">12/30/2023</a>
-                    </li>
-                    <li>
-                      <i class="fa fa-tags"></i
-                      ><a href="#">Lập trình & thiết kế web</a>
-                    </li>
-                  </ul>
-                </div>
-                <h3>
-                  <a href="blog-detail.html"
-                    >Tìm hiểu phát triển ứng dụng web từ các chuyên gia</a
-                  >
-                </h3>
-                <div class="entry-content">
-                  <p>
-                    Điều quan trọng là phải có một dịch vụ khách hàng tốt, một
-                    nhà cung cấp dịch vụ khách hàng. Hendrerit của Hạm đội Xe
-                    tải trẻ em không có thùng. Trong trừ khi hoặc, xe tải hoặc,
-                    protein đó, bất động sản hoặc, trừ khi. Nhưng giá cả, ligula
-                    sollicitudin laoreet viverra, tra tấn các thành viên libero
-                    leo, eget nhạt nhẽo bây giờ tra tấn eu nibh. Không mềm. Cứ
-                    như vậy. điện thoại thông minh Nhưng nhu cầu, trước khi và
-                    vulutate volutpat, eros pede [...]
-                  </p>
-                  <div>
-                    <a
-                      href="./blog-detail.html"
-                      class="btn btn-primary-custom p-2"
-                      >Đọc thêm</a
-                    >
-                  </div>
-                </div>
-                <hr />
-              </div>
-              <!--end blog post-->
-
-              <!--start blog post-->
-              <div class="blog-posts">
-                <div class="blog-post-thumb">
-                  <img
-                    src="assets/images/blog-member.jpg"
-                    alt="image"
-                    class="img-fluid"
-                  />
-                </div>
-                <div class="blog-posts-meta mt-3">
-                  <ul>
-                    <li><i class="fa fa-user"></i><a href="#">bsmart</a></li>
-                    <li>
-                      <i class="fa fa-calendar"></i><a href="#">12/30/2022</a>
-                    </li>
-                    <li>
-                      <i class="fa fa-tags"></i
-                      ><a href="#">Lập trình & thiết kế web</a>
-                    </li>
-                  </ul>
-                </div>
-                <h3>
-                  <a href="blog-detail.html"
-                    >Mở rộng cơ hội nghề nghiệp của bạn với Python</a
-                  >
-                </h3>
-                <div class="entry-content">
-                  <p>
-                    Điều quan trọng là phải có một dịch vụ khách hàng tốt, một
-                    nhà cung cấp dịch vụ khách hàng. Hendrerit của Hạm đội Xe
-                    tải trẻ em không có thùng. Trong trừ khi hoặc, xe tải hoặc,
-                    protein đó, bất động sản hoặc, trừ khi. Nhưng giá cả, ligula
-                    sollicitudin laoreet viverra, tra tấn các thành viên libero
-                    leo, eget nhạt nhẽo bây giờ tra tấn eu nibh. Không mềm. Cứ
-                    như vậy. điện thoại thông minh Nhưng nhu cầu, trước khi và
-                    vulutate volutpat, eros pede [...]
-                  </p>
-                  <div>
-                    <a
-                      href="./blog-detail.html"
-                      class="btn btn-primary-custom p-2"
-                      >đọc thêm</a
-                    >
-                  </div>
-                </div>
-              </div>
-              <!--end blog post-->
-
-              <!--end blog post-->
-
-              <div class="blog-pagination text-center">
-                <ul>
-                  <li><a href="#" class="active">1</a></li>
-                  <li><a href="#">2</a></li>
-                  <li>
-                    <a href="#"><i class="fa fa-angle-right"></i></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <!--start sidebar-->
-            <div class="col-md-4 col-sm-12">
-              <div class="blog-sidebar">
-                <!--start widget-->
-                <div class="search-form widget">
-                  <form>
-                    <input
-                      type="text"
-                      placeholder="Tìm kiếm bài viết..."
-                      class="form-control"
-                    />
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                  </form>
-                </div>
-                <!--end widget-->
-                <!--start widget-->
-                <div class="latest-post widget">
-                  <h4>Bài viết gần đây</h4>
-                  <!--start recent post single-->
-                  <div class="recent-post-single">
-                    <div class="recent-post-cont two">
-                      <h6>
-                        <a class="recent-news-title" href="#"
-                          >Tìm hiểu phát triển ứng dụng web từ các chuyên gia</a
-                        >
-                      </h6>
-                      <p class="recent-post-date mt-2">12/30/2023</p>
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+              <div class="box-annottation">
+                <h3>Thông báo</h3>
+                <button>Tất cả</button><button>Chưa đọc</button>
+                <div class="box-content-annatation">
+                  <div class="col-xs-2">
+                    <div class="img-annotation">
+                      <img
+                        src="./assets/images/avatar-mentor-1.jpg"
+                        alt="avatar"
+                      />
                     </div>
                   </div>
-                  <!--end recent post single-->
+                  <div class="col-xs-10">
+                    <div class="content-annotation">
+                      <p class="title">Đăng ký môn học</p>
+                      <p class="content">
+                        Chúc mừng bạn đã đăng ký môn học thành công
+                      </p>
+                      <p class="timeDate">Ngày 01/01/2023</p>
+                    </div>
+                  </div>
                 </div>
-                <!--end widget-->
-                <!--start widget-->
-                <div class="menu-list widget">
-                  <h4>Thể loại</h4>
-                  <ul class="widget-list">
-                    <li>
-                      <a href="#"
-                        ><i class="fa fa-angle-right"></i> Kinh doanh</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-angle-right"></i> Khoa học</a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-angle-right"></i> Giáo dục</a>
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><i class="fa fa-angle-right"></i> Thiết kế đồ họa</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><i class="fa fa-angle-right"></i> Lập trình</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><i class="fa fa-angle-right"></i>Thiết kế web</a
-                      >
-                    </li>
-                  </ul>
+
+                <!-- data test -->
+                <div class="box-content-annatation">
+                  <div class="col-xs-2">
+                    <div class="img-annotation">
+                      <img
+                        src="./assets/images/avatar-mentor-1.jpg"
+                        alt="avatar"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-xs-10">
+                    <div class="content-annotation">
+                      <p class="title">Học phí</p>
+                      <p class="content">
+                        Chúc mừng bạn đã đóng học phí thành công
+                      </p>
+                      <p class="timeDate">Ngày 01/01/2023</p>
+                    </div>
+                  </div>
                 </div>
-                <!--end widget-->
-                <!--start widget-->
-                <div class="menu-list widget">
-                  <h4>Dòng thời gian</h4>
-                  <ul class="widget-list">
-                    <li>
-                      <a href="#"
-                        ><i class="fa fa-angle-right"></i> Tháng 5, 2023</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><i class="fa fa-angle-right"></i> Tháng 6, 2023</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><i class="fa fa-angle-right"></i> Tháng 7, 2023</a
-                      >
-                    </li>
-                  </ul>
+                <div class="box-content-annatation">
+                  <div class="col-xs-2">
+                    <div class="img-annotation">
+                      <img
+                        src="./assets/images/avatar-mentor-1.jpg"
+                        alt="avatar"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-xs-10">
+                    <div class="content-annotation">
+                      <p class="title">React JS</p>
+                      <p class="content">
+                        Lớp học sẽ bắt đầu vào ngày 1/2/2023
+                      </p>
+                      <p class="timeDate">Ngày 01/01/2023</p>
+                    </div>
+                  </div>
                 </div>
-                <!--end widget-->
-                <!--start widget-->
-                <div class="menu-list widget">
-                  <h4>Lưu trữ</h4>
-                  <ul class="widget-list">
-                    <li>
-                      <a href="#"><i class="fa fa-angle-right"></i> Đăng ký</a>
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><i class="fa fa-angle-right"></i> Đăng nhập</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><i class="fa fa-angle-right"></i> Entries feed</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><i class="fa fa-angle-right"></i> WordPress.org</a
-                      >
-                    </li>
-                  </ul>
+                <div class="box-content-annatation">
+                  <div class="col-xs-2">
+                    <div class="img-annotation">
+                      <img
+                        src="./assets/images/avatar-mentor-1.jpg"
+                        alt="avatar"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-xs-10">
+                    <div class="content-annotation">
+                      <p class="title">Tài khoản</p>
+                      <p class="content">
+                        Tài khoản 0919****** SD đầu 1000$ tăng 200$ SD cuối
+                        1200$
+                      </p>
+                      <p class="timeDate">Ngày 01/01/2023</p>
+                    </div>
+                  </div>
                 </div>
-                <!--end widget-->
+                <div class="box-content-annatation">
+                  <div class="col-xs-2">
+                    <div class="img-annotation">
+                      <img
+                        src="./assets/images/avatar-mentor-1.jpg"
+                        alt="avatar"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-xs-10">
+                    <div class="content-annotation">
+                      <p class="title">Tài khoản</p>
+                      <p class="content">
+                        Tài khoản 0919****** SD đầu 1000$ giảm 200$ SD cuối 800$
+                      </p>
+                      <p class="timeDate">Ngày 01/01/2023</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="box-content-annatation">
+                  <div class="col-xs-2">
+                    <div class="img-annotation">
+                      <img
+                        src="./assets/images/avatar-mentor-1.jpg"
+                        alt="avatar"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-xs-10">
+                    <div class="content-annotation">
+                      <p class="title">Học tập</p>
+                      <p class="content">Bạn vừa bị đuổi học</p>
+                      <p class="timeDate">Ngày 01/01/2023</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="box-content-annatation">
+                  <div class="col-xs-2">
+                    <div class="img-annotation">
+                      <img
+                        src="./assets/images/avatar-mentor-1.jpg"
+                        alt="avatar"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-xs-10">
+                    <div class="content-annotation">
+                      <p class="title">Đăng ký môn học</p>
+                      <p class="content">
+                        Chúc mừng bạn đã đăng ký môn học thành công
+                      </p>
+                      <p class="timeDate">Ngày 01/01/2023</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- End -->
+              </div>
+              <div class="btn-showmore">
+                <button>Show more</button>
               </div>
             </div>
-            <!--end sidebar-->
+            <div class="col-md-3"></div>
           </div>
         </div>
       </section>
-      <!-- End blog section content -->
-      <!-- Start footer -->
+      <!-- End annotation -->
       <footer class="footer">
         <div class="container">
           <div class="row">
@@ -720,7 +643,6 @@
           </p>
         </div>
       </footer>
-      <!-- End footer -->
     </div>
     <!-- Import script bootstrap V5 -->
     <script
