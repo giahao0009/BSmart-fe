@@ -28,8 +28,11 @@
 // Import scss content wallet history
 @import "./private/walletHistory/_index.scss";
 
-// Import scss content wallet history
+// Import scss content annotation history
 @import "./private/annotation/_index.scss";
+
+// Import scss content feedback history
+@import "./private/feedback/_index.scss";
 
 // Import scss login mobile page
 @import "./private/loginMobilePage/_index";
