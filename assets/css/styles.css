@@ -3025,6 +3025,128 @@ body {
   transition: all 0.3s;
 }
 
+.lms-wrapper .banner__lms {
+  background-image: url(../images/banner-2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 110px 0 100px;
+  position: relative;
+  z-index: -2;
+}
+.lms-wrapper .banner__lms h2 {
+  color: #ff630e;
+  line-height: 30px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 49px;
+}
+.lms-wrapper .banner__lms p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #f5f5f5;
+}
+.lms-wrapper .banner__lms p a {
+  color: #f5f5f5;
+  transition: all 0.3s;
+}
+.lms-wrapper .banner__lms p a:hover {
+  color: #ff630e;
+}
+.lms-wrapper .banner__lms:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: rgba(5, 1, 51, 0.7);
+}
+.lms-wrapper .section-lms {
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+.lms-wrapper .section-lms .box-homework {
+  border-radius: 8px;
+  padding: 20px 20px;
+  -webkit-box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
+  box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
+}
+.lms-wrapper .section-lms .box-homework .box-title {
+  color: #ff630e;
+  line-height: 30px;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+.lms-wrapper .section-lms .box-homework select {
+  width: 100%;
+  height: 3rem;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
+  box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
+  border-radius: 8px;
+}
+.lms-wrapper .section-lms .box-homework .btn-time button {
+  width: 100%;
+  height: 3rem;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
+  box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
+  border-radius: 8px;
+  border: solid 0px;
+  text-align: left;
+}
+.lms-wrapper .section-lms .box-homework .btn-time button .title-date .txt {
+  text-align: left;
+}
+.lms-wrapper .section-lms .box-homework .btn-time button .numHw {
+  text-align: center;
+}
+.lms-wrapper .section-lms .box-homework .btn-time button:focus {
+  background-color: #ff630e;
+}
+.lms-wrapper .section-lms .box-homework .btn-time button .fa-chevron-up {
+  display: none;
+}
+.lms-wrapper .section-lms .box-homework .btn-time button:focus-within .fa-chevron-down {
+  display: none;
+}
+.lms-wrapper .section-lms .box-homework .btn-time button:focus-within .fa-chevron-up {
+  display: block;
+}
+.lms-wrapper .section-lms .box-homework .btn-time .btn-content {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 10px;
+  text-align: left;
+}
+.lms-wrapper .section-lms .box-homework .btn-time .btn-content .content-hw-show {
+  -webkit-box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
+  box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.lms-wrapper .section-lms .box-homework .btn-time .btn-content .title {
+  color: gray;
+  line-height: 30px;
+  padding-left: 20px;
+  font-weight: 500;
+  font-size: 16px;
+}
+.lms-wrapper .section-lms .box-homework .btn-time .btn-content .content {
+  padding-left: 20px;
+  color: gray;
+  font-weight: 500;
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+
 .footer {
   background-color: #0e0a38;
   padding: 90px 0;
