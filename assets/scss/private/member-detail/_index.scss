@@ -204,6 +204,18 @@
               }
             }
           }
+          .course-info-current {
+            p {
+              display: flex;
+              justify-content: space-between;
+              color: $primary-color;
+              font-weight: 400;
+              margin-bottom: 5px;
+              span {
+                color: $secondary-color;
+              }
+            }
+          }
         }
       }
     }

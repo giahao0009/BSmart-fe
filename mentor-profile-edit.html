@@ -37,6 +37,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Import swiper -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
     <!-- Import css reset -->
     <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
     <!-- Import css styles -->
@@ -451,6 +456,13 @@
                       >Rút tiền</a
                     >
                   </div>
+                  <div class="mt-2">
+                    <a
+                      href="./mentor-profile.html"
+                      class="btn btn-primary-custom w-100"
+                      >Danh sách khoá học</a
+                    >
+                  </div>
                 </div>
               </div>
               <div class="member-operation mt-3">
@@ -476,6 +488,44 @@
                 <form action="#" method="post" class="form-group-custome">
                   <h3>Thông tin cá nhân</h3>
                   <hr />
+                  <div class="mb-3">
+                    <label class="form-label form-label-custom mb-1"
+                      >Avatar</label
+                    >
+                    <div class="avatar" id="avatar">
+                      <div
+                        id="preview"
+                        class="border border-dark p-2 d-inline-block rounded"
+                      >
+                        <img
+                          src="./assets/images/avatar-mentor-1.jpg"
+                          id="avatarImage"
+                          class="avatar_img rounded"
+                        />
+                      </div>
+                      <div class="avatar_upload row mt-1">
+                        <div class="col-md-10 col-12">
+                          <input
+                            class="form-control w-100 mt-2"
+                            type="file"
+                            id="formFileAvatar"
+                            onchange="previewAvatar()"
+                          />
+                        </div>
+                        <div class="col-md-2 col-12">
+                          <button
+                            onclick="clearAvatar()"
+                            class="btn btn-outline-secondary-custom p-2 w-100 mt-2 btn-clear"
+                          >
+                            Xoá ảnh
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mt-2">
+                      <p style="color: #999">Nên chọn ảnh vuông</p>
+                    </div>
+                  </div>
                   <div class="mb-3">
                     <label class="form-label form-label-custom">Họ tên</label>
                     <input
@@ -512,12 +562,86 @@
                       value="0946005077"
                     />
                   </div>
+                  <div class="mb-3">
+                    <label class="form-label form-label-custom"
+                      >Chứng minh nhân dân</label
+                    >
+                    <div class="swiper mySwiper mb-3 swiper-id-card">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide slide_1">
+                          <div class="container-fluid col-md-12 slide-content">
+                            <img
+                              id="frame1"
+                              src="./assets/images/upload-img.jpg"
+                              class="img-fluid mb-2"
+                            />
+                            <div class="text-start mb-2 mt-2"></div>
+                            <div class="row align-items-center group-title">
+                              <div class="col-md-2 col-12">
+                                <label class="text-start">Mặt trước</label>
+                              </div>
+                              <div class="col-md-8 col-12">
+                                <input
+                                  class="form-control w-100 me-2"
+                                  type="file"
+                                  id="formFile"
+                                  onchange="preview1()"
+                                />
+                              </div>
+                              <div class="col-md-2 col-12">
+                                <button
+                                  onclick="clearImage1()"
+                                  class="btn btn-outline-secondary-custom p-2 w-100"
+                                >
+                                  Xoá ảnh
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide slide_2">
+                          <div class="container-fluid col-md-12 slide-content">
+                            <img
+                              id="frame2"
+                              src="./assets/images/upload-img.jpg"
+                              class="img-fluid mb-2 frame"
+                            />
+                            <div class="text-start mb-2 mt-2"></div>
+                            <div class="row align-items-center group-title">
+                              <div class="col-md-2">
+                                <label class="text-start me-2">Mặt sau</label>
+                              </div>
+                              <div class="col-md-8">
+                                <input
+                                  class="form-control w-100 me-2"
+                                  type="file"
+                                  id="formFile2"
+                                  onchange="preview2()"
+                                />
+                              </div>
+                              <div class="col-md-2">
+                                <button
+                                  onclick="clearImage2()"
+                                  class="btn btn-outline-secondary-custom p-2 w-100"
+                                >
+                                  Xoá ảnh
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                      <div class="swiper-button-next"></div>
+                      <div class="swiper-button-prev"></div>
+                    </div>
+                  </div>
                   <div class="mb-3 text-end">
                     <button
                       type="submit"
                       class="btn btn-primary-custom p-2 w-100"
                     >
-                      Thay đổi
+                      Cập nhật
                     </button>
                   </div>
                 </form>
@@ -563,7 +687,7 @@
                       type="submit"
                       class="btn btn-primary-custom p-2 w-100"
                     >
-                      Thay đổi
+                      Cập nhật
                     </button>
                   </div>
                 </form>
@@ -580,6 +704,16 @@
                   </div>
                   <div class="mb-3">
                     <label class="form-label form-label-custom">Password</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      value="123456789"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label form-label-custom"
+                      >Xác nhận Password</label
+                    >
                     <input
                       type="password"
                       class="form-control"
@@ -611,7 +745,7 @@
                       type="submit"
                       class="btn btn-primary-custom p-2 w-100"
                     >
-                      Thay đổi
+                      Cập nhật
                     </button>
                   </div>
                 </form>
@@ -650,7 +784,7 @@
                       type="submit"
                       class="btn btn-primary-custom p-2 w-100"
                     >
-                      Thay đổi
+                      Cập nhật
                     </button>
                   </div>
                 </form>
@@ -781,7 +915,40 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <!-- Import swiper -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <!-- Script -->
+    <script>
+      function preview1() {
+        frame1.src = "";
+        frame1.src = URL.createObjectURL(event.target.files[0]);
+      }
+      function clearImage1() {
+        event.preventDefault();
+        document.getElementById("formFile").value = null;
+        frame1.src = "./assets/images/upload-img.jpg";
+      }
+      function preview2() {
+        frame2.src = "";
+        frame2.src = URL.createObjectURL(event.target.files[0]);
+      }
+      function clearImage2() {
+        event.preventDefault();
+        document.getElementById("formFile2").value = null;
+        frame2.src = "./assets/images/upload-img.jpg";
+      }
+
+      // Upload avatar
+      function previewAvatar() {
+        avatarImage.src = "";
+        avatarImage.src = URL.createObjectURL(event.target.files[0]);
+      }
+      function clearAvatar() {
+        event.preventDefault();
+        document.getElementById("formFileAvatar").value = null;
+        avatarImage.src = "./assets/images/avatar-mentor-1.jpg";
+      }
+    </script>
     <script type="text/javascript" src="./assets/js/main.js"></script>
   </body>
 </html>

@@ -16,5 +16,10 @@
         line-height: 46px;
       }
     }
+    .avatar_img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+    }
   }
 }

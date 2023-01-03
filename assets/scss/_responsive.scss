@@ -228,6 +228,13 @@
       }
     }
   }
+  // Swiper
+  .swiper-slide {
+    button {
+      font-size: 12px;
+      padding: 3px !important;
+    }
+  }
   // Banner
   .banner {
     padding: 0;
@@ -382,6 +389,16 @@
     }
   }
   /* ------------------------ */
+  .member-detail-wrapper {
+    .mentor-profile-edit-content {
+      .avatar {
+        .btn-clear {
+          font-size: 15px;
+          padding: 3px !important;
+        }
+      }
+    }
+  }
 }
 
 /* Mobile */
@@ -404,6 +421,23 @@
   }
   .login-form-container {
     display: none;
+  }
+  // Swiper
+  .swiper-slide {
+    button {
+      font-size: 12px;
+      padding: 2px;
+    }
+    img {
+      height: 50%;
+    }
+    .group-title {
+      margin-top: 20px;
+      justify-content: space-between;
+      & > div {
+        margin-bottom: 18px;
+      }
+    }
   }
   /* ------------------------ */
   /* Header */
@@ -841,6 +875,17 @@
     }
   }
   /* ------------------------ */
+
+  .member-detail-wrapper {
+    .mentor-profile-edit-content {
+      .avatar {
+        .btn-clear {
+          font-size: 15px;
+          padding: 3px;
+        }
+      }
+    }
+  }
   /* Footer */
   /* ------------------------ */
 }

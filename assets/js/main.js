@@ -147,6 +147,14 @@ $(document).ready(function () {
     console.log(e);
   });
 
+  // Initial swiper
+  let swiper = new Swiper(".mySwiper", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
   // Login with google demo
   var googleUser = {};
   var startApp = function () {

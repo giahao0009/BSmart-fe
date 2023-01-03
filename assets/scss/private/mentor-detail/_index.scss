@@ -208,6 +208,12 @@
             font-weight: 700;
             line-height: 34px;
           }
+          .course-info-current {
+            p {
+              font-size: 16px;
+              color: $secondary-color;
+            }
+          }
         }
       }
     }

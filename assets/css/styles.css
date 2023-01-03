@@ -236,6 +236,61 @@ span.buttonText {
   font-family: "Roboto", sans-serif;
 }
 
+.swiper.swiper-id-card {
+  width: 100%;
+  height: 420px;
+}
+
+.swiper-slide {
+  text-align: center;
+  /* Center slide text vertically */
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  outline: none;
+}
+
+div.swiper-button-next,
+div.swiper-button-prev {
+  top: 60%;
+}
+
+.slide_1 {
+  border-radius: 10px;
+  padding: 10px;
+  height: 100%;
+}
+.slide_1 .slide-content {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  height: 100%;
+}
+
+.slide_2 {
+  border-radius: 10px;
+  padding: 10px;
+  height: 100%;
+}
+.slide_2 .slide-content {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  height: 100%;
+}
+
 .header-top {
   background-color: #0e0a38;
   overflow: hidden;
@@ -1936,6 +1991,10 @@ span.buttonText {
   font-weight: 700;
   line-height: 34px;
 }
+.mentor-detail-wrapper .content-info-mentor .courses .course-card .card-body .course-info-current p {
+  font-size: 16px;
+  color: #ff630e;
+}
 
 .blog-wrapper .banner__blog {
   background-image: url(../images/banner-2.jpg);
@@ -2327,6 +2386,16 @@ span.buttonText {
 }
 .member-detail-wrapper .content-info-mentor .courses .course-card .card-body .skill-single .progress .progress-bar {
   background-color: #ff630e;
+}
+.member-detail-wrapper .content-info-mentor .courses .course-card .card-body .course-info-current p {
+  display: flex;
+  justify-content: space-between;
+  color: #0e0a38;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.member-detail-wrapper .content-info-mentor .courses .course-card .card-body .course-info-current p span {
+  color: #ff630e;
 }
 .member-detail-wrapper .edit-content {
   padding: 100px 0;
@@ -2863,6 +2932,12 @@ span.buttonText {
   font-size: 36px;
   line-height: 46px;
 }
+.member-detail-wrapper .mentor-profile-edit-content .avatar_img {
+  width: 200px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 
 .footer {
   background-color: #0e0a38;
@@ -3207,6 +3282,10 @@ span.buttonText {
     color: #0e0a38;
     color: 16px;
   }
+  .swiper-slide button {
+    font-size: 12px;
+    padding: 3px !important;
+  }
   .banner {
     padding: 0;
   }
@@ -3339,6 +3418,10 @@ span.buttonText {
     margin-top: 20px !important;
   }
   /* ------------------------ */
+  .member-detail-wrapper .mentor-profile-edit-content .avatar .btn-clear {
+    font-size: 15px;
+    padding: 3px !important;
+  }
 }
 /* Mobile */
 @media only screen and (max-width: 767px) {
@@ -3360,6 +3443,20 @@ span.buttonText {
   }
   .login-form-container {
     display: none;
+  }
+  .swiper-slide button {
+    font-size: 12px;
+    padding: 2px;
+  }
+  .swiper-slide img {
+    height: 50%;
+  }
+  .swiper-slide .group-title {
+    margin-top: 20px;
+    justify-content: space-between;
+  }
+  .swiper-slide .group-title > div {
+    margin-bottom: 18px;
   }
   /* ------------------------ */
   /* Header */
@@ -3727,6 +3824,10 @@ span.buttonText {
     font-size: 25px;
   }
   /* ------------------------ */
+  .member-detail-wrapper .mentor-profile-edit-content .avatar .btn-clear {
+    font-size: 15px;
+    padding: 3px;
+  }
   /* Footer */
   /* ------------------------ */
 }
