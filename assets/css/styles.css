@@ -288,6 +288,35 @@ div.swiper-button-next,
 div.swiper-button-prev {
   top: 60%;
 }
+div.swiper-button-next:after,
+div.swiper-button-prev:after {
+  color: #ff630e;
+}
+
+.swiper.swiper-bachelor {
+  width: 100%;
+  height: 100%;
+}
+.swiper.swiper-bachelor .swiper-slide {
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+.swiper.swiper-bachelor .swiper-slide .img-wrapper {
+  max-height: 400px;
+}
+.swiper.swiper-bachelor .swiper-slide .img-wrapper img {
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.swiper.swiper-bachelor .swiper-slide.slide_add > div {
+  min-height: 578px;
+  height: 578px;
+}
+.swiper.swiper-bachelor .swiper-slide.slide_add > div i {
+  font-size: 60px;
+}
 
 .header-top {
   background-color: #0e0a38;

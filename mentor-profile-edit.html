@@ -649,38 +649,70 @@
                   <h3>Thông tin bằng cấp</h3>
                   <hr />
                   <div class="mb-3">
-                    <label class="form-label form-label-custom"
-                      >Tên bằng cấp</label
-                    >
-                    <input
-                      type="text"
-                      class="form-control"
-                      value="Mentor Cường"
-                    />
-                  </div>
-                  <div class="mb-3">
-                    <label class="form-label form-label-custom"
-                      >Ngày nhận</label
-                    >
-                    <input
-                      type="text"
-                      class="form-control"
-                      value="Mentor Cường"
-                    />
-                  </div>
-                  <div class="mb-3">
-                    <label class="form-label form-label-custom"
-                      >Link liên kết</label
-                    >
-                    <input
-                      type="text"
-                      class="form-control"
-                      value="Mentor Cường"
-                    />
-                  </div>
-                  <hr />
-                  <div class="btn btn-outline-secondary-custom w-100 p-1 mb-3">
-                    <i class="fa fa-plus"></i>
+                    <div class="swiper mySwiper mb-3 swiper-bachelor">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide slide_1">
+                          <div class="container-fluid col-md-12 slide-content">
+                            <div class="img-wrapper">
+                              <img
+                                id="frame1"
+                                src="./assets/images/University-Degree.jpg"
+                                class="img-fluid mb-2"
+                              />
+                            </div>
+
+                            <div class="text-start mb-2 mt-2"></div>
+                            <div class="row align-items-center group-title">
+                              <div class="col-md-2 col-12">
+                                <label class="text-start">Hình ảnh</label>
+                              </div>
+                              <div class="col-md-8 col-12">
+                                <input
+                                  class="form-control w-100 me-2"
+                                  type="file"
+                                  id="formFile"
+                                  onchange="preview1()"
+                                />
+                              </div>
+                              <div class="col-md-2 col-12">
+                                <button
+                                  onclick="clearImage1()"
+                                  class="btn btn-outline-secondary-custom p-2 w-100"
+                                >
+                                  Xoá ảnh
+                                </button>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12 col-12 mt-3 mb-3">
+                                <div class="text-start">
+                                  <label class="form-label form-label-custom"
+                                    >Tên bằng</label
+                                  >
+                                </div>
+                                <input
+                                  type="text"
+                                  value="Tên bằng"
+                                  class="form-control"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide slide_add">
+                          <div class="container-fluid col-md-12 slide-content">
+                            <button
+                              class="btn btn-outline-secondary-custom w-100 h-100"
+                            >
+                              <i class="fa fa-plus" aria-hidden="true"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                      <div class="swiper-button-next"></div>
+                      <div class="swiper-button-prev"></div>
+                    </div>
                   </div>
                   <div class="mb-3 text-end">
                     <button

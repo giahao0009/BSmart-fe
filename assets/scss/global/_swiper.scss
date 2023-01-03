@@ -55,4 +55,33 @@
 div.swiper-button-next,
 div.swiper-button-prev {
   top: 60%;
+  &:after {
+    color: $secondary-color;
+  }
+}
+
+.swiper.swiper-bachelor {
+  width: 100%;
+  height: 100%;
+  .swiper-slide {
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    .img-wrapper {
+      max-height: 400px;
+      img {
+        height: 400px;
+        object-fit: cover;
+      }
+    }
+  }
+  .swiper-slide.slide_add {
+    & > div {
+      min-height: 578px;
+      height: 578px;
+      i {
+        font-size: 60px;
+      }
+    }
+  }
 }
