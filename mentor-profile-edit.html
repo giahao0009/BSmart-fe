@@ -919,6 +919,12 @@
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <!-- Script -->
     <script>
+      let swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
       function preview1() {
         frame1.src = "";
         frame1.src = URL.createObjectURL(event.target.files[0]);
