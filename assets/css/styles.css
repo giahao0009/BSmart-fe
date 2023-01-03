@@ -240,6 +240,26 @@ span.buttonText {
   width: 100%;
   height: 420px;
 }
+.swiper.swiper-id-card .slide_1 {
+  border-radius: 10px;
+  padding: 10px;
+  height: 100%;
+}
+.swiper.swiper-id-card .slide_1 .slide-content {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  height: 100%;
+}
+.swiper.swiper-id-card .slide_2 {
+  border-radius: 10px;
+  padding: 10px;
+  height: 100%;
+}
+.swiper.swiper-id-card .slide_2 .slide-content {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  height: 100%;
+}
 
 .swiper-slide {
   text-align: center;
@@ -267,28 +287,6 @@ span.buttonText {
 div.swiper-button-next,
 div.swiper-button-prev {
   top: 60%;
-}
-
-.slide_1 {
-  border-radius: 10px;
-  padding: 10px;
-  height: 100%;
-}
-.slide_1 .slide-content {
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  height: 100%;
-}
-
-.slide_2 {
-  border-radius: 10px;
-  padding: 10px;
-  height: 100%;
-}
-.slide_2 .slide-content {
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  height: 100%;
 }
 
 .header-top {
