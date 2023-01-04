@@ -318,6 +318,49 @@ div.swiper-button-prev:after {
   font-size: 60px;
 }
 
+.swiper.swiper-typical-course .course-card {
+  width: 100% !important;
+}
+.swiper.swiper-typical-course .course-card .banner-course {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.swiper.swiper-typical-course .course-card .logo-course {
+  padding: 0;
+  border-radius: 10px;
+}
+.swiper.swiper-typical-course .course-card .logo-course img {
+  margin: 0;
+}
+.swiper.swiper-typical-course .course-card .card-title {
+  text-align: start;
+}
+.swiper.swiper-typical-course .course-card .sub-title {
+  text-align: start;
+}
+.swiper.swiper-typical-course .course-card .testi-rating {
+  text-align: start;
+}
+.swiper.swiper-typical-course .course-card .btn-invite-course {
+  width: 100%;
+}
+
+.swiper-typical-mentor div.swiper-button-next,
+.swiper-typical-mentor div.swiper-button-prev {
+  top: 50%;
+}
+.swiper-typical-mentor div.swiper-button-next:after,
+.swiper-typical-mentor div.swiper-button-prev:after {
+  color: #ff630e;
+}
+
+.swiper-testimonial .card-custom {
+  width: 100%;
+}
+.swiper-testimonial .card-custom img {
+  margin: 0;
+}
+
 .header-top {
   background-color: #0e0a38;
   overflow: hidden;

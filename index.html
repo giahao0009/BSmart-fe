@@ -37,6 +37,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
     <!-- Import css reset -->
     <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
     <!-- Import css styles -->
@@ -96,6 +101,7 @@
                 <a class="mean-non-expand" href="#">-</a>
               </li>
               <li><a href="./blog.html">Blog</a></li>
+              <li><a href="#">Tuyển dụng</a></li>
             </ul>
           </div>
           <div class="sidebar-bottom">
@@ -346,6 +352,11 @@
                           </li>
                         </ul>
                       </li>
+                      <li>
+                        <a href="#" class="nav-link nav-link-custom"
+                          >Tuyển dụng</a
+                        >
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -559,302 +570,335 @@
         <div class="container">
           <div class="courses-content">
             <h2 class="section-heading text-center">Khoá học tiêu biểu</h2>
-            <div class="owl-carousel owl-theme">
-              <div class="item d-flex justify-content-center">
-                <div class="card course-card">
-                  <div
-                    class="banner-course"
-                    style="
-                      background-image: url(./assets/images/devops-course-banner.png);
-                    "
-                  >
-                    <div class="logo-course">
-                      <img
-                        src="./assets/images/avatar-mentor-1.jpg"
-                        alt="Logo devops"
-                      />
+            <div class="swiper swiper-typical-course">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="card course-card">
+                    <div
+                      class="banner-course"
+                      style="
+                        background-image: url(./assets/images/devops-course-banner.png);
+                      "
+                    >
+                      <div class="logo-course">
+                        <img
+                          src="./assets/images/avatar-mentor-1.jpg"
+                          alt="Logo devops"
+                        />
+                      </div>
                     </div>
-                  </div>
-                  <div class="card-body pt-5">
-                    <h5 class="card-title">Khoá học Devops</h5>
-                    <p class="sub-title">Mentor Cường</p>
-                    <p class="description">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s
-                    </p>
-                    <div class="testi-rating">
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
+                    <div class="card-body pt-5">
+                      <h5 class="card-title">Khoá học Devops</h5>
+                      <p class="sub-title">Mentor Cường</p>
+                      <p class="description">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s
+                      </p>
+                      <div class="testi-rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <button class="btn-invite-course mt-2">Tham gia</button>
                     </div>
-                    <button class="btn-invite-course mt-2">Tham gia</button>
                   </div>
                 </div>
-              </div>
-              <div class="item d-flex justify-content-center">
-                <div class="card course-card">
-                  <div
-                    class="banner-course"
-                    style="
-                      background-image: url(./assets/images/front-end-course.png);
-                    "
-                  >
-                    <div class="logo-course">
-                      <img
-                        src="./assets/images/avatar-mentor-2.jpg"
-                        alt="Logo devops"
-                      />
+                <div class="swiper-slide">
+                  <div class="card course-card">
+                    <div
+                      class="banner-course"
+                      style="
+                        background-image: url(./assets/images/front-end-course.png);
+                      "
+                    >
+                      <div class="logo-course">
+                        <img
+                          src="./assets/images/avatar-mentor-2.jpg"
+                          alt="Logo devops"
+                        />
+                      </div>
                     </div>
-                  </div>
-                  <div class="card-body pt-5">
-                    <h5 class="card-title">Khoá học Front End</h5>
-                    <p class="sub-title">Khoá học Long</p>
-                    <p class="description">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s
-                    </p>
-                    <div class="testi-rating">
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                    </div>
+                    <div class="card-body pt-5">
+                      <h5 class="card-title">Khoá học Front End</h5>
+                      <p class="sub-title">Khoá học Long</p>
+                      <p class="description">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s
+                      </p>
+                      <div class="testi-rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
 
-                    <button class="btn-invite-course mt-2">Tham gia</button>
+                      <button class="btn-invite-course mt-2">Tham gia</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card course-card">
+                    <div
+                      class="banner-course"
+                      style="
+                        background-image: url(./assets/images/net-course-banner.jpg);
+                      "
+                    >
+                      <div class="logo-course">
+                        <img
+                          src="./assets/images/avatar-mentor-3.jpg"
+                          alt="Logo devops"
+                        />
+                      </div>
+                    </div>
+                    <div class="card-body pt-5">
+                      <h5 class="card-title">Khoá học .NET Basic</h5>
+                      <p class="sub-title">Mentor Phúc</p>
+                      <p class="description">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s
+                      </p>
+                      <div class="testi-rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <button class="btn-invite-course mt-2">Tham gia</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card course-card">
+                    <div
+                      class="banner-course"
+                      style="
+                        background-image: url(./assets/images/net-mvc-course.png);
+                      "
+                    >
+                      <div class="logo-course">
+                        <img
+                          src="./assets/images/avatar-mentor-1.jpg"
+                          alt="Logo devops"
+                        />
+                      </div>
+                    </div>
+                    <div class="card-body pt-5">
+                      <h5 class="card-title">Khoá học .NET MVC</h5>
+                      <p class="sub-title">Mentor Cường</p>
+                      <p class="description">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s
+                      </p>
+                      <div class="testi-rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <button class="btn-invite-course mt-2">Tham gia</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card course-card">
+                    <div
+                      class="banner-course"
+                      style="
+                        background-image: url(./assets/images/net-api-course.jpg);
+                      "
+                    >
+                      <div class="logo-course">
+                        <img
+                          src="./assets/images/avatar-mentor-2.jpg"
+                          alt="Logo devops"
+                        />
+                      </div>
+                    </div>
+                    <div class="card-body pt-5">
+                      <h5 class="card-title">Khoá học .NET API</h5>
+                      <p class="sub-title">Mentor Long</p>
+                      <p class="description">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s
+                      </p>
+                      <div class="testi-rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <button class="btn-invite-course mt-2">Tham gia</button>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="item d-flex justify-content-center">
-                <div class="card course-card">
-                  <div
-                    class="banner-course"
-                    style="
-                      background-image: url(./assets/images/net-course-banner.jpg);
-                    "
-                  >
-                    <div class="logo-course">
-                      <img
-                        src="./assets/images/avatar-mentor-3.jpg"
-                        alt="Logo devops"
-                      />
-                    </div>
-                  </div>
-                  <div class="card-body pt-5">
-                    <h5 class="card-title">Khoá học .NET Basic</h5>
-                    <p class="sub-title">Mentor Phúc</p>
-                    <p class="description">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s
-                    </p>
-                    <div class="testi-rating">
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                    </div>
-                    <button class="btn-invite-course mt-2">Tham gia</button>
-                  </div>
-                </div>
-              </div>
-              <div class="item d-flex justify-content-center">
-                <div class="card course-card">
-                  <div
-                    class="banner-course"
-                    style="
-                      background-image: url(./assets/images/net-mvc-course.png);
-                    "
-                  >
-                    <div class="logo-course">
-                      <img
-                        src="./assets/images/avatar-mentor-1.jpg"
-                        alt="Logo devops"
-                      />
-                    </div>
-                  </div>
-                  <div class="card-body pt-5">
-                    <h5 class="card-title">Khoá học .NET MVC</h5>
-                    <p class="sub-title">Mentor Cường</p>
-                    <p class="description">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s
-                    </p>
-                    <div class="testi-rating">
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                    </div>
-                    <button class="btn-invite-course mt-2">Tham gia</button>
-                  </div>
-                </div>
-              </div>
-              <div class="item d-flex justify-content-center">
-                <div class="card course-card">
-                  <div
-                    class="banner-course"
-                    style="
-                      background-image: url(./assets/images/net-api-course.jpg);
-                    "
-                  >
-                    <div class="logo-course">
-                      <img
-                        src="./assets/images/avatar-mentor-2.jpg"
-                        alt="Logo devops"
-                      />
-                    </div>
-                  </div>
-                  <div class="card-body pt-5">
-                    <h5 class="card-title">Khoá học .NET API</h5>
-                    <p class="sub-title">Mentor Long</p>
-                    <p class="description">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s
-                    </p>
-                    <div class="testi-rating">
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                    </div>
-                    <button class="btn-invite-course mt-2">Tham gia</button>
-                  </div>
-                </div>
-              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="our">
+      <section class="our mb-5">
         <div class="container">
           <h1>Mentor tiêu biểu</h1>
-          <div class="owl-carousel owl-theme">
-            <div class="item">
-              <div class="out__sigle">
-                <img src="./assets/images/instructor-2.jpg" alt="" />
-                <h3>Shane Warne</h3>
-                <h4>Instructor</h4>
-                <div class="instructor-links">
-                  <ul>
-                    <li>
-                      <a href="#"><i class="fa fa-facebook"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-pinterest"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-twitter"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-linkedin"></i></a>
-                    </li>
-                  </ul>
+          <div class="swiper swiper-typical-mentor">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="out__sigle">
+                  <img src="./assets/images/instructor-2.jpg" alt="" />
+                  <h3>Shane Warne</h3>
+                  <h4>Instructor</h4>
+                  <div class="instructor-links">
+                    <ul>
+                      <li>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="out__sigle">
+                  <img src="./assets/images/instructor-2.jpg" alt="" />
+                  <h3>Shane Warne</h3>
+                  <h4>Instructor</h4>
+                  <div class="instructor-links">
+                    <ul>
+                      <li>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="out__sigle">
+                  <img src="./assets/images/instructor-2.jpg" alt="" />
+                  <h3>Shane Warne</h3>
+                  <h4>Instructor</h4>
+                  <div class="instructor-links">
+                    <ul>
+                      <li>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="out__sigle">
+                  <img src="./assets/images/instructor-2.jpg" alt="" />
+                  <h3>Shane Warne</h3>
+                  <h4>Instructor</h4>
+                  <div class="instructor-links">
+                    <ul>
+                      <li>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="out__sigle">
+                  <img src="./assets/images/instructor-2.jpg" alt="" />
+                  <h3>Shane Warne</h3>
+                  <h4>Instructor</h4>
+                  <div class="instructor-links">
+                    <ul>
+                      <li>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="out__sigle">
+                  <img src="./assets/images/instructor-2.jpg" alt="" />
+                  <h3>Shane Warne</h3>
+                  <h4>Instructor</h4>
+                  <div class="instructor-links">
+                    <ul>
+                      <li>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="item">
-              <div class="out__sigle">
-                <img src="./assets/images/instructor-2.jpg" alt="" />
-                <h3>Shane Warne</h3>
-                <h4>Instructor</h4>
-                <div class="instructor-links">
-                  <ul>
-                    <li>
-                      <a href="#"><i class="fa fa-facebook"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-pinterest"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-twitter"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-linkedin"></i></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="out__sigle">
-                <img src="./assets/images/instructor-2.jpg" alt="" />
-                <h3>Shane Warne</h3>
-                <h4>Instructor</h4>
-                <div class="instructor-links">
-                  <ul>
-                    <li>
-                      <a href="#"><i class="fa fa-facebook"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-pinterest"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-twitter"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-linkedin"></i></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="out__sigle">
-                <img src="./assets/images/instructor-2.jpg" alt="" />
-                <h3>Shane Warne</h3>
-                <h4>Instructor</h4>
-                <div class="instructor-links">
-                  <ul>
-                    <li>
-                      <a href="#"><i class="fa fa-facebook"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-pinterest"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-twitter"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-linkedin"></i></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="out__sigle">
-                <img src="./assets/images/instructor-2.jpg" alt="" />
-                <h3>Shane Warne</h3>
-                <h4>Instructor</h4>
-                <div class="instructor-links">
-                  <ul>
-                    <li>
-                      <a href="#"><i class="fa fa-facebook"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-pinterest"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-twitter"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-linkedin"></i></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </section>
@@ -862,126 +906,131 @@
       <section class="testimonial-content" id="blog">
         <div class="container">
           <h2 class="text-center section-heading">Câu chuyện của học viên</h2>
-          <div class="owl-carousel owl-theme">
-            <div class="item">
-              <div class="card card-custom" style="width: 18rem">
-                <img
-                  src="https://algo.edu.vn/wp-content/uploads/2022/05/be1.jpg"
-                  class="card-img-top card-img-top-custom"
-                  alt="card-img"
-                />
-                <div class="card-body">
-                  <h5 class="card-title title">Sulin</h5>
-                  <span class="sub-title">Front-end</span>
-                  <p class="card-text">
-                    "Bé có thể tự tạo nên dự án riêng và học cách quản lý, phát
-                    triển dự án"
-                  </p>
-                  <div class="testi-rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
+          <div class="swiper swiper-testimonial">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card card-custom">
+                  <img
+                    src="https://algo.edu.vn/wp-content/uploads/2022/05/be1.jpg"
+                    class="card-img-top card-img-top-custom"
+                    alt="card-img"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title title">Sulin</h5>
+                    <span class="sub-title">Front-end</span>
+                    <p class="card-text">
+                      "Bé có thể tự tạo nên dự án riêng và học cách quản lý,
+                      phát triển dự án"
+                    </p>
+                    <div class="testi-rating">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card card-custom">
+                  <img
+                    src="https://algo.edu.vn/wp-content/uploads/2022/05/be2.jpg"
+                    class="card-img-top card-img-top-custom"
+                    alt="card-img"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title title">Karik</h5>
+                    <span class="sub-title">.NET Basic</span>
+                    <p class="card-text">
+                      "Con tự tin, mạnh dạn hơn khi trình bày, thuyết trình về
+                      lập trình"
+                    </p>
+                    <div class="testi-rating">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card card-custom">
+                  <img
+                    src="https://algo.edu.vn/wp-content/uploads/2022/05/ethan-2-2.jpg"
+                    class="card-img-top card-img-top-custom"
+                    alt="card-img"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title title">Ethen</h5>
+                    <span class="sub-title">ReactJS</span>
+                    <p class="card-text">
+                      "Em phát triển rất nhiều, giúp các môn học trên trường dễ
+                      dàng hơn"
+                    </p>
+                    <div class="testi-rating">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card card-custom">
+                  <img
+                    src="https://algo.edu.vn/wp-content/uploads/2022/05/be1.jpg"
+                    class="card-img-top card-img-top-custom"
+                    alt="card-img"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title title">Sulin</h5>
+                    <span class="sub-title">Front-end</span>
+                    <p class="card-text">
+                      "Bé có thể tự tạo nên dự án riêng và học cách quản lý,
+                      phát triển dự án"
+                    </p>
+                    <div class="testi-rating">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card card-custom">
+                  <img
+                    src="https://algo.edu.vn/wp-content/uploads/2022/05/im3-1-1.png"
+                    class="card-img-top card-img-top-custom"
+                    alt="card-img"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title title">Trần Tiến</h5>
+                    <span class="sub-title">ReactJS</span>
+                    <p class="card-text">
+                      "Con có thể thuần thục viết code, thật tuyệt vời"
+                    </p>
+                    <div class="testi-rating">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="item">
-              <div class="card card-custom" style="width: 18rem">
-                <img
-                  src="https://algo.edu.vn/wp-content/uploads/2022/05/be2.jpg"
-                  class="card-img-top card-img-top-custom"
-                  alt="card-img"
-                />
-                <div class="card-body">
-                  <h5 class="card-title title">Karik</h5>
-                  <span class="sub-title">.NET Basic</span>
-                  <p class="card-text">
-                    "Con tự tin, mạnh dạn hơn khi trình bày, thuyết trình về lập
-                    trình"
-                  </p>
-                  <div class="testi-rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="card card-custom" style="width: 18rem">
-                <img
-                  src="https://algo.edu.vn/wp-content/uploads/2022/05/ethan-2-2.jpg"
-                  class="card-img-top card-img-top-custom"
-                  alt="card-img"
-                />
-                <div class="card-body">
-                  <h5 class="card-title title">Ethen</h5>
-                  <span class="sub-title">ReactJS</span>
-                  <p class="card-text">
-                    "Em phát triển rất nhiều, giúp các môn học trên trường dễ
-                    dàng hơn"
-                  </p>
-                  <div class="testi-rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="card card-custom" style="width: 18rem">
-                <img
-                  src="https://algo.edu.vn/wp-content/uploads/2022/05/be1.jpg"
-                  class="card-img-top card-img-top-custom"
-                  alt="card-img"
-                />
-                <div class="card-body">
-                  <h5 class="card-title title">Sulin</h5>
-                  <span class="sub-title">Front-end</span>
-                  <p class="card-text">
-                    "Bé có thể tự tạo nên dự án riêng và học cách quản lý, phát
-                    triển dự án"
-                  </p>
-                  <div class="testi-rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="card card-custom" style="width: 18rem">
-                <img
-                  src="https://algo.edu.vn/wp-content/uploads/2022/05/im3-1-1.png"
-                  class="card-img-top card-img-top-custom"
-                  alt="card-img"
-                />
-                <div class="card-body">
-                  <h5 class="card-title title">Trần Tiến</h5>
-                  <span class="sub-title">ReactJS</span>
-                  <p class="card-text">
-                    "Con có thể thuần thục viết code, thật tuyệt vời"
-                  </p>
-                  <div class="testi-rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </section>
@@ -1068,6 +1117,7 @@
         </div>
       </section>
 
+      <!-- Start footer -->
       <footer class="footer">
         <div class="container">
           <div class="row">
@@ -1173,6 +1223,7 @@
           </p>
         </div>
       </footer>
+      <!-- End footer -->
     </div>
     <!-- Import script bootstrap V5 -->
     <script
@@ -1196,7 +1247,10 @@
     ></script>
     <!-- API google -->
     <script src="https://apis.google.com/js/api:client.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <!-- Script -->
+    <script type="text/javascript" src="./assets/js/initialSwiper.js"></script>
     <script type="text/javascript" src="./assets/js/main.js"></script>
   </body>
 </html>

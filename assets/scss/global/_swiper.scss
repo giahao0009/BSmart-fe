@@ -85,3 +85,51 @@ div.swiper-button-prev {
     }
   }
 }
+
+.swiper.swiper-typical-course {
+  .course-card {
+    width: 100% !important;
+    .banner-course {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    .logo-course {
+      padding: 0;
+      border-radius: 10px;
+      img {
+        margin: 0;
+      }
+    }
+    .card-title {
+      text-align: start;
+    }
+    .sub-title {
+      text-align: start;
+    }
+    .testi-rating {
+      text-align: start;
+    }
+    .btn-invite-course {
+      width: 100%;
+    }
+  }
+}
+
+.swiper-typical-mentor {
+  div.swiper-button-next,
+  div.swiper-button-prev {
+    top: 50%;
+    &:after {
+      color: $secondary-color;
+    }
+  }
+}
+
+.swiper-testimonial {
+  .card-custom {
+    width: 100%;
+    img {
+      margin: 0;
+    }
+  }
+}
