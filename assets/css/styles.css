@@ -3212,6 +3212,173 @@ body {
   padding-bottom: 20px;
 }
 
+.exam-wrapper .banner__exam {
+  background-image: url(../images/banner-2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 110px 0 100px;
+  position: relative;
+  z-index: -2;
+}
+.exam-wrapper .banner__exam h2 {
+  color: #ff630e;
+  line-height: 30px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 49px;
+}
+.exam-wrapper .banner__exam p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #f5f5f5;
+}
+.exam-wrapper .banner__exam p a {
+  color: #f5f5f5;
+  transition: all 0.3s;
+}
+.exam-wrapper .banner__exam p a:hover {
+  color: #ff630e;
+}
+.exam-wrapper .banner__exam:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: rgba(5, 1, 51, 0.7);
+}
+.exam-wrapper .section2 {
+  padding-top: 20px;
+  text-align: center;
+}
+.exam-wrapper .section2 .title {
+  color: #ff630e;
+  line-height: 30px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 49px;
+}
+.exam-wrapper .section3 {
+  padding-top: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.exam-wrapper .section3 .wrapper {
+  padding: 20px 20px;
+  -webkit-box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
+  box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
+  border-radius: 8px;
+}
+.exam-wrapper .section3 .wrapper .infor {
+  margin-bottom: 20px;
+  padding: 20px 20px;
+  -webkit-box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
+  box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
+}
+.exam-wrapper .section3 .wrapper .infor p {
+  color: black;
+  font-weight: 300;
+  font-size: 16px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  border-bottom: 1px solid gray;
+  border-top: 1px solid gray;
+}
+.exam-wrapper .section3 .wrapper .infor p b {
+  font-weight: 600;
+  font-size: 16px;
+}
+.exam-wrapper .section3 .wrapper .content {
+  padding: 20px 20px;
+  -webkit-box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
+  box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.exam-wrapper .section3 .wrapper .content h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.exam-wrapper .section3 .wrapper .content input {
+  margin-bottom: 10px;
+}
+.exam-wrapper .section3 .box-question {
+  padding: 20px 20px;
+  -webkit-box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
+  box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
+  border-radius: 8px;
+}
+.exam-wrapper .section3 .box-question .title {
+  font-size: 16px;
+  font-weight: 500;
+}
+.exam-wrapper .section3 .box-question .element {
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+.exam-wrapper .section3 .box-question .element .number {
+  float: left;
+  color: #fff;
+  text-align: center;
+  padding-top: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 5px;
+  background-color: #ff630e;
+}
+.exam-wrapper .section3 .box-question .box-time {
+  padding-top: 10px;
+}
+.exam-wrapper .section3 .box-question .box-time #clockdiv {
+  padding-left: 20%;
+  margin-top: 10px;
+  font-family: sans-serif;
+  color: #fff;
+  display: inline-block;
+  font-weight: 100;
+  text-align: center;
+  font-size: 16px;
+}
+.exam-wrapper .section3 .box-question .box-time #clockdiv > div {
+  padding: 10px;
+  border-radius: 3px;
+  background: #ff630e;
+  display: inline-block;
+}
+.exam-wrapper .section3 .box-question .box-time #clockdiv div > span {
+  padding: 1px;
+  border-radius: 50%;
+  background: #ff630e;
+  display: inline-block;
+}
+.exam-wrapper .section3 .box-question .box-time .smalltext {
+  padding-top: 5px;
+  font-size: 16px;
+}
+.exam-wrapper .section3 .box-question .submit {
+  padding-top: 20px;
+  text-align: center;
+}
+.exam-wrapper .section3 .box-question .submit input {
+  color: #fff;
+  background-color: #ff630e;
+  border-radius: 8px;
+  height: 36px;
+  border: 0px solid;
+}
+.exam-wrapper .section3 .box-question .submit input:hover {
+  background-color: green;
+}
+
 .withdraw-wrapper .banner__withdraw {
   background-image: url(../images/banner-2.jpg);
   background-position: center;
