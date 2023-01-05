@@ -1,0 +1,105 @@
+.wrapper-momoPay {
+  width: 100%;
+  height: 100%;
+
+  .section {
+    padding-top: 50px;
+    margin-bottom: 50px;
+    // margin-left: 10%;
+    .sidebar {
+      height: 100%;
+
+      background-color: $secondary-color;
+      border-radius: 8px;
+      padding-left: 20px;
+      padding-top: 50px;
+      -webkit-box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
+      box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
+
+      h4 {
+        color: $grey-white-color;
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 10px;
+      }
+      p {
+        color: $grey-white-color;
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 30px;
+        padding-left: 20px;
+      }
+      .back {
+        padding-left: 25%;
+        padding-top: 30%;
+      }
+    }
+    .content {
+      border-radius: 8px;
+      padding: 20px 20px;
+      -webkit-box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
+      box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
+      .header {
+        h3 {
+          color: #0e0a38;
+          font-size: 30px;
+          font-weight: bold;
+          text-align: center left;
+
+          float: left;
+        }
+        .logo-momo {
+          text-align: right;
+          img {
+            width: 40px;
+            height: 40px;
+          }
+        }
+      }
+      .qr-code {
+        .title {
+          font-size: 16px;
+          color: $secondary-color;
+          font-weight: 500;
+          text-align: center;
+          margin-bottom: 10px;
+        }
+        .qr {
+          text-align: center;
+          padding-top: 10px;
+
+          img {
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+          }
+          //   margin-left: 40%;
+          //   margin-top: 5%;
+          //   margin-bottom: 5%;
+        }
+        p {
+          font-size: 16px;
+          font-weight: 400;
+          text-align: center;
+        }
+      }
+      .footer-momo {
+        text-align: center;
+        p {
+          font-size: 16px;
+          font-weight: 400;
+          text-align: center;
+        }
+        .btn {
+          padding-top: 10px;
+          text-align: center;
+          button {
+            background-color: $secondary-color;
+            border: 1px;
+            border-radius: 8px;
+            color: $grey-white-color;
+          }
+        }
+      }
+    }
+  }
+}
