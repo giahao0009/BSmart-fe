@@ -86,33 +86,40 @@ $(document).ready(function () {
   });
   // ----------------------------------------------------------------
 
+  // Mean expand
   $(".mean-expand").click(function (event) {
     var parent = event.currentTarget.offsetParent;
+    parent.querySelector(".mean-non-expand").style.display = "block";
     var subMenu = parent.querySelector(".sub-menu");
     subMenu.style.display = "block";
+    event.currentTarget.style.display = "none";
   });
-  // Fixed header bottom
-  window.onscroll = () => {
-    var headerBottom = document.querySelector(".header-bottom");
-    var sticky = headerBottom.offsetTop;
 
-    if (window.pageYOffset >= sticky) {
-      headerBottom.classList.add("sticky");
-    }
-    if (window.pageYOffset === 0) {
-      headerBottom.classList.remove("sticky");
-    }
-  };
+  $(".mean-non-expand").click(function (event) {
+    var parent = event.currentTarget.offsetParent;
+    var subMenu = parent.querySelector(".sub-menu");
+    subMenu.style.display = "none";
+    parent.querySelector(".mean-expand").style.display = "block";
+    event.currentTarget.style.display = "none";
+  });
 
-  // Fixed header mobile
+  // Fixed header
   window.onscroll = () => {
-    var headerMobile = document.querySelector(".header-mobile");
-    var sticky = headerMobile.offsetTop;
+    let headerMobile = document.querySelector(".header-mobile");
+    let headerBottom = document.querySelector(".header-bottom");
+    let sticky = headerMobile.offsetTop;
+    let stickyHeaderBottom = headerBottom.offsetTop;
     if (window.pageYOffset >= sticky) {
       headerMobile.classList.add("sticky");
     }
     if (window.pageYOffset === 0) {
       headerMobile.classList.remove("sticky");
+    }
+    if (window.pageYOffset >= stickyHeaderBottom) {
+      headerBottom.classList.add("sticky");
+    }
+    if (window.pageYOffset === 0) {
+      headerBottom.classList.remove("sticky");
     }
   };
 
@@ -122,6 +129,4 @@ $(document).ready(function () {
     preloader.style.opacity = "0";
     preloader.style.visibility = "hidden";
   }, 500);
-
-  //
 });

@@ -1,3 +1,8 @@
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1320px !important;
+  }
+}
 /* Laptop */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .sidebar-wrap {
@@ -16,6 +21,56 @@
               min-height: 60px;
             }
           }
+        }
+      }
+    }
+  }
+  .home-wrapper {
+    .courses-section {
+      .owl-carousel {
+        .owl-nav {
+          .owl-prev {
+            left: 10px !important;
+          }
+          .owl-next {
+            right: 10px !important;
+          }
+        }
+      }
+    }
+    .testimonial-content {
+      .owl-carousel {
+        .owl-nav {
+          .owl-prev {
+            left: 10px;
+          }
+          .owl-next {
+            right: 10px;
+          }
+        }
+      }
+    }
+    .our {
+      .owl-carousel {
+        .owl-nav {
+          .owl-prev {
+            left: 10px;
+          }
+          .owl-next {
+            right: 10px;
+          }
+        }
+      }
+    }
+  }
+  .aboutus-wrapper {
+    .owl-carousel {
+      .owl-nav {
+        .owl-prev {
+          left: -1%;
+        }
+        .owl-next {
+          right: -1%;
         }
       }
     }
@@ -114,6 +169,15 @@
             font-size: 16px;
             color: $primary-color;
           }
+          .mean-non-expand {
+            display: none;
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding: 12px;
+            font-size: 16px;
+            color: $primary-color;
+          }
           &:last-child {
             border-bottom: none;
           }
@@ -164,6 +228,13 @@
       }
     }
   }
+  // Swiper
+  .swiper-slide {
+    button {
+      font-size: 12px;
+      padding: 3px !important;
+    }
+  }
   // Banner
   .banner {
     padding: 0;
@@ -201,6 +272,7 @@
   /* About us */
   .aboutus {
     padding: 100px 0;
+
     .about-description {
       font-size: 18px;
       line-height: 26px;
@@ -317,6 +389,16 @@
     }
   }
   /* ------------------------ */
+  .member-detail-wrapper {
+    .mentor-profile-edit-content {
+      .avatar {
+        .btn-clear {
+          font-size: 15px;
+          padding: 3px !important;
+        }
+      }
+    }
+  }
 }
 
 /* Mobile */
@@ -324,6 +406,9 @@
   /* Global */
   * {
     transition: all 2s;
+  }
+  .d-xs-none {
+    display: none;
   }
   .wrapper {
     width: 100vw;
@@ -336,6 +421,23 @@
   }
   .login-form-container {
     display: none;
+  }
+  // Swiper
+  .swiper-slide {
+    button {
+      font-size: 12px;
+      padding: 2px;
+    }
+    img {
+      height: 50%;
+    }
+    .group-title {
+      margin-top: 20px;
+      justify-content: space-between;
+      & > div {
+        margin-bottom: 18px;
+      }
+    }
   }
   /* ------------------------ */
   /* Header */
@@ -422,6 +524,15 @@
             font-size: 16px;
             color: $primary-color;
           }
+          .mean-non-expand {
+            display: none;
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding: 12px;
+            font-size: 20px;
+            color: $primary-color;
+          }
           &:last-child {
             border-bottom: none;
           }
@@ -505,6 +616,7 @@
     /* About us */
     .aboutus {
       padding: 100px 0;
+
       .about-description {
         font-size: 18px;
         line-height: 26px;
@@ -589,6 +701,13 @@
   /* ------------------------ */
   // About us page
   .aboutus-wrapper {
+    .banner__aboutus {
+      .caption-content {
+        h2 {
+          font-size: 25px;
+        }
+      }
+    }
     .employee__img {
       margin-top: 30px;
       width: 100%;
@@ -596,16 +715,19 @@
       gap: 30px 0;
       padding: 70px;
       .employ__box {
-        &:nth-child(2) {
-          margin-top: 0px;
+        &:not(:first-child) {
+          display: none !important;
         }
       }
     }
 
     .sec-heading__about {
+      h5 {
+        margin-bottom: 10px;
+      }
       h2 {
-        font-size: 36px;
-        line-height: 46px;
+        font-size: 20px;
+        line-height: 25px;
       }
     }
     .counter {
@@ -627,7 +749,10 @@
       width: 100%;
       background-color: #f7f7f7;
       margin-top: 50px;
-      padding: 70px 70px;
+      h2 {
+        font-size: 20px;
+        line-height: 25px;
+      }
       .choose {
         display: initial !important;
         grid-template-columns: none !important;
@@ -713,9 +838,20 @@
     .registration-form-wrap {
       width: 100% !important;
     }
+    .registration-form-mentor-wrap {
+      width: 100% !important;
+    }
   }
   // Courses page
   .courses-wrapper {
+    .course-sidebar {
+      .tag_r {
+        margin-bottom: 20px !important;
+        h3 {
+          margin-bottom: 0 !important;
+        }
+      }
+    }
     .courses-list-content {
       .header-courses-list {
         display: flex;
@@ -758,6 +894,58 @@
     }
   }
   /* ------------------------ */
+  // Blog page
+  .blog-wrapper {
+    .blog-posts {
+      .blog-posts-meta {
+        ul {
+          li {
+            margin-bottom: 10px;
+          }
+        }
+      }
+      h3 {
+        a {
+          font-size: 25px !important;
+        }
+      }
+      .entry-content {
+        p {
+          text-align: justify;
+        }
+      }
+    }
+  }
+  /* ------------------------ */
+  // Member detail page
+  .member-detail-wrapper {
+    .content-info-mentor {
+      .table-wallet-container {
+        overflow-x: scroll;
+        .table-wallet {
+          width: 500px !important;
+        }
+      }
+
+      .courses {
+        h3 {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+  /* ------------------------ */
+
+  .member-detail-wrapper {
+    .mentor-profile-edit-content {
+      .avatar {
+        .btn-clear {
+          font-size: 15px;
+          padding: 3px;
+        }
+      }
+    }
+  }
   /* Footer */
   /* ------------------------ */
 }

@@ -9,7 +9,6 @@
 
 // Import spinner scss
 @import "./global/_preloader.scss";
-
 // Import scss header component
 @import "./global/_header.scss";
 
@@ -48,16 +47,6 @@
 
 // Import scss course detail component
 @import "./private/course-detail/_index.scss";
-
-// Import scss  Lms member component
-@import "./private/lmsMember/_index.scss";
-
-// Import scss  exam component
-@import "./private/exam/_index.scss";
-
-// Import scss course withdraw component
-@import "./private/withdraw/_index.scss";
-
 // Import scss footer component
 @import "./global/_footer";
 

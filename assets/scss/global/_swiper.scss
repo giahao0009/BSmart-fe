@@ -1,0 +1,135 @@
+.swiper.swiper-id-card {
+  width: 100%;
+  height: 420px;
+  .slide_1 {
+    border-radius: 10px;
+    padding: 10px;
+    height: 100%;
+    .slide-content {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      height: 100%;
+    }
+  }
+
+  .slide_2 {
+    border-radius: 10px;
+    padding: 10px;
+    height: 100%;
+    .slide-content {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      height: 100%;
+    }
+  }
+}
+
+.swiper-slide {
+  text-align: center;
+  /* Center slide text vertically */
+
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  outline: none;
+}
+
+div.swiper-button-next,
+div.swiper-button-prev {
+  top: 60%;
+  &:after {
+    color: $secondary-color;
+  }
+}
+
+.swiper.swiper-bachelor {
+  width: 100%;
+  height: 100%;
+  .swiper-slide {
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    .img-wrapper {
+      max-height: 400px;
+      img {
+        height: 400px;
+        object-fit: cover;
+      }
+    }
+  }
+  .swiper-slide.slide_add {
+    & > div {
+      min-height: 578px;
+      height: 578px;
+      i {
+        font-size: 60px;
+      }
+    }
+  }
+}
+
+.swiper.swiper-typical-course {
+  .course-card {
+    width: 100% !important;
+    .banner-course {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    .logo-course {
+      padding: 0;
+      border-radius: 10px;
+      img {
+        margin: 0;
+      }
+    }
+    .card-title {
+      text-align: start;
+    }
+    .sub-title {
+      text-align: start;
+    }
+    .testi-rating {
+      text-align: start;
+    }
+    .btn-invite-course {
+      width: 100%;
+    }
+  }
+}
+
+.swiper-typical-mentor {
+  div.swiper-button-next,
+  div.swiper-button-prev {
+    top: 50%;
+    &:after {
+      color: $secondary-color;
+    }
+  }
+}
+
+.swiper-testimonial {
+  .card-custom {
+    width: 100%;
+    img {
+      margin: 0;
+    }
+  }
+}

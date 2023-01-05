@@ -64,30 +64,24 @@
       <div class="container-fluid">
         <div class="sidebar-content">
           <div class="sidebar-top">
-            <span class="sidebar-logo">BSMART</span>
+            <a href="./index.html" class="sidebar-logo">BSMART</a>
             <i class="fa fa-times" class="sidebar-close" id="closeSidebar"></i>
           </div>
           <div class="sidebar-center">
             <ul class="sidebar-mean-nav">
-              <li><a href="#">Trang chủ</a></li>
-              <li><a href="#">Về chúng tôi</a></li>
+              <li><a href="./index.html">Trang chủ</a></li>
+              <li><a href="./aboutus.html">Về chúng tôi</a></li>
               <li>
-                <a href="./lms.html">Nền tảng LMS</a>
-              </li>
-              <li>
-                <a href="#">Khoá học</a>
+                <a href="./courses.html">Khoá học</a>
                 <div class="d-flex align-items-center justify-content-end">
                   <ul class="sub-menu">
-                    <li><a href="#">Devops</a></li>
-                    <li><a href="#">.NET Basic</a></li>
-                    <li><a href="#">.NET Core MVC</a></li>
-                    <li><a href="#">.NET Core API</a></li>
-                    <li><a href="#">ReactJS</a></li>
                     <li><a href="#">Front End</a></li>
+                    <li><a href="#">Back End</a></li>
+                    <li><a href="#">Devops</a></li>
                   </ul>
                 </div>
-
                 <a class="mean-expand" href="#">+</a>
+                <a class="mean-non-expand" href="#">-</a>
               </li>
               <li>
                 <a href="#">Giảng viên</a>
@@ -99,17 +93,21 @@
                 </div>
 
                 <a class="mean-expand" href="#">+</a>
+                <a class="mean-non-expand" href="#">-</a>
               </li>
               <li><a href="./blog.html">Blog</a></li>
             </ul>
           </div>
           <div class="sidebar-bottom">
             <div class="search-course">
-              <input
-                type="text"
-                placeholder="Tìm kiếm khoá học"
-                class="form-control"
-              />
+              <form action="#" method="post">
+                <input
+                  type="text"
+                  placeholder="Tìm kiếm khoá học"
+                  class="form-control"
+                />
+              </form>
+
               <span><i class="fa fa-search"></i></span>
             </div>
             <ul class="contact-info">
@@ -132,7 +130,7 @@
             <ul class="sidebar-controls">
               <li><a href="./login-mobile.html">Login</a></li>
               <li><small>|</small></li>
-              <li><a href="registration.html">Register</a></li>
+              <li><a href="./register.html">Register</a></li>
             </ul>
           </div>
         </div>
@@ -148,7 +146,7 @@
         <div class="login-form-content">
           <div class="close-login-form" id="loginFormClose">&times;</div>
           <h3 class="mb-3 text-center">Đăng nhập</h3>
-          <form action="#">
+          <form action="#" method="post">
             <div class="form-group mb-3">
               <input type="text" placeholder="Email" class="form-control" />
             </div>
@@ -170,19 +168,27 @@
                 <a href="#" class="link-custom">Forgot Password?</a>
               </div>
             </div>
-            <div class="login-btn text-center mb-4">
-              <a href="#" class="btn btn-primary-custom p-2">Đăng nhập</a>
+            <div class="login-btn text-center mb-2">
+              <a href="./login-success.html" class="btn btn-primary-custom p-2"
+                >Đăng nhập</a
+              >
+            </div>
+            <div id="gSignInWrapper" class="mb-4 w-100">
+              <div id="customBtn" class="customGPlusSignIn w-100">
+                <span class="icon"></span>
+                <span class="buttonText">Đăng nhập bằng tài khoản google</span>
+              </div>
             </div>
             <div class="new-registration text-center">
               <span>Bạn chưa có tài khoản?</span>
-              <a href="#" class="link-custom">Đăng ký ngay</a>
+              <a href="./register.html" class="link-custom">Đăng ký ngay</a>
             </div>
           </form>
         </div>
       </div>
     </div>
     <!-- End login form modal -->
-    <div class="wrapper mentor-detail-wrapper">
+    <div class="wrapper member-detail-wrapper">
       <!-- Start header -->
       <header class="header-main">
         <div class="header-top">
@@ -215,20 +221,24 @@
               <!-- End header contact info -->
               <!-- Start header search -->
               <div class="header-course-search">
-                <input
-                  type="text"
-                  placeholder="Tìm kiếm khoá học"
-                  class="form-control"
-                />
+                <form action="#" method="post">
+                  <input
+                    type="text"
+                    placeholder="Tìm kiếm khoá học"
+                    class="form-control"
+                  />
+                </form>
                 <span><i class="fa fa-search"></i></span>
               </div>
               <!-- End header search -->
               <div class="header-log-reg d-flex justify-content-end">
-                <ul>
-                  <li><a href="#" id="loginFormOpen">Login</a></li>
-                  <li><small>|</small></li>
-                  <li><a href="./register.html">Register</a></li>
-                </ul>
+                <a href="./member-detail.html">
+                  <img
+                    src="./assets/images/avatar-mentor-3.jpg"
+                    alt="hinh anh"
+                    class="avatar"
+                  />
+                </a>
               </div>
             </div>
           </div>
@@ -244,7 +254,9 @@
                     <!-- Menu cấp parent -->
                     <ul class="navbar-nav">
                       <li>
-                        <a href="./index.html" class="nav-link nav-link-custom"
+                        <a
+                          href="./index.html"
+                          class="nav-link nav-link-custom active"
                           >Trang Chủ</a
                         >
                       </li>
@@ -304,7 +316,7 @@
                         </div>
                       </li>
                       <li>
-                        <a href="#" class="nav-link nav-link-custom active"
+                        <a href="#" class="nav-link nav-link-custom"
                           >Giảng viên</a
                         >
                         <ul class="sub-menu">
@@ -361,11 +373,11 @@
         </div>
       </header>
       <!-- End header -->
-      <section class="banner-mentor-detail">
+      <section class="banner-member-detail">
         <div class="banner-content">
-          <h1>Thông tin mentor</h1>
+          <h1>Thông tin member</h1>
           <p>
-            <a href="index.html">Trang chủ</a><span> > </span> Thông tin mentor
+            <a href="index.html">Trang chủ</a><span> > </span> Thông tin member
           </p>
         </div>
       </section>
@@ -373,16 +385,16 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-4 col-md-5">
-              <div class="mentor-info">
-                <div class="mentor-img">
+              <div class="member-info">
+                <div class="member-img">
                   <img
-                    src="./assets/images/avatar-mentor-1.jpg"
-                    alt="hinh anh mentor"
+                    src="./assets/images/avatar-mentor-3.jpg"
+                    alt="hinh anh member"
                   />
                 </div>
-                <div class="mentor-details">
-                  <h4>Mentor Cường</h4>
-                  <p>Mentor</p>
+                <div class="member-details">
+                  <h4>Nguyễn Văn A</h4>
+                  <p>Member</p>
                   <ul class="social-list">
                     <li>
                       <a href="#"><i class="fa fa-facebook"></i></a>
@@ -396,160 +408,152 @@
                   </ul>
                   <ul class="contact-info">
                     <li>
+                      <span><i class="fa fa-male fs-2"></i></span>
+                    </li>
+                    <li>
+                      <span>27/01/2001</span>
+                    </li>
+                    <li>
+                      <span>
+                        <i class="fa fa-location-arrow"></i> Tân Bình, Tp. Hồ
+                        Chí Minh
+                      </span>
+                    </li>
+                    <li>
                       <span
-                        ><i class="fa fa-envelope"></i>mrcuong@gmail.com</span
+                        ><i class="fa fa-envelope"></i>member@gmail.com</span
                       >
                     </li>
                     <li>
                       <span><i class="fa fa-phone"></i> 0946005077</span>
                     </li>
+                    <li>
+                      <span
+                        >Số dư hiện tại:
+                        <span class="current-amount">300,000 BS</span></span
+                      >
+                    </li>
                   </ul>
                   <div class="contact-btn">
-                    <a href="#" class="btn btn-primary-custom">Liên hệ</a>
+                    <a href="#" class="btn btn-primary-custom"
+                      >Chỉnh sửa thông tin</a
+                    >
+                  </div>
+                  <div class="mt-2">
+                    <a href="#" class="btn btn-primary-custom w-100"
+                      >Quản lý tiền</a
+                    >
+                  </div>
+                  <div class="mt-2">
+                    <a href="#" class="btn btn-primary-custom w-100"
+                      >Rút tiền</a
+                    >
                   </div>
                 </div>
+              </div>
+              <div class="member-operation mt-3">
+                <h4>Các hoạt động gần đây</h4>
+                <ul>
+                  <li>
+                    <p class="mt-2">Đã đăng ký khoá học ReactJS Basic</p>
+                    <span>01/01/2023</span>
+                    <hr />
+                  </li>
+                  <li>
+                    <p class="mt-2">
+                      Đã nhận được 100 BS từ việc chia sẻ khoá học
+                    </p>
+                    <span>01/01/2023</span>
+                    <hr />
+                  </li>
+                </ul>
               </div>
             </div>
             <div class="col-lg-8 col-md-7">
-              <div class="about-mentor">
-                <h3>Giới thiệu</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In
-                  nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed
-                  pretium, ligula sollicitudin laoreet viverra, tortor libero
-                  sodales leo, eget blandit nunc tortor eu nibh.
-                </p>
-              </div>
-              <div class="skill-rate">
-                <h3>Skill</h3>
-                <div class="row">
-                  <div class="col-lg-6 skill-single">
-                    <div class="d-flex justify-content-between mb-2">
-                      <div class="skill-name">PHP</div>
-                      <div class="skill-level-text">97%</div>
-                    </div>
-                    <div class="progress p-0">
-                      <div class="progress-bar" style="width: 97%"></div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 skill-single">
-                    <div class="d-flex justify-content-between mb-2">
-                      <div class="skill-name">PHP</div>
-                      <div class="skill-level-text">97%</div>
-                    </div>
-                    <div class="progress p-0">
-                      <div class="progress-bar" style="width: 97%"></div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 skill-single">
-                    <div class="d-flex justify-content-between mb-2">
-                      <div class="skill-name">PHP</div>
-                      <div class="skill-level-text">97%</div>
-                    </div>
-                    <div class="progress p-0">
-                      <div class="progress-bar" style="width: 97%"></div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 skill-single">
-                    <div class="d-flex justify-content-between mb-2">
-                      <div class="skill-name">PHP</div>
-                      <div class="skill-level-text">97%</div>
-                    </div>
-                    <div class="progress p-0">
-                      <div class="progress-bar" style="width: 97%"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="experience">
-                <h3>Kinh nghiệm thực tế</h3>
-                <p>
-                  Tôi có kinh nghiệm 10 năm với vai trò là một seniot web
-                  developer (2010 - Hiện tại) tại CodeMex. Ngoài ra, tôi còn là
-                  mentor của trung tâm lập trình WebCode trong hơn 5 năm (2005
-                  -2010).
-                </p>
-              </div>
-              <div class="row mentor-profile-counter">
-                <div class="col-lg-6">
-                  <div class="counter-single text-center mb-3">
-                    <div class="counter-number">
-                      <h2><span>20</span>+</h2>
-                    </div>
-                    <div class="counter-title">
-                      <p>Khoá học</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="counter-single text-center mb-3">
-                    <div class="counter-number">
-                      <h2><span>10,000</span>+</h2>
-                    </div>
-                    <div class="counter-title">
-                      <p>Học viên</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="courses">
-                <h3 class="mb-3">Khoá học tiêu biểu</h3>
-                <div class="row">
-                  <div class="col-lg-6">
-                    <div class="card course-card mb-3" style="width: 100%">
-                      <img
-                        src="./assets/images/front-end-course.png"
-                        class="card-img-top"
-                        alt="hinh anh"
-                      />
-                      <div class="card-body">
-                        <p class="card-price">1,200,000 VND</p>
-                        <h5 class="card-title">Front End Basic</h5>
-                        <div class="testi-rating">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <hr />
-                        <a href="#" class="btn btn-primary-custom"
-                          >Xem chi tiết</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="card course-card mb-3" style="width: 100%">
-                      <img
-                        src="./assets/images/reactjs-banner.png"
-                        class="card-img-top"
-                        alt="hinh anh"
-                      />
-                      <div class="card-body">
-                        <p class="card-price">2,000,000 VND</p>
-                        <h5 class="card-title">ReactJS Basic</h5>
-                        <div class="testi-rating">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <hr />
-                        <a href="#" class="btn btn-primary-custom"
-                          >Xem chi tiết</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="course-showmore d-flex justify-content-center mt-4">
-                <a href="#" class="btn btn-outline-secondary-custom w-50 p-2"
-                  >Xem thêm</a
+              <div class="table-wallet-container p-3">
+                <table
+                  class="table table-responsive table-striped fs-6 table-bordered table-wallet"
                 >
+                  <thead>
+                    <tr class="table-dark">
+                      <th scope="col">#</th>
+                      <th scope="col">Họ Tên</th>
+                      <th scope="col">Khoá học đăng ký</th>
+                      <th scope="col">Số tiền kiếm được</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Nguyễn Văn A</td>
+                      <td>Front End Basic</td>
+                      <td>100 BS</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Nguyễn Văn B</td>
+                      <td>Front End Basic</td>
+                      <td>100 BS</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Nguyễn Văn C</td>
+                      <td>Front End Basic</td>
+                      <td>100 BS</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">4</th>
+                      <td>Nguyễn Văn D</td>
+                      <td>Front End Basic</td>
+                      <td>100 BS</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">5</th>
+                      <td>Nguyễn Văn E</td>
+                      <td>Front End Basic</td>
+                      <td>100 BS</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">6</th>
+                      <td>Nguyễn Văn F</td>
+                      <td>Front End Basic</td>
+                      <td>100 BS</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">7</th>
+                      <td>Nguyễn Văn H</td>
+                      <td>Front End Basic</td>
+                      <td>100 BS</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">8</th>
+                      <td>Nguyễn Văn G</td>
+                      <td>Front End Basic</td>
+                      <td>100 BS</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">9</th>
+                      <td>Nguyễn Văn U</td>
+                      <td>Front End Basic</td>
+                      <td>100 BS</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">10</th>
+                      <td>Nguyễn Văn L</td>
+                      <td>Front End Basic</td>
+                      <td>100 BS</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="table-wallet-pagination">
+                <ul>
+                  <li><a href="#" class="active">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li>
+                    <a href="#"><i class="fa fa-angle-right"></i></a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
