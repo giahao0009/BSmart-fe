@@ -146,7 +146,7 @@
         <div class="login-form-content">
           <div class="close-login-form" id="loginFormClose">&times;</div>
           <h3 class="mb-3 text-center">Đăng nhập</h3>
-          <form action="#">
+          <form action="#" method="post">
             <div class="form-group mb-3">
               <input type="text" placeholder="Email" class="form-control" />
             </div>
@@ -169,7 +169,9 @@
               </div>
             </div>
             <div class="login-btn text-center mb-2">
-              <a href="#" class="btn btn-primary-custom p-2">Đăng nhập</a>
+              <a href="./login-success.html" class="btn btn-primary-custom p-2"
+                >Đăng nhập</a
+              >
             </div>
             <div id="gSignInWrapper" class="mb-4 w-100">
               <div id="customBtn" class="customGPlusSignIn w-100">
@@ -179,14 +181,14 @@
             </div>
             <div class="new-registration text-center">
               <span>Bạn chưa có tài khoản?</span>
-              <a href="#" class="link-custom">Đăng ký ngay</a>
+              <a href="./register.html" class="link-custom">Đăng ký ngay</a>
             </div>
           </form>
         </div>
       </div>
     </div>
     <!-- End login form modal -->
-    <div class="register-wrapper">
+    <div class="feedback-wrapper">
       <!-- Start header -->
       <header class="header-main">
         <div class="header-top">
@@ -219,11 +221,13 @@
               <!-- End header contact info -->
               <!-- Start header search -->
               <div class="header-course-search">
-                <input
-                  type="text"
-                  placeholder="Tìm kiếm khoá học"
-                  class="form-control"
-                />
+                <form action="#" method="post">
+                  <input
+                    type="text"
+                    placeholder="Tìm kiếm khoá học"
+                    class="form-control"
+                  />
+                </form>
                 <span><i class="fa fa-search"></i></span>
               </div>
               <!-- End header search -->
@@ -342,6 +346,11 @@
                           </li>
                         </ul>
                       </li>
+                      <li>
+                        <a href="#" class="nav-link nav-link-custom"
+                          >Tuyển dụng</a
+                        >
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -367,181 +376,177 @@
         </div>
       </header>
       <!-- End header -->
-      <section class="page-banner-area">
+      <!-- Start feedback -->
+      <section class="banner__feedback">
         <div class="container">
-          <div class="page-banner-content text-center">
-            <h1>Đăng ký</h1>
-            <p><a href="./index.html">Trang chủ</a><span> > </span> Đăng ký</p>
+          <div class="caption-content text-center">
+            <h2>Feedback</h2>
+            <p><a href="index.html">Trang chủ</a><span> > </span> Feedback</p>
           </div>
         </div>
       </section>
-      <section class="registration-area">
+
+      <section class="section-feedback">
         <div class="container">
-          <div class="tab-register">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-lg-6 p-0">
-                  <div
-                    class="tab-item active"
-                    onclick="openTabRegister('studentRegisterForm')"
-                    id="openFormStudentRegisterBtn"
-                  >
-                    Học viên
+          <div class="row justify-content-center">
+            <div class="col-md-6 col-sm-12 col-12">
+              <div class="from-feedback">
+                <!--  -->
+                <div class="box-title">
+                  <h3>
+                    Đóng góp ý kiến cho chúng tôi về chất lượng giảng dạy của
+                    giảng viên
+                  </h3>
+                </div>
+                <!--  -->
+                <div class="box-content">
+                  <p>
+                    Hãy cho chúng tôi biết cách chúng tôi có thể cải thiện trải
+                    nghiệm học tập của bạn.
+                  </p>
+                  <p>
+                    Hãy chọn giảng viên và môn học bên dưới và góp ý thật chi
+                    tiết nhé.
+                  </p>
+                </div>
+                <!--  -->
+                <div class="from-content">
+                  <form action="/">
+                    <!-- Teacher -->
+                    <label for="teacher"
+                      >Chọn giản viên mà bạn muốn phản hồi:</label
+                    ><br />
+                    <select name="teacher" id="teacher">
+                      <option value="null">
+                        Chọn giảng viên bạn muốn đánh giá
+                      </option>
+                      <option value="Mentor Cường">Mentor Cường</option>
+                      <option value="Mentor Long">Mentor Long</option>
+                    </select>
+                    <br />
+                    <hr />
+                    <!-- subject -->
+                    <label for="subject"
+                      >Chọn giản viên mà bạn muốn phản hồi:</label
+                    ><br />
+
+                    <select name="subject" id="subject">
+                      <option value="null">
+                        Chọn môn học bạn muốn đánh giá
+                      </option>
+                      <option value="React JS">React JS</option>
+                      <option value="PHP">PHP</option>
+                      <option value="Lập trình web cở bản">
+                        Lập trình web cở bản
+                      </option>
+                    </select>
+                    <br />
+                    <hr />
+                    <!--  -->
+
+                    <label for="feeling"
+                      >Bạn cảm thấy mức độ nhiệt tình của giáo viên như thế
+                      nào?</label
+                    >
+                    <br />
+                    <input
+                      class="radio-input"
+                      name="feeling"
+                      type="radio"
+                      value="1"
+                    />1
+                    <input
+                      class="radio-input"
+                      name="feeling"
+                      type="radio"
+                      value="2"
+                    />2
+                    <input
+                      class="radio-input"
+                      name="feeling"
+                      type="radio"
+                      value="3"
+                    />3
+                    <input
+                      class="radio-input"
+                      name="feeling"
+                      type="radio"
+                      value="4"
+                    />4
+                    <input
+                      class="radio-input"
+                      checked="checked"
+                      name="feeling"
+                      type="radio"
+                      value="5"
+                    />5
+
+                    <br />
+                    <!--  -->
+                    <hr />
+                    <label for="YN"
+                      >Giảng viên có giải đáp thắc mắc kịp thời ngay buổi học
+                      hay không?</label
+                    >
+                    <br />
+                    <input
+                      class="radio-input"
+                      checked="checked"
+                      name="YN"
+                      type="radio"
+                      value="Yes"
+                    />Yes
+                    <input
+                      class="radio-input"
+                      name="YN"
+                      type="radio"
+                      value="No"
+                    />No
+
+                    <br />
+                    <hr />
+                    <!--  -->
+                    <label for="feeling"
+                      >Giảng viên có thường xuyên hướng dẫn bài tập hay
+                      không?</label
+                    >
+                    <br />
+                    <input
+                      class="radio-input"
+                      checked="checked"
+                      name="YNO"
+                      type="radio"
+                      value="Yes"
+                    />Yes
+                    <input
+                      class="radio-input"
+                      name="YNO"
+                      type="radio"
+                      value="No"
+                    />No
+
+                    <input
+                      class="radio-input"
+                      name="YNO"
+                      type="radio"
+                      value="other"
+                    />other
+                    <hr />
+                    <input
+                      class="chat-input"
+                      placeholder="Bạn hãy cho chúng tôi biết cảm nhận của bạn khi trãi qua khóa học này."
+                    />
+                  </form>
+                  <div class="btn-showmore">
+                    <button>Gửi</button>
                   </div>
-                </div>
-                <div class="col-lg-6 p-0">
-                  <div
-                    class="tab-item"
-                    onclick="openTabRegister('mentorRegisterForm')"
-                    id="openFormMentorRegisterBtn"
-                  >
-                    Mentor
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="registration-area-content">
-            <div
-              id="studentRegisterForm"
-              class="registration-form-wrap tab-item-register"
-            >
-              <div class="form-group mb-3">
-                <label for="name" class="mb-2">Họ và tên</label>
-                <input
-                  type="text"
-                  placeholder="Họ và tên"
-                  class="form-control"
-                  name="name"
-                />
-              </div>
-              <div class="form-group mb-3">
-                <label for="email" class="mb-2">E-Mail</label>
-                <input
-                  type="text"
-                  placeholder="E-Mail"
-                  class="form-control"
-                  name="email"
-                />
-              </div>
-              <div class="form-group mb-3">
-                <label for="password" class="mb-2">Mật khẩu</label>
-                <input
-                  type="text"
-                  placeholder="Mật khẩu"
-                  class="form-control"
-                  name="password"
-                />
-              </div>
-              <div class="form-group mb-3">
-                <label for="confirmPassword" class="mb-2"
-                  >Xác nhận mật khẩu</label
-                >
-                <input
-                  type="text"
-                  placeholder="Xác nhận mật khẩu"
-                  class="form-control"
-                  name="confirmPassword"
-                />
-              </div>
-              <div class="registration-btn mb-3">
-                <a href="#" class="btn btn-primary-custom">Đăng ký</a>
-              </div>
-              <div id="gSignInWrapper" class="mb-4 w-100">
-                <div
-                  id="customBtn"
-                  class="customGPlusSignIn w-100 p-2 d-flex justify-content-center align-items-center"
-                >
-                  <span class="icon"></span>
-                  <span class="buttonText" style="font-size: 16px"
-                    >Đăng nhập bằng tài khoản google</span
-                  >
-                </div>
-              </div>
-            </div>
-            <div
-              id="mentorRegisterForm"
-              class="registration-form-mentor-wrap tab-item-register"
-            >
-              <div class="form-group mb-3">
-                <label for="name" class="mb-2">Họ và tên</label>
-                <input
-                  type="text"
-                  placeholder="Họ và tên"
-                  class="form-control"
-                  name="name"
-                />
-              </div>
-              <div class="form-group mb-3">
-                <label for="name" class="mb-2">Số điện thoại</label>
-                <input
-                  type="text"
-                  placeholder="Họ và tên"
-                  class="form-control"
-                  name="name"
-                />
-              </div>
-              <div class="form-group mb-3">
-                <label for="email" class="mb-2">E-Mail</label>
-                <input
-                  type="text"
-                  placeholder="E-Mail"
-                  class="form-control"
-                  name="email"
-                />
-              </div>
-              <div class="form-group mb-3">
-                <label for="password" class="mb-2">Mật khẩu</label>
-                <input
-                  type="text"
-                  placeholder="Mật khẩu"
-                  class="form-control"
-                  name="password"
-                />
-              </div>
-              <div class="form-group mb-3">
-                <label for="confirmPassword" class="mb-2"
-                  >Xác nhận mật khẩu</label
-                >
-                <input
-                  type="text"
-                  placeholder="Xác nhận mật khẩu"
-                  class="form-control"
-                  name="confirmPassword"
-                />
-              </div>
-              <div class="form-group mb-3">
-                <label for="confirmPassword" class="mb-2"
-                  >Giới thiệu bản thân</label
-                >
-                <div class="form-floating">
-                  <textarea
-                    class="form-control"
-                    placeholder="Leave a comment here"
-                    id="floatingTextarea2"
-                    style="height: 100px"
-                  ></textarea>
-                </div>
-              </div>
-              <div class="registration-btn mb-3">
-                <a href="#" class="btn btn-primary-custom">Đăng ký</a>
-              </div>
-              <div id="gSignInWrapper" class="mb-4 w-100">
-                <div
-                  id="customBtn"
-                  class="customGPlusSignIn w-100 p-2 d-flex justify-content-center align-items-center"
-                >
-                  <span class="icon"></span>
-                  <span class="buttonText" style="font-size: 16px"
-                    >Đăng nhập bằng tài khoản google</span
-                  >
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- Start footer -->
+      <!-- End feedback -->
       <footer class="footer">
         <div class="container">
           <div class="row">
@@ -550,18 +555,18 @@
             </div>
           </div>
           <div class="row mb-5">
-            <div class="col-lg-3 col-md-6">
-              <h3 class="quaters">Trụ sở: 117 Tân Cảng, Bình Thạnh</h3>
+            <div class="col-lg-4 col-md-6 mb-3">
+              <h3 class="quaters">Trụ sở 1: 117 Tân Cảng, Bình Thạnh</h3>
               <p class="hotline">Hotline: 096.105.1014</p>
               <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
             </div>
-            <div class="col-lg-3 col-md-6">
-              <h3 class="quaters">Trụ sở: 117 Tân Cảng, Bình Thạnh</h3>
+            <div class="col-lg-4 col-md-6 mb-3">
+              <h3 class="quaters">Trụ sở 2: 117 Tân Cảng, Bình Thạnh</h3>
               <p class="hotline">Hotline: 096.105.1014</p>
               <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
             </div>
-            <div class="col-lg-3 col-md-6">
-              <h3 class="quaters">Trụ sở: 117 Tân Cảng, Bình Thạnh</h3>
+            <div class="col-lg-4 col-md-6 mb-3">
+              <h3 class="quaters">Trụ sở 3: 117 Tân Cảng, Bình Thạnh</h3>
               <p class="hotline">Hotline: 096.105.1014</p>
               <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
             </div>
@@ -602,16 +607,23 @@
               <div class="footer-menu">
                 <h4>Menu</h4>
                 <ul>
+                  <li><a href="#">Trang chủ</a></li>
+                  <li><a href="#">Về chúng tôi</a></li>
+                  <li><a href="#">Nền tảng LMS</a></li>
                   <li><a href="#">Khoá học</a></li>
                   <li><a href="#">Giảng viên</a></li>
+                  <li><a href="#">Blog</a></li>
                 </ul>
               </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-3">
-              <div class="footer-control">
-                <button class="btn btn-primary-custom p-2 mb-2">
+              <div class="footer-control d-flex align-items-center mt-5">
+                <a
+                  href="./courses.html"
+                  class="btn btn-primary-custom p-2 mb-2"
+                >
                   Đăng ký khoá học
-                </button>
+                </a>
               </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-3">
@@ -635,12 +647,11 @@
         </div>
         <hr class="text-success mt-5" />
         <div class="container">
-          <p class="m-0 text-light">
+          <p class="m-0 text-light text-center">
             © Bản quyền BSmart 2022 - Empowered by <a href="#">BSmart</a>
           </p>
         </div>
       </footer>
-      <!-- End footer -->
     </div>
     <!-- Import script bootstrap V5 -->
     <script
@@ -662,33 +673,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <!-- API google -->
+    <script src="https://apis.google.com/js/api:client.js"></script>
     <!-- Script -->
     <script type="text/javascript" src="./assets/js/main.js"></script>
-    <script>
-      function openTabRegister(name) {
-        var i;
-        var x = document.getElementsByClassName("tab-item-register");
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-        }
-        document.getElementById(name).style.display = "block";
-        if (name === "studentRegisterForm") {
-          document
-            .getElementById("openFormStudentRegisterBtn")
-            .classList.add("active");
-          document
-            .getElementById("openFormMentorRegisterBtn")
-            .classList.remove("active");
-        }
-        if (name === "mentorRegisterForm") {
-          document
-            .getElementById("openFormMentorRegisterBtn")
-            .classList.add("active");
-          document
-            .getElementById("openFormStudentRegisterBtn")
-            .classList.remove("active");
-        }
-      }
-    </script>
   </body>
 </html>

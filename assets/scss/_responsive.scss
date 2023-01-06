@@ -342,6 +342,11 @@
     .registration-form-wrap {
       width: 100% !important;
     }
+    .registration-area {
+      .tab-register {
+        width: 100%;
+      }
+    }
   }
   /* ------------------------ */
   // Courses page
@@ -395,6 +400,13 @@
         .btn-clear {
           font-size: 15px;
           padding: 3px !important;
+        }
+      }
+      .id-card-warpper {
+        .card-id-custom {
+          img {
+            height: 300px;
+          }
         }
       }
     }
@@ -777,9 +789,18 @@
   .register-wrapper {
     .registration-form-wrap {
       width: 100% !important;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
     }
     .registration-form-mentor-wrap {
       width: 100% !important;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+    .registration-area {
+      .tab-register {
+        width: 100%;
+      }
     }
   }
   // Courses page

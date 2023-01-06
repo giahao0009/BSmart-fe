@@ -68,10 +68,12 @@ div.swiper-button-prev {
     padding: 10px;
     border: 1px solid #ccc;
     .img-wrapper {
-      max-height: 400px;
+      height: 350px;
       img {
-        height: 400px;
+        height: 100%;
+        width: 100%;
         object-fit: cover;
+        margin: 0;
       }
     }
   }

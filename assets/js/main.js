@@ -155,6 +155,10 @@ $(document).ready(function () {
     },
   });
 
+  function ratingStar() {
+    console.log("Hello word");
+  }
+
   // Login with google demo
   var googleUser = {};
   var startApp = function () {

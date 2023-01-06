@@ -21,5 +21,12 @@
       height: 200px;
       object-fit: cover;
     }
+    .id-card-warpper {
+      .card-id-custom {
+        img {
+          height: 220px;
+        }
+      }
+    }
   }
 }

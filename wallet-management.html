@@ -188,7 +188,7 @@
       </div>
     </div>
     <!-- End login form modal -->
-    <div class="wrapper member-detail-wrapper">
+    <div class="wrapper member-detail-wrapper wallet-history-wrapper">
       <!-- Start header -->
       <header class="header-main">
         <div class="header-top">
@@ -435,7 +435,7 @@
                     </li>
                   </ul>
                   <div class="contact-btn">
-                    <a href="#" class="btn btn-primary-custom"
+                    <a href="./edit-profile.html" class="btn btn-primary-custom"
                       >Chỉnh sửa thông tin</a
                     >
                   </div>
@@ -445,8 +445,17 @@
                     >
                   </div>
                   <div class="mt-2">
-                    <a href="#" class="btn btn-primary-custom w-100"
+                    <a
+                      href="./withdraw.html"
+                      class="btn btn-primary-custom w-100"
                       >Rút tiền</a
+                    >
+                  </div>
+                  <div class="mt-2">
+                    <a
+                      href="./mentor-detail.html"
+                      class="btn btn-primary-custom w-100"
+                      >Danh sách khoá học</a
                     >
                   </div>
                 </div>
@@ -470,91 +479,181 @@
               </div>
             </div>
             <div class="col-lg-8 col-md-7">
-              <div class="table-wallet-container p-3">
-                <table
-                  class="table table-responsive table-striped fs-6 table-bordered table-wallet"
-                >
-                  <thead>
-                    <tr class="table-dark">
-                      <th scope="col">#</th>
-                      <th scope="col">Họ Tên</th>
-                      <th scope="col">Khoá học đăng ký</th>
-                      <th scope="col">Số tiền kiếm được</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>Nguyễn Văn A</td>
-                      <td>Front End Basic</td>
-                      <td>100 BS</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>Nguyễn Văn B</td>
-                      <td>Front End Basic</td>
-                      <td>100 BS</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td>Nguyễn Văn C</td>
-                      <td>Front End Basic</td>
-                      <td>100 BS</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">4</th>
-                      <td>Nguyễn Văn D</td>
-                      <td>Front End Basic</td>
-                      <td>100 BS</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">5</th>
-                      <td>Nguyễn Văn E</td>
-                      <td>Front End Basic</td>
-                      <td>100 BS</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">6</th>
-                      <td>Nguyễn Văn F</td>
-                      <td>Front End Basic</td>
-                      <td>100 BS</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">7</th>
-                      <td>Nguyễn Văn H</td>
-                      <td>Front End Basic</td>
-                      <td>100 BS</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">8</th>
-                      <td>Nguyễn Văn G</td>
-                      <td>Front End Basic</td>
-                      <td>100 BS</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">9</th>
-                      <td>Nguyễn Văn U</td>
-                      <td>Front End Basic</td>
-                      <td>100 BS</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">10</th>
-                      <td>Nguyễn Văn L</td>
-                      <td>Front End Basic</td>
-                      <td>100 BS</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="table-wallet-pagination">
-                <ul>
-                  <li><a href="#" class="active">1</a></li>
-                  <li><a href="#">2</a></li>
-                  <li>
-                    <a href="#"><i class="fa fa-angle-right"></i></a>
-                  </li>
-                </ul>
-              </div>
+              <!-- wallet history of member -->
+              <section class="wallet-history-option">
+                <div class="container">
+                  <div class="title-wallet-member">
+                    <h3>Lịch sử giao dịch</h3>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="search-form widget">
+                        <form>
+                          <input
+                            type="text"
+                            placeholder="Tìm kiếm giao dịch..."
+                            class="form-control"
+                          />
+                          <button type="submit">
+                            <i class="fa fa-search"></i>
+                          </button>
+                        </form>
+                      </div>
+                    </div>
+                    <!-- The time start of member's wallet history -->
+                    <!-- <div class="col-md-3 widget search-date">
+                      <form class="row">
+                        <div class="input-group date">
+                          <input id="datepickerMbFrom" placeholder="From" />
+                        </div>
+                      </form>
+                    </div> -->
+                    <!-- The time end of member's wallet history -->
+                    <!-- <div class="col-md-3 widget search-date">
+                      <form class="row">
+                        <div class="input-group date">
+                          <input id="datepickerMbTo" placeholder="To" />
+                        </div>
+                      </form>
+                    </div> -->
+                  </div>
+                </div>
+              </section>
+              <!-- The table shows the number of wallets histories  -->
+              <section class="wallet-history-area">
+                <div class="container">
+                  <div class="row">
+                    <table class="table table-striped">
+                      <thead class="thead-dark">
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">
+                            <i class="fa fa-user" aria-hidden="true"></i> Tên
+                            người dùng
+                          </th>
+                          <th scope="col">Số tiền hiện có</th>
+                          <th scope="col">
+                            Tăng
+                            <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                          </th>
+                          <th scope="col">
+                            Giảm
+                            <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                          </th>
+                          <th scope="col">Tổng</th>
+                          <th scope="col">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            Thời gian
+                          </th>
+                        </tr>
+                      </thead>
+
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td scope="row">Nguyễn Văn A</td>
+                          <td scope="row">1000$</td>
+                          <td scope="row">200$</td>
+                          <td scope="row">0</td>
+                          <td scope="row">1200$</td>
+                          <td scope="row">12/31/2022</td>
+                        </tr>
+
+                        <tr>
+                          <th scope="row">2</th>
+                          <td scope="row">Nguyễn Văn B</td>
+                          <td scope="row">1000$</td>
+                          <td scope="row">0</td>
+                          <td scope="row">0</td>
+                          <td scope="row">1000$</td>
+                          <td scope="row">01/01/2023</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td scope="row">Nguyễn Văn C</td>
+                          <td scope="row">1000$</td>
+                          <td scope="row">0</td>
+                          <td scope="row">200$</td>
+                          <td scope="row">800$</td>
+                          <td scope="row">06/08/2022</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">4</th>
+                          <td scope="row">Nguyễn Văn C</td>
+                          <td scope="row">1000$</td>
+                          <td scope="row">0</td>
+                          <td scope="row">200$</td>
+                          <td scope="row">800$</td>
+                          <td scope="row">06/08/2022</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">5</th>
+                          <td scope="row">Nguyễn Văn C</td>
+                          <td scope="row">1000$</td>
+                          <td scope="row">0</td>
+                          <td scope="row">200$</td>
+                          <td scope="row">800$</td>
+                          <td scope="row">06/08/2022</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">6</th>
+                          <td scope="row">Nguyễn Văn C</td>
+                          <td scope="row">1000$</td>
+                          <td scope="row">0</td>
+                          <td scope="row">200$</td>
+                          <td scope="row">800$</td>
+                          <td scope="row">06/08/2022</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">7</th>
+                          <td scope="row">Nguyễn Văn C</td>
+                          <td scope="row">1000$</td>
+                          <td scope="row">0</td>
+                          <td scope="row">200$</td>
+                          <td scope="row">800$</td>
+                          <td scope="row">06/08/2022</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">8</th>
+                          <td scope="row">Nguyễn Văn C</td>
+                          <td scope="row">1000$</td>
+                          <td scope="row">0</td>
+                          <td scope="row">200$</td>
+                          <td scope="row">800$</td>
+                          <td scope="row">06/08/2022</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">9</th>
+                          <td scope="row">Nguyễn Văn C</td>
+                          <td scope="row">1000$</td>
+                          <td scope="row">0</td>
+                          <td scope="row">200$</td>
+                          <td scope="row">800$</td>
+                          <td scope="row">06/08/2022</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">10</th>
+                          <td scope="row">Nguyễn Văn C</td>
+                          <td scope="row">1000$</td>
+                          <td scope="row">0</td>
+                          <td scope="row">200$</td>
+                          <td scope="row">800$</td>
+                          <td scope="row">06/08/2022</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="blog-pagination text-center">
+                  <ul>
+                    <li><span>1</span></li>
+                    <li><a href="#">2</a></li>
+                    <li>
+                      <a href="#"><i class="fa fa-angle-right"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </section>
             </div>
           </div>
         </div>
@@ -680,6 +779,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script>
+      $("#datepickerMbFrom").datepicker({
+        uiLibrary: "bootstrap4",
+      });
+      $("#datepickerMbTo").datepicker({
+        uiLibrary: "bootstrap4",
+      });
+    </script>
     <!-- Script -->
     <script type="text/javascript" src="./assets/js/main.js"></script>
   </body>

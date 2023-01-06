@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,500&display=swap");
 // Import variable scss
 @import "./variable";
+// Import mixin
+@import "./_mixin.scss";
 // Import global scss
 @import "./global/_global.scss";
 // Import spinner scss
@@ -36,6 +38,16 @@
 @import "./private/blog-detail/_index.scss";
 // Import scss mentor edit component
 @import "./private/mentor-profile-edit/_index.scss";
+// Import withdraw component
+@import "./private/withdraw/_index.scss";
+// Import create course component
+@import "./private/create-course/_index.scss";
+// Import buy course component
+@import "./private/buy-course/_index.scss";
+// Import wallet history component
+@import "./private/wallet-management/_index.scss";
+// Import feedback component
+@import "./private/feedback/_index.scss";
 // Import scss footer component
 @import "./global/_footer";
 // Import login modal
