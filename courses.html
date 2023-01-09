@@ -343,7 +343,9 @@
                         </ul>
                       </li>
                       <li>
-                        <a href="#" class="nav-link nav-link-custom">Tuyển dụng</a>
+                        <a href="#" class="nav-link nav-link-custom"
+                          >Tuyển dụng</a
+                        >
                       </li>
                     </ul>
                   </div>
@@ -584,13 +586,15 @@
                           >
                             <span class="cost">1,200,000 VND</span>
                           </div>
-                          <div>
+                          <div id="btnShow">
                             <a
+                              id="linkIntro"
                               href="#"
                               class="btn btn-outline-secondary-custom w-100 p-1 mb-2 mt-2"
                               >Link giới thiệu</a
                             >
                             <a
+                              id="linkSign"
                               href="./course-detail.html"
                               class="btn btn-primary-custom p-3"
                               >Đăng ký</a
@@ -629,13 +633,15 @@
                           >
                             <span class="cost">2,000,000 VND</span>
                           </div>
-                          <div>
+                          <div id="btnShow">
                             <a
+                              id="linkIntro"
                               href="#"
                               class="btn btn-outline-secondary-custom w-100 p-1 mb-2 mt-2"
                               >Link giới thiệu</a
                             >
                             <a
+                              id="linkSign"
                               href="./course-detail.html"
                               class="btn btn-primary-custom p-3"
                               >Đăng ký</a
@@ -676,13 +682,15 @@
                           >
                             <span class="cost">1,200,000 VND</span>
                           </div>
-                          <div>
+                          <div id="btnShow">
                             <a
+                              id="linkIntro"
                               href="#"
                               class="btn btn-outline-secondary-custom w-100 p-1 mb-2 mt-2"
                               >Link giới thiệu</a
                             >
                             <a
+                              id="linkSign"
                               href="./course-detail.html"
                               class="btn btn-primary-custom p-3"
                               >Đăng ký</a
@@ -721,13 +729,15 @@
                           >
                             <span class="cost">3,000,000 VND</span>
                           </div>
-                          <div>
+                          <div id="btnShow">
                             <a
+                              id="linkIntro"
                               href="#"
                               class="btn btn-outline-secondary-custom w-100 p-1 mb-2 mt-2"
                               >Link giới thiệu</a
                             >
                             <a
+                              id="linkSign"
                               href="./course-detail.html"
                               class="btn btn-primary-custom p-3"
                               >Đăng ký</a
@@ -766,13 +776,15 @@
                           >
                             <span class="cost">1,000,000 VND</span>
                           </div>
-                          <div>
+                          <div id="btnShow">
                             <a
+                              id="linkIntro"
                               href="#"
                               class="btn btn-outline-secondary-custom w-100 p-1 mb-2 mt-2"
                               >Link giới thiệu</a
                             >
                             <a
+                              id="linkSign"
                               href="./course-detail.html"
                               class="btn btn-primary-custom p-3"
                               >Đăng ký</a
@@ -811,13 +823,15 @@
                           >
                             <span class="cost">1,000,000 VND</span>
                           </div>
-                          <div>
+                          <div id="btnShow">
                             <a
+                              id="linkIntro"
                               href="#"
                               class="btn btn-outline-secondary-custom w-100 p-1 mb-2 mt-2"
                               >Link giới thiệu</a
                             >
                             <a
+                              id="linkSign"
                               href="./course-detail.html"
                               class="btn btn-primary-custom p-3"
                               >Đăng ký</a
@@ -856,13 +870,15 @@
                           >
                             <span class="cost">1,300,000 VND</span>
                           </div>
-                          <div>
+                          <div id="btnShow">
                             <a
+                              id="linkIntro"
                               href="#"
                               class="btn btn-outline-secondary-custom w-100 p-1 mb-2 mt-2"
                               >Link giới thiệu</a
                             >
                             <a
+                              id="linkSign"
                               href="./course-detail.html"
                               class="btn btn-primary-custom p-3"
                               >Đăng ký</a
@@ -901,13 +917,15 @@
                           >
                             <span class="cost">1,000,000 VND</span>
                           </div>
-                          <div>
+                          <div id="btnShow">
                             <a
+                              id="linkIntro"
                               href="#"
                               class="btn btn-outline-secondary-custom w-100 p-1 mb-2 mt-2"
                               >Link giới thiệu</a
                             >
                             <a
+                              id="linkSign"
                               href="./course-detail.html"
                               class="btn btn-primary-custom p-3"
                               >Đăng ký</a
@@ -946,13 +964,14 @@
                           >
                             <span class="cost">1,500,000 VND</span>
                           </div>
-                          <div>
+                          <div id="btnShow">
                             <a
                               href="#"
                               class="btn btn-outline-secondary-custom w-100 p-1 mb-2 mt-2"
                               >Link giới thiệu</a
                             >
                             <a
+                              id="linkSign"
                               href="./course-detail.html"
                               class="btn btn-primary-custom p-3"
                               >Đăng ký</a
@@ -1084,6 +1103,38 @@
         </div>
       </footer>
     </div>
+    <!--  Hidden Link Intro and Sign -->
+    <script>
+      var mentor = false; //temp
+      var member = true; //temp
+      var memberLearned = true; //temp
+
+      let elements = document.querySelectorAll("#linkIntro");
+      let elementsSign = document.querySelectorAll("#linkSign");
+
+      console.log(elements);
+      //Check Token if User is mentor
+      if (mentor == true) {
+        for (let i = 0; i < elements.length; i++) {
+          elements[i].style.display = "none";
+          elementsSign[i].style.marginTop = "26px";
+          elementsSign[i].style.marginBottom = "26px";
+        }
+      }
+      //Check Token if User is member
+      if (member == true) {
+        for (let i = 0; i < elements.length; i++) {
+          //Check student's subject
+          if (memberLearned == true) {
+            //if student dosen't has in class
+            elements[i].style.display = "none";
+            elementsSign[i].style.marginTop = "26px";
+            elementsSign[i].style.marginBottom = "26px";
+          }
+          //else Show Link Introduction for All student in class
+        }
+      }
+    </script>
     <!-- Import script bootstrap V5 -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
