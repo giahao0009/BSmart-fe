@@ -398,138 +398,212 @@
                 </form>
                 <form action="#" method="post" class="category__course tag_r">
                   <div class="d-flex align-items-center">
-                    <h3 class="me-2">Lĩnh vực</h3>
-                    <span class="openFilterCourse"
+                    <h3 class="me-2" onclick="showMore(`showLvMobile`)">
+                      Lĩnh vực
+                    </h3>
+                    <!-- <span class="openFilterCourse"
                       ><i class="fa fa-arrow-down"></i
                     ></span>
                     <span class="closeFilterCourse"
-                      ><i class="fa fa-arrow-down" style="display: none"></i
-                    ></span>
+                      ><i class="fa fa-arrow-up" style="display: none"></i
+                    ></span> -->
                   </div>
-                  <div class="categories__course d-xs-none">
+                  <div id="showLvMobile" class="categories__course d-xs-none">
                     <div class="checkbox__course">
-                      <input id="id" type="checkbox" />
-                      <label for="id">Front End</label>
+                      <input id="idFontEnd" type="checkbox" />
+                      <label for="idFontEnd">Front End</label>
                     </div>
                     <div class="checkbox__course">
-                      <input id="id" type="checkbox" />
-                      <label for="id">Back End</label>
+                      <input id="idBackEnd" type="checkbox" />
+                      <label for="idBackEnd">Back End</label>
                     </div>
-                    <div class="checkbox__course">
-                      <input id="id" type="checkbox" />
-                      <label for="id">Devops</label>
+                    <div id="linhVuc">
+                      <div class="checkbox__course">
+                        <input id="idDevops" type="checkbox" />
+                        <label for="idDevops">Devops</label>
+                      </div>
+                      <div class="checkbox__course">
+                        <input id="idDatabase" type="checkbox" />
+                        <label for="idDatabase">Database</label>
+                      </div>
                     </div>
-                    <div class="checkbox__course">
-                      <input id="id" type="checkbox" />
-                      <label for="id">Database</label>
+                    <!-- Show more -->
+                    <div
+                      id="showMore"
+                      onclick="showMoreLocal(`linhVuc`,`txtShowTitle`,`upIcon`,`downIcon`)"
+                    >
+                      <a class="txtShow">
+                        <span id="txtShowTitle">Xem thêm</span>
+                        <i
+                          id="downIcon"
+                          class="fa fa-arrow-down"
+                          aria-hidden="true"
+                        ></i>
+                        <i
+                          id="upIcon"
+                          class="fa fa-arrow-up"
+                          aria-hidden="true"
+                        ></i>
+                      </a>
                     </div>
                   </div>
                 </form>
                 <form action="#" method="post" class="tag__course tag_r">
-                  <h3>Môn học</h3>
-                  <div class="tag__course d-xs-none">
+                  <h3 onclick="showMore(`showSubMobi`)">Môn học</h3>
+                  <div id="showSubMobi" class="tag__course d-xs-none">
                     <div>
                       <div class="checkbox__course">
-                        <input id="id" type="checkbox" />
-                        <label for="id">Ngôn ngữ C/C++</label>
+                        <input id="idLanguageC" type="checkbox" />
+                        <label for="idLanguageC">Ngôn ngữ C/C++</label>
                       </div>
                       <div class="checkbox__course">
-                        <input id="id" type="checkbox" />
-                        <label for="id">Javascript</label>
+                        <input id="idJavascript" type="checkbox" />
+                        <label for="idJavascript">Javascript</label>
                       </div>
                       <div class="checkbox__course">
-                        <input id="id" type="checkbox" />
-                        <label for="id">.NET Core</label>
+                        <input id="idDotNet" type="checkbox" />
+                        <label for="idDotNet">.NET Core</label>
                       </div>
                       <div class="checkbox__course">
-                        <input id="id" type="checkbox" />
-                        <label for="id">ReactJS</label>
+                        <input id="idReactJS" type="checkbox" />
+                        <label for="idReactJS">ReactJS</label>
                       </div>
-                      <div class="checkbox__course">
-                        <input id="id" type="checkbox" />
-                        <label for="id">Typescript</label>
+
+                      <div id="subject">
+                        <div class="checkbox__course">
+                          <input id="idTypescript" type="checkbox" />
+                          <label for="idTypescript">Typescript</label>
+                        </div>
+                        <div class="checkbox__course">
+                          <input id="idNodeJS" type="checkbox" />
+                          <label for="idNodeJS">NodeJS</label>
+                        </div>
+                        <div class="checkbox__course">
+                          <input id="idDatabase" type="checkbox" />
+                          <label for="idDatabase">Database Sql</label>
+                        </div>
+                        <div class="checkbox__course">
+                          <input id="idMongoDB" type="checkbox" />
+                          <label for="idMongoDB">Database MongoDB</label>
+                        </div>
                       </div>
-                      <div class="checkbox__course">
-                        <input id="id" type="checkbox" />
-                        <label for="id">NodeJS</label>
-                      </div>
-                      <div class="checkbox__course">
-                        <input id="id" type="checkbox" />
-                        <label for="id">Database Sql</label>
-                      </div>
-                      <div class="checkbox__course">
-                        <input id="id" type="checkbox" />
-                        <label for="id">Database MongoDB</label>
+                      <!-- Show more -->
+                      <div
+                        id="showMore"
+                        onclick="showMoreLocal(`subject`,`txtShowTitle1`,`upIcon1`,`downIcon1`)"
+                      >
+                        <a class="txtShow">
+                          <span id="txtShowTitle1">Xem thêm</span>
+                          <i
+                            id="downIcon1"
+                            class="fa fa-arrow-down"
+                            aria-hidden="true"
+                          ></i>
+                          <i
+                            id="upIcon1"
+                            class="fa fa-arrow-up"
+                            aria-hidden="true"
+                          ></i>
+                        </a>
                       </div>
                     </div>
                   </div>
                 </form>
                 <form action="#" method="post" class="tag__form tag_r">
-                  <h3>Hình thức</h3>
-                  <div class="tag__course d-xs-none">
+                  <h3 onclick="showMore(`showHTMobi`)">Hình thức</h3>
+                  <div id="showHTMobi" class="tag__course d-xs-none">
                     <div>
                       <div class="checkbox__course">
-                        <input id="id" type="checkbox" />
-                        <label for="id">Online</label>
+                        <input id="idOnline" type="checkbox" />
+                        <label for="idOnline">Online</label>
                       </div>
                       <div class="checkbox__course">
-                        <input id="id" type="checkbox" />
-                        <label for="id">Offline</label>
+                        <input id="idOffline" type="checkbox" />
+                        <label for="idOffline">Offline</label>
                       </div>
                     </div>
                   </div>
                 </form>
                 <form action="#" method="post" class="tag__location tag_r">
-                  <h3>Khu vực</h3>
-                  <div class="tag__course d-xs-none">
+                  <h3 onclick="showMore(`showLocalMobi`)">Khu vực</h3>
+                  <div id="showLocalMobi" class="tag__course d-xs-none">
                     <div>
                       <div class="checkbox__course">
-                        <input id="id" type="checkbox" />
-                        <label for="id">Quận 1</label>
+                        <input id="idQ1" type="checkbox" />
+                        <label for="idQ1">Quận 1</label>
                       </div>
                       <div class="checkbox__course">
-                        <input id="id" type="checkbox" />
-                        <label for="id">Quận 2</label>
+                        <input id="idQ2" type="checkbox" />
+                        <label for="idQ2">Quận 2</label>
                       </div>
                       <div class="checkbox__course">
-                        <input id="id" type="checkbox" />
-                        <label for="id">Quận 3</label>
+                        <input id="idQ3" type="checkbox" />
+                        <label for="idQ3">Quận 3</label>
                       </div>
                       <div class="checkbox__course">
-                        <input id="id" type="checkbox" />
-                        <label for="id">Quận 4</label>
+                        <input id="idQ4" type="checkbox" />
+                        <label for="idQ4">Quận 4</label>
                       </div>
-                      <div class="checkbox__course">
-                        <input id="id" type="checkbox" />
-                        <label for="id">Quận 5</label>
+                      <!--  -->
+                      <div id="local" style="display: none">
+                        <div class="checkbox__course">
+                          <input id="idQ5" type="checkbox" />
+                          <label for="idQ5">Quận 5</label>
+                        </div>
+                        <div class="checkbox__course">
+                          <input id="idQ6" type="checkbox" />
+                          <label for="idQ6">Quận 6</label>
+                        </div>
+                        <div class="checkbox__course">
+                          <input id="idQ7" type="checkbox" />
+                          <label for="idQ7">Quận 7</label>
+                        </div>
+                        <div class="checkbox__course">
+                          <input id="idQ8" type="checkbox" />
+                          <label for="idQ8">Quận 8</label>
+                        </div>
+                        <div class="checkbox__course">
+                          <input id="idQ9" type="checkbox" />
+                          <label for="idQ9">Quận 9</label>
+                        </div>
+                        <div class="checkbox__course">
+                          <input id="idQ10" type="checkbox" />
+                          <label for="idQ10">Quận 10</label>
+                        </div>
+                        <div class="checkbox__course">
+                          <input id="idQ11" type="checkbox" />
+                          <label for="idQ11">Quận 11</label>
+                        </div>
+                        <div class="checkbox__course">
+                          <input id="idQ12" type="checkbox" />
+                          <label for="idQ12">Quận 12</label>
+                        </div>
+                        <div class="checkbox__course">
+                          <input id="idThuDuc" type="checkbox" />
+                          <label for="idThuDuc">Thủ Đức</label>
+                        </div>
+                        <div class="checkbox__course">
+                          <input id="idBinhChanh" type="checkbox" />
+                          <label for="idBinhChanh">Bình Chánh</label>
+                        </div>
                       </div>
-                      <div class="checkbox__course">
-                        <input id="id" type="checkbox" />
-                        <label for="id">Quận 6</label>
-                      </div>
-                      <div class="checkbox__course">
-                        <input id="id" type="checkbox" />
-                        <label for="id">Quận 7</label>
-                      </div>
-                      <div class="checkbox__course">
-                        <input id="id" type="checkbox" />
-                        <label for="id">Quận 10</label>
-                      </div>
-                      <div class="checkbox__course">
-                        <input id="id" type="checkbox" />
-                        <label for="id">Quận 11</label>
-                      </div>
-                      <div class="checkbox__course">
-                        <input id="id" type="checkbox" />
-                        <label for="id">Quận 12</label>
-                      </div>
-                      <div class="checkbox__course">
-                        <input id="id" type="checkbox" />
-                        <label for="id">Thủ Đức</label>
-                      </div>
-                      <div class="checkbox__course">
-                        <input id="id" type="checkbox" />
-                        <label for="id">Bình Chánh</label>
+                      <div
+                        id="showMore"
+                        onclick="showMoreLocal(`local`,`txtShowTitle2`,`upIcon2`,`downIcon2`)"
+                      >
+                        <a class="txtShow">
+                          <span id="txtShowTitle2">Xem thêm</span>
+                          <i
+                            id="downIcon2"
+                            class="fa fa-arrow-down"
+                            aria-hidden="true"
+                          ></i>
+                          <i
+                            id="upIcon2"
+                            class="fa fa-arrow-up"
+                            aria-hidden="true"
+                          ></i>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -966,6 +1040,7 @@
                           </div>
                           <div id="btnShow">
                             <a
+                              id="linkIntro"
                               href="#"
                               class="btn btn-outline-secondary-custom w-100 p-1 mb-2 mt-2"
                               >Link giới thiệu</a
@@ -1105,18 +1180,30 @@
     </div>
     <!--  Hidden Link Intro and Sign -->
     <script>
-      var mentor = false; //temp
-      var member = true; //temp
-      var memberLearned = true; //temp
+      var mentor = true; //temp
+      var member = false; //temp
 
       let elements = document.querySelectorAll("#linkIntro");
       let elementsSign = document.querySelectorAll("#linkSign");
+      let cost = document.querySelectorAll(".cost");
 
-      console.log(elements);
+      let memberLearned = [
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+      ];
+
       //Check Token if User is mentor
-      if (mentor == true) {
-        for (let i = 0; i < elements.length; i++) {
+      for (let i = 0; i < elements.length; i++) {
+        if (mentor == true) {
           elements[i].style.display = "none";
+          cost[i].style.display = "none";
           elementsSign[i].style.marginTop = "26px";
           elementsSign[i].style.marginBottom = "26px";
         }
@@ -1125,13 +1212,42 @@
       if (member == true) {
         for (let i = 0; i < elements.length; i++) {
           //Check student's subject
-          if (memberLearned == true) {
+          if (memberLearned[i] == true) {
             //if student dosen't has in class
             elements[i].style.display = "none";
-            elementsSign[i].style.marginTop = "26px";
-            elementsSign[i].style.marginBottom = "26px";
+            elementsSign[i].style.marginTop = "51px";
+            elementsSign[i].style.marginBottom = "0px";
           }
           //else Show Link Introduction for All student in class
+        }
+      }
+      //Dropdown list
+      function showMoreLocal(local, text, upIcon, downIcon) {
+        var lct = document.getElementById(local);
+        var txt = document.getElementById(text);
+        var icUp = document.getElementById(upIcon);
+        var icdown = document.getElementById(downIcon);
+
+        if (lct.style.display === "none") {
+          lct.style.display = "block";
+          icUp.style.display = "block";
+          icdown.style.display = "none";
+          txt.innerText = "Thu gọn";
+        } else {
+          lct.style.display = "none";
+          icdown.style.display = "block";
+          icUp.style.display = "none";
+          txt.innerText = "Xem thêm";
+        }
+      }
+      //Dropdown list mobile
+      function showMore(temp) {
+        var lct = document.getElementById(temp);
+        var drd = lct.classList.contains("d-xs-none");
+        if (drd) {
+          lct.classList.remove("d-xs-none");
+        } else {
+          lct.classList.add("d-xs-none");
         }
       }
     </script>
