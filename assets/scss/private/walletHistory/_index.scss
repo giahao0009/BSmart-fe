@@ -1,0 +1,194 @@
+.wallet-history-wrapper {
+  .banner__wallet-history {
+    background-image: url(../images/banner-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 110px 0 100px;
+    position: relative;
+    z-index: -2;
+    h2 {
+      color: $secondary-color;
+      line-height: 30px;
+      letter-spacing: 2px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      font-size: 49px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 26px;
+      color: $grey-white-color;
+      a {
+        color: $grey-white-color;
+        transition: all 0.3s;
+        &:hover {
+          color: $secondary-color;
+        }
+      }
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: rgba(5, 1, 51, 0.7);
+    }
+  }
+  .employee__img {
+    margin-top: 130px;
+    width: 100%;
+    padding: 30px;
+    .employ__box {
+      width: 100%;
+      border-radius: 15px;
+      img {
+        width: 100%;
+        border-radius: 25px;
+      }
+    }
+    &:nth-child(2) {
+      margin-top: -70px;
+    }
+  }
+  .sec-heading__about {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+    h5 {
+      font-size: 16px;
+      line-height: 26px;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: $secondary-color;
+      letter-spacing: 1px;
+    }
+    h2 {
+      font-size: 45px;
+      line-height: 55px;
+      font-weight: 700;
+    }
+    p {
+      color: grey;
+      margin: 20px 0 40px;
+      letter-spacing: 1px;
+      line-height: 25px;
+    }
+  }
+  .wallet-history-option {
+    padding-top: 100px;
+  }
+
+  .title-wallet-member h3 {
+    color: $secondary-color;
+    line-height: 30px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 32px;
+  }
+  .search-form {
+    position: relative;
+  }
+
+  .search-form input {
+    width: 100%;
+    height: 35px;
+    border: 0;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+    border-radius: 5px;
+    font-family: "Rubik";
+  }
+
+  .search-form button {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    height: 35px;
+    width: 60px;
+    border: 0;
+    background-color: #ff630e;
+    font-size: 20px;
+    padding: 0 20px;
+    border-radius: 0 5px 5px 0;
+    color: #fff;
+  }
+
+  .search-form button:hover {
+    background-color: #130f40;
+  }
+  .widget {
+    padding: 20px 20px 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
+    box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
+  }
+  .widget h4 {
+    color: #130f40;
+    padding-bottom: 15px;
+    font-weight: 700;
+    font-size: 24px;
+  }
+  .search-date {
+    margin-right: 10px;
+  }
+  .btn {
+    background-color: #ff630e;
+    color: white;
+  }
+
+  .wallet-history-area {
+    padding: 10px 0;
+  }
+  .table {
+    padding: 30px 40px 40px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 15px rgb(51 51 51 / 10%);
+    box-shadow: 0 0 15px rgb(51 51 51 / 10%);
+  }
+  .blog-pagination li {
+    display: inline-block;
+  }
+
+  .blog-pagination li a,
+  .blog-pagination li span {
+    width: 55px;
+    height: 55px;
+    background-color: #f7f7f7;
+    display: block;
+    border: 1px solid #e6f0fa;
+    border-radius: 50%;
+    font-weight: 500;
+    line-height: 55px;
+    font-family: "Rubik";
+    font-size: 16px;
+    margin: 0 5px;
+  }
+
+  .blog-pagination li i {
+    font-size: 20px;
+  }
+
+  .blog-pagination li a:hover,
+  .blog-pagination li span {
+    border-color: #ff630e;
+    background-color: #ff630e;
+    color: #fff;
+  }
+
+  @media only screen and(min-width:414px) {
+    .table {
+      .row {
+      }
+    }
+  }
+}

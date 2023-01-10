@@ -1,0 +1,25 @@
+.member-detail-wrapper {
+  .mentor-profile-edit-content {
+    padding: 20px;
+    label {
+      color: $primary-color;
+      font-weight: 500;
+    }
+    .form-group-custome {
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      h3 {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 46px;
+      }
+    }
+    .avatar_img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+    }
+  }
+}

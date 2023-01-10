@@ -45,6 +45,20 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/responsive.css" />
   </head>
   <body>
+    <!-- Preloader start -->
+    <div class="preloader">
+      <div class="lds-roller">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <!-- Preloader end -->
     <!-- Start Sidebar mobile -->
     <div class="sidebar-wrap" id="sidebar-mobile">
       <div class="container-fluid">
@@ -57,6 +71,9 @@
             <ul class="sidebar-mean-nav">
               <li><a href="#">Trang chủ</a></li>
               <li><a href="#">Về chúng tôi</a></li>
+              <li>
+                <a href="./lms.html">Nền tảng LMS</a>
+              </li>
               <li>
                 <a href="#">Khoá học</a>
                 <div class="d-flex align-items-center justify-content-end">
@@ -83,7 +100,7 @@
 
                 <a class="mean-expand" href="#">+</a>
               </li>
-              <li><a href="#">Blog</a></li>
+              <li><a href="./blog.html">Blog</a></li>
             </ul>
           </div>
           <div class="sidebar-bottom">
@@ -165,7 +182,7 @@
       </div>
     </div>
     <!-- End login form modal -->
-    <div class="wrapper banner-mentor-wrapper">
+    <div class="wrapper mentor-detail-wrapper">
       <!-- Start header -->
       <header class="header-main">
         <div class="header-top">
@@ -219,7 +236,7 @@
         <div class="header-bottom">
           <div class="container">
             <div class="header-bottom-wrapper">
-              <a href="#"><span class="site-logo">BSMART</span></a>
+              <a href="./index.html"><span class="site-logo">BSMART</span></a>
               <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                   <div class="collapse navbar-collapse">
@@ -227,9 +244,7 @@
                     <!-- Menu cấp parent -->
                     <ul class="navbar-nav">
                       <li>
-                        <a
-                          href="./index.html"
-                          class="nav-link nav-link-custom active"
+                        <a href="./index.html" class="nav-link nav-link-custom"
                           >Trang Chủ</a
                         >
                       </li>
@@ -240,61 +255,56 @@
                           >Về Chúng Tôi</a
                         >
                       </li>
+
                       <li>
                         <a
                           href="./courses.html"
                           class="nav-link nav-link-custom"
                           >Khoá Học</a
                         >
-                        <!-- Menu con cấp 1 -->
-                        <ul>
-                          <li>
-                            <a href="#" class="nav-link-custom"
-                              >Khoá học Devops</a
-                            >
-                          </li>
-                          <li>
-                            <a href="#" class="nav-link-custom"
-                              >Khoá học Back End</a
-                            >
-                            <ul>
-                              <li>
-                                <a href="#" class="nav-link-custom"
-                                  >ASP.NET Core Basic</a
-                                >
-                              </li>
-                              <li>
-                                <a href="#" class="nav-link-custom"
-                                  >ASP.NET Core MVC</a
-                                >
-                              </li>
-                              <li>
-                                <a href="#" class="nav-link-custom"
-                                  >ASP.NET Core API</a
-                                >
-                              </li>
-                            </ul>
-                          </li>
-                          <li>
-                            <a href="#" class="nav-link-custom"
-                              >Khoá học Front End</a
-                            >
-                            <ul>
-                              <li>
-                                <a href="#" class="nav-link-custom">ReactJS</a>
-                              </li>
-                              <li>
-                                <a href="#" class="nav-link-custom">VueJS</a>
-                              </li>
-                              <li>
-                                <a href="#" class="nav-link-custom">Angular</a>
-                              </li>
-                            </ul>
-                          </li>
-                        </ul>
+                        <div class="sub-nav">
+                          <div
+                            class="content-sub-nav d-flex justify-content-between"
+                          >
+                            <div>
+                              <a href="#">Front End</a>
+                              <ul>
+                                <li>
+                                  <a href="#"><span>+</span> Front End Basic</a>
+                                </li>
+                                <li>
+                                  <a href="#"><span>+</span> ReactJS</a>
+                                </li>
+                                <li>
+                                  <a href="#"><span>+</span> VueJS</a>
+                                </li>
+                                <li>
+                                  <a href="#"><span>+</span> Angular</a>
+                                </li>
+                              </ul>
+                            </div>
+                            <div>
+                              <a href="#">Back End</a>
+                              <ul>
+                                <li>
+                                  <a href="#"><span>+</span> NodeJS </a>
+                                </li>
+                                <li>
+                                  <a href="#"><span>+</span> .NET Core MVC</a>
+                                </li>
+                                <li>
+                                  <a href="#"><span>+</span> .NET Core API</a>
+                                </li>
+                              </ul>
+                            </div>
+                            <div>
+                              <a href="#">Devops</a>
+                            </div>
+                          </div>
+                        </div>
                       </li>
                       <li>
-                        <a href="#" class="nav-link nav-link-custom"
+                        <a href="#" class="nav-link nav-link-custom active"
                           >Giảng viên</a
                         >
                         <ul class="sub-menu">
@@ -308,9 +318,23 @@
                       </li>
 
                       <li>
-                        <a href="#blog" class="nav-link nav-link-custom"
+                        <a href="./blog.html" class="nav-link nav-link-custom"
                           >Blog</a
                         >
+                        <ul class="sub-menu">
+                          <li>
+                            <a href="./blog.html">Sự kiện</a>
+                          </li>
+                          <li>
+                            <a href="./blog.html">Khuyến mãi</a>
+                          </li>
+                          <li>
+                            <a href="./blog.html">Tuyển dụng</a>
+                          </li>
+                          <li>
+                            <a href="./blog.html">Hoạt động</a>
+                          </li>
+                        </ul>
                       </li>
                     </ul>
                   </div>
@@ -338,11 +362,197 @@
       </header>
       <!-- End header -->
       <section class="banner-mentor-detail">
-        <div class="content-banner-mentor-detail">
+        <div class="banner-content">
           <h1>Thông tin mentor</h1>
           <p>
             <a href="index.html">Trang chủ</a><span> > </span> Thông tin mentor
           </p>
+        </div>
+      </section>
+      <section class="content-info-mentor">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-5">
+              <div class="mentor-info">
+                <div class="mentor-img">
+                  <img
+                    src="./assets/images/avatar-mentor-1.jpg"
+                    alt="hinh anh mentor"
+                  />
+                </div>
+                <div class="mentor-details">
+                  <h4>Mentor Cường</h4>
+                  <p>Mentor</p>
+                  <ul class="social-list">
+                    <li>
+                      <a href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                  </ul>
+                  <ul class="contact-info">
+                    <li>
+                      <span
+                        ><i class="fa fa-envelope"></i>mrcuong@gmail.com</span
+                      >
+                    </li>
+                    <li>
+                      <span><i class="fa fa-phone"></i> 0946005077</span>
+                    </li>
+                  </ul>
+                  <div class="contact-btn">
+                    <a href="#" class="btn btn-primary-custom">Liên hệ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8 col-md-7">
+              <div class="about-mentor">
+                <h3>Giới thiệu</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In
+                  nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed
+                  pretium, ligula sollicitudin laoreet viverra, tortor libero
+                  sodales leo, eget blandit nunc tortor eu nibh.
+                </p>
+              </div>
+              <div class="skill-rate">
+                <h3>Skill</h3>
+                <div class="row">
+                  <div class="col-lg-6 skill-single">
+                    <div class="d-flex justify-content-between mb-2">
+                      <div class="skill-name">PHP</div>
+                      <div class="skill-level-text">97%</div>
+                    </div>
+                    <div class="progress p-0">
+                      <div class="progress-bar" style="width: 97%"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 skill-single">
+                    <div class="d-flex justify-content-between mb-2">
+                      <div class="skill-name">PHP</div>
+                      <div class="skill-level-text">97%</div>
+                    </div>
+                    <div class="progress p-0">
+                      <div class="progress-bar" style="width: 97%"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 skill-single">
+                    <div class="d-flex justify-content-between mb-2">
+                      <div class="skill-name">PHP</div>
+                      <div class="skill-level-text">97%</div>
+                    </div>
+                    <div class="progress p-0">
+                      <div class="progress-bar" style="width: 97%"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 skill-single">
+                    <div class="d-flex justify-content-between mb-2">
+                      <div class="skill-name">PHP</div>
+                      <div class="skill-level-text">97%</div>
+                    </div>
+                    <div class="progress p-0">
+                      <div class="progress-bar" style="width: 97%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="experience">
+                <h3>Kinh nghiệm thực tế</h3>
+                <p>
+                  Tôi có kinh nghiệm 10 năm với vai trò là một seniot web
+                  developer (2010 - Hiện tại) tại CodeMex. Ngoài ra, tôi còn là
+                  mentor của trung tâm lập trình WebCode trong hơn 5 năm (2005
+                  -2010).
+                </p>
+              </div>
+              <div class="row mentor-profile-counter">
+                <div class="col-lg-6">
+                  <div class="counter-single text-center mb-3">
+                    <div class="counter-number">
+                      <h2><span>20</span>+</h2>
+                    </div>
+                    <div class="counter-title">
+                      <p>Khoá học</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="counter-single text-center mb-3">
+                    <div class="counter-number">
+                      <h2><span>10,000</span>+</h2>
+                    </div>
+                    <div class="counter-title">
+                      <p>Học viên</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="courses">
+                <h3 class="mb-3">Khoá học tiêu biểu</h3>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="card course-card mb-3" style="width: 100%">
+                      <img
+                        src="./assets/images/front-end-course.png"
+                        class="card-img-top"
+                        alt="hinh anh"
+                      />
+                      <div class="card-body">
+                        <p class="card-price">1,200,000 VND</p>
+                        <h5 class="card-title">Front End Basic</h5>
+                        <div class="testi-rating">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <hr />
+                        <a href="#" class="btn btn-primary-custom"
+                          >Xem chi tiết</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="card course-card mb-3" style="width: 100%">
+                      <img
+                        src="./assets/images/reactjs-banner.png"
+                        class="card-img-top"
+                        alt="hinh anh"
+                      />
+                      <div class="card-body">
+                        <p class="card-price">2,000,000 VND</p>
+                        <h5 class="card-title">ReactJS Basic</h5>
+                        <div class="testi-rating">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <hr />
+                        <a href="#" class="btn btn-primary-custom"
+                          >Xem chi tiết</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="course-showmore d-flex justify-content-center mt-4">
+                <a href="#" class="btn btn-outline-secondary-custom w-50 p-2"
+                  >Xem thêm</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <!-- Start footer -->

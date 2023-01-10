@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BSmart</title>
+    <!-- Import css bootstrap v5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- Import font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Imoprt owl carousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Import swiper -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- Import css reset -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
+    <!-- Import css styles -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
+    <!-- Import css responsive -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/responsive.css" />
+  </head>
+  <body>
+    <!-- Preloader start -->
+    <div class="preloader">
+      <div class="lds-roller">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <!-- Preloader end -->
+    <!-- Start Sidebar mobile -->
+    <div class="sidebar-wrap" id="sidebar-mobile">
+      <div class="container-fluid">
+        <div class="sidebar-content">
+          <div class="sidebar-top">
+            <a href="./index.html" class="sidebar-logo">BSMART</a>
+            <i class="fa fa-times" class="sidebar-close" id="closeSidebar"></i>
+          </div>
+          <div class="sidebar-center">
+            <ul class="sidebar-mean-nav">
+              <li><a href="./index.html">Trang chủ</a></li>
+              <li><a href="./aboutus.html">Về chúng tôi</a></li>
+              <li>
+                <a href="./courses.html">Khoá học</a>
+                <div class="d-flex align-items-center justify-content-end">
+                  <ul class="sub-menu">
+                    <li><a href="#">Front End</a></li>
+                    <li><a href="#">Back End</a></li>
+                    <li><a href="#">Devops</a></li>
+                  </ul>
+                </div>
+                <a class="mean-expand" href="#">+</a>
+                <a class="mean-non-expand" href="#">-</a>
+              </li>
+              <li>
+                <a href="#">Giảng viên</a>
+                <div class="d-flex align-items-center justify-content-end">
+                  <ul class="sub-menu">
+                    <li><a href="#">Mentor Long</a></li>
+                    <li><a href="#">Mentor Cuong</a></li>
+                  </ul>
+                </div>
+
+                <a class="mean-expand" href="#">+</a>
+                <a class="mean-non-expand" href="#">-</a>
+              </li>
+              <li><a href="./blog.html">Blog</a></li>
+            </ul>
+          </div>
+          <div class="sidebar-bottom">
+            <div class="search-course">
+              <form action="#" method="post">
+                <input
+                  type="text"
+                  placeholder="Tìm kiếm khoá học"
+                  class="form-control"
+                />
+              </form>
+
+              <span><i class="fa fa-search"></i></span>
+            </div>
+            <ul class="contact-info">
+              <li class="mb-3">
+                <i class="fa fa-envelope"></i> bsmart@gmail.com
+              </li>
+              <li><i class="fa fa-phone"></i> +98 946005077</li>
+            </ul>
+            <ul class="social-list">
+              <li>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-dribbble"></i></a>
+              </li>
+            </ul>
+            <ul class="sidebar-controls">
+              <li><a href="./login-mobile.html">Login</a></li>
+              <li><small>|</small></li>
+              <li><a href="./register.html">Register</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Sidebar mobile -->
+    <!-- Login form modal -->
+    <div id="loginFormModal" class="login-form-container">
+      <div
+        class="container-fluid d-flex justify-content-center align-items-center"
+        style="height: 100%"
+      >
+        <div class="login-form-content">
+          <div class="close-login-form" id="loginFormClose">&times;</div>
+          <h3 class="mb-3 text-center">Đăng nhập</h3>
+          <form action="#" method="post">
+            <div class="form-group mb-3">
+              <input type="text" placeholder="Email" class="form-control" />
+            </div>
+            <div class="form-group mb-3">
+              <input type="text" placeholder="Password" class="form-control" />
+            </div>
+            <div
+              class="form-check d-flex justify-content-between align-items-center mb-3"
+            >
+              <div class="checkbox d-flex align-items-center">
+                <input
+                  type="checkbox"
+                  class="form-check-input mt-0"
+                  id="signed"
+                />
+                <label for="signed" class="ms-1">Remember me</label>
+              </div>
+              <div class="forgot-pass">
+                <a href="#" class="link-custom">Forgot Password?</a>
+              </div>
+            </div>
+            <div class="login-btn text-center mb-2">
+              <a href="./login-success.html" class="btn btn-primary-custom p-2"
+                >Đăng nhập</a
+              >
+            </div>
+            <div id="gSignInWrapper" class="mb-4 w-100">
+              <div id="customBtn" class="customGPlusSignIn w-100">
+                <span class="icon"></span>
+                <span class="buttonText">Đăng nhập bằng tài khoản google</span>
+              </div>
+            </div>
+            <div class="new-registration text-center">
+              <span>Bạn chưa có tài khoản?</span>
+              <a href="./register.html" class="link-custom">Đăng ký ngay</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- End login form modal -->
+    <div class="wrapper member-detail-wrapper create-course-wrapper">
+      <!-- Start header -->
+      <header class="header-main">
+        <div class="header-top">
+          <div class="container">
+            <div class="header-top-wrapper">
+              <!-- Start header social -->
+              <div class="header-top-social text-left">
+                <ul>
+                  <li>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                  </li>
+                </ul>
+              </div>
+              <!-- End header social -->
+              <!-- Start header contact info -->
+              <div class="header-contact-info">
+                <ul>
+                  <li class="mb-3">
+                    <i class="fa fa-envelope"></i> bsmart@gmail.com
+                  </li>
+                  <li><i class="fa fa-phone"></i> +98 946005077</li>
+                </ul>
+              </div>
+              <!-- End header contact info -->
+              <!-- Start header search -->
+              <div class="header-course-search">
+                <form action="#" method="post">
+                  <input
+                    type="text"
+                    placeholder="Tìm kiếm khoá học"
+                    class="form-control"
+                  />
+                </form>
+                <span><i class="fa fa-search"></i></span>
+              </div>
+              <!-- End header search -->
+              <div class="header-log-reg d-flex justify-content-end">
+                <a href="./member-detail.html">
+                  <img
+                    src="./assets/images/avatar-mentor-3.jpg"
+                    alt="hinh anh"
+                    class="avatar"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-bottom">
+          <div class="container">
+            <div class="header-bottom-wrapper">
+              <a href="./index.html"><span class="site-logo">BSMART</span></a>
+              <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <div class="collapse navbar-collapse">
+                    <!-- Menu -->
+                    <!-- Menu cấp parent -->
+                    <ul class="navbar-nav">
+                      <li>
+                        <a href="./index.html" class="nav-link nav-link-custom"
+                          >Trang Chủ</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="./aboutus.html"
+                          class="nav-link nav-link-custom"
+                          >Về Chúng Tôi</a
+                        >
+                      </li>
+
+                      <li>
+                        <a
+                          href="./courses.html"
+                          class="nav-link nav-link-custom"
+                          >Khoá Học</a
+                        >
+                        <div class="sub-nav">
+                          <div
+                            class="content-sub-nav d-flex justify-content-between"
+                          >
+                            <div>
+                              <a href="#">Front End</a>
+                              <ul>
+                                <li>
+                                  <a href="#"><span>+</span> Front End Basic</a>
+                                </li>
+                                <li>
+                                  <a href="#"><span>+</span> ReactJS</a>
+                                </li>
+                                <li>
+                                  <a href="#"><span>+</span> VueJS</a>
+                                </li>
+                                <li>
+                                  <a href="#"><span>+</span> Angular</a>
+                                </li>
+                              </ul>
+                            </div>
+                            <div>
+                              <a href="#">Back End</a>
+                              <ul>
+                                <li>
+                                  <a href="#"><span>+</span> NodeJS </a>
+                                </li>
+                                <li>
+                                  <a href="#"><span>+</span> .NET Core MVC</a>
+                                </li>
+                                <li>
+                                  <a href="#"><span>+</span> .NET Core API</a>
+                                </li>
+                              </ul>
+                            </div>
+                            <div>
+                              <a href="#">Devops</a>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <a href="#" class="nav-link nav-link-custom active"
+                          >Giảng viên</a
+                        >
+                        <ul class="sub-menu">
+                          <li>
+                            <a href="./mentor-detail.html">Mentor Cường</a>
+                          </li>
+                          <li>
+                            <a href="./mentor-detail.html">Mentor Long</a>
+                          </li>
+                        </ul>
+                      </li>
+
+                      <li>
+                        <a href="./blog.html" class="nav-link nav-link-custom"
+                          >Blog</a
+                        >
+                        <ul class="sub-menu">
+                          <li>
+                            <a href="./blog.html">Sự kiện</a>
+                          </li>
+                          <li>
+                            <a href="./blog.html">Khuyến mãi</a>
+                          </li>
+                          <li>
+                            <a href="./blog.html">Tuyển dụng</a>
+                          </li>
+                          <li>
+                            <a href="./blog.html">Hoạt động</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+              <div class="header-cart">
+                <a href="#"
+                  ><i class="fa fa-shopping-cart"></i>
+                  <span class="cart-total-number">0</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-mobile">
+          <div class="container">
+            <div class="header-mobile-content">
+              <div class="header-mobile-logo"><span>BSMART</span></div>
+              <div class="header-mobile-menu-hambuger" id="activeMenu">
+                <i class="fa fa-bars"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- End header -->
+      <section class="banner-member-detail">
+        <div class="banner-content">
+          <h1>Mentor profile</h1>
+          <p>
+            <a href="index.html">Trang chủ</a><span> > </span> Mentor profile
+          </p>
+        </div>
+      </section>
+      <section class="content-info-mentor">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-12">
+              <div class="member-info">
+                <div class="member-img">
+                  <img
+                    src="./assets/images/avatar-mentor-1.jpg"
+                    alt="hinh anh member"
+                  />
+                </div>
+                <div class="member-details">
+                  <h4>Mentor Cường</h4>
+                  <p>Mentor</p>
+                  <ul class="social-list">
+                    <li>
+                      <a href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                  </ul>
+                  <ul class="contact-info">
+                    <li>
+                      <span><i class="fa fa-male fs-2"></i></span>
+                    </li>
+                    <li>
+                      <span>27/01/2001</span>
+                    </li>
+                    <li>
+                      <span>
+                        <i class="fa fa-location-arrow"></i> Tân Bình, Tp. Hồ
+                        Chí Minh
+                      </span>
+                    </li>
+                    <li>
+                      <span
+                        ><i class="fa fa-envelope"></i>mentor@gmail.com</span
+                      >
+                    </li>
+                    <li>
+                      <span><i class="fa fa-phone"></i> 0946005077</span>
+                    </li>
+                    <li>
+                      <span
+                        >Số dư hiện tại:
+                        <span class="current-amount">300,000 BS</span></span
+                      >
+                    </li>
+                  </ul>
+                  <div class="contact-btn">
+                    <a
+                      href="./mentor-profile-edit.html"
+                      class="btn btn-primary-custom"
+                      >Chỉnh sửa thông tin</a
+                    >
+                  </div>
+                  <div class="mt-2">
+                    <a
+                      href="./wallet-management.html"
+                      class="btn btn-primary-custom w-100"
+                      >Quản lý ví tiền</a
+                    >
+                  </div>
+                  <div class="mt-2">
+                    <a href="#" class="btn btn-primary-custom w-100"
+                      >Rút tiền</a
+                    >
+                  </div>
+                  <div class="mt-2">
+                    <a
+                      href="./mentor-profile.html"
+                      class="btn btn-primary-custom w-100"
+                      >Danh sách khoá học</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="member-operation mt-3">
+                <h4>Các hoạt động gần đây</h4>
+                <ul>
+                  <li>
+                    <p class="mt-2">Đã đăng ký khoá học ReactJS Basic</p>
+                    <span>01/01/2023</span>
+                    <hr />
+                  </li>
+                  <li>
+                    <p class="mt-2">
+                      Đã nhận được 100 BS từ việc chia sẻ khoá học
+                    </p>
+                    <span>01/01/2023</span>
+                    <hr />
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-8 col-md-12">
+              <div class="mentor-add-course">
+                <form action="#" method="post" class="add-course-form">
+                  <div class="mb-3">
+                    <div class="card card-image-custom">
+                      <div class="p-2">
+                        <div class="rounded border my-border-color p-1">
+                          <div class="image-container">
+                            <img
+                              id="frameImageCourse"
+                              src="./assets/images/upload-img.jpg"
+                              class="img-fluid w-100 rounded"
+                            />
+                            <div class="loading" id="loading-upload-img">
+                              <div class="spinner-border" role="status">
+                                <span class="sr-only">Loading...</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <div class="row align-items-center group-title">
+                            <div class="col-md-2 col-sm-2">
+                              <label class="text-center mb-2">Hình ảnh</label>
+                            </div>
+                            <div class="col-md-7">
+                              <input
+                                class="form-control w-100 mb-2"
+                                type="file"
+                                id="formFileImageCourse"
+                                onchange="previewImageCourse()"
+                              />
+                            </div>
+                            <div class="col-md-3">
+                              <button
+                                onclick="clearImageCourse()"
+                                class="btn btn-outline-secondary-custom p-2 w-100"
+                              >
+                                Xoá ảnh
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Tên khoá học</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      value="Front End Nâng cao"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Hình thức khoá học</label>
+                    <select
+                      id="formsOfTraining"
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected>Open this select menu</option>
+                      <option value="Online">Online</option>
+                      <option value="Offline">Offline</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Số lượng học viên</label>
+                    <input type="number" class="form-control" value="20" />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Phân loại khoá học</label>
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected>Open this select menu</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Ngày mở khoá học</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      value="20/01/2023"
+                    />
+                  </div>
+
+                  <div id="showLocation">
+                    <div class="mb-3">
+                      <label class="form-label">Tỉnh Thành</label>
+                      <select
+                        onchange="print_state('state',this.selectedIndex);"
+                        id="country"
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <!-- <option selected>Chọn thành phố</option>
+                        <option value="1">Online</option>
+                        <option value="2">Offline</option> -->
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Quận | Huyện</label>
+                      <select
+                        onchange="print_district('district',this.selectedIndex);"
+                        name="state"
+                        id="state"
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Vui lòng chọn tỉnh thành trước</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Đường</label>
+                      <select
+                        name="district"
+                        id="district"
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Vui lòng chọn quận huyện trước</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Địa chỉ chi tiết</label>
+                      <input type="text" class="form-control" value="" />
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Miêu tả khoá học</label>
+                    <div class="form-floating">
+                      <textarea
+                        class="form-control"
+                        style="height: 200px"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <button type="submit" class="btn btn-primary-custom w-100">
+                      Tạo khoá học
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Start footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12">
+              <h3 class="title-address">TP.Hồ Chí Minh</h3>
+            </div>
+          </div>
+          <div class="row mb-5">
+            <div class="col-lg-3 col-md-6">
+              <h3 class="quaters">Trụ sở: 117 Tân Cảng, Bình Thạnh</h3>
+              <p class="hotline">Hotline: 096.105.1014</p>
+              <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <h3 class="quaters">Trụ sở: 117 Tân Cảng, Bình Thạnh</h3>
+              <p class="hotline">Hotline: 096.105.1014</p>
+              <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <h3 class="quaters">Trụ sở: 117 Tân Cảng, Bình Thạnh</h3>
+              <p class="hotline">Hotline: 096.105.1014</p>
+              <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
+            </div>
+          </div>
+          <hr class="text-success mt-5 mb-5" />
+          <div class="row">
+            <div class="col-lg-3 col-md-6 mb-3">
+              <div class="footer-logo">
+                <a href="#"
+                  ><span class="site-logo site-logo-footer">BSMART</span></a
+                >
+                <p class="footer-about-description">
+                  Chúng tôi cung cấp các khoá học chất lượng cao để cải thiện
+                  các kỹ năng lập trình của bạn. Tất cả các giảng viên của chúng
+                  tôi đều có nhiều kinh nghiệm trong thực tế và giảng dạy.
+                </p>
+                <h6>Theo dõi chúng tôi tại:</h6>
+                <ul class="footer-social-icons">
+                  <li>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 mb-3">
+              <div class="footer-menu">
+                <h4>Menu</h4>
+                <ul>
+                  <li><a href="#">Khoá học</a></li>
+                  <li><a href="#">Giảng viên</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-3">
+              <div class="footer-control">
+                <button class="btn btn-primary-custom p-2 mb-2">
+                  Đăng ký khoá học
+                </button>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-3">
+              <div class="footer-contact">
+                <h4>Liên hệ với chúng tôi</h4>
+                <li>
+                  <i class="fa fa-map-marker"></i>
+                  <p class="m-0">260/19 Tân Binh, Hồ Chí Minh</p>
+                </li>
+                <li>
+                  <i class="fa fa-envelope"></i>
+                  <p class="m-0">bsmart@gmail.com</p>
+                </li>
+                <li>
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+                  <p class="m-0">+98 946005077</p>
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="text-success mt-5" />
+        <div class="container">
+          <p class="m-0 text-light">
+            © Bản quyền BSmart 2022 - Empowered by <a href="#">BSmart</a>
+          </p>
+        </div>
+      </footer>
+      <!-- End footer -->
+    </div>
+    <!-- Import script bootstrap V5 -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Import script Jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Import script owl carousel  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Import swiper -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Script -->
+    <script>
+      function previewImageCourse() {
+        // console.log(frame1);
+        // console.log(URL.createObjectURL(event.target.files[0]));
+
+        frameImageCourse.src = "";
+        frameImageCourse.src = window.URL.createObjectURL(
+          event.target.files[0]
+        );
+      }
+      function clearImageCourse() {
+        event.preventDefault();
+        loading();
+        document.getElementById("formFileImageCourse").value = null;
+        frameImageCourse.src = "./assets/images/upload-img.jpg";
+      }
+
+      document
+        .getElementById("formsOfTraining")
+        .addEventListener("change", function () {
+          if (this.value == "Online") {
+            document.getElementById("showLocation").style.display = "none";
+          } else {
+            document.getElementById("showLocation").style.display = "block";
+          }
+        });
+    </script>
+    <script type="text/javascript">
+      var country_arr = new Array(
+        "An Giang",
+        "Bà Rịa - Vũng Tàu",
+        "Bắc Giang",
+        "Bắc Kạn",
+        "Bạc Liêu",
+        "Bắc Ninh",
+        "Bến Tre",
+        "Bình Định",
+        "Bình Dương",
+        "Bình Phước",
+        "Bình Thuận",
+        "Cà Mau",
+        "Cần Thơ",
+        "Cao Bằng",
+        "Đà Nẵng",
+        "Đắk Lắk",
+        "Đắk Nông",
+        "Điện Biên",
+        "Đồng Nai",
+        "Đồng Tháp",
+        "Gia Lai",
+        "Hà Giang",
+        "Hà Nam",
+        "Hà Nội",
+        "Hà Tĩnh",
+        "Hải Dương",
+        "Hải Phòng",
+        "Hậu Giang",
+        "Hòa Bình",
+        "Hưng Yên",
+        "Khánh Hòa",
+        "Kiên Giang",
+        "Kon Tum",
+        "Lai Châu",
+        "Lâm Đồng",
+        "Lạng Sơn",
+        "Lào Cai",
+        "Long An",
+        "Nam Định",
+        "Nghệ An",
+        "Ninh Bình",
+        "Ninh Thuận",
+        "Phú Thọ",
+        "Phú Yên",
+        "Quảng Bình",
+        "QuảngNam",
+        "Quảng Ngãi",
+        "Quảng Ninh",
+        "Quảng Trị",
+        "Sóc Trăng",
+        "Sơn La",
+        "TâyNinh",
+        "Thái Bình",
+        "Thái Nguyên",
+        "Thanh Hóa",
+        "Thừa Thiên Huế",
+        "Tiền Giang",
+        "Thành phố Hồ Chí Minh",
+        "Trà Vinh",
+        "Tuyên Quang",
+        "Vĩnh Long",
+        "Vĩnh Phúc",
+        "Yên Bái"
+      );
+      var s_a = new Array();
+      s_a[0] = "";
+      s_a[1] =
+        "Thành phố Long Xuyên, Thành phố Châu Đốc, Huyện An Phú, Thị xã Tân Châu, Huyện Phú Tân, Huyện Châu Phú, Huyện Tịnh Biên, Huyện Tri Tôn, Huyện Châu Thành, Huyện Chợ Mới, Huyện Thoại Sơn";
+      s_a[2] =
+        "Thành phố Vũng Tàu,Thành phố Bà Rịa,Huyện Châu Đức,Huyện Xuyên Mộc,Huyện Long Điền,Huyện Đất Đ,Huyện Tân Thành";
+      s_a[3] =
+        "Thành phố Bắc Giang ,Huyện Yên Thế ,Huyện Tân Yên ,Huyện Lạng Giang ,Huyện Lục Nam ,Huyện Lục Ngạn ,Huyện Sơn Động ,Huyện Yên Dũng ,Huyện Việt Yên ,Huyện Hiệp Hòa";
+      s_a[4] =
+        "Thành Phố Bắc Kạn ,Huyện Pác Nặm ,Huyện Ba Bể ,Huyện Ngân Sơn ,Huyện Bạch Thông,Huyện Chợ Đồn ,Huyện Chợ Mới ,Huyện Na Rì";
+      s_a[5] =
+        "Thành phố Bạc Liêu ,Huyện Hồng Dân ,Huyện Phước Long ,Huyện Vĩnh Lợi ,Thị xã Giá Rai ,Huyện Đông Hải ,Huyện Hoà Bình";
+      s_a[6] =
+        "Thành phố Bắc Ninh ,Huyện Yên Phong ,Huyện Quế Võ ,Huyện Tiên Du ,Thị xã Từ Sơn,Huyện Thuận Thành ,Huyện Gia Bình ,Huyện Lương";
+      var s_b = new Array();
+      s_b[(1, 1)] = "c11|c12|c13|c14|c15|c16|c17|c18|c19|c10";
+      s_b[(1, 2)] = "c21|c22|c23|c24|c25|c26|c27|c28|c29|c210";
+      s_b[(2, 1)] = "d11|d12|d13|d14|d15|d16|d17|d18|d19|d10";
+      s_b[(2, 2)] = "d21|d22|d23|d24|d25|d26|d27|d28|d29|d210";
+      function print_country(country_id) {
+        // given the id of the <select> tag as function argument, it inserts <option> tags
+        var option_str = document.getElementById(country_id);
+        option_str.length = 0;
+        option_str.options[0] = new Option("Chọn thành phố hoặc tỉnh", "");
+        option_str.selectedIndex = 0;
+        for (var i = 0; i < country_arr.length; i++) {
+          option_str.options[option_str.length] = new Option(
+            country_arr[i],
+            country_arr[i]
+          );
+        }
+      }
+
+      function print_state(state_id, state_index) {
+        var option_str = document.getElementById(state_id);
+        option_str.length = 0;
+        option_str.options[0] = new Option("Chọn quận huyện", "");
+        option_str.selectedIndex = 0;
+        var state_arr = s_a[state_index].split(",");
+        for (var i = 0; i < state_arr.length; i++) {
+          option_str.options[option_str.length] = new Option(
+            state_arr[i],
+            state_arr[i]
+          );
+        }
+      }
+      //This function is incorrect, just to demonstrate, please help to correct this
+
+      function print_district(district_id, district_index) {
+        var option_str = document.getElementById(district_id);
+        option_str.length = 0;
+        option_str.options[0] = new Option("Chọn đường", "");
+        option_str.selectedIndex = 0;
+        var district_arr = s_b[district_index].split("|");
+        for (var i = 0; i < district_arr.length; i++) {
+          option_str.options[option_str.length] = new Option(
+            district_arr[i],
+            district_arr[i]
+          );
+        }
+      }
+    </script>
+    <script language="javascript">
+      print_country("country");
+    </script>
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+  </body>
+</html>

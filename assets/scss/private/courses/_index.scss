@@ -81,6 +81,20 @@
             margin-left: 5px;
           }
         }
+        #showMore {
+          .txtShow {
+            font-size: 14px;
+            color: grey;
+            margin-left: 5px;
+            .fa-arrow-down {
+              float: left;
+            }
+            .fa-arrow-up {
+              display: none;
+              float: left;
+            }
+          }
+        }
       }
     }
     .courses-list-content {

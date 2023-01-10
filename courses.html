@@ -64,27 +64,24 @@
       <div class="container-fluid">
         <div class="sidebar-content">
           <div class="sidebar-top">
-            <span class="sidebar-logo">BSMART</span>
+            <a href="./index.html" class="sidebar-logo">BSMART</a>
             <i class="fa fa-times" class="sidebar-close" id="closeSidebar"></i>
           </div>
           <div class="sidebar-center">
             <ul class="sidebar-mean-nav">
-              <li><a href="#">Trang chủ</a></li>
-              <li><a href="#">Về chúng tôi</a></li>
+              <li><a href="./index.html">Trang chủ</a></li>
+              <li><a href="./aboutus.html">Về chúng tôi</a></li>
               <li>
-                <a href="#">Khoá học</a>
+                <a href="./courses.html">Khoá học</a>
                 <div class="d-flex align-items-center justify-content-end">
                   <ul class="sub-menu">
-                    <li><a href="#">Devops</a></li>
-                    <li><a href="#">.NET Basic</a></li>
-                    <li><a href="#">.NET Core MVC</a></li>
-                    <li><a href="#">.NET Core API</a></li>
-                    <li><a href="#">ReactJS</a></li>
                     <li><a href="#">Front End</a></li>
+                    <li><a href="#">Back End</a></li>
+                    <li><a href="#">Devops</a></li>
                   </ul>
                 </div>
-
                 <a class="mean-expand" href="#">+</a>
+                <a class="mean-non-expand" href="#">-</a>
               </li>
               <li>
                 <a href="#">Giảng viên</a>
@@ -96,17 +93,21 @@
                 </div>
 
                 <a class="mean-expand" href="#">+</a>
+                <a class="mean-non-expand" href="#">-</a>
               </li>
-              <li><a href="#">Blog</a></li>
+              <li><a href="./blog.html">Blog</a></li>
             </ul>
           </div>
           <div class="sidebar-bottom">
             <div class="search-course">
-              <input
-                type="text"
-                placeholder="Tìm kiếm khoá học"
-                class="form-control"
-              />
+              <form action="#" method="post">
+                <input
+                  type="text"
+                  placeholder="Tìm kiếm khoá học"
+                  class="form-control"
+                />
+              </form>
+
               <span><i class="fa fa-search"></i></span>
             </div>
             <ul class="contact-info">
@@ -129,7 +130,7 @@
             <ul class="sidebar-controls">
               <li><a href="./login-mobile.html">Login</a></li>
               <li><small>|</small></li>
-              <li><a href="registration.html">Register</a></li>
+              <li><a href="./register.html">Register</a></li>
             </ul>
           </div>
         </div>
@@ -145,7 +146,7 @@
         <div class="login-form-content">
           <div class="close-login-form" id="loginFormClose">&times;</div>
           <h3 class="mb-3 text-center">Đăng nhập</h3>
-          <form action="#">
+          <form action="#" method="post">
             <div class="form-group mb-3">
               <input type="text" placeholder="Email" class="form-control" />
             </div>
@@ -167,12 +168,20 @@
                 <a href="#" class="link-custom">Forgot Password?</a>
               </div>
             </div>
-            <div class="login-btn text-center mb-4">
-              <a href="#" class="btn btn-primary-custom p-2">Đăng nhập</a>
+            <div class="login-btn text-center mb-2">
+              <a href="./login-success.html" class="btn btn-primary-custom p-2"
+                >Đăng nhập</a
+              >
+            </div>
+            <div id="gSignInWrapper" class="mb-4 w-100">
+              <div id="customBtn" class="customGPlusSignIn w-100">
+                <span class="icon"></span>
+                <span class="buttonText">Đăng nhập bằng tài khoản google</span>
+              </div>
             </div>
             <div class="new-registration text-center">
               <span>Bạn chưa có tài khoản?</span>
-              <a href="#" class="link-custom">Đăng ký ngay</a>
+              <a href="./register.html" class="link-custom">Đăng ký ngay</a>
             </div>
           </form>
         </div>
@@ -233,7 +242,7 @@
         <div class="header-bottom">
           <div class="container">
             <div class="header-bottom-wrapper">
-              <a href="#"><span class="site-logo">BSMART</span></a>
+              <a href="./index.html"><span class="site-logo">BSMART</span></a>
               <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                   <div class="collapse navbar-collapse">
@@ -252,70 +261,90 @@
                           >Về Chúng Tôi</a
                         >
                       </li>
+
                       <li>
-                        <a href="#" class="nav-link nav-link-custom active"
+                        <a
+                          href="./courses.html"
+                          class="nav-link nav-link-custom active"
                           >Khoá Học</a
                         >
-                        <!-- Menu con cấp 1 -->
-                        <ul>
-                          <li>
-                            <a href="#" class="nav-link-custom"
-                              >Khoá học Devops</a
-                            >
-                          </li>
-                          <li>
-                            <a href="#" class="nav-link-custom"
-                              >Khoá học Back End</a
-                            >
-                            <ul>
-                              <li>
-                                <a href="#" class="nav-link-custom"
-                                  >ASP.NET Core Basic</a
-                                >
-                              </li>
-                              <li>
-                                <a href="#" class="nav-link-custom"
-                                  >ASP.NET Core MVC</a
-                                >
-                              </li>
-                              <li>
-                                <a href="#" class="nav-link-custom"
-                                  >ASP.NET Core API</a
-                                >
-                              </li>
-                            </ul>
-                          </li>
-                          <li>
-                            <a href="#" class="nav-link-custom"
-                              >Khoá học Front End</a
-                            >
-                            <ul>
-                              <li>
-                                <a href="#" class="nav-link-custom">ReactJS</a>
-                              </li>
-                              <li>
-                                <a href="#" class="nav-link-custom">VueJS</a>
-                              </li>
-                              <li>
-                                <a href="#" class="nav-link-custom">Angular</a>
-                              </li>
-                            </ul>
-                          </li>
-                        </ul>
+                        <div class="sub-nav">
+                          <div
+                            class="content-sub-nav d-flex justify-content-between"
+                          >
+                            <div>
+                              <a href="#">Front End</a>
+                              <ul>
+                                <li>
+                                  <a href="#"><span>+</span> Front End Basic</a>
+                                </li>
+                                <li>
+                                  <a href="#"><span>+</span> ReactJS</a>
+                                </li>
+                                <li>
+                                  <a href="#"><span>+</span> VueJS</a>
+                                </li>
+                                <li>
+                                  <a href="#"><span>+</span> Angular</a>
+                                </li>
+                              </ul>
+                            </div>
+                            <div>
+                              <a href="#">Back End</a>
+                              <ul>
+                                <li>
+                                  <a href="#"><span>+</span> NodeJS </a>
+                                </li>
+                                <li>
+                                  <a href="#"><span>+</span> .NET Core MVC</a>
+                                </li>
+                                <li>
+                                  <a href="#"><span>+</span> .NET Core API</a>
+                                </li>
+                              </ul>
+                            </div>
+                            <div>
+                              <a href="#">Devops</a>
+                            </div>
+                          </div>
+                        </div>
                       </li>
                       <li>
                         <a href="#" class="nav-link nav-link-custom"
                           >Giảng viên</a
                         >
                         <ul class="sub-menu">
-                          <li><a href="#">Mentor Cường</a></li>
-                          <li><a href="#">Mentor Long</a></li>
+                          <li>
+                            <a href="./mentor-detail.html">Mentor Cường</a>
+                          </li>
+                          <li>
+                            <a href="./mentor-detail.html">Mentor Long</a>
+                          </li>
                         </ul>
                       </li>
 
                       <li>
-                        <a href="#blog" class="nav-link nav-link-custom"
+                        <a href="./blog.html" class="nav-link nav-link-custom"
                           >Blog</a
+                        >
+                        <ul class="sub-menu">
+                          <li>
+                            <a href="./blog.html">Sự kiện</a>
+                          </li>
+                          <li>
+                            <a href="./blog.html">Khuyến mãi</a>
+                          </li>
+                          <li>
+                            <a href="./blog.html">Tuyển dụng</a>
+                          </li>
+                          <li>
+                            <a href="./blog.html">Hoạt động</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#" class="nav-link nav-link-custom"
+                          >Tuyển dụng</a
                         >
                       </li>
                     </ul>
@@ -343,89 +372,242 @@
         </div>
       </header>
       <!-- End header -->
+
       <!-- Start content -->
       <!-- Start banner course -->
       <section class="banner__course">
         <div class="content__banner_course">
           <h1>Danh sách khoá học</h1>
-          <p><a href="index.html">Trang chủ</a><span> > </span> Đăng ký</p>
+          <p><a href="index.html">Trang chủ</a><span> > </span> Khoá học</p>
         </div>
       </section>
       <!-- End banner course -->
+
       <!-- Start content -->
       <section class="course-content-container">
         <div class="container">
           <div class="row">
             <div class="col-lg-3 col-md-5">
               <div class="course-sidebar">
-                <div class="course-sidebar-search">
+                <form action="#" method="post" class="course-sidebar-search">
                   <input
                     type="text"
                     placeholder="Tìm kiếm ..."
                     class="form-control"
-                  />
-                  <i class="fa fa-search"></i>
-                </div>
-                <div class="category__course tag_r">
-                  <h3>Lĩnh vực</h3>
-                  <div class="categories__course">
+                  /><i class="fa fa-search"></i>
+                </form>
+                <form action="#" method="post" class="category__course tag_r">
+                  <div class="d-flex align-items-center">
+                    <h3 class="me-2" onclick="showMore(`showLvMobile`)">
+                      Lĩnh vực
+                    </h3>
+                    <!-- <span class="openFilterCourse"
+                      ><i class="fa fa-arrow-down"></i
+                    ></span>
+                    <span class="closeFilterCourse"
+                      ><i class="fa fa-arrow-up" style="display: none"></i
+                    ></span> -->
+                  </div>
+                  <div id="showLvMobile" class="categories__course d-xs-none">
                     <div class="checkbox__course">
-                      <input id="id" type="checkbox" />
-                      <label for="id">Front End</label>
+                      <input id="idFontEnd" type="checkbox" />
+                      <label for="idFontEnd">Front End</label>
                     </div>
                     <div class="checkbox__course">
-                      <input id="id" type="checkbox" />
-                      <label for="id">Back End</label>
+                      <input id="idBackEnd" type="checkbox" />
+                      <label for="idBackEnd">Back End</label>
                     </div>
-                    <div class="checkbox__course">
-                      <input id="id" type="checkbox" />
-                      <label for="id">Devops</label>
+                    <div id="linhVuc">
+                      <div class="checkbox__course">
+                        <input id="idDevops" type="checkbox" />
+                        <label for="idDevops">Devops</label>
+                      </div>
+                      <div class="checkbox__course">
+                        <input id="idDatabase" type="checkbox" />
+                        <label for="idDatabase">Database</label>
+                      </div>
                     </div>
-                    <div class="checkbox__course">
-                      <input id="id" type="checkbox" />
-                      <label for="id">Database</label>
+                    <!-- Show more -->
+                    <div
+                      id="showMore"
+                      onclick="showMoreLocal(`linhVuc`,`txtShowTitle`,`upIcon`,`downIcon`)"
+                    >
+                      <a class="txtShow">
+                        <span id="txtShowTitle">Xem thêm</span>
+                        <i
+                          id="downIcon"
+                          class="fa fa-arrow-down"
+                          aria-hidden="true"
+                        ></i>
+                        <i
+                          id="upIcon"
+                          class="fa fa-arrow-up"
+                          aria-hidden="true"
+                        ></i>
+                      </a>
                     </div>
                   </div>
-                </div>
-                <div class="tag__course tag_r">
-                  <h3>Môn học</h3>
-                  <div class="tag__course">
+                </form>
+                <form action="#" method="post" class="tag__course tag_r">
+                  <h3 onclick="showMore(`showSubMobi`)">Môn học</h3>
+                  <div id="showSubMobi" class="tag__course d-xs-none">
                     <div>
                       <div class="checkbox__course">
-                        <input id="id" type="checkbox" />
-                        <label for="id">Ngôn ngữ C/C++</label>
+                        <input id="idLanguageC" type="checkbox" />
+                        <label for="idLanguageC">Ngôn ngữ C/C++</label>
                       </div>
                       <div class="checkbox__course">
-                        <input id="id" type="checkbox" />
-                        <label for="id">Javascript</label>
+                        <input id="idJavascript" type="checkbox" />
+                        <label for="idJavascript">Javascript</label>
                       </div>
                       <div class="checkbox__course">
-                        <input id="id" type="checkbox" />
-                        <label for="id">.NET Core</label>
+                        <input id="idDotNet" type="checkbox" />
+                        <label for="idDotNet">.NET Core</label>
                       </div>
                       <div class="checkbox__course">
-                        <input id="id" type="checkbox" />
-                        <label for="id">ReactJS</label>
+                        <input id="idReactJS" type="checkbox" />
+                        <label for="idReactJS">ReactJS</label>
                       </div>
-                      <div class="checkbox__course">
-                        <input id="id" type="checkbox" />
-                        <label for="id">Typescript</label>
+
+                      <div id="subject">
+                        <div class="checkbox__course">
+                          <input id="idTypescript" type="checkbox" />
+                          <label for="idTypescript">Typescript</label>
+                        </div>
+                        <div class="checkbox__course">
+                          <input id="idNodeJS" type="checkbox" />
+                          <label for="idNodeJS">NodeJS</label>
+                        </div>
+                        <div class="checkbox__course">
+                          <input id="idDatabase" type="checkbox" />
+                          <label for="idDatabase">Database Sql</label>
+                        </div>
+                        <div class="checkbox__course">
+                          <input id="idMongoDB" type="checkbox" />
+                          <label for="idMongoDB">Database MongoDB</label>
+                        </div>
                       </div>
-                      <div class="checkbox__course">
-                        <input id="id" type="checkbox" />
-                        <label for="id">NodeJS</label>
-                      </div>
-                      <div class="checkbox__course">
-                        <input id="id" type="checkbox" />
-                        <label for="id">Database Sql</label>
-                      </div>
-                      <div class="checkbox__course">
-                        <input id="id" type="checkbox" />
-                        <label for="id">Database MongoDB</label>
+                      <!-- Show more -->
+                      <div
+                        id="showMore"
+                        onclick="showMoreLocal(`subject`,`txtShowTitle1`,`upIcon1`,`downIcon1`)"
+                      >
+                        <a class="txtShow">
+                          <span id="txtShowTitle1">Xem thêm</span>
+                          <i
+                            id="downIcon1"
+                            class="fa fa-arrow-down"
+                            aria-hidden="true"
+                          ></i>
+                          <i
+                            id="upIcon1"
+                            class="fa fa-arrow-up"
+                            aria-hidden="true"
+                          ></i>
+                        </a>
                       </div>
                     </div>
                   </div>
-                </div>
+                </form>
+                <form action="#" method="post" class="tag__form tag_r">
+                  <h3 onclick="showMore(`showHTMobi`)">Hình thức</h3>
+                  <div id="showHTMobi" class="tag__course d-xs-none">
+                    <div>
+                      <div class="checkbox__course">
+                        <input id="idOnline" type="checkbox" />
+                        <label for="idOnline">Online</label>
+                      </div>
+                      <div class="checkbox__course">
+                        <input id="idOffline" type="checkbox" />
+                        <label for="idOffline">Offline</label>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <form action="#" method="post" class="tag__location tag_r">
+                  <h3 onclick="showMore(`showLocalMobi`)">Khu vực</h3>
+                  <div id="showLocalMobi" class="tag__course d-xs-none">
+                    <div>
+                      <div class="checkbox__course">
+                        <input id="idQ1" type="checkbox" />
+                        <label for="idQ1">Quận 1</label>
+                      </div>
+                      <div class="checkbox__course">
+                        <input id="idQ2" type="checkbox" />
+                        <label for="idQ2">Quận 2</label>
+                      </div>
+                      <div class="checkbox__course">
+                        <input id="idQ3" type="checkbox" />
+                        <label for="idQ3">Quận 3</label>
+                      </div>
+                      <div class="checkbox__course">
+                        <input id="idQ4" type="checkbox" />
+                        <label for="idQ4">Quận 4</label>
+                      </div>
+                      <!--  -->
+                      <div id="local" style="display: none">
+                        <div class="checkbox__course">
+                          <input id="idQ5" type="checkbox" />
+                          <label for="idQ5">Quận 5</label>
+                        </div>
+                        <div class="checkbox__course">
+                          <input id="idQ6" type="checkbox" />
+                          <label for="idQ6">Quận 6</label>
+                        </div>
+                        <div class="checkbox__course">
+                          <input id="idQ7" type="checkbox" />
+                          <label for="idQ7">Quận 7</label>
+                        </div>
+                        <div class="checkbox__course">
+                          <input id="idQ8" type="checkbox" />
+                          <label for="idQ8">Quận 8</label>
+                        </div>
+                        <div class="checkbox__course">
+                          <input id="idQ9" type="checkbox" />
+                          <label for="idQ9">Quận 9</label>
+                        </div>
+                        <div class="checkbox__course">
+                          <input id="idQ10" type="checkbox" />
+                          <label for="idQ10">Quận 10</label>
+                        </div>
+                        <div class="checkbox__course">
+                          <input id="idQ11" type="checkbox" />
+                          <label for="idQ11">Quận 11</label>
+                        </div>
+                        <div class="checkbox__course">
+                          <input id="idQ12" type="checkbox" />
+                          <label for="idQ12">Quận 12</label>
+                        </div>
+                        <div class="checkbox__course">
+                          <input id="idThuDuc" type="checkbox" />
+                          <label for="idThuDuc">Thủ Đức</label>
+                        </div>
+                        <div class="checkbox__course">
+                          <input id="idBinhChanh" type="checkbox" />
+                          <label for="idBinhChanh">Bình Chánh</label>
+                        </div>
+                      </div>
+                      <div
+                        id="showMore"
+                        onclick="showMoreLocal(`local`,`txtShowTitle2`,`upIcon2`,`downIcon2`)"
+                      >
+                        <a class="txtShow">
+                          <span id="txtShowTitle2">Xem thêm</span>
+                          <i
+                            id="downIcon2"
+                            class="fa fa-arrow-down"
+                            aria-hidden="true"
+                          ></i>
+                          <i
+                            id="upIcon2"
+                            class="fa fa-arrow-up"
+                            aria-hidden="true"
+                          ></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </form>
               </div>
             </div>
             <div class="col-lg-9 col-md-7">
@@ -435,13 +617,16 @@
                     <h5>0</h5>
                     <p>Khoá học</p>
                   </div>
-                  <select class="form-select">
-                    <option selected>Sắp xếp khoá học</option>
-                    <option value="1">Các khoá học mới nhất</option>
-                    <option value="2">Các khoá học nhiều người học</option>
-                    <option value="3">A - Z</option>
-                    <option value="3">Z - A</option>
-                  </select>
+                  <form action="#" method="post">
+                    <select class="form-select">
+                      <option selected>Sắp xếp khoá học</option>
+                      <option value="1">Khoá học mới nhất</option>
+                      <option value="2">Khoá học nhiều người học</option>
+                      <option value="3">Khoá học sắp bắt đầu</option>
+                      <option value="3">A - Z</option>
+                      <option value="3">Z - A</option>
+                    </select>
+                  </form>
                 </div>
                 <div class="main-courses-list mt-3">
                   <div class="row">
@@ -474,9 +659,20 @@
                             class="d-flex justify-content-between align-items-center"
                           >
                             <span class="cost">1,200,000 VND</span>
-                            <span class="add-to-cart"
-                              ><i class="fa fa-shopping-cart"></i
-                            ></span>
+                          </div>
+                          <div id="btnShow">
+                            <a
+                              id="linkIntro"
+                              href="#"
+                              class="btn btn-outline-secondary-custom w-100 p-1 mb-2 mt-2"
+                              >Link giới thiệu</a
+                            >
+                            <a
+                              id="linkSign"
+                              href="./course-detail.html"
+                              class="btn btn-primary-custom p-3"
+                              >Đăng ký</a
+                            >
                           </div>
                         </div>
                       </div>
@@ -510,9 +706,20 @@
                             class="d-flex justify-content-between align-items-center"
                           >
                             <span class="cost">2,000,000 VND</span>
-                            <span class="add-to-cart"
-                              ><i class="fa fa-shopping-cart"></i
-                            ></span>
+                          </div>
+                          <div id="btnShow">
+                            <a
+                              id="linkIntro"
+                              href="#"
+                              class="btn btn-outline-secondary-custom w-100 p-1 mb-2 mt-2"
+                              >Link giới thiệu</a
+                            >
+                            <a
+                              id="linkSign"
+                              href="./course-detail.html"
+                              class="btn btn-primary-custom p-3"
+                              >Đăng ký</a
+                            >
                           </div>
                         </div>
                       </div>
@@ -548,9 +755,20 @@
                             class="d-flex justify-content-between align-items-center"
                           >
                             <span class="cost">1,200,000 VND</span>
-                            <span class="add-to-cart"
-                              ><i class="fa fa-shopping-cart"></i
-                            ></span>
+                          </div>
+                          <div id="btnShow">
+                            <a
+                              id="linkIntro"
+                              href="#"
+                              class="btn btn-outline-secondary-custom w-100 p-1 mb-2 mt-2"
+                              >Link giới thiệu</a
+                            >
+                            <a
+                              id="linkSign"
+                              href="./course-detail.html"
+                              class="btn btn-primary-custom p-3"
+                              >Đăng ký</a
+                            >
                           </div>
                         </div>
                       </div>
@@ -584,9 +802,20 @@
                             class="d-flex justify-content-between align-items-center"
                           >
                             <span class="cost">3,000,000 VND</span>
-                            <span class="add-to-cart"
-                              ><i class="fa fa-shopping-cart"></i
-                            ></span>
+                          </div>
+                          <div id="btnShow">
+                            <a
+                              id="linkIntro"
+                              href="#"
+                              class="btn btn-outline-secondary-custom w-100 p-1 mb-2 mt-2"
+                              >Link giới thiệu</a
+                            >
+                            <a
+                              id="linkSign"
+                              href="./course-detail.html"
+                              class="btn btn-primary-custom p-3"
+                              >Đăng ký</a
+                            >
                           </div>
                         </div>
                       </div>
@@ -620,9 +849,20 @@
                             class="d-flex justify-content-between align-items-center"
                           >
                             <span class="cost">1,000,000 VND</span>
-                            <span class="add-to-cart"
-                              ><i class="fa fa-shopping-cart"></i
-                            ></span>
+                          </div>
+                          <div id="btnShow">
+                            <a
+                              id="linkIntro"
+                              href="#"
+                              class="btn btn-outline-secondary-custom w-100 p-1 mb-2 mt-2"
+                              >Link giới thiệu</a
+                            >
+                            <a
+                              id="linkSign"
+                              href="./course-detail.html"
+                              class="btn btn-primary-custom p-3"
+                              >Đăng ký</a
+                            >
                           </div>
                         </div>
                       </div>
@@ -656,9 +896,20 @@
                             class="d-flex justify-content-between align-items-center"
                           >
                             <span class="cost">1,000,000 VND</span>
-                            <span class="add-to-cart"
-                              ><i class="fa fa-shopping-cart"></i
-                            ></span>
+                          </div>
+                          <div id="btnShow">
+                            <a
+                              id="linkIntro"
+                              href="#"
+                              class="btn btn-outline-secondary-custom w-100 p-1 mb-2 mt-2"
+                              >Link giới thiệu</a
+                            >
+                            <a
+                              id="linkSign"
+                              href="./course-detail.html"
+                              class="btn btn-primary-custom p-3"
+                              >Đăng ký</a
+                            >
                           </div>
                         </div>
                       </div>
@@ -692,9 +943,20 @@
                             class="d-flex justify-content-between align-items-center"
                           >
                             <span class="cost">1,300,000 VND</span>
-                            <span class="add-to-cart"
-                              ><i class="fa fa-shopping-cart"></i
-                            ></span>
+                          </div>
+                          <div id="btnShow">
+                            <a
+                              id="linkIntro"
+                              href="#"
+                              class="btn btn-outline-secondary-custom w-100 p-1 mb-2 mt-2"
+                              >Link giới thiệu</a
+                            >
+                            <a
+                              id="linkSign"
+                              href="./course-detail.html"
+                              class="btn btn-primary-custom p-3"
+                              >Đăng ký</a
+                            >
                           </div>
                         </div>
                       </div>
@@ -728,9 +990,20 @@
                             class="d-flex justify-content-between align-items-center"
                           >
                             <span class="cost">1,000,000 VND</span>
-                            <span class="add-to-cart"
-                              ><i class="fa fa-shopping-cart"></i
-                            ></span>
+                          </div>
+                          <div id="btnShow">
+                            <a
+                              id="linkIntro"
+                              href="#"
+                              class="btn btn-outline-secondary-custom w-100 p-1 mb-2 mt-2"
+                              >Link giới thiệu</a
+                            >
+                            <a
+                              id="linkSign"
+                              href="./course-detail.html"
+                              class="btn btn-primary-custom p-3"
+                              >Đăng ký</a
+                            >
                           </div>
                         </div>
                       </div>
@@ -764,9 +1037,20 @@
                             class="d-flex justify-content-between align-items-center"
                           >
                             <span class="cost">1,500,000 VND</span>
-                            <span class="add-to-cart"
-                              ><i class="fa fa-shopping-cart"></i
-                            ></span>
+                          </div>
+                          <div id="btnShow">
+                            <a
+                              id="linkIntro"
+                              href="#"
+                              class="btn btn-outline-secondary-custom w-100 p-1 mb-2 mt-2"
+                              >Link giới thiệu</a
+                            >
+                            <a
+                              id="linkSign"
+                              href="./course-detail.html"
+                              class="btn btn-primary-custom p-3"
+                              >Đăng ký</a
+                            >
                           </div>
                         </div>
                       </div>
@@ -791,7 +1075,6 @@
       </section>
       <!-- End content -->
 
-      <!-- Start footer -->
       <footer class="footer">
         <div class="container">
           <div class="row">
@@ -800,18 +1083,18 @@
             </div>
           </div>
           <div class="row mb-5">
-            <div class="col-lg-3 col-md-6">
-              <h3 class="quaters">Trụ sở: 117 Tân Cảng, Bình Thạnh</h3>
+            <div class="col-lg-4 col-md-6 mb-3">
+              <h3 class="quaters">Trụ sở 1: 117 Tân Cảng, Bình Thạnh</h3>
               <p class="hotline">Hotline: 096.105.1014</p>
               <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
             </div>
-            <div class="col-lg-3 col-md-6">
-              <h3 class="quaters">Trụ sở: 117 Tân Cảng, Bình Thạnh</h3>
+            <div class="col-lg-4 col-md-6 mb-3">
+              <h3 class="quaters">Trụ sở 2: 117 Tân Cảng, Bình Thạnh</h3>
               <p class="hotline">Hotline: 096.105.1014</p>
               <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
             </div>
-            <div class="col-lg-3 col-md-6">
-              <h3 class="quaters">Trụ sở: 117 Tân Cảng, Bình Thạnh</h3>
+            <div class="col-lg-4 col-md-6 mb-3">
+              <h3 class="quaters">Trụ sở 3: 117 Tân Cảng, Bình Thạnh</h3>
               <p class="hotline">Hotline: 096.105.1014</p>
               <p class="address">Address: 117 Tân Cảng, Bình Thạnh, TPHCM</p>
             </div>
@@ -852,16 +1135,20 @@
               <div class="footer-menu">
                 <h4>Menu</h4>
                 <ul>
+                  <li><a href="#">Trang chủ</a></li>
+                  <li><a href="#">Về chúng tôi</a></li>
+                  <li><a href="#">Nền tảng LMS</a></li>
                   <li><a href="#">Khoá học</a></li>
                   <li><a href="#">Giảng viên</a></li>
+                  <li><a href="#">Blog</a></li>
                 </ul>
               </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-3">
-              <div class="footer-control">
-                <button class="btn btn-primary-custom p-2 mb-2">
-                  Đăng ký khoá học
-                </button>
+              <div class="footer-control d-flex align-items-center mt-5">
+                <a href="#" class="btn btn-primary-custom mb-2">
+                  Liên hệ tư vấn
+                </a>
               </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-3">
@@ -885,13 +1172,85 @@
         </div>
         <hr class="text-success mt-5" />
         <div class="container">
-          <p class="m-0 text-light">
+          <p class="m-0 text-light text-center">
             © Bản quyền BSmart 2022 - Empowered by <a href="#">BSmart</a>
           </p>
         </div>
       </footer>
-      <!-- End footer -->
     </div>
+    <!--  Hidden Link Intro and Sign -->
+    <script>
+      var mentor = true; //temp
+      var member = false; //temp
+
+      let elements = document.querySelectorAll("#linkIntro");
+      let elementsSign = document.querySelectorAll("#linkSign");
+      let cost = document.querySelectorAll(".cost");
+
+      let memberLearned = [
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+      ];
+
+      //Check Token if User is mentor
+      for (let i = 0; i < elements.length; i++) {
+        if (mentor == true) {
+          elements[i].style.display = "none";
+          cost[i].style.display = "none";
+          elementsSign[i].style.marginTop = "26px";
+          elementsSign[i].style.marginBottom = "26px";
+        }
+      }
+      //Check Token if User is member
+      if (member == true) {
+        for (let i = 0; i < elements.length; i++) {
+          //Check student's subject
+          if (memberLearned[i] == true) {
+            //if student dosen't has in class
+            elements[i].style.display = "none";
+            elementsSign[i].style.marginTop = "51px";
+            elementsSign[i].style.marginBottom = "0px";
+          }
+          //else Show Link Introduction for All student in class
+        }
+      }
+      //Dropdown list
+      function showMoreLocal(local, text, upIcon, downIcon) {
+        var lct = document.getElementById(local);
+        var txt = document.getElementById(text);
+        var icUp = document.getElementById(upIcon);
+        var icdown = document.getElementById(downIcon);
+
+        if (lct.style.display === "none") {
+          lct.style.display = "block";
+          icUp.style.display = "block";
+          icdown.style.display = "none";
+          txt.innerText = "Thu gọn";
+        } else {
+          lct.style.display = "none";
+          icdown.style.display = "block";
+          icUp.style.display = "none";
+          txt.innerText = "Xem thêm";
+        }
+      }
+      //Dropdown list mobile
+      function showMore(temp) {
+        var lct = document.getElementById(temp);
+        var drd = lct.classList.contains("d-xs-none");
+        if (drd) {
+          lct.classList.remove("d-xs-none");
+        } else {
+          lct.classList.add("d-xs-none");
+        }
+      }
+    </script>
     <!-- Import script bootstrap V5 -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
